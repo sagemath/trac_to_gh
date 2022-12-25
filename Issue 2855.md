@@ -53,3 +53,19 @@ archive/issue_comments_019550.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_003047.json:
+```json
+{
+    "actor": "@dwbump",
+    "created_at": "2008-04-08T06:07:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2855",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2855#event-3047"
+}
+```

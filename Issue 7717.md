@@ -57,6 +57,22 @@ Duplicate of 7716: please delete.
 
 ---
 
+archive/issue_events_007933.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-12-17T01:47:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7717",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7717#event-7933"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066168.json:
 ```json
 {

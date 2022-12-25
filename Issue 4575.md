@@ -101,6 +101,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_004820.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-28T06:48:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4575",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4575#event-4820"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034212.json:
 ```json
 {
@@ -301,6 +317,22 @@ archive/issue_comments_034221.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_004821.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-30T05:42:55Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4575",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4575#event-4821"
+}
+```
 
 
 
@@ -729,6 +761,22 @@ archive/issue_comments_034234.json:
 ```
 
 I'm ok with the api addition to show.
+
+
+
+---
+
+archive/issue_events_004822.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T06:26:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4575",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4575#event-4822"
+}
+```
 
 
 

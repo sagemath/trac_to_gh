@@ -80,6 +80,22 @@ Positive review from me.
 
 ---
 
+archive/issue_events_002930.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-31T20:08:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2742",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2742#event-2930"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018815.json:
 ```json
 {

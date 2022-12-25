@@ -82,6 +82,22 @@ This requires the new jmol spkg
 
 ---
 
+archive/issue_events_001824.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-03T16:15:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1665",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1665#event-1824"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010557.json:
 ```json
 {

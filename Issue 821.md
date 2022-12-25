@@ -178,6 +178,22 @@ for number fields raise a clear exception (ValueError or NotImplementedError) th
 
 ---
 
+archive/issue_events_000932.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-20T05:52:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/821",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/821#event-932"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005079.json:
 ```json
 {

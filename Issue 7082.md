@@ -141,6 +141,22 @@ The changes in this patch have already been included.
 
 ---
 
+archive/issue_events_007304.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-15T14:15:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7082",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7082#event-7304"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058438.json:
 ```json
 {

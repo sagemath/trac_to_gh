@@ -66,6 +66,22 @@ Looks good to me -- all tests pass.
 
 ---
 
+archive/issue_events_004011.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-09T00:43:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3789",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3789#event-4011"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026890.json:
 ```json
 {

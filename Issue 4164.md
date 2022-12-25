@@ -548,6 +548,22 @@ Changing keywords from "" to "polyhedra, graphics".
 
 ---
 
+archive/issue_events_004402.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-26T01:07:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4164",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4164#event-4402"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030178.json:
 ```json
 {

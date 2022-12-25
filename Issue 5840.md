@@ -160,6 +160,22 @@ AFAIK it's supposed to be in the optional repository, but there were issues with
 
 ---
 
+archive/issue_events_006092.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T01:17:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5840",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5840#event-6092"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045833.json:
 ```json
 {

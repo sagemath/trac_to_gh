@@ -82,6 +82,22 @@ This will be fixed by #7109.
 
 ---
 
+archive/issue_events_007142.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2010-01-27T17:16:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6915",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6915#event-7142"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056997.json:
 ```json
 {

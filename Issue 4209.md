@@ -124,6 +124,22 @@ builds fine, tests pass in the right places...
 
 ---
 
+archive/issue_events_004446.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-27T21:40:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4209",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4209#event-4446"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030532.json:
 ```json
 {

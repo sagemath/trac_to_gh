@@ -241,3 +241,19 @@ applied to 2.8.11.alpha0. I also updated the patch level to "4" and cleanup up a
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001090.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T10:17:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/969",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/969#event-1090"
+}
+```

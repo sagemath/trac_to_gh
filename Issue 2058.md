@@ -276,6 +276,22 @@ attachment:booleanmonomial_eval_doctest.patch makes it conform to the "all funct
 
 ---
 
+archive/issue_events_002219.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-26T21:36:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#event-2219"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013299.json:
 ```json
 {

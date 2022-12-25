@@ -233,6 +233,22 @@ I have no opinion about this, but if you want to do something about it, let's mo
 
 ---
 
+archive/issue_events_004706.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T06:57:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4460#event-4706"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032853.json:
 ```json
 {
@@ -426,6 +442,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_004707.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-28T17:44:57Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4460#event-4707"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032863.json:
 ```json
 {
@@ -522,6 +554,22 @@ archive/issue_comments_032867.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_004708.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-30T01:46:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4460#event-4708"
+}
+```
 
 
 

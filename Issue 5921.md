@@ -367,3 +367,19 @@ Merged both patches in Sage 3.4.2.rc0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_006175.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-30T09:20:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5921",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5921#event-6175"
+}
+```

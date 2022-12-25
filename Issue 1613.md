@@ -115,6 +115,22 @@ and the output is put into the separate output area.
 
 ---
 
+archive/issue_events_001772.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-02-07T07:28:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1613",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1613#event-1772"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010237.json:
 ```json
 {

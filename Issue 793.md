@@ -354,6 +354,22 @@ Cheers, gsw
 
 ---
 
+archive/issue_events_000902.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-01T23:54:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/793#event-902"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004764.json:
 ```json
 {

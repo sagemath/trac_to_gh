@@ -66,6 +66,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/460
 
 ---
 
+archive/issue_events_000489.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-08-19T16:45:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/460#event-489"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002280.json:
 ```json
 {

@@ -171,3 +171,19 @@ archive/issue_comments_000438.json:
 ```
 
 So lets do it ... one ticket less to worry about :-)
+
+
+
+---
+
+archive/issue_events_000088.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-02-27T11:08:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/88",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/88#event-88"
+}
+```

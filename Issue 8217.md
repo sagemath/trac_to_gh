@@ -227,3 +227,19 @@ archive/issue_comments_072359.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008419.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-17T04:31:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8217",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8217#event-8419"
+}
+```

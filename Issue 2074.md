@@ -103,6 +103,22 @@ Apply the second patch -- positive review.
 
 ---
 
+archive/issue_events_002235.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-07T09:59:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2074",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2074#event-2235"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013387.json:
 ```json
 {

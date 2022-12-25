@@ -226,6 +226,22 @@ Updated patch looks fine. (But haven't yet applied/tested it.)
 
 ---
 
+archive/issue_events_008866.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T07:55:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8694",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8694#event-8866"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079077.json:
 ```json
 {

@@ -264,6 +264,22 @@ then apply all 4 attachments to this bug (one bundle, and 3 patches) in order.
 
 ---
 
+archive/issue_events_000471.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T11:23:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/444",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/444#event-471"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002219.json:
 ```json
 {

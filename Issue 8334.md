@@ -892,6 +892,22 @@ Done.
 
 ---
 
+archive/issue_events_008527.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-28T10:56:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8334",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8334#event-8527"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074148.json:
 ```json
 {

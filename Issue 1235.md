@@ -325,6 +325,22 @@ Merged in 2.9.alpha2.
 
 ---
 
+archive/issue_events_001373.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-09T13:15:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1235",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-1373"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007690.json:
 ```json
 {
@@ -381,6 +397,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001374.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-12-10T15:34:40Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1235",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-1374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007693.json:
 ```json
 {
@@ -430,3 +462,19 @@ archive/issue_comments_007695.json:
 ```
 
 Merged trac-1235-doctest_fix.patch   in 2.9.alpha5.
+
+
+
+---
+
+archive/issue_events_001375.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-10T21:02:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1235",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1235#event-1375"
+}
+```

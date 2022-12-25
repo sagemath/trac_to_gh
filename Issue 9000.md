@@ -183,6 +183,22 @@ Looks good to me. Doctests pass. Positive review.
 
 ---
 
+archive/issue_events_009154.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-04T01:34:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9000",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9000#event-9154"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083093.json:
 ```json
 {

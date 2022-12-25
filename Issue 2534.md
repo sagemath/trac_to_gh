@@ -165,6 +165,22 @@ Merged in Sage 2.10.4.rc0 - I will valgrind this once rc0 is out.
 
 ---
 
+archive/issue_events_002715.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-16T05:23:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2534",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2534#event-2715"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017246.json:
 ```json
 {

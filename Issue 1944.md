@@ -107,6 +107,22 @@ This will be fixed in the Sphinx reference manual.
 
 ---
 
+archive/issue_events_002099.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-02-28T04:20:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1944",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1944#event-2099"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012312.json:
 ```json
 {

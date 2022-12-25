@@ -365,6 +365,22 @@ This is a slightly rebased version of Arnaud Bergeron's patch
 
 ---
 
+archive/issue_events_002958.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-12T02:00:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2770",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2770#event-2958"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019004.json:
 ```json
 {

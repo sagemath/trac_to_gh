@@ -167,6 +167,22 @@ This isn't a patch etc. so it cannot be reviewed yet. I'll change the status to 
 
 ---
 
+archive/issue_events_006395.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-08-18T21:37:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6146",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6146#event-6395"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048970.json:
 ```json
 {

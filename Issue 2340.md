@@ -241,6 +241,22 @@ Reviewed the attached patch 8812.patch with positive review. The patches are to 
 
 ---
 
+archive/issue_events_002517.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-09T17:27:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2340",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2340#event-2517"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015635.json:
 ```json
 {

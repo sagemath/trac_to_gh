@@ -67,6 +67,22 @@ wrong and thus I changed it locally to return the constant coefficient if the  p
 
 ---
 
+archive/issue_events_001117.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-27T02:48:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/994",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/994#event-1117"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006040.json:
 ```json
 {

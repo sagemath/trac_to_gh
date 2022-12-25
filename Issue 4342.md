@@ -1701,6 +1701,22 @@ I don't think so.  I originally tested them all without #9221.
 
 ---
 
+archive/issue_events_004589.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-03T06:35:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4342",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4342#event-4589"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031851.json:
 ```json
 {

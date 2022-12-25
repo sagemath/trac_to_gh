@@ -254,6 +254,22 @@ Changing assignee from @mwhansen to @hivert.
 
 ---
 
+archive/issue_events_007628.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-19T16:57:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7403#event-7628"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062184.json:
 ```json
 {

@@ -91,3 +91,19 @@ Merged in Sage 3.4.2.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_006247.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-06T06:27:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5992",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5992#event-6247"
+}
+```

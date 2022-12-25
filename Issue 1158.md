@@ -487,3 +487,19 @@ archive/issue_comments_007060.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_001288.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-01-31T09:37:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1158",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1158#event-1288"
+}
+```

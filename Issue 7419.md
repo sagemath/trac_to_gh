@@ -185,6 +185,22 @@ I'm pretty sure it's my fault from when I did the setup_eval_from_grid patch.
 
 ---
 
+archive/issue_events_007643.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-12T06:46:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7419",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7419#event-7643"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062322.json:
 ```json
 {

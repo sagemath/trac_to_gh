@@ -108,6 +108,22 @@ Numpy is now a standard sage component.
 
 ---
 
+archive/issue_events_000150.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-08T19:28:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/144",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/144#event-150"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000663.json:
 ```json
 {

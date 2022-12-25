@@ -179,3 +179,19 @@ archive/issue_comments_044967.json:
 ```
 
 I think we can close this as invalid as all of the doctests in the patch currenly pass.
+
+
+
+---
+
+archive/issue_events_006010.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-22T15:07:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5763",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5763#event-6010"
+}
+```

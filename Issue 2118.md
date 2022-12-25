@@ -58,6 +58,22 @@ This is a duplicate of #336.
 
 ---
 
+archive/issue_events_002280.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-05-10T17:10:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2118",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2118#event-2280"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013856.json:
 ```json
 {

@@ -298,3 +298,19 @@ archive/issue_comments_029036.json:
 ```
 
 Merged trac_4031.patch in Sage 3.1.2.alpha4
+
+
+
+---
+
+archive/issue_events_004261.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-02T10:13:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4031",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4031#event-4261"
+}
+```

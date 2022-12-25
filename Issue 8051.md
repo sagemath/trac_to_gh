@@ -897,6 +897,22 @@ It turns out that I merged #4217, not #3154, into SageNB 0.7.  I didn't notice t
 
 ---
 
+archive/issue_events_008260.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-10T09:34:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#event-8260"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070314.json:
 ```json
 {

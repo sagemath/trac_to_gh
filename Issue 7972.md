@@ -276,6 +276,22 @@ Applying the patch to 4.3, this works.  In the notebook, running reset() then sh
 
 ---
 
+archive/issue_events_008187.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-19T05:58:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7972",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7972#event-8187"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069425.json:
 ```json
 {

@@ -48,6 +48,22 @@ fixed by patch:
 
 ---
 
+archive/issue_events_000659.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-06T19:48:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/601",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/601#event-659"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003092.json:
 ```json
 {

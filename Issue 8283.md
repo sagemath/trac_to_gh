@@ -291,6 +291,22 @@ Done. All tests passed!
 
 ---
 
+archive/issue_events_008481.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-06T08:36:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8283",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8283#event-8481"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073220.json:
 ```json
 {

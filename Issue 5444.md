@@ -86,6 +86,22 @@ Resolution: worksforme
 
 ---
 
+archive/issue_events_005694.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2009-05-18T21:54:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5444",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5444#event-5694"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042013.json:
 ```json
 {
@@ -144,6 +160,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_005695.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-19T04:57:15Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5444",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5444#event-5695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042016.json:
 ```json
 {
@@ -197,6 +229,22 @@ archive/issue_comments_042018.json:
 ```
 
 Doctest looks fine to me.
+
+
+
+---
+
+archive/issue_events_005696.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:50:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5444",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5444#event-5696"
+}
+```
 
 
 

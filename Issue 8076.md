@@ -823,3 +823,19 @@ archive/issue_comments_070669.json:
 ```
 
 Merged [gap-4.4.12.p1.spkg](http://sage.math.washington.edu/home/mvngu/spkg/standard/gap/gap-4.4.12.p1.spkg) in the standard spkg repository.
+
+
+
+---
+
+archive/issue_events_008282.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-17T20:49:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8076",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8076#event-8282"
+}
+```

@@ -150,6 +150,22 @@ The new code seems to compare favorably to Magma. IIRC Bill Hart suggested to do
 
 ---
 
+archive/issue_events_000779.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-30T01:48:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/708",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/708#event-779"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003708.json:
 ```json
 {

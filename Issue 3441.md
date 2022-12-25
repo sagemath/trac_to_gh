@@ -77,3 +77,19 @@ archive/issue_comments_024232.json:
 ```
 
 Successfully implemented by #3786, which goes further (arbitrary length, not just 64).
+
+
+
+---
+
+archive/issue_events_003660.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2008-08-10T03:42:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3441",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3441#event-3660"
+}
+```

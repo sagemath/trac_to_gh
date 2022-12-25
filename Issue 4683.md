@@ -194,6 +194,22 @@ I don't see any growth in memory usage anymore either. I guess we can safely clo
 
 ---
 
+archive/issue_events_004929.json:
+```json
+{
+    "actor": "@wjp",
+    "created_at": "2010-01-17T23:19:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4683",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4683#event-4929"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035236.json:
 ```json
 {

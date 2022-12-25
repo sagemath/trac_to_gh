@@ -46,6 +46,22 @@ Changing assignee from @garyfurnish to mabshoff.
 
 ---
 
+archive/issue_events_003850.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-12T21:30:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3631",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3631#event-3850"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025636.json:
 ```json
 {

@@ -147,6 +147,22 @@ Added parse() method to take several kinds of inputs, re-enabled doctest for sol
 
 ---
 
+archive/issue_events_000618.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2007-09-06T19:20:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/570",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/570#event-618"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002945.json:
 ```json
 {
@@ -219,6 +235,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000619.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2007-09-06T20:21:48Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/570",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/570#event-619"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002949.json:
 ```json
 {
@@ -232,3 +264,19 @@ archive/issue_comments_002949.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000620.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T04:34:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/570",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/570#event-620"
+}
+```

@@ -91,3 +91,19 @@ archive/issue_comments_032488.json:
 ```
 
 OK.  I would really like to fix the problem though, since this should never happen when cookies are enabled.  It happens a lot for me when I try safari on os x.
+
+
+
+---
+
+archive/issue_events_004673.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-09T16:26:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4429",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4429#event-4673"
+}
+```

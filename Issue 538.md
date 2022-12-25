@@ -118,3 +118,19 @@ archive/issue_comments_002731.json:
 ```
 
 Attachment [c_lib_fixes.hg](tarball://root/attachments/some-uuid/ticket538/c_lib_fixes.hg) by @williamstein created at 2007-09-01 17:45:45
+
+
+
+---
+
+archive/issue_events_000577.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-01T17:45:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/538",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/538#event-577"
+}
+```

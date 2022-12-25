@@ -122,3 +122,19 @@ archive/issue_comments_019520.json:
 ```
 
 Merged 2850.patch in Sage 3.0.alpha5
+
+
+
+---
+
+archive/issue_events_003040.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-15T00:30:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2850",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2850#event-3040"
+}
+```

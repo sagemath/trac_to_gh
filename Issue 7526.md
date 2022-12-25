@@ -240,6 +240,22 @@ And here is the positive review!
 
 ---
 
+archive/issue_events_007754.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-29T05:48:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7526",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7526#event-7754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063685.json:
 ```json
 {

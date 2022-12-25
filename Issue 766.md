@@ -66,6 +66,22 @@ Attachment [Trac766.hg](tarball://root/attachments/some-uuid/ticket766/Trac766.h
 
 ---
 
+archive/issue_events_000863.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-03T23:48:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/766",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/766#event-863"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004517.json:
 ```json
 {

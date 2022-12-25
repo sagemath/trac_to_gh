@@ -203,6 +203,22 @@ Merged numerical_sqrt.patch in 4.0.1.rc1.
 
 ---
 
+archive/issue_events_005661.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T19:10:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5404",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5404#event-5661"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041682.json:
 ```json
 {

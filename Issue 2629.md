@@ -166,6 +166,22 @@ This ancient ticket should definitely be closed.  Setting positive review.
 
 ---
 
+archive/issue_events_002820.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-03-28T15:21:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2629",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2629#event-2820"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018036.json:
 ```json
 {

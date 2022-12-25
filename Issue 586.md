@@ -64,6 +64,22 @@ fixed for sage-2.8.3.4
 
 ---
 
+archive/issue_events_000640.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-05T04:23:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/586",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/586#event-640"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003012.json:
 ```json
 {

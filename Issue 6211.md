@@ -179,3 +179,19 @@ archive/issue_comments_049533.json:
 ```
 
 Fine by me.
+
+
+
+---
+
+archive/issue_events_006460.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-14T21:41:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6211",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6211#event-6460"
+}
+```

@@ -234,6 +234,22 @@ This looks like spam but I didn't try the link.
 
 ---
 
+archive/issue_events_007757.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T07:11:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7529",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7529#event-7757"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063711.json:
 ```json
 {

@@ -92,6 +92,22 @@ You're right, this is now fixed.
 
 ---
 
+archive/issue_events_000630.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-20T01:07:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/576",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/576#event-630"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002980.json:
 ```json
 {

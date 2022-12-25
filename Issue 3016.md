@@ -130,3 +130,19 @@ archive/issue_comments_020685.json:
 ```
 
 This should be brought up as a thread on sage-devel.
+
+
+
+---
+
+archive/issue_events_003221.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-06-20T04:51:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3016",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3016#event-3221"
+}
+```

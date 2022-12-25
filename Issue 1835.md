@@ -64,6 +64,22 @@ Simple enough, should be applied.
 
 ---
 
+archive/issue_events_001994.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-21T06:16:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1835",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1835#event-1994"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011589.json:
 ```json
 {

@@ -123,6 +123,22 @@ Thanks for the review !
 
 ---
 
+archive/issue_events_009416.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T10:04:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9256",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9256#event-9416"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086972.json:
 ```json
 {

@@ -75,6 +75,22 @@ I've done what this ticket says to do.  This ticket can be closed.
 
 ---
 
+archive/issue_events_001614.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-12T03:59:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1463",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1463#event-1614"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009396.json:
 ```json
 {

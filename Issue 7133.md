@@ -96,3 +96,19 @@ archive/issue_comments_059038.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007353.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-06-17T07:36:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7133",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7133#event-7353"
+}
+```

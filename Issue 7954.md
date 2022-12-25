@@ -265,3 +265,19 @@ archive/issue_comments_069295.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008170.json:
+```json
+{
+    "actor": "@slel",
+    "created_at": "2020-08-22T07:20:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7954",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7954#event-8170"
+}
+```

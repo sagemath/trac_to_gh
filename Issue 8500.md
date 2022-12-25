@@ -732,6 +732,22 @@ I just tried on bsd.sagemath.org, with 4.4.2 and just those two patches, and all
 
 ---
 
+archive/issue_events_008681.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-05T22:28:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8500",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8500#event-8681"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076640.json:
 ```json
 {

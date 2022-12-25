@@ -108,6 +108,22 @@ See #6166.
 
 ---
 
+archive/issue_events_006372.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T05:04:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6122",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6122#event-6372"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048829.json:
 ```json
 {

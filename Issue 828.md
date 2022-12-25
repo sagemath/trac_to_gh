@@ -123,3 +123,19 @@ archive/issue_comments_005116.json:
 ```
 
 I don't think this is needed -- it was only need for the old version...
+
+
+
+---
+
+archive/issue_events_000939.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:33:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/828",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/828#event-939"
+}
+```

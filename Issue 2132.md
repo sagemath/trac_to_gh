@@ -87,6 +87,22 @@ I'm not sure where that memory is [not] allocated.
 
 ---
 
+archive/issue_events_002294.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-01-23T10:43:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2132",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2132#event-2294"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013952.json:
 ```json
 {

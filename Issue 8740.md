@@ -400,6 +400,22 @@ Changing status from needs_review to needs_info.
 
 ---
 
+archive/issue_events_008910.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-08-20T20:33:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8740",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8740#event-8910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079840.json:
 ```json
 {

@@ -50,6 +50,22 @@ Fixed by #7352
 
 ---
 
+archive/issue_events_007363.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-20T06:21:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7143",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7143#event-7363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059075.json:
 ```json
 {

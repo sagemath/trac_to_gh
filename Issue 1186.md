@@ -269,6 +269,22 @@ Apply both patches.  Works for me against 2.10.3.alpha0.
 
 ---
 
+archive/issue_events_001318.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-28T00:24:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#event-1318"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007304.json:
 ```json
 {

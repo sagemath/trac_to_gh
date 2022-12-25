@@ -125,6 +125,22 @@ I agree.
 
 ---
 
+archive/issue_events_006561.json:
+```json
+{
+    "actor": "@mkoeppe",
+    "created_at": "2022-09-01T02:30:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6313",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6313#event-6561"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050303.json:
 ```json
 {

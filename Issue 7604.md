@@ -187,6 +187,22 @@ solevillar`@`gmail.com, could we get your name for the release notes?  Or, you c
 
 ---
 
+archive/issue_events_007830.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-07T08:12:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#event-7830"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064764.json:
 ```json
 {

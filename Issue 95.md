@@ -49,6 +49,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/95
 
 ---
 
+archive/issue_events_000095.json:
+```json
+{
+    "actor": "@wdjoyner",
+    "created_at": "2006-09-29T00:00:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/95",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/95#event-95"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000452.json:
 ```json
 {
@@ -157,6 +173,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000096.json:
+```json
+{
+    "actor": "@wdjoyner",
+    "created_at": "2006-09-29T00:02:21Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/95",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/95#event-96"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000456.json:
 ```json
 {
@@ -170,6 +202,22 @@ archive/issue_comments_000456.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000097.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-12T22:39:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/95",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/95#event-97"
+}
+```
 
 
 

@@ -861,6 +861,22 @@ Please don't put spaces in patch filenames
 
 ---
 
+archive/issue_events_009831.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-01T10:10:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9698",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9698#event-9831"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094133.json:
 ```json
 {
@@ -926,6 +942,22 @@ Changing status from closed to needs_work.
 
 ---
 
+archive/issue_events_009832.json:
+```json
+{
+    "actor": "@eviatarbach",
+    "created_at": "2011-01-05T04:30:48Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9698",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9698#event-9832"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094136.json:
 ```json
 {
@@ -939,3 +971,19 @@ archive/issue_comments_094136.json:
 ```
 
 I created a new ticket for this: #10561
+
+
+
+---
+
+archive/issue_events_009833.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-05T08:19:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9698",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9698#event-9833"
+}
+```

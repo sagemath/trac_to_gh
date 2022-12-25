@@ -92,3 +92,19 @@ Replying to [comment:1 hivert]:
 > This looks like a duplicate of #8402... and should be closed.
 
 Oops, right. Sorry.
+
+
+
+---
+
+archive/issue_events_008868.json:
+```json
+{
+    "actor": "@nthiery",
+    "created_at": "2010-04-18T10:02:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8697",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8697#event-8868"
+}
+```

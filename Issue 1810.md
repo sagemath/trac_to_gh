@@ -237,6 +237,22 @@ Merged finite_field_refactor_doc.3.patch, gfp.patch and guava_fix.patch in Sage 
 
 ---
 
+archive/issue_events_001967.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-02T22:51:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1810",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1810#event-1967"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011421.json:
 ```json
 {

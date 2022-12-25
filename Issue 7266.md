@@ -146,6 +146,22 @@ Fair point(s).  One reason for getting better (usually) bounds for *rational* po
 
 ---
 
+archive/issue_events_007487.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-31T15:48:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7266",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7266#event-7487"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060262.json:
 ```json
 {

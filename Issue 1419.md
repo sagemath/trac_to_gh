@@ -141,6 +141,22 @@ We're now using jmol for everything.
 
 ---
 
+archive/issue_events_001567.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2009-05-18T21:38:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1419",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1419#event-1567"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009135.json:
 ```json
 {

@@ -81,6 +81,22 @@ Looks good. Good job.
 
 ---
 
+archive/issue_events_007119.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T09:40:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6888",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6888#event-7119"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056822.json:
 ```json
 {

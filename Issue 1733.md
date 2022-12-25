@@ -96,6 +96,22 @@ Great stuff!  Works well, and makes the code cleaner!
 
 ---
 
+archive/issue_events_001891.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-12T11:03:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1733",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1733#event-1891"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010947.json:
 ```json
 {

@@ -211,3 +211,19 @@ archive/issue_comments_063041.json:
 ```
 
 I've merged this in with the optional spkgs.
+
+
+
+---
+
+archive/issue_events_007711.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-01-04T02:05:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7481",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7481#event-7711"
+}
+```

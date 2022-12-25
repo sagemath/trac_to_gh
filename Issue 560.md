@@ -111,6 +111,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000604.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T03:12:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/560",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/560#event-604"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002888.json:
 ```json
 {
@@ -142,6 +158,22 @@ archive/issue_comments_002889.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000605.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-09-07T03:17:50Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/560",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/560#event-605"
+}
+```
 
 
 
@@ -200,6 +232,22 @@ This is likely to be fixed. Please valgrind and report back.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000606.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-02T00:48:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/560",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/560#event-606"
+}
+```
 
 
 

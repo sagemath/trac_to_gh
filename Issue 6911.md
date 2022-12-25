@@ -200,3 +200,19 @@ Merged patches in this order:
 
 1. `trac_6911-referee-replace_other_patch-apply_only_this.patch`
 2. `trac_6911-referee_followup_that_fixes_some_bugs.patch`
+
+
+
+---
+
+archive/issue_events_007139.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-19T20:40:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6911",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6911#event-7139"
+}
+```

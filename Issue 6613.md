@@ -98,6 +98,22 @@ i confirm that the doctests correctly repesents the given testcase.
 
 ---
 
+archive/issue_events_006853.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-24T22:29:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6613",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6613#event-6853"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054039.json:
 ```json
 {

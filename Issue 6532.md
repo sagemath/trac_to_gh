@@ -833,3 +833,19 @@ Merged in this order:
 
 1. [r-2.10.1.spkg](http://boxen.math.washington.edu/home/kcrisman/r-2.10.1.spkg) in the standard spkg repository
 2. [trac_6532-r-upgrade.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6532/trac_6532-r-upgrade.patch)
+
+
+
+---
+
+archive/issue_events_006768.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-25T23:18:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6532",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6532#event-6768"
+}
+```

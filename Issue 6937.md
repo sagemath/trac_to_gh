@@ -142,6 +142,22 @@ Bing!
 
 ---
 
+archive/issue_events_007162.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-22T20:02:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6937",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6937#event-7162"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057238.json:
 ```json
 {

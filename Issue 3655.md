@@ -136,6 +136,22 @@ Looks good to me.  Apply both patches.
 
 ---
 
+archive/issue_events_003874.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-26T22:54:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3655",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3655#event-3874"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025792.json:
 ```json
 {

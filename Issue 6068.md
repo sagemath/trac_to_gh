@@ -122,6 +122,22 @@ Proposing to close all sagenb tickets as outdated, so that all remaining open ti
 
 ---
 
+archive/issue_events_006323.json:
+```json
+{
+    "actor": "@slel",
+    "created_at": "2020-08-22T07:13:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6068",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6068#event-6323"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048202.json:
 ```json
 {

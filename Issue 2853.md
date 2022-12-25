@@ -269,6 +269,22 @@ Looks good to me.  Apply just 2853.1.patch.
 
 ---
 
+archive/issue_events_003045.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-09T00:11:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2853",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2853#event-3045"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019546.json:
 ```json
 {

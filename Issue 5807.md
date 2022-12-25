@@ -71,6 +71,22 @@ Note that dsage is so broken that it isn't even possible to test this out.  See 
 
 ---
 
+archive/issue_events_006056.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-19T07:41:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5807",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5807#event-6056"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045523.json:
 ```json
 {

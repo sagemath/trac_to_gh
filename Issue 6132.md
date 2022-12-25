@@ -271,6 +271,22 @@ I think we can close this as a duplicate of those other tickets now that they ar
 
 ---
 
+archive/issue_events_006381.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-22T15:02:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#event-6381"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048891.json:
 ```json
 {

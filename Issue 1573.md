@@ -108,6 +108,22 @@ Michael
 
 ---
 
+archive/issue_events_001727.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-20T18:07:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1573",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1573#event-1727"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009984.json:
 ```json
 {

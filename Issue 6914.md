@@ -107,6 +107,22 @@ Duplicate of #7442
 
 ---
 
+archive/issue_events_007141.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2010-01-20T10:29:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6914",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6914#event-7141"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056995.json:
 ```json
 {

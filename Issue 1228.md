@@ -118,6 +118,22 @@ Fixed the doctest directly :)
 
 ---
 
+archive/issue_events_001366.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-21T13:05:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1228",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1228#event-1366"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007621.json:
 ```json
 {

@@ -214,6 +214,22 @@ Merged [trac_8979_2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/
 
 ---
 
+archive/issue_events_009133.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-19T07:51:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8979",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8979#event-9133"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082716.json:
 ```json
 {

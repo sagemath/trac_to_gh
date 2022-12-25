@@ -146,6 +146,22 @@ Merged sage0_keywords.2.patch in Sage 2.10.2.alpha0
 
 ---
 
+archive/issue_events_001873.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-15T00:24:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1714",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1714#event-1873"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010843.json:
 ```json
 {

@@ -152,3 +152,19 @@ archive/issue_comments_016040.json:
 ```
 
 Merged trac_2382.3.patch in Sage 2.10.3.rc2
+
+
+
+---
+
+archive/issue_events_002558.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-04T23:51:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2382",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2382#event-2558"
+}
+```

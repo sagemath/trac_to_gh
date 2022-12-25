@@ -83,6 +83,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_004404.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-22T22:56:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4167",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4167#event-4404"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030189.json:
 ```json
 {

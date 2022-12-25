@@ -579,6 +579,22 @@ Done in trac-4525-combined-2.patch which *replaces* trac-4525-combined.patch .
 
 ---
 
+archive/issue_events_004769.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-23T23:50:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4525",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4525#event-4769"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033538.json:
 ```json
 {

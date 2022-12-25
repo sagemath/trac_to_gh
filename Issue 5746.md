@@ -189,6 +189,22 @@ Asking for points over a subfield of the field of definition is indeed not well 
 
 ---
 
+archive/issue_events_005993.json:
+```json
+{
+    "actor": "@koffie",
+    "created_at": "2017-09-25T13:05:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5746",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5746#event-5993"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044843.json:
 ```json
 {

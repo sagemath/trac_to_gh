@@ -440,6 +440,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_008368.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2016-08-30T13:32:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8164",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8164#event-8368"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071719.json:
 ```json
 {

@@ -1060,6 +1060,22 @@ I just want to add that I tested it on a fresh Sage-4.3.
 
 ---
 
+archive/issue_events_007365.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-14T07:01:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#event-7365"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059108.json:
 ```json
 {

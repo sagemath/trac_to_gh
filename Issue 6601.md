@@ -48,6 +48,22 @@ It looks like you're using Sage 3.4.1. Would it be possible to try your script w
 
 ---
 
+archive/issue_events_006840.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2010-01-16T23:30:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6601",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6601#event-6840"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053929.json:
 ```json
 {

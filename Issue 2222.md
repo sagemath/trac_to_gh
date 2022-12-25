@@ -117,6 +117,22 @@ it's just that it's broken const.tex.
 
 ---
 
+archive/issue_events_002392.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-21T17:05:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2222",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2222#event-2392"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014695.json:
 ```json
 {

@@ -76,6 +76,22 @@ This is fixed by #1833.
 
 ---
 
+archive/issue_events_001895.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-21T04:13:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1737",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1737#event-1895"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010966.json:
 ```json
 {

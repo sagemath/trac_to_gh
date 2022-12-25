@@ -78,3 +78,19 @@ archive/issue_comments_000514.json:
 ```
 
 I fixed this for sage-1.4
+
+
+
+---
+
+archive/issue_events_000114.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-10-05T07:44:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/110",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/110#event-114"
+}
+```

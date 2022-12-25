@@ -193,6 +193,22 @@ Here's a patch: apply on top of the other one.
 
 ---
 
+archive/issue_events_006001.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-13T06:33:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5754",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5754#event-6001"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044897.json:
 ```json
 {

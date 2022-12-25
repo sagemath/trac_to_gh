@@ -113,3 +113,19 @@ archive/issue_comments_086478.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_009391.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-06-12T21:12:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9229",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9229#event-9391"
+}
+```

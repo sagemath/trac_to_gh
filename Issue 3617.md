@@ -159,6 +159,22 @@ Sebastian
 
 ---
 
+archive/issue_events_003834.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T08:13:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3617",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3617#event-3834"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025478.json:
 ```json
 {

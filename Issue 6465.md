@@ -1109,3 +1109,19 @@ archive/issue_comments_052184.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006705.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-18T21:51:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6465",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6465#event-6705"
+}
+```

@@ -59,6 +59,22 @@ Changing assignee from somebody to @malb.
 
 ---
 
+archive/issue_events_000261.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-02-07T05:02:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/247",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/247#event-261"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001087.json:
 ```json
 {

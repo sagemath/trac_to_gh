@@ -54,6 +54,22 @@ This is fixed thanks to Sphinx and ReST which has native support for this.
 
 ---
 
+archive/issue_events_004138.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2009-04-27T13:01:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3911",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3911#event-4138"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027917.json:
 ```json
 {

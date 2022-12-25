@@ -166,6 +166,22 @@ Wall time: 0.72
 
 ---
 
+archive/issue_events_000223.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-02-23T03:09:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/212",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/212#event-223"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000953.json:
 ```json
 {

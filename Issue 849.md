@@ -49,6 +49,22 @@ Attachment [sage-cython-fixes.hg](tarball://root/attachments/some-uuid/ticket849
 
 ---
 
+archive/issue_events_000962.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:24:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/849",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/849#event-962"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005237.json:
 ```json
 {

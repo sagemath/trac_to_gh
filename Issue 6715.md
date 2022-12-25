@@ -108,6 +108,22 @@ there is just a "newline missing" note from mercurial at the bottom of the first
 
 ---
 
+archive/issue_events_006950.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-14T10:42:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6715#event-6950"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055016.json:
 ```json
 {

@@ -71,6 +71,22 @@ dave
 
 ---
 
+archive/issue_events_008645.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-06T23:14:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8461",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8461#event-8645"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076044.json:
 ```json
 {

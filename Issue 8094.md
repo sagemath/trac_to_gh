@@ -782,6 +782,22 @@ Attached rebased versions of two patches because of fuzz 2.
 
 ---
 
+archive/issue_events_008302.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-18T09:37:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8094",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8094#event-8302"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070842.json:
 ```json
 {

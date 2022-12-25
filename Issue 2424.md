@@ -615,6 +615,22 @@ Thumbs up from me.
 
 ---
 
+archive/issue_events_002601.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-20T04:51:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#event-2601"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016379.json:
 ```json
 {

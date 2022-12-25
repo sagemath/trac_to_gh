@@ -114,6 +114,22 @@ Closing this as a duplicate of #6280.
 
 ---
 
+archive/issue_events_006430.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-10-01T05:51:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6181",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6181#event-6430"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049257.json:
 ```json
 {

@@ -109,6 +109,22 @@ Attachment [2140-typo.patch](tarball://root/attachments/some-uuid/ticket2140/214
 
 ---
 
+archive/issue_events_002302.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-13T08:05:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2140",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2140#event-2302"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014003.json:
 ```json
 {

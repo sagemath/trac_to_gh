@@ -72,6 +72,22 @@ Looks good to me.  Compiles and passes tests on sage.math.
 
 ---
 
+archive/issue_events_003133.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-15T10:36:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2931",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2931#event-3133"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020142.json:
 ```json
 {

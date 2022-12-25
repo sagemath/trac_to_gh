@@ -69,6 +69,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/8826
 
 ---
 
+archive/issue_events_008989.json:
+```json
+{
+    "actor": "gostrc",
+    "created_at": "2010-05-04T01:36:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#event-8989"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080917.json:
 ```json
 {
@@ -136,6 +152,38 @@ archive/issue_comments_080920.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_008990.json:
+```json
+{
+    "actor": "gostrc",
+    "created_at": "2010-05-18T03:14:16Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#event-8990"
+}
+```
+
+
+
+---
+
+archive/issue_events_008991.json:
+```json
+{
+    "actor": "gostrc",
+    "created_at": "2010-06-06T20:16:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#event-8991"
+}
+```
 
 
 

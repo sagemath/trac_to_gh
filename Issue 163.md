@@ -170,3 +170,19 @@ sage: P = plot(lambda x: hypergeometric_U(1.0,1.0,x),0.1,0.9)
 sage: show(P)
 ```
 
+
+
+
+---
+
+archive/issue_events_000169.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-21T01:55:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/163",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/163#event-169"
+}
+```

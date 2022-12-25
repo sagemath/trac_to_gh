@@ -1130,6 +1130,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_005710.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-08-14T07:01:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5457",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5457#event-5710"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042254.json:
 ```json
 {
@@ -1298,6 +1314,22 @@ archive/issue_comments_042262.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_005711.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-01T13:01:43Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5457",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5457#event-5711"
+}
+```
 
 
 
@@ -1994,6 +2026,22 @@ archive/issue_comments_042292.json:
 ```
 
 Apply trac_5457-symmetric_functions-mz.patch, 5457_long_time.patch, trac_5457_llt_doc_and_bug_fix-mz.2.patch
+
+
+
+---
+
+archive/issue_events_005712.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-04T08:39:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5457",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5457#event-5712"
+}
+```
 
 
 

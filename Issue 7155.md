@@ -78,6 +78,22 @@ This is now a duplicate of #7325, which already has a first patch, so I am closi
 
 ---
 
+archive/issue_events_007375.json:
+```json
+{
+    "actor": "@kcrisman",
+    "created_at": "2009-10-28T00:54:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7155",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7155#event-7375"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059177.json:
 ```json
 {

@@ -148,3 +148,19 @@ This was merged some time in 2.9.2.X.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001670.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-05T14:29:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1516",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1516#event-1670"
+}
+```

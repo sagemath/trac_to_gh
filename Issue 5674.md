@@ -80,6 +80,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_005917.json:
+```json
+{
+    "actor": "@JohnCremona",
+    "created_at": "2009-04-03T11:14:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5674",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5674#event-5917"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044309.json:
 ```json
 {

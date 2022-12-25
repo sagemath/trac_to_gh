@@ -257,6 +257,22 @@ Patch looks good, applies cleanly, doctests pass on sage.math
 
 ---
 
+archive/issue_events_008566.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T08:32:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8379",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8379#event-8566"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074808.json:
 ```json
 {

@@ -54,6 +54,22 @@ I believe this refers to documentation which is generated from server/notebook/t
 
 ---
 
+archive/issue_events_002589.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-14T05:34:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2413",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2413#event-2589"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016248.json:
 ```json
 {

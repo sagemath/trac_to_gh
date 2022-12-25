@@ -348,6 +348,22 @@ OK, this is now very good.  Excellent! Thanks!!
 
 ---
 
+archive/issue_events_005884.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-02T18:45:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5642",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5642#event-5884"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043987.json:
 ```json
 {

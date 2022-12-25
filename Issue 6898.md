@@ -120,6 +120,22 @@ I agree with mhansen.  I've created a second patch which rewrites that part of t
 
 ---
 
+archive/issue_events_007126.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-23T01:18:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6898",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6898#event-7126"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056884.json:
 ```json
 {

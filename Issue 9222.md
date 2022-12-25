@@ -247,3 +247,19 @@ Replying to [comment:6 AlexGhitza]:
 > Done.
 
 Thanks!
+
+
+
+---
+
+archive/issue_events_009380.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T07:46:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9222",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9222#event-9380"
+}
+```

@@ -146,6 +146,22 @@ Looks fine to me. All tests pass.
 
 ---
 
+archive/issue_events_008513.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-03T14:03:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8319",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8319#event-8513"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073671.json:
 ```json
 {

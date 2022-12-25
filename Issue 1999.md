@@ -170,6 +170,22 @@ Both patches merged in Sage 2.10.1.rc5
 
 ---
 
+archive/issue_events_002153.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-02T07:58:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1999",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1999#event-2153"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012904.json:
 ```json
 {

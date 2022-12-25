@@ -122,6 +122,22 @@ I have fixed this.  Patch attached.  JEC
 
 ---
 
+archive/issue_events_001547.json:
+```json
+{
+    "actor": "@JohnCremona",
+    "created_at": "2007-12-05T20:23:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1403#event-1547"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009028.json:
 ```json
 {
@@ -200,6 +216,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001548.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-05T21:13:52Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1403#event-1548"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009032.json:
 ```json
 {
@@ -231,6 +263,22 @@ archive/issue_comments_009033.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001549.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-06T02:04:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1403#event-1549"
+}
+```
 
 
 
@@ -290,6 +338,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001550.json:
+```json
+{
+    "actor": "@JohnCremona",
+    "created_at": "2007-12-06T09:06:57Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1403#event-1550"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009037.json:
 ```json
 {
@@ -323,6 +387,22 @@ archive/issue_comments_009038.json:
 ```
 
 Second patch merged in 2.9.alpha1.
+
+
+
+---
+
+archive/issue_events_001551.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-06T13:13:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1403#event-1551"
+}
+```
 
 
 

@@ -40,6 +40,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/377
 
 ---
 
+archive/issue_events_000399.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-05-31T14:09:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/377",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/377#event-399"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001790.json:
 ```json
 {

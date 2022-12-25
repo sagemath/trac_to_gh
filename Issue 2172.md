@@ -142,6 +142,22 @@ This needs to be applied.
 
 ---
 
+archive/issue_events_002339.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-17T04:35:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2172",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2172#event-2339"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014238.json:
 ```json
 {

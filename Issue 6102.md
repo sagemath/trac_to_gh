@@ -1038,6 +1038,22 @@ Great! Thanks very much.
 
 ---
 
+archive/issue_events_006355.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-10-18T12:06:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#event-6355"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048667.json:
 ```json
 {

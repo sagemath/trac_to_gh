@@ -96,6 +96,22 @@ Changing assignee from @williamstein to failure.
 
 ---
 
+archive/issue_events_000737.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-21T18:59:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/669",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/669#event-737"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003456.json:
 ```json
 {

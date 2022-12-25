@@ -90,6 +90,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_003940.json:
+```json
+{
+    "actor": "@JohnCremona",
+    "created_at": "2008-07-25T16:44:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3720",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3720#event-3940"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026344.json:
 ```json
 {

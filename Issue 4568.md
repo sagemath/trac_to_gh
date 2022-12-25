@@ -173,6 +173,22 @@ Cheers
 
 ---
 
+archive/issue_events_004813.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-28T20:51:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4568",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4568#event-4813"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034160.json:
 ```json
 {

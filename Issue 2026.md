@@ -152,6 +152,22 @@ Jason positive reviewed my patch, and I positively review his patch on top of my
 
 ---
 
+archive/issue_events_002182.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-02T03:18:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2026",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2026#event-2182"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013080.json:
 ```json
 {

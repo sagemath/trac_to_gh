@@ -113,6 +113,22 @@ This works on a wide range of architectures where I tested it, and of course the
 
 ---
 
+archive/issue_events_003159.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-19T05:06:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2953",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2953#event-3159"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020325.json:
 ```json
 {

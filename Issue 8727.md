@@ -136,3 +136,19 @@ archive/issue_comments_079581.json:
 ```
 
 Out of sync with latest package.
+
+
+
+---
+
+archive/issue_events_008897.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-07-05T10:39:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8727",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8727#event-8897"
+}
+```

@@ -106,6 +106,22 @@ The patch cleanly applies as well.
 
 ---
 
+archive/issue_events_005797.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-23T21:26:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5552",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5552#event-5797"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043108.json:
 ```json
 {

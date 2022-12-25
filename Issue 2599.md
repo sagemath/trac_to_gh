@@ -106,6 +106,22 @@ The patch does what it advertises and doctests that behavior. All good, I say ap
 
 ---
 
+archive/issue_events_002790.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-21T02:25:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2599",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2599#event-2790"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017754.json:
 ```json
 {

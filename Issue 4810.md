@@ -124,6 +124,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_005052.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2017-03-14T16:25:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4810",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4810#event-5052"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036400.json:
 ```json
 {

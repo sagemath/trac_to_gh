@@ -249,3 +249,19 @@ archive/issue_comments_066049.json:
 ```
 
 version 0.29 now in experimental and I removed the obsolete old optional spkg. ticket can be closed.
+
+
+
+---
+
+archive/issue_events_007925.json:
+```json
+{
+    "actor": "@haraldschilly",
+    "created_at": "2010-08-18T16:21:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7708",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7708#event-7925"
+}
+```

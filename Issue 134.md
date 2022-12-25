@@ -58,3 +58,19 @@ archive/issue_comments_000637.json:
 ```
 
 I believe this has been resolved.
+
+
+
+---
+
+archive/issue_events_000140.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-08-09T21:47:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/134",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/134#event-140"
+}
+```

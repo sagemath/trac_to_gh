@@ -176,3 +176,19 @@ If someone disagrees please reopen.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004568.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-10T07:19:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4323",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4323#event-4568"
+}
+```

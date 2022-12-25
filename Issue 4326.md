@@ -385,6 +385,22 @@ The new patch looks okay to me.
 
 ---
 
+archive/issue_events_004573.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-19T17:00:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4326",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4326#event-4573"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031648.json:
 ```json
 {

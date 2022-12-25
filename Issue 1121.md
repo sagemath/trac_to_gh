@@ -194,6 +194,22 @@ The issues raised here have all been sorted under other tickets.  This one can b
 
 ---
 
+archive/issue_events_001247.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-06T14:11:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#event-1247"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006759.json:
 ```json
 {

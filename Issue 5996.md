@@ -510,6 +510,22 @@ Just wanted to say thanks for your help and work.
 
 ---
 
+archive/issue_events_006250.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-16T21:20:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5996",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5996#event-6250"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047623.json:
 ```json
 {

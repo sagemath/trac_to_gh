@@ -163,6 +163,22 @@ Anyway, I say merge, and I'm eager to see the rest of the tensor product stuff.
 
 ---
 
+archive/issue_events_002472.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-26T05:07:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2297",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2297#event-2472"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015202.json:
 ```json
 {

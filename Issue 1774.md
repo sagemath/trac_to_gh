@@ -114,6 +114,22 @@ Also, make very clear that the credit for this update goes to Bill Allombert!!
 
 ---
 
+archive/issue_events_001931.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-15T19:46:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1774",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1774#event-1931"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011209.json:
 ```json
 {

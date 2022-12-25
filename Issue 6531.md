@@ -137,3 +137,19 @@ archive/issue_comments_053143.json:
 ```
 
 Merged `trac_6531-restify_generic_ring-rebase.patch`. See #6850 for a follow-up to this ticket.
+
+
+
+---
+
+archive/issue_events_006767.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-31T06:03:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6531",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6531#event-6767"
+}
+```

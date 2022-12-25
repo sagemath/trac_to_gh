@@ -93,6 +93,22 @@ Looks like I simultaneously reviewed this.  Positive review from me too.
 
 ---
 
+archive/issue_events_006195.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-19T13:31:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5941",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5941#event-6195"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046877.json:
 ```json
 {

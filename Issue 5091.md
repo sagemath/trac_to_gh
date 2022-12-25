@@ -236,3 +236,19 @@ archive/issue_comments_038727.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_005337.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2017-12-12T08:23:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5091",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5091#event-5337"
+}
+```

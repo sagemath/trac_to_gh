@@ -111,6 +111,22 @@ I suggest that we can close this ticket now with the new doctest system.
 
 ---
 
+archive/issue_events_001842.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-22T13:51:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1683",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1683#event-1842"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010667.json:
 ```json
 {

@@ -193,6 +193,22 @@ dear release manager, first merge trac_9579.patch and then trac_9579_review.patc
 
 ---
 
+archive/issue_events_009724.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-26T02:37:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9579",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9579#event-9724"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092370.json:
 ```json
 {

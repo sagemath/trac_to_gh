@@ -402,6 +402,22 @@ The spkg itself is ok (though there's a typo "numbery" in the README, and Willia
 
 ---
 
+archive/issue_events_005978.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-06-10T08:52:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5731",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5731#event-5978"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044707.json:
 ```json
 {

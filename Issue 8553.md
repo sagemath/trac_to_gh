@@ -985,6 +985,22 @@ In any case, this (somewhat surprisingly) still applies fine to 4.7.rc2!  And do
 
 ---
 
+archive/issue_events_008736.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-06-01T07:16:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8553",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8553#event-8736"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077268.json:
 ```json
 {

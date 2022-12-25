@@ -83,6 +83,22 @@ Merged in 2.9.1.alpha1
 
 ---
 
+archive/issue_events_001702.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-18T21:24:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1548",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1548#event-1702"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009849.json:
 ```json
 {

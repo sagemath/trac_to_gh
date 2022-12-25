@@ -271,6 +271,22 @@ I applied both patches, checked it out a bit and give a positive review.
 
 ---
 
+archive/issue_events_002402.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-04T18:14:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2232",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2232#event-2402"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014760.json:
 ```json
 {

@@ -102,6 +102,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_009942.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-05-03T11:19:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9819",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9819#event-9942"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096670.json:
 ```json
 {

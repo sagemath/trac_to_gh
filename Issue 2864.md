@@ -350,6 +350,22 @@ Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2
 
 ---
 
+archive/issue_events_003058.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-10T20:31:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2864",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2864#event-3058"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019613.json:
 ```json
 {

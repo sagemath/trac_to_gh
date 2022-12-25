@@ -41,6 +41,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/1154
 
 ---
 
+archive/issue_events_001284.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-12-02T06:33:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1154",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1154#event-1284"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007024.json:
 ```json
 {

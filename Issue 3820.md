@@ -170,6 +170,22 @@ looks good
 
 ---
 
+archive/issue_events_004044.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-25T08:35:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#event-4044"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027115.json:
 ```json
 {

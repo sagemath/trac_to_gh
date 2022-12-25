@@ -95,6 +95,22 @@ Closing since this refers to a very old version.
 
 ---
 
+archive/issue_events_005576.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-04-11T16:19:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5322",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5322#event-5576"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040899.json:
 ```json
 {

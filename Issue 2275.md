@@ -172,6 +172,22 @@ Looks superb to me.
 
 ---
 
+archive/issue_events_002446.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-03T12:33:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2275",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2275#event-2446"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015065.json:
 ```json
 {

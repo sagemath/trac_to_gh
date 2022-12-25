@@ -253,6 +253,22 @@ See trac #
 
 ---
 
+archive/issue_events_000496.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T06:40:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/467",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/467#event-496"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002316.json:
 ```json
 {

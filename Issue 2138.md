@@ -89,6 +89,22 @@ I think this was fixed as part of another ticket? Anyway, I think I removed the 
 
 ---
 
+archive/issue_events_002300.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-09T15:20:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2138",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2138#event-2300"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013991.json:
 ```json
 {

@@ -113,6 +113,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000950.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T21:00:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/837",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/837#event-950"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005160.json:
 ```json
 {

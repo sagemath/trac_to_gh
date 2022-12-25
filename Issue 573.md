@@ -52,6 +52,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/573
 
 ---
 
+archive/issue_events_000625.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2007-09-06T20:18:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/573",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/573#event-625"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002964.json:
 ```json
 {
@@ -128,6 +144,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000626.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2007-09-06T20:20:18Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/573",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/573#event-626"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002968.json:
 ```json
 {
@@ -141,3 +173,19 @@ archive/issue_comments_002968.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000627.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T04:37:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/573",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/573#event-627"
+}
+```

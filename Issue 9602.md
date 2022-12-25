@@ -252,6 +252,22 @@ I'll take that as a "positive review"
 
 ---
 
+archive/issue_events_009746.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-03-15T13:02:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9602",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9602#event-9746"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092796.json:
 ```json
 {

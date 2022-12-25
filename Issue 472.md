@@ -29,6 +29,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/472
 
 ---
 
+archive/issue_events_000503.json:
+```json
+{
+    "actor": "@jmbr",
+    "created_at": "2007-08-23T00:04:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/472",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/472#event-503"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002349.json:
 ```json
 {
@@ -122,6 +138,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000504.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T03:43:24Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/472",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/472#event-504"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002354.json:
 ```json
 {
@@ -157,3 +189,19 @@ archive/issue_comments_002355.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000505.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T21:13:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/472",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/472#event-505"
+}
+```

@@ -435,6 +435,22 @@ Merged sage-1946.hg in Sage 2.10.2.rc0
 
 ---
 
+archive/issue_events_002101.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-21T15:17:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#event-2101"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012339.json:
 ```json
 {

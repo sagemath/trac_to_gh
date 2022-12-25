@@ -958,6 +958,22 @@ New commits:
 
 ---
 
+archive/issue_events_008441.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2017-10-20T09:15:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8240",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8240#event-8441"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072729.json:
 ```json
 {

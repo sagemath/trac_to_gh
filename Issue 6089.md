@@ -664,6 +664,22 @@ Nice work!
 
 ---
 
+archive/issue_events_006342.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:09:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6089",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6089#event-6342"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048436.json:
 ```json
 {

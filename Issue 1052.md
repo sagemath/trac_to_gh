@@ -289,6 +289,22 @@ I agree with Jeroen, and Nick A's example also now works, so I have made the "po
 
 ---
 
+archive/issue_events_001175.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-01T10:21:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1052",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1052#event-1175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006389.json:
 ```json
 {

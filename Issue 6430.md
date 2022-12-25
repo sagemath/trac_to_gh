@@ -134,6 +134,22 @@ Presuming these are all correctly reviewed as either duplicate, invalid, or wont
 
 ---
 
+archive/issue_events_006672.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2019-02-26T13:58:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6430",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6430#event-6672"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051551.json:
 ```json
 {

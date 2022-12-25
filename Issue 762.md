@@ -134,6 +134,22 @@ applied to 2.8.11.alpha0
 
 ---
 
+archive/issue_events_000859.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T09:43:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/762",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/762#event-859"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004502.json:
 ```json
 {

@@ -128,6 +128,22 @@ My impression is: The verdict on [sage-devel] was overall negative, so I propose
 
 ---
 
+archive/issue_events_001973.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-04-01T12:06:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1816",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1816#event-1973"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011450.json:
 ```json
 {

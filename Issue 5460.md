@@ -219,6 +219,22 @@ Looks like its all ready now.
 
 ---
 
+archive/issue_events_005715.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-23T21:26:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5460#event-5715"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042321.json:
 ```json
 {

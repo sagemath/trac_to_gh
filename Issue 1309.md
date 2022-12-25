@@ -108,6 +108,22 @@ Attachment [trees.patch](tarball://root/attachments/some-uuid/ticket1309/trees.p
 
 ---
 
+archive/issue_events_001449.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-03T02:07:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1309",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1309#event-1449"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008217.json:
 ```json
 {

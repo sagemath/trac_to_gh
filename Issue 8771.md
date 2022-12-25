@@ -213,6 +213,22 @@ archive/issue_comments_080146.json:
 
 ---
 
+archive/issue_events_008939.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-28T19:17:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8771",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8771#event-8939"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080147.json:
 ```json
 {

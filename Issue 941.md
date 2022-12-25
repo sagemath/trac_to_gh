@@ -234,6 +234,22 @@ David roe says this *is* just a dupe of #919.
 
 ---
 
+archive/issue_events_001061.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-20T17:59:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/941",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/941#event-1061"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005745.json:
 ```json
 {

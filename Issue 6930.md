@@ -48,6 +48,22 @@ Attachment [trac_6930_axes3d_frame_label.patch](tarball://root/attachments/some-
 
 ---
 
+archive/issue_events_007154.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-23T23:03:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6930",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6930#event-7154"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057174.json:
 ```json
 {

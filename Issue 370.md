@@ -118,3 +118,19 @@ Unless the request is specified, I'm all for closing it.
 [13:20] <mabshoff> If you also think it should be closed as fixed please do so.
 ```
 
+
+
+
+---
+
+archive/issue_events_000392.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-04-01T12:25:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/370",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/370#event-392"
+}
+```

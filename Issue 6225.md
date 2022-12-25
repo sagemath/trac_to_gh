@@ -82,6 +82,22 @@ Attachment [irc_help.diff](tarball://root/attachments/some-uuid/ticket6225/irc_h
 
 ---
 
+archive/issue_events_006472.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:39:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6225",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6225#event-6472"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049601.json:
 ```json
 {

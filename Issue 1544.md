@@ -232,6 +232,22 @@ http://sage.math.washington.edu/home/wdj/patches/tut.tex
 
 ---
 
+archive/issue_events_001698.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-07T17:16:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1544",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1544#event-1698"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009836.json:
 ```json
 {

@@ -227,6 +227,22 @@ I agree. Merged in Sage 2.10.3.rc4
 
 ---
 
+archive/issue_events_002602.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-09T19:11:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#event-2602"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016389.json:
 ```json
 {

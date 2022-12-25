@@ -265,6 +265,22 @@ If so, then let's finally let the square root of 4 be 2!
 
 ---
 
+archive/issue_events_004669.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-08T07:12:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4425",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4425#event-4669"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032476.json:
 ```json
 {

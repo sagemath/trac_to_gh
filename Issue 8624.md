@@ -625,6 +625,22 @@ So I'm closing this ticket as fixed.
 
 ---
 
+archive/issue_events_008794.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-12-06T12:11:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8624",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8624#event-8794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078063.json:
 ```json
 {

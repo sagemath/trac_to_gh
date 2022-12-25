@@ -191,6 +191,22 @@ patch 'irange_improved.hg' is relative to 'irange.hg'
 
 ---
 
+archive/issue_events_000778.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-21T07:32:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/706",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/706#event-778"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003702.json:
 ```json
 {

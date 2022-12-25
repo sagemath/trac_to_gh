@@ -304,3 +304,19 @@ archive/issue_comments_031449.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_004548.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T09:23:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4305",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4305#event-4548"
+}
+```

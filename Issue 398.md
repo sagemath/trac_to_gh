@@ -128,3 +128,19 @@ Since David has confirmed that this has been merged some undetermined time ago I
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000422.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-26T15:42:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/398",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/398#event-422"
+}
+```

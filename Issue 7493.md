@@ -188,3 +188,19 @@ archive/issue_comments_063187.json:
 ```
 
 This is essentially all implemented in #12415.
+
+
+
+---
+
+archive/issue_events_007722.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-02-22T21:35:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7493",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7493#event-7722"
+}
+```

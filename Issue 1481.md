@@ -109,6 +109,22 @@ Changing component from algebraic geometry to linear algebra.
 
 ---
 
+archive/issue_events_001633.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2008-01-19T07:22:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1481",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1481#event-1633"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009496.json:
 ```json
 {
@@ -178,6 +194,22 @@ archive/issue_comments_009498.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_001634.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-19T07:26:34Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1481",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1481#event-1634"
+}
+```
 
 
 

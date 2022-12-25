@@ -88,6 +88,22 @@ Michael
 
 ---
 
+archive/issue_events_002092.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-02T07:01:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1936",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1936#event-2092"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012253.json:
 ```json
 {

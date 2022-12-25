@@ -658,6 +658,22 @@ Apparently the incompatibilities with the 1.51 version are unavoidable.  Once in
 
 ---
 
+archive/issue_events_008418.json:
+```json
+{
+    "actor": "mhampton",
+    "created_at": "2011-01-13T04:41:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8216",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8216#event-8418"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072348.json:
 ```json
 {

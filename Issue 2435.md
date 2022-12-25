@@ -163,6 +163,22 @@ Interestingly enough, David Roe increfs `ONE` in his `_val_unit` function (integ
 
 ---
 
+archive/issue_events_002612.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-11T15:41:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2435",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2435#event-2612"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016442.json:
 ```json
 {

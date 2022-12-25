@@ -122,6 +122,22 @@ Good catch!  I deleted those two lines and posted an updated patch.  Thanks for 
 
 ---
 
+archive/issue_events_006787.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-20T17:24:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6552",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6552#event-6787"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053335.json:
 ```json
 {
@@ -194,6 +210,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_006788.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-20T17:37:25Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6552",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6552#event-6788"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053339.json:
 ```json
 {
@@ -207,3 +239,19 @@ archive/issue_comments_053339.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006789.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T03:37:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6552",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6552#event-6789"
+}
+```

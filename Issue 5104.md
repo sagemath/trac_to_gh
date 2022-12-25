@@ -41,6 +41,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5104
 
 ---
 
+archive/issue_events_005350.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-26T16:50:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5104",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5104#event-5350"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038898.json:
 ```json
 {
@@ -110,6 +126,22 @@ archive/issue_comments_038901.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005351.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-01-26T16:54:27Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5104",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5104#event-5351"
+}
+```
 
 
 
@@ -322,6 +354,22 @@ Merged in Sage 3.3.rc3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005352.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-20T13:07:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5104",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5104#event-5352"
+}
+```
 
 
 

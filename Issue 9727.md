@@ -271,6 +271,22 @@ Remove assignee edward.scheinerman.
 
 ---
 
+archive/issue_events_009861.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-09-08T02:20:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9727",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9727#event-9861"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094922.json:
 ```json
 {

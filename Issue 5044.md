@@ -96,6 +96,22 @@ Changing priority from major to critical.
 
 ---
 
+archive/issue_events_005288.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-28T13:48:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5044",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5044#event-5288"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038350.json:
 ```json
 {

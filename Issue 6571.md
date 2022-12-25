@@ -354,6 +354,22 @@ Sébastien's documentation changes are good.
 
 ---
 
+archive/issue_events_006808.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-26T21:46:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6571",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6571#event-6808"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053558.json:
 ```json
 {

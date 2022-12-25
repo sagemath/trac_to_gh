@@ -1440,6 +1440,22 @@ Changing type from defect to enhancement.
 
 ---
 
+archive/issue_events_008852.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-04-14T19:43:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8678",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8678#event-8852"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078926.json:
 ```json
 {

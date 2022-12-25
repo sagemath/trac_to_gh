@@ -71,6 +71,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_001626.json:
+```json
+{
+    "actor": "TimothyClemans",
+    "created_at": "2008-02-23T22:37:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1475",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1475#event-1626"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009467.json:
 ```json
 {
@@ -167,6 +183,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001627.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-02-24T04:46:39Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1475",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1475#event-1627"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009472.json:
 ```json
 {
@@ -222,6 +254,22 @@ I've attached a patch which is all of the previous ones folded together.  This c
 Also, please don't say that this depends on #4135 as it does not.
 
 Using Mercurial queues would allow you to make single patches as opposed to multiple little ones and would allow you to see what actually depends on what.
+
+
+
+---
+
+archive/issue_events_001628.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-21T07:46:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1475",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1475#event-1628"
+}
+```
 
 
 

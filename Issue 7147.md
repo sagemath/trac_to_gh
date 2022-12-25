@@ -105,6 +105,22 @@ I'm closing this as invalid, as the variable can take on 3 values - 0, 1 and 2, 
 
 ---
 
+archive/issue_events_007367.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2009-12-03T04:51:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7147",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7147#event-7367"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059117.json:
 ```json
 {

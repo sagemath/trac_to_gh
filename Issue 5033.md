@@ -81,6 +81,22 @@ The patch fixes both issues mentioned in the ticket and the code is nice. Positi
 
 ---
 
+archive/issue_events_005277.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T09:07:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5033",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5033#event-5277"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038259.json:
 ```json
 {

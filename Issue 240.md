@@ -58,6 +58,22 @@ Anyway, it seems as though the server is maybe returning 'd' when it shouldn't.
 
 ---
 
+archive/issue_events_000254.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-19T02:06:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/240",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/240#event-254"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001069.json:
 ```json
 {

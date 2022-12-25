@@ -312,6 +312,22 @@ FWIW: I've just checked and it *does* build and run OK on Solaris, by the way. I
 
 ---
 
+archive/issue_events_008637.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-28T19:32:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8453",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8453#event-8637"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075943.json:
 ```json
 {

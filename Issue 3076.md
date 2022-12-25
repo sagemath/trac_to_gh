@@ -60,3 +60,19 @@ archive/issue_comments_021184.json:
 ```
 
 Fixed in Sage 3.0.1.rc0
+
+
+
+---
+
+archive/issue_events_003290.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-02T09:50:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3076",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3076#event-3290"
+}
+```

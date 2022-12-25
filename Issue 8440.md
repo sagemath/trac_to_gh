@@ -460,6 +460,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_008625.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-06T19:35:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8440#event-8625"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075664.json:
 ```json
 {

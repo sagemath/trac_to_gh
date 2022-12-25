@@ -109,6 +109,22 @@ The attached patch resolves those warnings as claimed.
 
 ---
 
+archive/issue_events_008881.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-19T05:18:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8711",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8711#event-8881"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079359.json:
 ```json
 {

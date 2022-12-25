@@ -197,6 +197,22 @@ The attached patch will be in 2.8.10.
 
 ---
 
+archive/issue_events_001075.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-27T18:02:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/955",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/955#event-1075"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005806.json:
 ```json
 {

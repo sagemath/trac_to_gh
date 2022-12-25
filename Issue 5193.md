@@ -69,6 +69,22 @@ Yep, the reasoning is explained in the patch.  Doctests in matrixspace.py pass o
 
 ---
 
+archive/issue_events_005447.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-06T22:28:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5193",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5193#event-5447"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039731.json:
 ```json
 {

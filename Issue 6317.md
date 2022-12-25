@@ -236,6 +236,22 @@ obsolete ?
 
 ---
 
+archive/issue_events_006564.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2022-10-08T07:33:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6317",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6317#event-6564"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050324.json:
 ```json
 {

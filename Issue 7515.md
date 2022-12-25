@@ -210,6 +210,22 @@ Perhaps it is possible to script it in emacs.... :-)
 
 ---
 
+archive/issue_events_007744.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-01T03:53:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7515",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7515#event-7744"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063547.json:
 ```json
 {

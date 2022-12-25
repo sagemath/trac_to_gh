@@ -284,6 +284,22 @@ diff -r 2a6823917a29 -r 85b96a510e10 sage/schemes/elliptic_curves/ell_point.py
 
 ---
 
+archive/issue_events_000086.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-12T22:27:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/86",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/86#event-86"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000428.json:
 ```json
 {

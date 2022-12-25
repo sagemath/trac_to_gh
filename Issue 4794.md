@@ -263,6 +263,22 @@ Please close this ticket
 
 ---
 
+archive/issue_events_005037.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-10T10:50:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4794",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4794#event-5037"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036281.json:
 ```json
 {

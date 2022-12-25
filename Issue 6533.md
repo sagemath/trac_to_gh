@@ -29,6 +29,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/6533
 
 ---
 
+archive/issue_events_006769.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-11T17:43:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6533",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6533#event-6769"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053169.json:
 ```json
 {

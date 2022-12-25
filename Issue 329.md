@@ -2070,6 +2070,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000353.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2013-12-16T17:00:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/329",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/329#event-353"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001621.json:
 ```json
 {

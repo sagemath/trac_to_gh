@@ -63,6 +63,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/8398
 
 ---
 
+archive/issue_events_008583.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-06T23:10:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8398",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8398#event-8583"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075113.json:
 ```json
 {

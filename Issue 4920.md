@@ -221,6 +221,22 @@ Attachment [sage.modular-final.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
+archive/issue_events_005163.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-24T19:11:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#event-5163"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037273.json:
 ```json
 {

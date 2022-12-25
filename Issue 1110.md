@@ -61,3 +61,19 @@ archive/issue_comments_006696.json:
 Attachment [trac1110.patch](tarball://root/attachments/some-uuid/ticket1110/trac1110.patch) by mabshoff created at 2007-11-06 22:10:01
 
 applied to 2.8.12.rc0
+
+
+
+---
+
+archive/issue_events_001236.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-06T22:10:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1110",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1110#event-1236"
+}
+```

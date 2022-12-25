@@ -71,6 +71,22 @@ Michael
 
 ---
 
+archive/issue_events_005076.json:
+```json
+{
+    "actor": "@haraldschilly",
+    "created_at": "2008-12-19T13:06:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4830",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4830#event-5076"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036543.json:
 ```json
 {

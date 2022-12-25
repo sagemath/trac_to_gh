@@ -237,6 +237,22 @@ Since this works now, and my original usage of `mathematica.eval` isn't supposed
 
 ---
 
+archive/issue_events_004570.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2009-04-22T07:24:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#event-4570"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031627.json:
 ```json
 {
@@ -268,6 +284,22 @@ archive/issue_comments_031628.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_004571.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-22T07:33:17Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#event-4571"
+}
+```
 
 
 
@@ -328,6 +360,22 @@ archive/issue_comments_031631.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_004572.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-22T07:34:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#event-4572"
+}
+```
 
 
 

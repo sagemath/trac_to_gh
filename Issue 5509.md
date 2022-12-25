@@ -80,6 +80,22 @@ This is a trivial patch, I know, but it was also to demonstrate the development 
 
 ---
 
+archive/issue_events_005761.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-20T20:35:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5509",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5509#event-5761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042701.json:
 ```json
 {

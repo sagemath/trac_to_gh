@@ -49,6 +49,22 @@ adds bernoulli_mod_p_single function
 
 ---
 
+archive/issue_events_000591.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2007-09-01T17:05:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/550",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/550#event-591"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002819.json:
 ```json
 {

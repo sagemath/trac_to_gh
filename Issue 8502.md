@@ -196,3 +196,19 @@ archive/issue_comments_076648.json:
 ```
 
 Merged "trac_8502-mpoly.patch" in 4.4.alpha0.
+
+
+
+---
+
+archive/issue_events_008682.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T18:44:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8502",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8502#event-8682"
+}
+```

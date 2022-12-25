@@ -108,6 +108,22 @@ Anyway, this patch applies (after #6568) and is clearly correct, so positive rev
 
 ---
 
+archive/issue_events_007086.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-03T08:16:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6853",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6853#event-7086"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056401.json:
 ```json
 {

@@ -696,3 +696,19 @@ Merged in this order:
 1. [trac_8244-slot_wrapper_argspec.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8244/trac_8244-slot_wrapper_argspec.patch)
 2. [trac_8244-conf-autodoc.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8244/trac_8244-conf-autodoc.2.patch)
 3. [trac_8244-sagedoc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8244/trac_8244-sagedoc.patch)
+
+
+
+---
+
+archive/issue_events_008445.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T22:04:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8244",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8244#event-8445"
+}
+```

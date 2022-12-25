@@ -196,3 +196,19 @@ Merged in Sage 3.4.rc0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005618.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-02T02:17:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5363",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5363#event-5618"
+}
+```

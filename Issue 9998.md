@@ -222,3 +222,19 @@ archive/issue_comments_100291.json:
 ```
 
 agreed
+
+
+
+---
+
+archive/issue_events_010122.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-04-01T14:09:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9998",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9998#event-10122"
+}
+```

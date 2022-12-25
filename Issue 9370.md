@@ -819,6 +819,22 @@ Best, Christian
 
 ---
 
+archive/issue_events_009525.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-04-07T13:49:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9370",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9370#event-9525"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088902.json:
 ```json
 {

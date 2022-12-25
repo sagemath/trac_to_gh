@@ -173,6 +173,22 @@ Replying to [comment:2 cremona]:
 
 ---
 
+archive/issue_events_009359.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T07:18:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#event-9359"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086027.json:
 ```json
 {

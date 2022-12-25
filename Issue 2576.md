@@ -150,6 +150,22 @@ At least I did. Anyway, the patch applies and does what it is supposed to do. Po
 
 ---
 
+archive/issue_events_002761.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-18T00:32:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2576",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2576#event-2761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017573.json:
 ```json
 {

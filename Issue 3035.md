@@ -215,6 +215,22 @@ This seems to have "magically" fixed itself for me after 3.0.1.alpha1.  After co
 
 ---
 
+archive/issue_events_003242.json:
+```json
+{
+    "actor": "@garyfurnish",
+    "created_at": "2008-05-01T10:24:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#event-3242"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020852.json:
 ```json
 {

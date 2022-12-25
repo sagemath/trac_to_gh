@@ -31,6 +31,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5715
 
 ---
 
+archive/issue_events_005957.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2009-04-08T19:24:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#event-5957"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044573.json:
 ```json
 {
@@ -221,6 +237,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_005958.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2009-04-09T10:40:29Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#event-5958"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044581.json:
 ```json
 {
@@ -276,6 +308,22 @@ Merged 5715-mat2-subdiv.patch in Sage 3.4.1.rc3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005959.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-13T09:13:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#event-5959"
+}
+```
 
 
 

@@ -49,6 +49,22 @@ Reimplements introspection.
 
 ---
 
+archive/issue_events_007298.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-09-29T20:14:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7076",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7076#event-7298"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058409.json:
 ```json
 {

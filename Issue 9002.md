@@ -514,3 +514,19 @@ Replying to [comment:15 kcrisman]:
 > Hopefully this will address the issue!
 
 Excellent. Thanks! Merged in 4.5.2.alpha1.
+
+
+
+---
+
+archive/issue_events_009156.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T23:34:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9002",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9002#event-9156"
+}
+```

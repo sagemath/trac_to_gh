@@ -352,6 +352,22 @@ I've made #7836 for this.
 
 ---
 
+archive/issue_events_007820.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-01-03T21:38:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7595",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7595#event-7820"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064663.json:
 ```json
 {
@@ -383,6 +399,22 @@ archive/issue_comments_064664.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_007821.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-01-04T01:17:30Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7595",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7595#event-7821"
+}
+```
 
 
 
@@ -603,3 +635,19 @@ Apparently when the ticket was reopened, this did not revert. I don't know how t
 > ... until `trac_7595-failures.patch` is merged.
 
 Repeat: as of sage-4.3.1.alpha1, *both* patches need to be merged.
+
+
+
+---
+
+archive/issue_events_007822.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-13T05:03:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7595",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7595#event-7822"
+}
+```

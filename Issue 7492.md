@@ -412,6 +412,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_007721.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-05T22:41:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7492",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7492#event-7721"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063180.json:
 ```json
 {

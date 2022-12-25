@@ -49,6 +49,22 @@ closed with #76
 
 ---
 
+archive/issue_events_000077.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-09-23T01:00:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/77",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/77#event-77"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000390.json:
 ```json
 {

@@ -141,6 +141,22 @@ My sage install originally was in /Volumes/E/sage-4.1.2.rc0, and then I upgraded
 
 ---
 
+archive/issue_events_007476.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-24T06:17:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7255",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7255#event-7476"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060167.json:
 ```json
 {

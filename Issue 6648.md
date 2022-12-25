@@ -1384,6 +1384,22 @@ Starting next fall I plan to develop this further as my senior project in math a
 
 ---
 
+archive/issue_events_006884.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T05:32:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6648",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6648#event-6884"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054479.json:
 ```json
 {

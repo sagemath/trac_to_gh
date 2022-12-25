@@ -109,6 +109,22 @@ I couldn't resist to review this right on the spot. What should I say? I even te
 
 ---
 
+archive/issue_events_007689.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-17T06:01:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7463",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7463#event-7689"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062749.json:
 ```json
 {

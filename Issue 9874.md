@@ -236,6 +236,22 @@ Okay, it was actually [this commit of Dan Drake's](https://github.com/sagemath/s
 
 ---
 
+archive/issue_events_010003.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-06-19T12:17:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9874",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9874#event-10003"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097547.json:
 ```json
 {

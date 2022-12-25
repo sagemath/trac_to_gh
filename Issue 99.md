@@ -209,6 +209,22 @@ concrete example that illustrates the behavior you observed?
 
 ---
 
+archive/issue_events_000101.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-11-06T06:24:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/99",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/99#event-101"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000470.json:
 ```json
 {

@@ -163,6 +163,22 @@ Since this patch depends on #3406 anyway, I'll add the positive review back.
 
 ---
 
+archive/issue_events_003623.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-25T00:39:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3407",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3407#event-3623"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023854.json:
 ```json
 {

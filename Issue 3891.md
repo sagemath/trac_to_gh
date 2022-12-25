@@ -173,6 +173,22 @@ The reviewer's patch looks good to me, and all tests passed.  (I based the docst
 
 ---
 
+archive/issue_events_004118.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-24T00:47:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3891",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3891#event-4118"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027754.json:
 ```json
 {

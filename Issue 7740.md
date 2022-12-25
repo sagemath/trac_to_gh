@@ -349,6 +349,22 @@ positive review
 
 ---
 
+archive/issue_events_007952.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-13T11:39:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7740",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7740#event-7952"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066410.json:
 ```json
 {

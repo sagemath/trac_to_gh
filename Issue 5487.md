@@ -411,6 +411,22 @@ Positive review on Andrew and Florent's patches.
 
 ---
 
+archive/issue_events_005740.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-15T00:10:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5487",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5487#event-5740"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042514.json:
 ```json
 {

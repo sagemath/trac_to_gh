@@ -125,3 +125,19 @@ archive/issue_comments_039881.json:
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005470.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-11T06:10:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5215",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5215#event-5470"
+}
+```

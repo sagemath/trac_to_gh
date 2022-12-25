@@ -280,3 +280,19 @@ archive/issue_comments_015419.json:
 ```
 
 Merged in Sage 2.10.4.alpha0 - I followed all five steps and did commit after step three.
+
+
+
+---
+
+archive/issue_events_002498.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-14T17:47:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2322",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2322#event-2498"
+}
+```

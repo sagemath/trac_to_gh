@@ -119,6 +119,22 @@ Changing component from distribution to notebook.
 
 ---
 
+archive/issue_events_001954.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2021-10-11T07:02:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1796",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1796#event-1954"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011349.json:
 ```json
 {

@@ -196,6 +196,22 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
+archive/issue_events_006258.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-07-29T06:12:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6005",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6005#event-6258"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047688.json:
 ```json
 {

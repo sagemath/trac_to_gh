@@ -225,6 +225,22 @@ Apply only 3788.patch
 
 ---
 
+archive/issue_events_004010.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-08T23:37:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3788",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3788#event-4010"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026886.json:
 ```json
 {

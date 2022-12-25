@@ -63,6 +63,22 @@ Problems with gcc-3.3:
 
 ---
 
+archive/issue_events_000731.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-20T19:15:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/663",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/663#event-731"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003435.json:
 ```json
 {

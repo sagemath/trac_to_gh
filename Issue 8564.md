@@ -200,6 +200,22 @@ Ondrej
 
 ---
 
+archive/issue_events_008743.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-21T03:31:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8564",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8564#event-8743"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077415.json:
 ```json
 {

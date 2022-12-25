@@ -46,6 +46,22 @@ Done.
 
 ---
 
+archive/issue_events_007949.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-18T22:01:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7737",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7737#event-7949"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066370.json:
 ```json
 {

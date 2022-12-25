@@ -120,6 +120,22 @@ Passes tests on 4.6.alpha1!
 
 ---
 
+archive/issue_events_010090.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-29T08:39:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9962",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9962#event-10090"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099637.json:
 ```json
 {

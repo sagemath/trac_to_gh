@@ -11431,6 +11431,22 @@ I've updated the commit string for the extcode patch and updated [NewPARI](http:
 
 ---
 
+archive/issue_events_009496.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-10T10:38:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9343",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9343#event-9496"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088552.json:
 ```json
 {

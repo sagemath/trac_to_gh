@@ -148,6 +148,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_001155.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T23:26:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#event-1155"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006287.json:
 ```json
 {
@@ -249,6 +265,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001156.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-02T00:50:31Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#event-1156"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006291.json:
 ```json
 {
@@ -327,6 +359,22 @@ archive/issue_comments_006293.json:
 The second patch is just the first patch rehashed because the first patch is already in the tree and hg won't reimport.  There are no other differences.
 
 It unbundles and passes all doc-tests against 2.8.11.rc1
+
+
+
+---
+
+archive/issue_events_001157.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-02T19:37:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#event-1157"
+}
+```
 
 
 

@@ -45,6 +45,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000582.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-31T21:03:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/543",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/543#event-582"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002742.json:
 ```json
 {

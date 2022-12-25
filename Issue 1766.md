@@ -653,6 +653,22 @@ I've made http://sage.math.washington.edu/home/mhansen/1766.hg which replaces th
 
 ---
 
+archive/issue_events_001924.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-15T06:35:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1766",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1766#event-1924"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011153.json:
 ```json
 {

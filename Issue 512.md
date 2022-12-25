@@ -67,6 +67,22 @@ done for sage-2.8.3.
 
 ---
 
+archive/issue_events_000549.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T22:40:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-549"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002580.json:
 ```json
 {
@@ -80,6 +96,22 @@ archive/issue_comments_002580.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000550.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-30T06:48:27Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-550"
+}
+```
 
 
 
@@ -245,3 +277,19 @@ archive/issue_comments_002586.json:
 ```
 
 I've upgraded everything to gap-4.4.10, and fixed the insanely bloated 4.4.10 spkg that was on David's web page.
+
+
+
+---
+
+archive/issue_events_000551.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-20T20:51:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/512#event-551"
+}
+```

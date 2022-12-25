@@ -333,6 +333,22 @@ Thanks. This will be removed before the final release.
 
 ---
 
+archive/issue_events_002846.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-04T21:24:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2655",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2655#event-2846"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018240.json:
 ```json
 {

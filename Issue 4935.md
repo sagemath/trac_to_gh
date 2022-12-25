@@ -394,3 +394,19 @@ I will use iterators for testing then in the future.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005178.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-04T19:38:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4935",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4935#event-5178"
+}
+```

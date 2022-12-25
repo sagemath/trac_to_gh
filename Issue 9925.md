@@ -629,6 +629,22 @@ tested on Debian x64 and on MacOSX 10.5 PPC. Positive!
 
 ---
 
+archive/issue_events_010053.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-21T08:39:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9925",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9925#event-10053"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098690.json:
 ```json
 {

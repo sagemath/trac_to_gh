@@ -118,3 +118,19 @@ As per request on IRC:
 [23:17] <ncalexan> jason--: I think that decision is fine.  I say close it as invalid.
 ```
 
+
+
+
+---
+
+archive/issue_events_002588.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2008-11-14T05:20:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2412",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2412#event-2588"
+}
+```

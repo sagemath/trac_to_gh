@@ -93,6 +93,22 @@ The attached patches fix these warnings, as well as several others.
 
 ---
 
+archive/issue_events_001144.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-28T17:46:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1020",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1020#event-1144"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006239.json:
 ```json
 {

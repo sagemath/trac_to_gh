@@ -467,6 +467,22 @@ Changing priority from blocker to critical.
 
 ---
 
+archive/issue_events_007980.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T00:36:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7765",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7765#event-7980"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066798.json:
 ```json
 {

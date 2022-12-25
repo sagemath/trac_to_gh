@@ -99,6 +99,22 @@ merged in 2.9.1 rc2
 
 ---
 
+archive/issue_events_001736.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-23T03:20:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1580",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1580#event-1736"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010045.json:
 ```json
 {

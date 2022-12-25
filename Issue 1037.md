@@ -102,6 +102,22 @@ applied to 2.8.11.alpha0
 
 ---
 
+archive/issue_events_001162.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T09:22:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1037",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1037#event-1162"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006315.json:
 ```json
 {

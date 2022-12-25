@@ -66,6 +66,22 @@ This no longer fails with Cygwin 1.7.
 
 ---
 
+archive/issue_events_007559.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-02-17T08:12:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7337",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-7559"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061284.json:
 ```json
 {
@@ -115,6 +131,22 @@ archive/issue_comments_061286.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_007560.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-05-26T20:20:36Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7337",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-7560"
+}
+```
 
 
 
@@ -187,6 +219,22 @@ archive/issue_comments_061290.json:
 ```
 
 looks good
+
+
+
+---
+
+archive/issue_events_007561.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-05-26T23:08:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7337",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7337#event-7561"
+}
+```
 
 
 

@@ -309,6 +309,22 @@ Close as a duplicate of #8056.
 
 ---
 
+archive/issue_events_008024.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-17T05:07:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7810",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7810#event-8024"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067466.json:
 ```json
 {

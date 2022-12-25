@@ -155,6 +155,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_008262.json:
+```json
+{
+    "actor": "rkirov",
+    "created_at": "2010-04-04T17:18:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8053",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8053#event-8262"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070331.json:
 ```json
 {

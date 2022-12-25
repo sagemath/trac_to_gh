@@ -245,3 +245,19 @@ Merged misc-doc-fixes-rebased.patch in Sage 3.4.rc1.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005673.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-04T22:30:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5416",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5416#event-5673"
+}
+```

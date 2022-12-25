@@ -199,3 +199,19 @@ archive/issue_comments_079008.json:
 Merged in 4.4.alpha0:
 - trac_8683-randstate.2.patch
 - trac_8683-reviewer.patch
+
+
+
+---
+
+archive/issue_events_008857.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T18:57:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8683",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8683#event-8857"
+}
+```

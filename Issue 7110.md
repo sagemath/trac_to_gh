@@ -242,3 +242,19 @@ archive/issue_comments_058824.json:
 ```
 
 I merged this into the official sagenb repo and pushed it.  And it works very nicely!
+
+
+
+---
+
+archive/issue_events_007332.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-11T19:27:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7110",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7110#event-7332"
+}
+```

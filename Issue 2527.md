@@ -107,3 +107,19 @@ This was achieved in Sage 3.1.alpha2 via #1220.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002708.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-12T23:46:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2527",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2527#event-2708"
+}
+```

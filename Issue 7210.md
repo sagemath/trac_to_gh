@@ -48,6 +48,22 @@ I've already adressed this at #7889
 
 ---
 
+archive/issue_events_007431.json:
+```json
+{
+    "actor": "olazo",
+    "created_at": "2010-02-01T02:21:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7210",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7210#event-7431"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059725.json:
 ```json
 {
@@ -133,6 +149,38 @@ archive/issue_comments_059729.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_007432.json:
+```json
+{
+    "actor": "olazo",
+    "created_at": "2010-02-01T03:56:06Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7210",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7210#event-7432"
+}
+```
+
+
+
+---
+
+archive/issue_events_007433.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-01T04:11:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7210",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7210#event-7433"
+}
+```
 
 
 

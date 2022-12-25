@@ -216,6 +216,22 @@ Merged in Sage 3.0.1.alpha0
 
 ---
 
+archive/issue_events_000888.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-26T03:35:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/783",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-888"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004672.json:
 ```json
 {
@@ -247,6 +263,22 @@ archive/issue_comments_004673.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_000889.json:
+```json
+{
+    "actor": "@zimmermann6",
+    "created_at": "2010-02-07T10:44:24Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/783",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-889"
+}
+```
 
 
 
@@ -592,3 +624,19 @@ archive/issue_comments_004689.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000890.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T11:13:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/783",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/783#event-890"
+}
+```

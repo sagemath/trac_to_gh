@@ -45,6 +45,22 @@ Changing assignee from boothby to TimothyClemans.
 
 ---
 
+archive/issue_events_000363.json:
+```json
+{
+    "actor": "TimothyClemans",
+    "created_at": "2007-03-31T18:24:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/339",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/339#event-363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001662.json:
 ```json
 {

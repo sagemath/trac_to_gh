@@ -47,6 +47,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/8548
 
 ---
 
+archive/issue_events_008729.json:
+```json
+{
+    "actor": "giraudo",
+    "created_at": "2010-03-16T16:37:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8548",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8548#event-8729"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077168.json:
 ```json
 {
@@ -96,6 +112,22 @@ archive/issue_comments_077170.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_008730.json:
+```json
+{
+    "actor": "@jbandlow",
+    "created_at": "2010-03-16T16:48:42Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8548",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8548#event-8730"
+}
+```
 
 
 
@@ -156,6 +188,22 @@ Hi Samuele,
 You're able to fix problems that as not yet in sage ! Impressive :-) See #8420 where the problem should be solve. 
 
 For the release manager: please close this as a duplicate.
+
+
+
+---
+
+archive/issue_events_008731.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-04-19T03:07:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8548",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8548#event-8731"
+}
+```
 
 
 

@@ -78,6 +78,22 @@ Several comments, but positive review with the additional patch:
 
 ---
 
+archive/issue_events_002067.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-26T11:21:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1911",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1911#event-2067"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012077.json:
 ```json
 {

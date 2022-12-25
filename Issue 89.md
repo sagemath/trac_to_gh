@@ -82,6 +82,22 @@ fixed in sage 1.4
 
 ---
 
+archive/issue_events_000089.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2006-10-10T23:58:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/89",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/89#event-89"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000441.json:
 ```json
 {

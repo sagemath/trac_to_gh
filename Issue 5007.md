@@ -86,6 +86,22 @@ Attachment [trac_5007_bashism.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_005251.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-18T14:03:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5007",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5007#event-5251"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038109.json:
 ```json
 {

@@ -225,6 +225,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_003031.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-11T01:04:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2841",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2841#event-3031"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019459.json:
 ```json
 {

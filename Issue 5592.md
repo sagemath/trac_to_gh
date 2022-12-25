@@ -46,6 +46,22 @@ archive/issue_comments_043479.json:
 
 ---
 
+archive/issue_events_005836.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-15T14:17:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5592",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5592#event-5836"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043480.json:
 ```json
 {

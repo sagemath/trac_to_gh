@@ -246,6 +246,22 @@ I added '#7976:' and re-uploaded the patch. Thanks for the improvement of the do
 
 ---
 
+archive/issue_events_008191.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-22T23:27:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#event-8191"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069470.json:
 ```json
 {

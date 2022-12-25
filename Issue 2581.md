@@ -120,6 +120,22 @@ Merged both patches in Sage 2.11.alpha0
 
 ---
 
+archive/issue_events_002766.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-18T10:23:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2581",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2581#event-2766"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017621.json:
 ```json
 {
@@ -171,6 +187,22 @@ archive/issue_comments_017623.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002767.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-18T23:55:59Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2581",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2581#event-2767"
+}
+```
 
 
 
@@ -296,6 +328,22 @@ archive/issue_comments_017629.json:
 ```
 
 I think this looks good and should be applied.  I think that means part3 should be applied since the other two already have been.
+
+
+
+---
+
+archive/issue_events_002768.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-19T23:58:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2581",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2581#event-2768"
+}
+```
 
 
 

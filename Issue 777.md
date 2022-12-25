@@ -95,6 +95,22 @@ so this ticket should be closed, presumably as a duplicate.
 
 ---
 
+archive/issue_events_000880.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-10T16:17:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/777",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/777#event-880"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004623.json:
 ```json
 {

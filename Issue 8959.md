@@ -283,6 +283,22 @@ It would be nice if there was an easy way to pack things in various ways.  It al
 
 ---
 
+archive/issue_events_009111.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-07-11T06:06:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#event-9111"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082454.json:
 ```json
 {

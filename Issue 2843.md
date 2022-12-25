@@ -226,6 +226,22 @@ Merged padics_ZZ_pXModulus2.patch in Sage 3.0.alpha4
 
 ---
 
+archive/issue_events_003033.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-10T22:45:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2843",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2843#event-3033"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019475.json:
 ```json
 {

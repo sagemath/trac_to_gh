@@ -272,3 +272,19 @@ Merged in this order:
 1. [trac_8786-wikipedia-links.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-wikipedia-links.patch)
 2. [trac_8786-other_fixes.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-other_fixes.2.patch)
 3. [trac_8786-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8786/trac_8786-reviewer.patch)
+
+
+
+---
+
+archive/issue_events_008951.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-08T21:49:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8786",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8786#event-8951"
+}
+```

@@ -128,6 +128,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009659.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-23T07:18:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9512#event-9659"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091308.json:
 ```json
 {
@@ -182,6 +198,22 @@ archive/issue_comments_091310.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009660.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-25T07:28:25Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9512#event-9660"
+}
+```
 
 
 
@@ -254,6 +286,22 @@ archive/issue_comments_091314.json:
 ```
 
 Changing status from needs_work to needs_review.
+
+
+
+---
+
+archive/issue_events_009661.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-09-11T10:41:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9512#event-9661"
+}
+```
 
 
 

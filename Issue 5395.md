@@ -99,6 +99,22 @@ not the modified title `Binary self-dual codes`. It looks like the file "doc/en/
 
 ---
 
+archive/issue_events_005652.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-28T16:28:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5395",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5395#event-5652"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041468.json:
 ```json
 {

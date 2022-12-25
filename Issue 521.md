@@ -314,6 +314,22 @@ Merged in Sage 2.10.2.alpha1. Even though the coverage is "only" up to 23% I am 
 
 ---
 
+archive/issue_events_000560.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-17T17:12:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/521",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/521#event-560"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002640.json:
 ```json
 {

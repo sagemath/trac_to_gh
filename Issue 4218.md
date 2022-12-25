@@ -185,6 +185,22 @@ and also that `S.random_element()` gives a random integer (I think).  Another ti
 
 ---
 
+archive/issue_events_004455.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-21T22:39:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4218",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4218#event-4455"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030597.json:
 ```json
 {

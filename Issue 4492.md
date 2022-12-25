@@ -886,6 +886,22 @@ Sounds like the latest patch has been tested and everybody is OK with all of thi
 
 ---
 
+archive/issue_events_004738.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-27T09:56:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4492",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4492#event-4738"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033156.json:
 ```json
 {

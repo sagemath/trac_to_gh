@@ -53,6 +53,22 @@ Duplicate of #6503.  I'll get to this today.
 
 ---
 
+archive/issue_events_007461.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-19T04:28:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7242",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7242#event-7461"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060021.json:
 ```json
 {

@@ -272,6 +272,22 @@ sage: CIF(a)
 
 ---
 
+archive/issue_events_003316.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-05T02:04:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3100",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3100#event-3316"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021369.json:
 ```json
 {

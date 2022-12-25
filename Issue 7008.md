@@ -432,6 +432,22 @@ Merged both patches.
 
 ---
 
+archive/issue_events_007232.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-29T14:53:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7008",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7008#event-7232"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057853.json:
 ```json
 {

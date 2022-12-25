@@ -117,6 +117,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000870.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-04T15:54:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/769#event-870"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004554.json:
 ```json
 {
@@ -148,6 +164,22 @@ archive/issue_comments_004555.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000871.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2007-10-04T21:22:51Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/769#event-871"
+}
+```
 
 
 
@@ -186,6 +218,22 @@ archive/issue_comments_004557.json:
 I fixed the algorithm, it was forgetting to clear some pivots in some cases on full rank (where it was jumping to the end 'cause it knew it everything but the diagonal was 0's) 
 
 I have tested this on 1000's of matrices of varying sizes and primes.
+
+
+
+---
+
+archive/issue_events_000872.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-05T02:16:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/769#event-872"
+}
+```
 
 
 

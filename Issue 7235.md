@@ -209,6 +209,22 @@ On the other hand, we *do* agree on what to do, so I confirm that the issue at h
 
 ---
 
+archive/issue_events_007455.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-12T06:07:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7235",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7235#event-7455"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059910.json:
 ```json
 {

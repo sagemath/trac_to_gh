@@ -85,6 +85,22 @@ That makes sense to me!  JV
 
 ---
 
+archive/issue_events_000756.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-10T19:21:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/690",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/690#event-756"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003578.json:
 ```json
 {

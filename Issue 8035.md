@@ -105,6 +105,22 @@ Hmm, I forget how to close tickets. Release manager, please close this.
 
 ---
 
+archive/issue_events_008246.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-06-02T13:26:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8035",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8035#event-8246"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070063.json:
 ```json
 {

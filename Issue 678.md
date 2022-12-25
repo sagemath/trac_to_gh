@@ -133,3 +133,19 @@ By introducing sage_fortran this issue has been fixed.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000746.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-29T17:27:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/678",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/678#event-746"
+}
+```

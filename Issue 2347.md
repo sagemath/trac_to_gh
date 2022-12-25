@@ -360,6 +360,22 @@ I've looked at the changes and tested things out, and things look good to me.  T
 
 ---
 
+archive/issue_events_002524.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-14T22:55:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2347",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2347#event-2524"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015708.json:
 ```json
 {

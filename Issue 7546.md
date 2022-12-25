@@ -536,6 +536,22 @@ Sorry, that is not the right ticket, so I guess I'll leave it here.
 
 ---
 
+archive/issue_events_007776.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-09T02:41:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#event-7776"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063986.json:
 ```json
 {

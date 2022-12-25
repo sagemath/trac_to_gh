@@ -660,6 +660,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_005292.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-01-15T21:55:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5048",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5048#event-5292"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038403.json:
 ```json
 {

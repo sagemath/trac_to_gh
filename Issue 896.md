@@ -86,6 +86,22 @@ Thanks.  That bug was fixed about a year ago.  Good.
 
 ---
 
+archive/issue_events_001012.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:14:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/896",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/896#event-1012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005501.json:
 ```json
 {

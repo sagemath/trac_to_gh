@@ -78,6 +78,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006330.json:
+```json
+{
+    "actor": "@certik",
+    "created_at": "2009-11-30T08:59:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6076",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6076#event-6330"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048274.json:
 ```json
 {

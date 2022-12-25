@@ -355,3 +355,19 @@ archive/issue_comments_004325.json:
 ```
 
 Merged 8087.patch and 8088.patch in Sage 2.10.1.rc3
+
+
+
+---
+
+archive/issue_events_000829.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-29T12:29:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/740",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/740#event-829"
+}
+```

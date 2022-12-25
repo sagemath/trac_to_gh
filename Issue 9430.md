@@ -311,6 +311,22 @@ Moving to positive review. I'm about to release rc0, so this will get plenty of 
 
 ---
 
+archive/issue_events_009585.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-07-08T19:53:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9430",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9430#event-9585"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089891.json:
 ```json
 {

@@ -152,3 +152,19 @@ archive/issue_comments_070157.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008251.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T07:03:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8041",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8041#event-8251"
+}
+```

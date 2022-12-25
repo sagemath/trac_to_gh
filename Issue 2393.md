@@ -105,6 +105,22 @@ I like this suggestion, since "1) tell everybody ..." is always doomed to failur
 
 ---
 
+archive/issue_events_002569.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-30T08:45:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2393",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2393#event-2569"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016107.json:
 ```json
 {

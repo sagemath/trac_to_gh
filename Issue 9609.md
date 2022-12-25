@@ -231,6 +231,22 @@ I'm including 4.5.2.alpha0's `spkg/standard/libdist_filelist` in 4.5.2.rc0.
 
 ---
 
+archive/issue_events_009752.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-29T04:53:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9609",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9609#event-9752"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092934.json:
 ```json
 {

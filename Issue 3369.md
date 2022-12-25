@@ -120,6 +120,22 @@ Ah, OK. Then I guess we should close this.
 
 ---
 
+archive/issue_events_003585.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-09T06:16:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3369",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3369#event-3585"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023530.json:
 ```json
 {

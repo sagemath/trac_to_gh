@@ -179,6 +179,22 @@ Remember to fill in the "Author(s)" and "Reviewer(s)" fields.  We use these to g
 
 ---
 
+archive/issue_events_009991.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T22:52:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9861",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9861#event-9991"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097212.json:
 ```json
 {

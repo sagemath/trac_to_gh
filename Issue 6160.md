@@ -124,6 +124,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_006409.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2010-01-17T02:12:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6160",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6160#event-6409"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049046.json:
 ```json
 {

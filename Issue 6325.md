@@ -125,6 +125,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_006571.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-09T11:13:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6325",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6325#event-6571"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050386.json:
 ```json
 {

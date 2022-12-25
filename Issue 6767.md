@@ -83,6 +83,22 @@ Applied OK against Sage 4.1.1. Passed all doctests. The change looks reasonable.
 
 ---
 
+archive/issue_events_006999.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-25T05:00:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6767",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6767#event-6999"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055638.json:
 ```json
 {

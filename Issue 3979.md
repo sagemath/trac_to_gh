@@ -1068,6 +1068,22 @@ So I have merged them all into one patch.  Hope this works.
 
 ---
 
+archive/issue_events_004209.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-28T07:46:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3979",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3979#event-4209"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028564.json:
 ```json
 {

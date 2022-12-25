@@ -88,6 +88,22 @@ The optional spkg has been added to sagemath.org.
 
 ---
 
+archive/issue_events_001623.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T05:45:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1472",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1472#event-1623"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009451.json:
 ```json
 {

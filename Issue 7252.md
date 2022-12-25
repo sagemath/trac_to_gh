@@ -102,6 +102,22 @@ PIL correctly gets installed with this patch. Positive review.
 
 ---
 
+archive/issue_events_007473.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-20T06:10:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7252",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7252#event-7473"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060136.json:
 ```json
 {

@@ -330,6 +330,22 @@ Merged redef_substi2.patch in Sage 3.0.3.alpha1
 
 ---
 
+archive/issue_events_001587.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-04T20:55:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#event-1587"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009273.json:
 ```json
 {

@@ -191,3 +191,19 @@ archive/issue_comments_014126.json:
 ```
 
 Merged in Sage 2.10.3.rc1 (or earlier via #2053). It would be great if somebody could revisit this ticket.
+
+
+
+---
+
+archive/issue_events_002321.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-05T00:46:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2155",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2155#event-2321"
+}
+```

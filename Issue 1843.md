@@ -105,6 +105,22 @@ They both apply and work for me.
 
 ---
 
+archive/issue_events_002002.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-21T05:57:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1843",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1843#event-2002"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011642.json:
 ```json
 {

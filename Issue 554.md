@@ -93,6 +93,22 @@ Attachment [554.patch](tarball://root/attachments/some-uuid/ticket554/554.patch)
 
 ---
 
+archive/issue_events_000597.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-03T20:03:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/554",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/554#event-597"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002856.json:
 ```json
 {

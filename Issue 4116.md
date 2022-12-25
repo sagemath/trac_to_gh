@@ -411,6 +411,22 @@ Actually, I just noticed that I get the same failures with 3.1.1.
 
 ---
 
+archive/issue_events_004353.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-16T06:21:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4116",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4116#event-4353"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029750.json:
 ```json
 {

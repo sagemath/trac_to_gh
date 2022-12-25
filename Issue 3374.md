@@ -117,6 +117,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3374
 
 ---
 
+archive/issue_events_003590.json:
+```json
+{
+    "actor": "@garyfurnish",
+    "created_at": "2008-06-05T20:38:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3374",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3374#event-3590"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023550.json:
 ```json
 {

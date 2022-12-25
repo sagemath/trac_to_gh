@@ -149,6 +149,22 @@ I've added a mention of this now too.
 
 ---
 
+archive/issue_events_009902.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T11:38:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9770",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9770#event-9902"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095600.json:
 ```json
 {

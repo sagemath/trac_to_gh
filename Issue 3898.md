@@ -408,6 +408,22 @@ I agree: this should be closed.
 
 ---
 
+archive/issue_events_004125.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-21T11:33:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#event-4125"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027836.json:
 ```json
 {

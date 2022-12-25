@@ -143,6 +143,22 @@ This is as of 2.8.8.1, so I think we can call this fixed.
 
 ---
 
+archive/issue_events_000816.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-10-22T01:33:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-816"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004278.json:
 ```json
 {
@@ -174,6 +190,22 @@ archive/issue_comments_004279.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000817.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-22T07:02:17Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-817"
+}
+```
 
 
 
@@ -250,3 +282,19 @@ archive/issue_comments_004283.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_000818.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T21:15:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/731#event-818"
+}
+```

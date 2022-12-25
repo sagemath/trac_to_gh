@@ -269,6 +269,22 @@ Attachment [trac_8847-take4.patch](tarball://root/attachments/some-uuid/ticket88
 
 ---
 
+archive/issue_events_009012.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-05-26T02:52:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#event-9012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081209.json:
 ```json
 {

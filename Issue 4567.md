@@ -417,3 +417,19 @@ Merged in Sage 3.2. Thanks Minh.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004812.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-30T06:01:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4567",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4567#event-4812"
+}
+```

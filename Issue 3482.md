@@ -365,6 +365,22 @@ I still want to see doctests that show a failing unpickle, but this is still goo
 
 ---
 
+archive/issue_events_003702.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-07T03:34:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3482",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3482#event-3702"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024495.json:
 ```json
 {

@@ -157,6 +157,22 @@ Michael
 
 ---
 
+archive/issue_events_000455.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2007-08-28T22:27:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/428",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/428#event-455"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002141.json:
 ```json
 {

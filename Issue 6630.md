@@ -228,6 +228,22 @@ Everything looks good to me.  I will delete the other old patches.
 
 ---
 
+archive/issue_events_006869.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-26T05:10:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#event-6869"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054237.json:
 ```json
 {

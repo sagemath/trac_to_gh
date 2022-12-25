@@ -210,6 +210,22 @@ Closing tickets in the sage-duplicate/invalid/wontfix module with positive_revie
 
 ---
 
+archive/issue_events_002149.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2017-07-13T07:54:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1994",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1994#event-2149"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012879.json:
 ```json
 {

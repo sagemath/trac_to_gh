@@ -245,6 +245,22 @@ In that case, everything looks good. A quick retest also passes. ~ Adam
 
 ---
 
+archive/issue_events_004200.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T05:49:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3970",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3970#event-4200"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028477.json:
 ```json
 {

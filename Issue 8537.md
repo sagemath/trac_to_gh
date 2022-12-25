@@ -72,6 +72,22 @@ This is a dup of #8455, as a search for "update mpi" in trac shows.
 
 ---
 
+archive/issue_events_008716.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-03-14T23:13:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8537",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8537#event-8716"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077040.json:
 ```json
 {
@@ -103,6 +119,22 @@ archive/issue_comments_077041.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_008717.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-14T23:25:02Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8537",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8537#event-8717"
+}
+```
 
 
 
@@ -484,3 +516,19 @@ archive/issue_comments_077057.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008718.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-02-06T09:58:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8537",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8537#event-8718"
+}
+```

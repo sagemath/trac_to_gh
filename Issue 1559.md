@@ -112,6 +112,22 @@ Deleting the temp files is completely not needed -- it's just to save disk space
 
 ---
 
+archive/issue_events_001713.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-14T16:35:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1559",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1559#event-1713"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009911.json:
 ```json
 {

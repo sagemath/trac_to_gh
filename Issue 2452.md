@@ -801,6 +801,22 @@ Sorry for the inconvenience.
 
 ---
 
+archive/issue_events_002629.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-04T19:54:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2452",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2452#event-2629"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016564.json:
 ```json
 {

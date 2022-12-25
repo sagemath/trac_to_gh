@@ -97,6 +97,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_006714.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T07:24:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6477",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6477#event-6714"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052264.json:
 ```json
 {

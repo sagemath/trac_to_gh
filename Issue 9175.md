@@ -101,6 +101,22 @@ By #9343, the script sea.gp will be removed, so this will trivially be fixed.
 
 ---
 
+archive/issue_events_009332.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-10T10:48:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9175",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9175#event-9332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085688.json:
 ```json
 {

@@ -102,3 +102,19 @@ Identity endomorphism of Univariate Polynomial Ring in x over Rational Field
 
 
 I'm going to close this an invalid.  A more appropriate ticket should be opened if there is a failure you're trying to fix.
+
+
+
+---
+
+archive/issue_events_006410.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-05-31T19:25:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6161",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6161#event-6410"
+}
+```

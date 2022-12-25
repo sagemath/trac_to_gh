@@ -76,6 +76,22 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
+archive/issue_events_005632.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-10-09T10:47:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5377",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5377#event-5632"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041326.json:
 ```json
 {

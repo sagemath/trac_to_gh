@@ -64,3 +64,19 @@ archive/issue_comments_085276.json:
 Attachment [sage-4.4.2-enable-as-needed.patch](tarball://root/attachments/some-uuid/ticket9147/sage-4.4.2-enable-as-needed.patch) by @mwhansen created at 2010-06-05 17:37:27
 
 This is already handled by #8844.
+
+
+
+---
+
+archive/issue_events_009307.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-05T17:37:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9147",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9147#event-9307"
+}
+```

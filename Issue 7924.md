@@ -139,6 +139,22 @@ Works with sagenb-0.6.
 
 ---
 
+archive/issue_events_008140.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T03:15:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7924",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7924#event-8140"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068856.json:
 ```json
 {

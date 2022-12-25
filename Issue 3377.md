@@ -612,6 +612,22 @@ One should apply 3377-torsion_nf.patch followed by 3377-torsion_nf-1.patch.
 
 ---
 
+archive/issue_events_003593.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-03T16:13:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3377",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3377#event-3593"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023601.json:
 ```json
 {

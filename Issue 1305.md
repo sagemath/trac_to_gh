@@ -107,3 +107,19 @@ archive/issue_comments_008189.json:
 ```
 
 I think we can close this ticket as it is very vague.  Additionally, there is now a class for incidence structures which can be found at http://www.sagemath.org/hg/sage-main/file/5be1d5ad8339/sage/combinat/designs/incidence_structures.py .
+
+
+
+---
+
+archive/issue_events_001447.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-12-02T10:15:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1305",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1305#event-1447"
+}
+```

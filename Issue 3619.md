@@ -317,6 +317,22 @@ Yes, definitely.  However, I don't think that has to be done in this patch.  Lit
 
 ---
 
+archive/issue_events_003836.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-07T17:38:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3619",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3619#event-3836"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025496.json:
 ```json
 {

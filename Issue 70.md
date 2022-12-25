@@ -98,6 +98,22 @@ else:
 
 ---
 
+archive/issue_events_000071.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2006-10-11T06:37:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/70",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/70#event-71"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000359.json:
 ```json
 {

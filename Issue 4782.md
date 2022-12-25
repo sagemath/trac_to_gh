@@ -242,6 +242,22 @@ Number Field in b with defining polynomial x^2 - 69*x + 38 over its base field
 
 ---
 
+archive/issue_events_005024.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-02-20T05:19:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#event-5024"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036182.json:
 ```json
 {
@@ -351,6 +367,22 @@ archive/issue_comments_036186.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005025.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-20T07:03:47Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#event-5025"
+}
+```
 
 
 
@@ -519,6 +551,22 @@ archive/issue_comments_036193.json:
 I cannot reproduce the problem with sage 4.6 on debian linux 32 bits. I just get the relative field and looks ok.
 
 Does anyone still experience issues?
+
+
+
+---
+
+archive/issue_events_005026.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-12-04T19:40:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#event-5026"
+}
+```
 
 
 

@@ -79,6 +79,22 @@ spam, consider 1.6.
 
 ---
 
+archive/issue_events_001787.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-07-21T07:27:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1628",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1628#event-1787"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010348.json:
 ```json
 {

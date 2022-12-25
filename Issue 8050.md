@@ -147,6 +147,22 @@ Close as fixed by #8115.
 
 ---
 
+archive/issue_events_008259.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-20T17:31:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8050",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8050#event-8259"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070275.json:
 ```json
 {

@@ -49,6 +49,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3164
 
 ---
 
+archive/issue_events_003383.json:
+```json
+{
+    "actor": "@NathanDunfield",
+    "created_at": "2008-05-12T00:53:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3164",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3164#event-3383"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021892.json:
 ```json
 {

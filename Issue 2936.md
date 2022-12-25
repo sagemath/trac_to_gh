@@ -82,6 +82,22 @@ Attachment [sage-2936-test.hg](tarball://root/attachments/some-uuid/ticket2936/s
 
 ---
 
+archive/issue_events_003138.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2008-06-18T19:25:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2936",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2936#event-3138"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020189.json:
 ```json
 {

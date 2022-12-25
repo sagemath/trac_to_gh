@@ -136,6 +136,22 @@ Looks good!  Doctests pass with phc installed; the plot looks pretty; and after 
 
 ---
 
+archive/issue_events_003251.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T11:28:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3044",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3044#event-3251"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020922.json:
 ```json
 {

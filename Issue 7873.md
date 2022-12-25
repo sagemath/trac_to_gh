@@ -232,6 +232,22 @@ Thank you very much for the positive review.
 
 ---
 
+archive/issue_events_008088.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-14T02:39:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7873",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7873#event-8088"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068276.json:
 ```json
 {

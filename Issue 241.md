@@ -48,6 +48,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/241
 
 ---
 
+archive/issue_events_000255.json:
+```json
+{
+    "actor": "@roed314",
+    "created_at": "2007-04-13T03:55:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/241",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/241#event-255"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001071.json:
 ```json
 {

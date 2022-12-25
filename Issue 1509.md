@@ -230,6 +230,22 @@ This is really neat, as the graphic says! It makes good sense to get more of the
 
 ---
 
+archive/issue_events_001663.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T05:22:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1509",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1509#event-1663"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009644.json:
 ```json
 {

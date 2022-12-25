@@ -111,3 +111,19 @@ Since #3905 has been merged this can be closed. In case you want improvements pl
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001807.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-31T07:57:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1647",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1647#event-1807"
+}
+```

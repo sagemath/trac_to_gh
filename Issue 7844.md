@@ -162,3 +162,19 @@ archive/issue_comments_067834.json:
 ```
 
 merged into sagenb-0.5.
+
+
+
+---
+
+archive/issue_events_008059.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-05T04:00:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#event-8059"
+}
+```

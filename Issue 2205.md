@@ -329,6 +329,22 @@ Michael
 
 ---
 
+archive/issue_events_002371.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-14T17:01:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2205",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2205#event-2371"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014521.json:
 ```json
 {
@@ -401,6 +417,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_002372.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-14T19:50:55Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2205",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2205#event-2372"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014525.json:
 ```json
 {
@@ -414,6 +446,22 @@ archive/issue_comments_014525.json:
 ```
 
 I'm reopening this because there is now a procedure for new spkg's to go into sage, and we need to follow it.
+
+
+
+---
+
+archive/issue_events_002373.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-15T08:35:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2205",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2205#event-2373"
+}
+```
 
 
 

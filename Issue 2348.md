@@ -821,3 +821,19 @@ archive/issue_comments_015742.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_002525.json:
+```json
+{
+    "actor": "@simon-king-jena",
+    "created_at": "2008-03-05T10:47:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2348",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2348#event-2525"
+}
+```

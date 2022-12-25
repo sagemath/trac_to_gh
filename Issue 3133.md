@@ -294,3 +294,19 @@ archive/issue_comments_021723.json:
 ```
 
 See #6963 for a follow up to this ticket.
+
+
+
+---
+
+archive/issue_events_003349.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-19T20:07:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3133",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3133#event-3349"
+}
+```

@@ -47,6 +47,22 @@ The spkg is here: http://sage.math.washington.edu/home/wstein/patches/pynac-0.1.
 
 ---
 
+archive/issue_events_006429.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T06:27:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6180",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6180#event-6429"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049251.json:
 ```json
 {

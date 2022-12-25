@@ -773,6 +773,22 @@ Perfect.
 
 ---
 
+archive/issue_events_000266.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-08-26T03:00:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/252#event-266"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001137.json:
 ```json
 {

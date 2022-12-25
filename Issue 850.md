@@ -71,6 +71,22 @@ Sorry.
 
 ---
 
+archive/issue_events_000963.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:25:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/850",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/850#event-963"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005240.json:
 ```json
 {

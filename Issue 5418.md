@@ -68,3 +68,19 @@ archive/issue_comments_041847.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_005674.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-15T11:21:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5418",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5418#event-5674"
+}
+```

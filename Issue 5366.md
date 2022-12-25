@@ -206,6 +206,22 @@ I was testing in parallel, so that must have been what happened, since testing t
 
 ---
 
+archive/issue_events_005621.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-28T15:57:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#event-5621"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041256.json:
 ```json
 {

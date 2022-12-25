@@ -144,3 +144,19 @@ archive/issue_comments_002726.json:
 ```
 
 I'm closing this one, for pretty much the same reasons as #536. It's too bad we don't have the doctests that caused these ...
+
+
+
+---
+
+archive/issue_events_000576.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2010-01-20T06:36:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/537",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/537#event-576"
+}
+```

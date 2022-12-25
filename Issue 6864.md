@@ -299,6 +299,22 @@ Great!  Thanks.   This passes all relevant doctests and nothing appears in my ho
 
 ---
 
+archive/issue_events_007096.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-16T04:02:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6864",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6864#event-7096"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056550.json:
 ```json
 {

@@ -134,6 +134,22 @@ but anyway wanted to point it out in case this is considered something that shou
 
 ---
 
+archive/issue_events_008034.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-13T05:14:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7819",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7819#event-8034"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067560.json:
 ```json
 {

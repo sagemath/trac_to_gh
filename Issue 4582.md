@@ -115,6 +115,22 @@ The attached patch should satisfy the requierement
 
 ---
 
+archive/issue_events_004829.json:
+```json
+{
+    "actor": "gmoroz",
+    "created_at": "2008-11-27T00:04:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4582",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-4829"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034292.json:
 ```json
 {
@@ -172,6 +188,22 @@ archive/issue_comments_034294.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_004830.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-27T00:08:56Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4582",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-4830"
+}
+```
 
 
 
@@ -317,3 +349,19 @@ archive/issue_comments_034301.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_004831.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-30T23:12:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4582",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4582#event-4831"
+}
+```

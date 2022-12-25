@@ -123,6 +123,22 @@ Anyway, I've patched this up for the release, but more work needs to be done...
 
 ---
 
+archive/issue_events_001013.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-14T22:53:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/897",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/897#event-1013"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005505.json:
 ```json
 {

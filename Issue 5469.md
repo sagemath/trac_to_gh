@@ -47,6 +47,22 @@ Just a note, it would be nice if the files could be hard linked rather than actu
 
 ---
 
+archive/issue_events_005723.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-11T06:27:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5469",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5469#event-5723"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042365.json:
 ```json
 {

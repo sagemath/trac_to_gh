@@ -93,6 +93,22 @@ On a completely insignificant note, I'm not sure why you did a0inv = ..., and th
 
 ---
 
+archive/issue_events_002063.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-25T18:13:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1906",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1906#event-2063"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012045.json:
 ```json
 {

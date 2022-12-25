@@ -289,6 +289,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_002693.json:
+```json
+{
+    "actor": "@haikona",
+    "created_at": "2011-03-23T00:55:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2512#event-2693"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017004.json:
 ```json
 {

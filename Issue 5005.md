@@ -40,6 +40,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5005
 
 ---
 
+archive/issue_events_005249.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-01-17T09:45:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5005",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5005#event-5249"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038101.json:
 ```json
 {

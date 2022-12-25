@@ -51,6 +51,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000354.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-03-28T12:19:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/330",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/330#event-354"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001623.json:
 ```json
 {

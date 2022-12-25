@@ -154,6 +154,22 @@ Changing assignee from tba to mabshoff.
 
 ---
 
+archive/issue_events_006208.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-01T05:58:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5953",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5953#event-6208"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047003.json:
 ```json
 {

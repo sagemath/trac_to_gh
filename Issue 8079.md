@@ -166,6 +166,22 @@ Changing keywords from "" to "Developer's Guide patching spkg".
 
 ---
 
+archive/issue_events_008285.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-14T14:36:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8079",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8079#event-8285"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070690.json:
 ```json
 {

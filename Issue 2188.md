@@ -62,3 +62,19 @@ archive/issue_comments_014334.json:
 ```
 
 The bit-shift method uses the GMP function ``mpz_mul_2exp``, thus this ticket is no longer valid.
+
+
+
+---
+
+archive/issue_events_002355.json:
+```json
+{
+    "actor": "spancratz",
+    "created_at": "2010-01-16T08:06:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2188",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2188#event-2355"
+}
+```

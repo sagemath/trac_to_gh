@@ -196,6 +196,22 @@ LGTM.
 
 ---
 
+archive/issue_events_007647.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2021-01-24T10:36:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7423",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7423#event-7647"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062371.json:
 ```json
 {

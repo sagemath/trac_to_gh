@@ -244,6 +244,22 @@ a proposal for a docstring
 
 ---
 
+archive/issue_events_008065.json:
+```json
+{
+    "actor": "olazo",
+    "created_at": "2010-01-24T19:35:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#event-8065"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067885.json:
 ```json
 {

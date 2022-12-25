@@ -131,6 +131,22 @@ The above error is not due to the patch. Ticket #6825 contains steps to reproduc
 
 ---
 
+archive/issue_events_006735.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-10T09:41:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6497",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6497#event-6735"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052759.json:
 ```json
 {

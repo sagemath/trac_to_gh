@@ -116,6 +116,22 @@ Let's close this?
 
 ---
 
+archive/issue_events_006176.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-01T01:46:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5922",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5922#event-6176"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046735.json:
 ```json
 {

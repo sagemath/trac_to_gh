@@ -75,6 +75,22 @@ Apply this patch instead.
 
 ---
 
+archive/issue_events_001164.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T09:27:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1039",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1039#event-1164"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006320.json:
 ```json
 {

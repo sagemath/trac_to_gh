@@ -69,6 +69,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_002425.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2008-03-06T08:36:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2255",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2255#event-2425"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014905.json:
 ```json
 {

@@ -226,6 +226,22 @@ I feel like the readability of _tasteful_ticks() could be improved. Better varia
 
 ---
 
+archive/issue_events_005890.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-16T22:59:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5649",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5649#event-5890"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044031.json:
 ```json
 {

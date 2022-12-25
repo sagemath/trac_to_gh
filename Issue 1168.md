@@ -111,6 +111,22 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
+archive/issue_events_001300.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2007-11-30T23:38:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1168",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1168#event-1300"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007141.json:
 ```json
 {

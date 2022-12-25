@@ -112,6 +112,22 @@ http://sage.math.washington.edu/home/mvngu/release/merged-tkt.txt
 
 ---
 
+archive/issue_events_005094.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-20T15:52:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4849",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4849#event-5094"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036700.json:
 ```json
 {

@@ -234,6 +234,22 @@ become a non-issue.
 
 ---
 
+archive/issue_events_004893.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-07T03:42:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#event-4893"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034911.json:
 ```json
 {

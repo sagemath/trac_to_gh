@@ -87,6 +87,22 @@ Attachment [trac_6129.patch](tarball://root/attachments/some-uuid/ticket6129/tra
 
 ---
 
+archive/issue_events_006378.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-05-28T07:31:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6129",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6129#event-6378"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048870.json:
 ```json
 {

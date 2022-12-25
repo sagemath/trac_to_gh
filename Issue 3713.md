@@ -155,3 +155,19 @@ archive/issue_comments_026305.json:
 ```
 
 This is a duplicate of #3167. Close it as per Tom Boothby's suggestion.
+
+
+
+---
+
+archive/issue_events_003933.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-12T16:32:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3713",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3713#event-3933"
+}
+```

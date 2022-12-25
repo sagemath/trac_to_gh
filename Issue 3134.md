@@ -202,3 +202,19 @@ archive/issue_comments_021731.json:
 ```
 
 Merged trac_3134-2.patch in Sage 3.2.2.alpha0
+
+
+
+---
+
+archive/issue_events_003350.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-04T15:37:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3134",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3134#event-3350"
+}
+```

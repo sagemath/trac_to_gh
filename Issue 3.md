@@ -91,3 +91,19 @@ In the meantime, mac users can pull the patch at my darcs repository entitled "f
 
 My repository is located at:
 http://sage.math.washington.edu/home/boothby/sage/devel/sage
+
+
+
+---
+
+archive/issue_events_000003.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2006-09-14T18:24:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3#event-3"
+}
+```

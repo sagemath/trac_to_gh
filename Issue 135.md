@@ -44,6 +44,22 @@ These patches are shipped with SAGE now.
 
 ---
 
+archive/issue_events_000141.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-08-09T21:48:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/135",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/135#event-141"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000639.json:
 ```json
 {

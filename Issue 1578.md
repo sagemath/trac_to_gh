@@ -291,6 +291,22 @@ there is action on this at #753
 
 ---
 
+archive/issue_events_001732.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2008-03-03T14:32:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1578",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1578#event-1732"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010033.json:
 ```json
 {
@@ -363,6 +379,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001733.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-03T16:13:50Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1578",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1578#event-1733"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010037.json:
 ```json
 {
@@ -398,3 +430,19 @@ archive/issue_comments_010038.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001734.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-03T16:13:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1578",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1578#event-1734"
+}
+```

@@ -1914,6 +1914,22 @@ For a future ticket with #15657 - make `Graph.tutte_polynomial` a ``@`cached_met
 
 ---
 
+archive/issue_events_001454.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-01-11T14:56:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1314",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1314#event-1454"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008338.json:
 ```json
 {

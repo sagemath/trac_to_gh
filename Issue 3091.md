@@ -134,6 +134,22 @@ Changing status from new to needs_info.
 
 ---
 
+archive/issue_events_003305.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-01-16T20:18:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3091",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3091#event-3305"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021298.json:
 ```json
 {

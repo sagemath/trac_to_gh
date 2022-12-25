@@ -569,6 +569,22 @@ Yes, that should be a ticket on the Cython trac.
 
 ---
 
+archive/issue_events_005215.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-18T14:44:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#event-5215"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037823.json:
 ```json
 {

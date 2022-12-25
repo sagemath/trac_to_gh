@@ -104,6 +104,22 @@ Is this still a valid ticket? We do check dependencies now, right?
 
 ---
 
+archive/issue_events_000145.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-02-27T12:21:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/139#event-145"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000649.json:
 ```json
 {

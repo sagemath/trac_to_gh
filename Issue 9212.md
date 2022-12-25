@@ -68,6 +68,22 @@ Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/so
 
 ---
 
+archive/issue_events_009366.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-11T07:44:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9212",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-9366"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086179.json:
 ```json
 {
@@ -290,6 +306,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_009367.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2010-06-14T16:11:48Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9212",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-9367"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086190.json:
 ```json
 {
@@ -428,6 +460,22 @@ archive/issue_comments_086196.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_009368.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T08:20:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9212",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9212#event-9368"
+}
+```
 
 
 

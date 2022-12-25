@@ -295,6 +295,22 @@ Thank you for contributing to the Graph Section !! :-)
 
 ---
 
+archive/issue_events_007793.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-01T08:23:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7564",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7564#event-7793"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064258.json:
 ```json
 {

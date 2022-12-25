@@ -131,6 +131,22 @@ Looks good to me. Nice style changes.
 
 ---
 
+archive/issue_events_008078.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T03:34:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7863",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7863#event-8078"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068055.json:
 ```json
 {

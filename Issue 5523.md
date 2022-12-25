@@ -51,6 +51,22 @@ Attachment [steenrod_odd.patch](tarball://root/attachments/some-uuid/ticket5523/
 
 ---
 
+archive/issue_events_005773.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-25T08:16:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5523",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5523#event-5773"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042890.json:
 ```json
 {

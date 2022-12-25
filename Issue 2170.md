@@ -376,6 +376,22 @@ With apologies to zimmerma and Laurent Imbert for stealing their thunder, I atta
 
 ---
 
+archive/issue_events_002337.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-03T19:25:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2170",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2170#event-2337"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014216.json:
 ```json
 {

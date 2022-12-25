@@ -122,6 +122,22 @@ I was right in the middle of tracking this down when you posted the patch, so I 
 
 ---
 
+archive/issue_events_005276.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T14:31:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5032",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5032#event-5276"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038255.json:
 ```json
 {

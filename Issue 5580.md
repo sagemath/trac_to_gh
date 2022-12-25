@@ -90,6 +90,22 @@ The example in the description works for me.  I suggest closing this ticket as 
 
 ---
 
+archive/issue_events_005825.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-01T08:49:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5580",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5580#event-5825"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043419.json:
 ```json
 {

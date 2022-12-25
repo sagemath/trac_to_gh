@@ -272,6 +272,22 @@ Yup, those are all good changes.  I never know exactly how many characters are o
 
 ---
 
+archive/issue_events_005800.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T05:17:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5556",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5556#event-5800"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043156.json:
 ```json
 {

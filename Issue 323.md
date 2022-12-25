@@ -58,3 +58,19 @@ archive/issue_comments_001531.json:
 ```
 
 This bug is too imprecise to be of any use, especially since I build SAGE regularly on Edgy eft and it works fine.   (In fact it's my main devel environment.)
+
+
+
+---
+
+archive/issue_events_000345.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-03-21T22:44:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/323",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/323#event-345"
+}
+```

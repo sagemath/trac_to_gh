@@ -64,6 +64,22 @@ applying the patch appears to fix the problem of axes; looks good to me.
 
 ---
 
+archive/issue_events_002519.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-28T06:26:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2342",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2342#event-2519"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015649.json:
 ```json
 {

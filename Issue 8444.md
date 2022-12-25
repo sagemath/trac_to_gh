@@ -328,3 +328,19 @@ archive/issue_comments_075797.json:
 ```
 
 Merged "trac_8444.fix_pari_memleak.patch" into 4.4.alpha0.
+
+
+
+---
+
+archive/issue_events_008628.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T23:52:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8444",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8444#event-8628"
+}
+```

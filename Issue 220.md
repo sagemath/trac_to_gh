@@ -87,6 +87,22 @@ I think this has already been done as evidenced by sage/rings/power_series*.pyx.
 
 ---
 
+archive/issue_events_000233.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-11-14T08:43:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/220",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/220#event-233"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000985.json:
 ```json
 {

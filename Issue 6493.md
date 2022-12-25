@@ -132,6 +132,22 @@ http://sage.math.washington.edu/home/mvngu/patch/numpy-1.3.0.p1.spkg
 
 ---
 
+archive/issue_events_006731.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-17T08:49:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6493",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6493#event-6731"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052450.json:
 ```json
 {

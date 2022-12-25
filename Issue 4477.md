@@ -343,6 +343,22 @@ I've created #4748. Other than that it works great (and the issue above didn't w
 
 ---
 
+archive/issue_events_004726.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-10T07:54:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4477",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4477#event-4726"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033010.json:
 ```json
 {

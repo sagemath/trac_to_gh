@@ -173,6 +173,22 @@ Oops!
 
 ---
 
+archive/issue_events_008417.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:49:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8215",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8215#event-8417"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072327.json:
 ```json
 {

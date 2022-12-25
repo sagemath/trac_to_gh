@@ -161,6 +161,22 @@ Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/tes
 
 ---
 
+archive/issue_events_002938.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-02T01:36:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2752",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2752#event-2938"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018867.json:
 ```json
 {

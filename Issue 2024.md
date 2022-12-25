@@ -222,6 +222,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_002178.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-02-03T00:46:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#event-2178"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013059.json:
 ```json
 {
@@ -295,6 +311,22 @@ archive/issue_comments_013062.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002179.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-02-03T01:16:20Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#event-2179"
+}
+```
 
 
 
@@ -415,6 +447,22 @@ Closing this ticket, per IRC discussion with malb (see also #2497):
 [2:29pm] dmharvey: ok I will do that
 ```
 
+
+
+
+---
+
+archive/issue_events_002180.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2008-04-05T18:35:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#event-2180"
+}
+```
 
 
 

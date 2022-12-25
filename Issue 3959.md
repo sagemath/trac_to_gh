@@ -230,3 +230,19 @@ Mike: Feel free to submit a patch on top of this one.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004187.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-18T15:11:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3959",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3959#event-4187"
+}
+```

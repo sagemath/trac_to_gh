@@ -118,6 +118,22 @@ Merged in Sage 2.11.alpha0
 
 ---
 
+archive/issue_events_002770.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-19T00:39:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2583",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2583#event-2770"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017639.json:
 ```json
 {
@@ -167,6 +183,22 @@ archive/issue_comments_017641.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002771.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-19T10:13:22Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2583",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2583#event-2771"
+}
+```
 
 
 
@@ -235,6 +267,22 @@ This is unrelated to this patch and hence we will close it and open another tick
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002772.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-19T13:29:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2583",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2583#event-2772"
+}
+```
 
 
 

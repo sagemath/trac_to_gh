@@ -96,6 +96,22 @@ Attachment [univariate_poly_quo_rem_zero.patch](tarball://root/attachments/some-
 
 ---
 
+archive/issue_events_003643.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2008-06-17T19:41:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3428",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3428#event-3643"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024106.json:
 ```json
 {
@@ -168,6 +184,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_003644.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-06-17T22:37:04Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3428",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3428#event-3644"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024110.json:
 ```json
 {
@@ -219,6 +251,22 @@ archive/issue_comments_024112.json:
 ```
 
 apply after Burcin's patch
+
+
+
+---
+
+archive/issue_events_003645.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T10:00:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3428",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3428#event-3645"
+}
+```
 
 
 

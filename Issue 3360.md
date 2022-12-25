@@ -3466,3 +3466,19 @@ archive/issue_comments_023473.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_003577.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2020-08-07T19:05:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3360",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3360#event-3577"
+}
+```

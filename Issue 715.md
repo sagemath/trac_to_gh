@@ -5657,6 +5657,22 @@ I'm just confirming that applying this patch & that at #11521 to 5.0-beta13 on a
 
 ---
 
+archive/issue_events_000788.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-05-06T12:12:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-788"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003948.json:
 ```json
 {
@@ -5688,6 +5704,22 @@ archive/issue_comments_003949.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_000789.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-07-05T08:40:06Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-789"
+}
+```
 
 
 
@@ -10156,6 +10188,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000790.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-10-17T20:59:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-790"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004101.json:
 ```json
 {
@@ -10192,6 +10240,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_000791.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-11-03T17:35:41Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-791"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004103.json:
 ```json
 {
@@ -10205,6 +10269,22 @@ archive/issue_comments_004103.json:
 ```
 
 Resolution changed from fixed to 
+
+
+
+---
+
+archive/issue_events_000792.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-11-04T08:37:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/715#event-792"
+}
+```
 
 
 

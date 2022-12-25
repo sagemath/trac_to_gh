@@ -85,6 +85,22 @@ This ticket has been fixed based on the current behavior of the notebook since t
 
 ---
 
+archive/issue_events_000260.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-04-15T07:25:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/246",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/246#event-260"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001085.json:
 ```json
 {

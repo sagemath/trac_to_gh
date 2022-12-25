@@ -102,6 +102,22 @@ This is done at #4267
 
 ---
 
+archive/issue_events_004423.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-19T08:08:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4184",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4184#event-4423"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030309.json:
 ```json
 {

@@ -79,3 +79,19 @@ archive/issue_comments_054964.json:
 Attachment [trac_6704-spell-check-graphs.patch](tarball://root/attachments/some-uuid/ticket6704/trac_6704-spell-check-graphs.patch) by mvngu created at 2009-08-12 05:41:14
 
 The patch `trac_6704-spell-check-graphs.patch` is a rebase; it depends on #6684.
+
+
+
+---
+
+archive/issue_events_006939.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-12T05:41:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6704",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6704#event-6939"
+}
+```

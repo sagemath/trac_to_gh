@@ -133,6 +133,22 @@ I cannot duplicate this in Sage 3.2.3 either.  I'm going to mark it as invalid a
 
 ---
 
+archive/issue_events_001932.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-23T12:43:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1775",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1775#event-1932"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011216.json:
 ```json
 {

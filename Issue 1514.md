@@ -132,6 +132,22 @@ Apply both patches.
 
 ---
 
+archive/issue_events_001668.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T07:21:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1514",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1514#event-1668"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009684.json:
 ```json
 {

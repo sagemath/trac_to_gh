@@ -297,6 +297,22 @@ The patch file should be produced with Mercurial, not with diff: it should inclu
 
 ---
 
+archive/issue_events_006463.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T05:21:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6214",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6214#event-6463"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049557.json:
 ```json
 {

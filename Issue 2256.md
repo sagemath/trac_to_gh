@@ -174,6 +174,22 @@ The real way to do this is to have a rank function which works by looking at the
 
 ---
 
+archive/issue_events_002426.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-14T22:49:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2256",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2256#event-2426"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014910.json:
 ```json
 {

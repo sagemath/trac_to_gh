@@ -218,3 +218,19 @@ archive/issue_comments_049036.json:
 ```
 
 Merged in 4.0.1.alpha0.
+
+
+
+---
+
+archive/issue_events_006407.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T00:48:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6158",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6158#event-6407"
+}
+```

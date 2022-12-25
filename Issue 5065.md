@@ -146,6 +146,22 @@ Remove assignee @loefflerd.
 
 ---
 
+archive/issue_events_005311.json:
+```json
+{
+    "actor": "@JohnCremona",
+    "created_at": "2010-08-14T16:47:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5065",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5065#event-5311"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038515.json:
 ```json
 {

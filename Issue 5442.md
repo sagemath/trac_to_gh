@@ -96,6 +96,22 @@ I'm marking this ticket as invalid unless you see a good reason to totally chang
 
 ---
 
+archive/issue_events_005692.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-03-06T15:45:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5442",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5442#event-5692"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042002.json:
 ```json
 {

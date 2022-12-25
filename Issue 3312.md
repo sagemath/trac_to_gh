@@ -125,6 +125,22 @@ What exactly is wrong with this patch? Use this ticket to provide feedback about
 
 ---
 
+archive/issue_events_003532.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-06-18T04:39:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3312",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3312#event-3532"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022863.json:
 ```json
 {

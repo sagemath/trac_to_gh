@@ -77,6 +77,22 @@ Attachment [trac_4996-OSX64-libcsage.patch](tarball://root/attachments/some-uuid
 
 ---
 
+archive/issue_events_005240.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T00:30:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4996",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4996#event-5240"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038047.json:
 ```json
 {

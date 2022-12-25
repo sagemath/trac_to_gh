@@ -136,6 +136,22 @@ builds OK on the machine t2 running Solaris. (It also compiles on Linux.)
 
 ---
 
+archive/issue_events_006800.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-24T00:06:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6563",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6563#event-6800"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053428.json:
 ```json
 {

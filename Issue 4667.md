@@ -779,3 +779,19 @@ Merged  trac_4667_z.patch and trac_4667_z2.patch in Sage 3.4.1.rc0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004915.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-31T21:29:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4667",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4667#event-4915"
+}
+```

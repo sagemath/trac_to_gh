@@ -81,6 +81,22 @@ I strongly agree with this fix.
 
 ---
 
+archive/issue_events_004316.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-09T02:40:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4078",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4078#event-4316"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029375.json:
 ```json
 {

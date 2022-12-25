@@ -75,6 +75,22 @@ I applied this for 2.9.
 
 ---
 
+archive/issue_events_001613.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-12-12T15:55:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1462",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1462#event-1613"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009392.json:
 ```json
 {

@@ -49,6 +49,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/6753
 
 ---
 
+archive/issue_events_006984.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-02T16:18:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6753",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6753#event-6984"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055497.json:
 ```json
 {

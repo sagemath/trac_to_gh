@@ -194,6 +194,22 @@ Yes, I did split this ticket into individual items. Please close this ticket as 
 
 ---
 
+archive/issue_events_002148.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-01T22:49:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1993",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1993#event-2148"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012869.json:
 ```json
 {

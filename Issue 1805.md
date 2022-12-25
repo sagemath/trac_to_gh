@@ -502,6 +502,22 @@ I attached the one small change requested.
 
 ---
 
+archive/issue_events_001962.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-02T20:34:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1805",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1805#event-1962"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011399.json:
 ```json
 {

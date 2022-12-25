@@ -64,6 +64,22 @@ Wall time: 0.01 s
 
 ---
 
+archive/issue_events_007204.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-25T06:32:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6980",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6980#event-7204"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057622.json:
 ```json
 {

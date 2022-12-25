@@ -185,6 +185,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_003387.json:
+```json
+{
+    "actor": "@videlec",
+    "created_at": "2018-05-18T17:16:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3169",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3169#event-3387"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021918.json:
 ```json
 {

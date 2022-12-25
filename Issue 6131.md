@@ -61,3 +61,19 @@ archive/issue_comments_048878.json:
 ```
 
 Duplicate of #6132
+
+
+
+---
+
+archive/issue_events_006380.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-05-26T20:06:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6131",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6131#event-6380"
+}
+```

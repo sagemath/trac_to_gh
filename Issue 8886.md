@@ -478,6 +478,22 @@ Attachment [trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch](tarball://r
 
 ---
 
+archive/issue_events_009043.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-10-08T18:15:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8886",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8886#event-9043"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081568.json:
 ```json
 {

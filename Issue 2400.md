@@ -433,6 +433,22 @@ These two patches apply against 2.10.4.alpha0, fix the problems, and pass tests 
 
 ---
 
+archive/issue_events_002576.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-16T02:48:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2400",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2400#event-2576"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016177.json:
 ```json
 {

@@ -155,3 +155,19 @@ Yes, I tried that.
 
 > So doctests really ought to be run on this file just to make sure that the examples are correct.
 With other dependencies and this patch, all doctests in the tutorial pass.
+
+
+
+---
+
+archive/issue_events_007176.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-19T19:34:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6952",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6952#event-7176"
+}
+```

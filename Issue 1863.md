@@ -118,6 +118,22 @@ Looks good to me.  1863.patch is rebased and the one to apply.
 
 ---
 
+archive/issue_events_002021.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-31T15:01:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1863",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1863#event-2021"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011772.json:
 ```json
 {

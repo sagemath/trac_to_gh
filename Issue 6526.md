@@ -114,6 +114,22 @@ Positive review.
 
 ---
 
+archive/issue_events_006763.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-18T14:50:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6526",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6526#event-6763"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053123.json:
 ```json
 {

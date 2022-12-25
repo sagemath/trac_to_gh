@@ -67,6 +67,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_005592.json:
+```json
+{
+    "actor": "@mezzarobba",
+    "created_at": "2009-03-05T20:09:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5337",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5337#event-5592"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041033.json:
 ```json
 {
@@ -120,6 +136,22 @@ archive/issue_comments_041035.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005593.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-03-05T20:13:20Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5337",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5337#event-5593"
+}
+```
 
 
 
@@ -185,6 +217,22 @@ Replying to [comment:4 mmezzarobba]:
 > This should be fixed by the patch attached to #5850.
 
 And now #5850 has been closed, so I think this ticket should be closed too.
+
+
+
+---
+
+archive/issue_events_005594.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-09T07:59:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5337",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5337#event-5594"
+}
+```
 
 
 

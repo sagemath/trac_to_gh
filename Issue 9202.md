@@ -622,6 +622,22 @@ I've opened up #9221 for the SVN spkg.  Future updates for matplotlib should pro
 
 ---
 
+archive/issue_events_009356.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-25T15:44:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9202",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9202#event-9356"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085987.json:
 ```json
 {

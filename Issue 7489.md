@@ -246,3 +246,19 @@ archive/issue_comments_063140.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_007718.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-02-16T18:27:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7489",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7489#event-7718"
+}
+```

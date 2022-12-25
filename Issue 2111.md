@@ -96,6 +96,22 @@ I personally prefer long outputs of doctests to be all one line -- I find it mak
 
 ---
 
+archive/issue_events_002271.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-15T04:54:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2111",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2111#event-2271"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013735.json:
 ```json
 {

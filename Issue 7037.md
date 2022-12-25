@@ -203,3 +203,19 @@ archive/issue_comments_058158.json:
 ```
 
 Fixed by #7375.
+
+
+
+---
+
+archive/issue_events_007258.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-29T05:28:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7037",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7037#event-7258"
+}
+```

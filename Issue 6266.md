@@ -414,6 +414,22 @@ positive review, and merged into 4.0.2.rc1
 
 ---
 
+archive/issue_events_006510.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-06-15T23:40:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6266",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6266#event-6510"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049959.json:
 ```json
 {

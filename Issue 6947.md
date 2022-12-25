@@ -156,6 +156,22 @@ Attachment [trac-6947-review.patch](tarball://root/attachments/some-uuid/ticket6
 
 ---
 
+archive/issue_events_007171.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-23T07:10:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6947",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6947#event-7171"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057336.json:
 ```json
 {

@@ -548,6 +548,22 @@ Great!
 
 ---
 
+archive/issue_events_006129.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-07-04T07:21:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5873",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5873#event-6129"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046313.json:
 ```json
 {

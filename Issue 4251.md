@@ -208,6 +208,22 @@ Merged 4251.patch in Sage 3.2.alpha0
 
 ---
 
+archive/issue_events_004490.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-18T09:10:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4251",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4251#event-4490"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030871.json:
 ```json
 {

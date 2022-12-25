@@ -79,6 +79,22 @@ The patch at #4644 fixes this problem, according to this thread: http://groups.g
 
 ---
 
+archive/issue_events_005759.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-02T06:55:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5507",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5507#event-5759"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042682.json:
 ```json
 {

@@ -118,3 +118,19 @@ archive/issue_comments_060058.json:
 ```
 
 Thanks for checking into this guys.  It turns out there were a copy of gettext in my /usr/local/bin/ directory from 2006 -- probably from installing tex or something, and it was now broken.  Mercurial I guess was never broken by it before.  Anyway, removing it and also the broken msgfmt and now mercurial builds.  Thus I'm closing this ticket as invalid.  Thanks again!
+
+
+
+---
+
+archive/issue_events_007466.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-20T21:15:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7247",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7247#event-7466"
+}
+```

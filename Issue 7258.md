@@ -114,3 +114,19 @@ archive/issue_comments_060179.json:
 ```
 
 merged into 4.2
+
+
+
+---
+
+archive/issue_events_007479.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-25T06:49:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7258",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7258#event-7479"
+}
+```

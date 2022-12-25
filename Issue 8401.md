@@ -73,6 +73,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/8401
 
 ---
 
+archive/issue_events_008586.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-06T23:11:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8401",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8401#event-8586"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075122.json:
 ```json
 {

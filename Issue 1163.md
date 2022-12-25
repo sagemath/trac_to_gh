@@ -807,6 +807,22 @@ Depending on how the release manager does things, we'll see which patch to resol
 
 ---
 
+archive/issue_events_001295.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-19T17:35:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1163",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1163#event-1295"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007117.json:
 ```json
 {

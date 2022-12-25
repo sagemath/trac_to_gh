@@ -69,6 +69,22 @@ matrix multiplication optimization
 
 ---
 
+archive/issue_events_000933.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-04T17:57:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/822",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/822#event-933"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005082.json:
 ```json
 {

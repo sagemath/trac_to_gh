@@ -218,6 +218,22 @@ Anyway, positive review.  It would have been nice to have an example with `False
 
 ---
 
+archive/issue_events_009705.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-06-14T21:08:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9560",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9560#event-9705"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092011.json:
 ```json
 {

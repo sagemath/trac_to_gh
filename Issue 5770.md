@@ -108,6 +108,22 @@ Thanks, David.  Getting the documentation to build & look ok takes a long time! 
 
 ---
 
+archive/issue_events_006017.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-13T22:06:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5770",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5770#event-6017"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045048.json:
 ```json
 {

@@ -622,3 +622,19 @@ archive/issue_comments_049791.json:
 ```
 
 Merged into 4.4.alpha2.
+
+
+
+---
+
+archive/issue_events_006490.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-23T17:11:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6245",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6245#event-6490"
+}
+```

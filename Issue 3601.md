@@ -166,6 +166,22 @@ Yes, both patches.
 
 ---
 
+archive/issue_events_003820.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-16T03:51:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#event-3820"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025408.json:
 ```json
 {

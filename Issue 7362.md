@@ -80,6 +80,22 @@ MobWrite seems to be a good option, provided it doesn't overload client and serv
 
 ---
 
+archive/issue_events_007585.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:12:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7362",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7362#event-7585"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061578.json:
 ```json
 {

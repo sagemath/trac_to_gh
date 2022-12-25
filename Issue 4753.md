@@ -451,3 +451,19 @@ Merged all four patches in Sage 3.3.alpha0
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004996.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-18T13:54:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4753",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4753#event-4996"
+}
+```

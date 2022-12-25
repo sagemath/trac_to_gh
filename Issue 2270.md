@@ -505,3 +505,19 @@ archive/issue_comments_015021.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_002441.json:
+```json
+{
+    "actor": "@garyfurnish",
+    "created_at": "2008-03-09T05:39:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2270",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2270#event-2441"
+}
+```

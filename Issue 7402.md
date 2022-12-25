@@ -204,6 +204,22 @@ Regards the --dev-mode thing, I just noticed that SageNB uses disttools, not set
 
 ---
 
+archive/issue_events_007627.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-08T05:33:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7402",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7402#event-7627"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062173.json:
 ```json
 {

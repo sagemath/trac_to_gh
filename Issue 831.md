@@ -46,6 +46,22 @@ Attachment [hg-export-tip.patch](tarball://root/attachments/some-uuid/ticket831/
 
 ---
 
+archive/issue_events_000944.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T01:41:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/831",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/831#event-944"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005126.json:
 ```json
 {

@@ -86,6 +86,22 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_000921.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-21T21:25:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/811",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/811#event-921"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004892.json:
 ```json
 {
@@ -157,6 +173,38 @@ archive/issue_comments_004895.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000922.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-21T21:26:07Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/811",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/811#event-922"
+}
+```
+
+
+
+---
+
+archive/issue_events_000923.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-21T21:26:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/811",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/811#event-923"
+}
+```
 
 
 

@@ -555,3 +555,19 @@ in Sage 3.2.1.rc0
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004628.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-29T03:31:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4383",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4383#event-4628"
+}
+```

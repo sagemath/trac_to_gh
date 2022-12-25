@@ -556,6 +556,22 @@ Positive review. (I'm quite sure malb will confirm)
 
 ---
 
+archive/issue_events_009108.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-28T10:57:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8955",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8955#event-9108"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082423.json:
 ```json
 {

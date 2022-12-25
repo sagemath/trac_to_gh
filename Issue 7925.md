@@ -84,6 +84,22 @@ Attachment [trac_7925.patch](tarball://root/attachments/some-uuid/ticket7925/tra
 
 ---
 
+archive/issue_events_008141.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-16T03:55:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7925",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7925#event-8141"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068860.json:
 ```json
 {

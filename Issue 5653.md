@@ -1642,6 +1642,22 @@ archive/issue_comments_044121.json:
 
 ---
 
+archive/issue_events_005894.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T22:40:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5653",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5653#event-5894"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044122.json:
 ```json
 {
@@ -1831,6 +1847,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_005895.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-28T17:59:05Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5653",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5653#event-5895"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044132.json:
 ```json
 {
@@ -1906,3 +1938,19 @@ Merged:
 1. `trac_5653_pretty_docstrings_v7.patch`
 2. `trac_5653-doc.patch`
 3. `trac_5653-manifest.patch`
+
+
+
+---
+
+archive/issue_events_005896.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-30T02:01:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5653",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5653#event-5896"
+}
+```

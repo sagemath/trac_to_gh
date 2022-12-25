@@ -146,6 +146,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_001843.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-01-22T00:02:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1684",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1684#event-1843"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010674.json:
 ```json
 {

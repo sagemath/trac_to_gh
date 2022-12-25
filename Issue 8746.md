@@ -221,6 +221,22 @@ change this field... Many Apologies for this late request.
 
 ---
 
+archive/issue_events_008915.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T05:22:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8746",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8746#event-8915"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079896.json:
 ```json
 {

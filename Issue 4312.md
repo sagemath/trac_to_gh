@@ -213,6 +213,22 @@ I made a new ticket to have someone find an **actual** fix, which is #4545. I al
 
 ---
 
+archive/issue_events_004555.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-18T18:17:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4312",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4312#event-4555"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031514.json:
 ```json
 {

@@ -67,6 +67,22 @@ Applies cleanly, looks good.  Apply to scripts repository.
 
 ---
 
+archive/issue_events_007168.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-22T23:04:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6944",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6944#event-7168"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057312.json:
 ```json
 {

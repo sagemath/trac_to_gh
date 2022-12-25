@@ -102,6 +102,22 @@ Note that one followup patch is needed.  After that everything works (all long d
 
 ---
 
+archive/issue_events_006358.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-21T13:40:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6107",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6107#event-6358"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048703.json:
 ```json
 {

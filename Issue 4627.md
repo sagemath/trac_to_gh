@@ -173,6 +173,22 @@ I added another doctest (which really needs compared between versions with `%tim
 
 ---
 
+archive/issue_events_004874.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-27T04:48:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4627",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4627#event-4874"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034731.json:
 ```json
 {

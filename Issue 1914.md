@@ -87,6 +87,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_002070.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2008-05-24T09:40:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1914",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1914#event-2070"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012099.json:
 ```json
 {

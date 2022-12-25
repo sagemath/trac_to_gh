@@ -95,3 +95,19 @@ archive/issue_comments_062005.json:
 ```
 
 Looks good.
+
+
+
+---
+
+archive/issue_events_007611.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-01T08:39:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7386",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7386#event-7611"
+}
+```

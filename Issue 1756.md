@@ -75,6 +75,22 @@ See #1793 for a patch, copying mabshoff's comment over to that ticket now and cl
 
 ---
 
+archive/issue_events_001914.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-01-16T15:47:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1756",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1756#event-1914"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011058.json:
 ```json
 {

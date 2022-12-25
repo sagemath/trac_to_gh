@@ -222,6 +222,22 @@ Changing component from notebook to build.
 
 ---
 
+archive/issue_events_003146.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-09T02:36:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2942",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2942#event-3146"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020233.json:
 ```json
 {

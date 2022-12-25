@@ -252,6 +252,22 @@ The changes look good to me.  I say apply.
 
 ---
 
+archive/issue_events_002382.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-13T12:45:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2212",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2212#event-2382"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014588.json:
 ```json
 {

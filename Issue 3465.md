@@ -184,6 +184,22 @@ I think that the problem is that base had no documentation.
 
 ---
 
+archive/issue_events_003686.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T07:03:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3465",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3465#event-3686"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024390.json:
 ```json
 {

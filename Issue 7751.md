@@ -433,6 +433,22 @@ reported by mpatel with no other changes.
 
 ---
 
+archive/issue_events_007963.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-14T14:33:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7751",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7751#event-7963"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066646.json:
 ```json
 {

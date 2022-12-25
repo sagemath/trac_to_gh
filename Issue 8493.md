@@ -257,6 +257,22 @@ I think that's fine.  It applies cleanly to 4.4.alpha0; I'm checking doctests an
 
 ---
 
+archive/issue_events_008674.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-19T05:13:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8493",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8493#event-8674"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076481.json:
 ```json
 {

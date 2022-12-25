@@ -196,6 +196,22 @@ This is a positive review to both patches!
 
 ---
 
+archive/issue_events_002754.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-19T00:36:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2571",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2571#event-2754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017536.json:
 ```json
 {

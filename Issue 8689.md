@@ -100,6 +100,22 @@ obsolete. I will close later if nobody objects
 
 ---
 
+archive/issue_events_008863.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2019-09-06T18:37:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#event-8863"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079039.json:
 ```json
 {

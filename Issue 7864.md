@@ -1266,6 +1266,22 @@ There are no library patches. All patches are in the .spkg file and are committe
 
 ---
 
+archive/issue_events_008079.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-09T09:37:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7864",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7864#event-8079"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068087.json:
 ```json
 {

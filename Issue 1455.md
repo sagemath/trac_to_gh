@@ -92,6 +92,22 @@ Merged in 2.9.alpha5.
 
 ---
 
+archive/issue_events_001606.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-11T01:01:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1455",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1455#event-1606"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009358.json:
 ```json
 {

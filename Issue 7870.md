@@ -1325,3 +1325,19 @@ archive/issue_comments_068210.json:
 ```
 
 Works now without magma.
+
+
+
+---
+
+archive/issue_events_008085.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-03-18T13:42:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7870",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7870#event-8085"
+}
+```

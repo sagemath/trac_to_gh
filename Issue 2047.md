@@ -91,6 +91,22 @@ I am not objecting this patch goes in, but maybe a follow-up patch could address
 
 ---
 
+archive/issue_events_002205.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-07T05:25:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2047",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2047#event-2205"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013225.json:
 ```json
 {

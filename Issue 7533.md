@@ -226,6 +226,22 @@ Nathann
 
 ---
 
+archive/issue_events_007763.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-29T05:57:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7533",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7533#event-7763"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063773.json:
 ```json
 {

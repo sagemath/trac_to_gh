@@ -356,6 +356,22 @@ Merged trac_3825-gridlines.patch and trac_3825-gridlines-2.patch in Sage 3.1.rc0
 
 ---
 
+archive/issue_events_004049.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-15T06:51:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3825",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3825#event-4049"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027157.json:
 ```json
 {

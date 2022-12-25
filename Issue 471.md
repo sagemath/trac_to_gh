@@ -140,6 +140,22 @@ Is this ticket still valid?
 
 ---
 
+archive/issue_events_000502.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-21T05:22:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/471#event-502"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002347.json:
 ```json
 {

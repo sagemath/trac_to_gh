@@ -137,3 +137,19 @@ archive/issue_comments_001432.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_000318.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-11-28T20:58:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/301",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/301#event-318"
+}
+```

@@ -92,6 +92,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/2496
 
 ---
 
+archive/issue_events_002677.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-05-11T06:12:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2496#event-2677"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016887.json:
 ```json
 {

@@ -193,6 +193,22 @@ I agree with mabshoff's remark above that we shouldn't add fxsr, even though it 
 
 ---
 
+archive/issue_events_006252.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-17T11:00:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5998",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5998#event-6252"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047635.json:
 ```json
 {

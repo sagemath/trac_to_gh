@@ -315,6 +315,22 @@ We should close this ticket as outdated.
 
 ---
 
+archive/issue_events_007397.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-06-24T06:27:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7178",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7178#event-7397"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059353.json:
 ```json
 {

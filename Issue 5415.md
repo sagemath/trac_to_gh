@@ -849,6 +849,22 @@ ok, this passes all tests. I am setting to positive.
 
 ---
 
+archive/issue_events_005672.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2017-05-27T23:42:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5415",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5415#event-5672"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041836.json:
 ```json
 {

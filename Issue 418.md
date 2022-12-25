@@ -879,6 +879,22 @@ There is a problem with `sage/sat/solvers/cryptominisat/solverconf_helper.cpp` n
 
 ---
 
+archive/issue_events_000445.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-08-12T18:57:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/418",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/418#event-445"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002093.json:
 ```json
 {

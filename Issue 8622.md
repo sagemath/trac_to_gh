@@ -366,6 +366,22 @@ ok
 
 ---
 
+archive/issue_events_008793.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2019-02-26T13:58:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8622",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8622#event-8793"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078039.json:
 ```json
 {

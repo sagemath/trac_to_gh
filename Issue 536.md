@@ -88,6 +88,22 @@ I'm closing this as wontfix -- we don't know which doctest caused this, and it's
 
 ---
 
+archive/issue_events_000575.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2010-01-17T22:48:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/536",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/536#event-575"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002721.json:
 ```json
 {

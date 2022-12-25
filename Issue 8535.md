@@ -233,6 +233,22 @@ Note: only apply the second patch, not both!
 
 ---
 
+archive/issue_events_008714.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T09:20:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8535",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8535#event-8714"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077022.json:
 ```json
 {

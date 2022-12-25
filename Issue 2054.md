@@ -281,6 +281,22 @@ now at: scripts_2054.patch
 
 ---
 
+archive/issue_events_002215.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T15:12:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2054",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2054#event-2215"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013274.json:
 ```json
 {

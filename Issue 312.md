@@ -61,3 +61,19 @@ archive/issue_comments_001488.json:
 ```
 
 This bug report actually doesn't make any sense, or is the result of confusion about what latex is.
+
+
+
+---
+
+archive/issue_events_000331.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-19T02:05:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/312",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/312#event-331"
+}
+```

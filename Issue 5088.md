@@ -237,6 +237,22 @@ I have not reviewed this yet, only looked at the patch code, but will do.
 
 ---
 
+archive/issue_events_005332.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T18:07:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5088",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5088#event-5332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038697.json:
 ```json
 {

@@ -278,6 +278,22 @@ Total time for all tests: 7.7 seconds
 
 ---
 
+archive/issue_events_001229.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-07T05:18:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1103",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1103#event-1229"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006657.json:
 ```json
 {

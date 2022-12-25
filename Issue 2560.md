@@ -60,6 +60,22 @@ delete - duplicate
 
 ---
 
+archive/issue_events_002743.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-03-16T22:36:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2560",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2560#event-2743"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017416.json:
 ```json
 {

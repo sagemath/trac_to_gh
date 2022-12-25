@@ -96,3 +96,19 @@ This was fixed in 2.8.14 by an updated cddlib.spkg.
 Cheers,
 
 Michal
+
+
+
+---
+
+archive/issue_events_001093.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-30T08:57:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/972",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/972#event-1093"
+}
+```

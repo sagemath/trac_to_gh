@@ -69,6 +69,22 @@ This will be resolved by #12415.
 
 ---
 
+archive/issue_events_000951.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-02-08T13:55:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/838",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/838#event-951"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005163.json:
 ```json
 {

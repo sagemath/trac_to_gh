@@ -76,6 +76,22 @@ Attachment [trac_7064-fix-warnings.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
+archive/issue_events_007284.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-30T03:55:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7064",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7064#event-7284"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058325.json:
 ```json
 {

@@ -156,6 +156,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_008469.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-02-16T23:30:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8270",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8270#event-8469"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073091.json:
 ```json
 {

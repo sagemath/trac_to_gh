@@ -84,6 +84,22 @@ Merged in 2.8.13.alpha0.
 
 ---
 
+archive/issue_events_001280.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-18T08:25:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1152",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1152#event-1280"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007015.json:
 ```json
 {
@@ -97,6 +113,22 @@ archive/issue_comments_007015.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_001281.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-20T09:37:21Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1152",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1152#event-1281"
+}
+```
 
 
 
@@ -137,6 +169,22 @@ See also #1202.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001282.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-14T02:10:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1152",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1152#event-1282"
+}
+```
 
 
 

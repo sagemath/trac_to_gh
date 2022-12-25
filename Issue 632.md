@@ -120,6 +120,22 @@ And we are already at 0.8.4 for IPython.
 
 ---
 
+archive/issue_events_000692.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-24T10:35:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/632",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/632#event-692"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003243.json:
 ```json
 {

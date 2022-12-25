@@ -142,6 +142,22 @@ Merged in Sage 3.0.4.alpha1
 
 ---
 
+archive/issue_events_003646.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-26T03:44:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3429",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-3646"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024121.json:
 ```json
 {
@@ -256,6 +272,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_003647.json:
+```json
+{
+    "actor": "@ClementPernet",
+    "created_at": "2008-06-27T21:19:50Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3429",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-3647"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024127.json:
 ```json
 {
@@ -273,6 +305,22 @@ Positive review on update_new_linbox_interface.patch. After applying to a fresh 
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003648.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-30T04:58:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3429",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3429#event-3648"
+}
+```
 
 
 

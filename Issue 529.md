@@ -95,3 +95,19 @@ archive/issue_comments_002689.json:
 ```
 
 I don't think that this would be such an awesome idea anymore, invalidating it.
+
+
+
+---
+
+archive/issue_events_000568.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-01-18T16:26:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/529",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/529#event-568"
+}
+```

@@ -47,6 +47,22 @@ This will be resolved by ticket #3541, which I am currently working on.
 
 ---
 
+archive/issue_events_002323.json:
+```json
+{
+    "actor": "ekirkman",
+    "created_at": "2009-01-25T01:48:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2157",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2157#event-2323"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014136.json:
 ```json
 {

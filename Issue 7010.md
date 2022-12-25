@@ -109,6 +109,22 @@ Positive review.
 
 ---
 
+archive/issue_events_007233.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T10:04:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7010",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7010#event-7233"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057858.json:
 ```json
 {

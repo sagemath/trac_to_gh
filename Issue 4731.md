@@ -240,6 +240,22 @@ I have verified that #6818 *does* fix this problem:
 
 ---
 
+archive/issue_events_004975.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-25T01:18:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4731",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4731#event-4975"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035646.json:
 ```json
 {

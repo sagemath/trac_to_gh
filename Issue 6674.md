@@ -459,6 +459,22 @@ Nothing wrong to report. Positive review !
 
 ---
 
+archive/issue_events_006910.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-07T05:54:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6674",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6674#event-6910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054765.json:
 ```json
 {

@@ -237,6 +237,22 @@ Let's assume this is fixed by the new `brial` package.
 
 ---
 
+archive/issue_events_007255.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-09-12T13:57:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7034",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7034#event-7255"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058142.json:
 ```json
 {

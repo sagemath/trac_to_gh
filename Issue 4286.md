@@ -124,6 +124,22 @@ cdef Integer z = <Integer>PY_NEW(Integer)
 
 ---
 
+archive/issue_events_004530.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-18T20:32:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4286",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4286#event-4530"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031313.json:
 ```json
 {

@@ -106,6 +106,22 @@ I changed the title, to put x64 rather than 64-bit, as there is Open Solaris run
 
 ---
 
+archive/issue_events_008269.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T15:16:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8060",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8060#event-8269"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070536.json:
 ```json
 {

@@ -132,6 +132,22 @@ Patch redone to correct the doctests.
 
 ---
 
+archive/issue_events_006086.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-24T07:19:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5836",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5836#event-6086"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045777.json:
 ```json
 {

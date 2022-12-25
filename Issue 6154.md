@@ -49,6 +49,22 @@ Still passes doctests on my machine for those two files.  Looks good to me.  Pos
 
 ---
 
+archive/issue_events_006403.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-05-30T04:59:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6154",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6154#event-6403"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049017.json:
 ```json
 {

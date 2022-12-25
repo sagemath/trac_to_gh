@@ -118,6 +118,22 @@ spkg and patch merged in 2.9.1 rc0
 
 ---
 
+archive/issue_events_001687.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-22T18:58:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1533",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1533#event-1687"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009764.json:
 ```json
 {

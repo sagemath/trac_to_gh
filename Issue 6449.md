@@ -1336,6 +1336,22 @@ I have therefore left the tag as "positive review" and hope that mhansen is now 
 
 ---
 
+archive/issue_events_006690.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T07:09:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6449",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6449#event-6690"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051784.json:
 ```json
 {

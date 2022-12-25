@@ -543,6 +543,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_009104.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-25T11:19:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8951",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8951#event-9104"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082327.json:
 ```json
 {

@@ -925,6 +925,22 @@ I recently opened #10040 for not using `tar`'s `v` option (by default) when extr
 
 ---
 
+archive/issue_events_009923.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-01T10:04:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9798",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9798#event-9923"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096129.json:
 ```json
 {

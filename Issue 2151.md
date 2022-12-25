@@ -166,6 +166,22 @@ Thank you very much!
 
 ---
 
+archive/issue_events_002315.json:
+```json
+{
+    "actor": "@simon-king-jena",
+    "created_at": "2008-08-14T11:38:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2151",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2151#event-2315"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014085.json:
 ```json
 {
@@ -221,6 +237,22 @@ archive/issue_comments_014087.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002316.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-14T14:25:10Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2151",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2151#event-2316"
+}
+```
 
 
 
@@ -308,6 +340,22 @@ I thought the issue was only present if the dump is unpickled from a different s
 > And sorry for closing the ticket. A question: Is it possible to modify the trac system such that *only* administrators are able to close a ticket? This would have prevented me from a couple of errors.
 
 AFAIK no, there is repeated talk about a new Trac version which matches our process better, but nothing solid has emerged.
+
+
+
+---
+
+archive/issue_events_002317.json:
+```json
+{
+    "actor": "@simon-king-jena",
+    "created_at": "2010-07-05T11:45:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2151",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2151#event-2317"
+}
+```
 
 
 

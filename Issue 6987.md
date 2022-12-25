@@ -56,6 +56,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/6987
 
 ---
 
+archive/issue_events_007211.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-05T00:34:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6987",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6987#event-7211"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057689.json:
 ```json
 {

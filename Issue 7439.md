@@ -389,6 +389,22 @@ Great!
 
 ---
 
+archive/issue_events_007664.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-07T05:06:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7439",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7439#event-7664"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062498.json:
 ```json
 {

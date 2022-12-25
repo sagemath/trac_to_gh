@@ -378,6 +378,22 @@ Sorry, Burcin, truthfully I hadn't even noticed that!  I was just trying to make
 
 ---
 
+archive/issue_events_008747.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T01:27:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8568",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8568#event-8747"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077484.json:
 ```json
 {
@@ -427,6 +443,22 @@ archive/issue_comments_077486.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_008748.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-07T06:53:25Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8568",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8568#event-8748"
+}
+```
 
 
 
@@ -651,3 +683,19 @@ archive/issue_comments_077493.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_008749.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-29T08:39:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8568",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8568#event-8749"
+}
+```

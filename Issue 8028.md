@@ -110,6 +110,22 @@ Everything ok !
 
 ---
 
+archive/issue_events_008239.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T14:00:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8028",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8028#event-8239"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070007.json:
 ```json
 {

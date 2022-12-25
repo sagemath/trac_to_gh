@@ -173,6 +173,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_001380.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-19T19:11:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-1380"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007740.json:
 ```json
 {
@@ -245,6 +261,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_001381.json:
+```json
+{
+    "actor": "@zimmermann6",
+    "created_at": "2010-03-04T13:54:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-1381"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007744.json:
 ```json
 {
@@ -309,6 +341,22 @@ archive/issue_comments_007745.json:
 ```
 
 Changing assignee from mabshoff to mvngu.
+
+
+
+---
+
+archive/issue_events_001382.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-04T16:43:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#event-1382"
+}
+```
 
 
 

@@ -308,6 +308,22 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_009821.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-24T02:51:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9689",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9689#event-9821"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094030.json:
 ```json
 {

@@ -220,3 +220,19 @@ archive/issue_comments_011170.json:
 ```
 
 Both patches merged in Sage 2.10.alpha3
+
+
+
+---
+
+archive/issue_events_001927.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-15T06:15:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1769#event-1927"
+}
+```

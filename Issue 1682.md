@@ -755,6 +755,22 @@ The above patch makes this optional via an `implicit_multiplication(...)` functi
 
 ---
 
+archive/issue_events_001841.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-15T06:05:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1682",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1682#event-1841"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010661.json:
 ```json
 {

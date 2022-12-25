@@ -214,6 +214,22 @@ Ah, so it's historical in that sense.  Thanks for the clarification.
 
 ---
 
+archive/issue_events_008446.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-01-13T23:07:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#event-8446"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072807.json:
 ```json
 {

@@ -47,6 +47,22 @@ Closing deprecated notebook tickets
 
 ---
 
+archive/issue_events_004799.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:05:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4554",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4554#event-4799"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034071.json:
 ```json
 {

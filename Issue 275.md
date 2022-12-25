@@ -80,6 +80,22 @@ Changing component from algebraic geometry to interfaces.
 
 ---
 
+archive/issue_events_000292.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-18T20:25:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/275",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/275#event-292"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001306.json:
 ```json
 {

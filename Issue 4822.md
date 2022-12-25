@@ -228,6 +228,22 @@ This patch also works with the optional package. I give this ticket a positive r
 
 ---
 
+archive/issue_events_005066.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-25T03:54:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4822",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4822#event-5066"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036494.json:
 ```json
 {

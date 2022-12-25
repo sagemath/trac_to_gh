@@ -141,3 +141,19 @@ Due to #2099 being merged we can close this.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000701.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-10T06:32:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/639",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/639#event-701"
+}
+```

@@ -107,6 +107,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000802.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-02T03:52:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-802"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004184.json:
 ```json
 {
@@ -156,6 +172,22 @@ archive/issue_comments_004186.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000803.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-02T04:08:21Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-803"
+}
+```
 
 
 
@@ -238,6 +270,22 @@ archive/issue_comments_004190.json:
 ```
 
 Bundled against 2.8.6, with additional material (added ntl ZZ_pE and ZZ_pEX)
+
+
+
+---
+
+archive/issue_events_000804.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:46:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/721",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/721#event-804"
+}
+```
 
 
 

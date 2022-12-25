@@ -69,6 +69,22 @@ Sep 06 19:26:23 <wstein>        #599: +1
 
 ---
 
+archive/issue_events_000657.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-09-06T18:59:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/599",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/599#event-657"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003086.json:
 ```json
 {

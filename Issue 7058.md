@@ -133,6 +133,22 @@ The recent changes to linbox have made this obsolete.
 
 ---
 
+archive/issue_events_007278.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2017-01-21T18:03:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7058",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7058#event-7278"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058301.json:
 ```json
 {

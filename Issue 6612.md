@@ -1047,3 +1047,19 @@ Merged patches in the script repository in this order:
 1. `6612-sage-update-mirror-network-r1.patch`
 2. `6612-sage-update-mirror-network-r2.patch`
 3. `trac_6612-reviewer.patch`
+
+
+
+---
+
+archive/issue_events_006852.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-30T04:05:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6612",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6612#event-6852"
+}
+```

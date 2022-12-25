@@ -144,6 +144,22 @@ This fixes the problem for me.  TimothyClemans, you need a bunch of things for t
 
 ---
 
+archive/issue_events_002054.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T09:39:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1897",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1897#event-2054"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011981.json:
 ```json
 {

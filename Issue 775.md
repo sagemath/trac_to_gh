@@ -153,3 +153,19 @@ archive/issue_comments_004616.json:
 ```
 
 This no longer happens. The traceback could be more useful, but the paths pointed to are now correct.
+
+
+
+---
+
+archive/issue_events_000878.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-01-23T02:53:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/775",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/775#event-878"
+}
+```

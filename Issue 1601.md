@@ -145,6 +145,22 @@ Attachment [Sage-2.10.2-trac_1601.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
+archive/issue_events_001759.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-18T21:28:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1601",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1601#event-1759"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010154.json:
 ```json
 {

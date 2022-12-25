@@ -118,6 +118,22 @@ Tested both with and without the database installed!
 
 ---
 
+archive/issue_events_006558.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T03:24:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6310",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6310#event-6558"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050272.json:
 ```json
 {

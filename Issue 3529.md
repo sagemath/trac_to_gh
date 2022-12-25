@@ -135,6 +135,22 @@ positive review as explained in irc.
 
 ---
 
+archive/issue_events_003748.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-07T05:46:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3529",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3529#event-3748"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024845.json:
 ```json
 {

@@ -93,3 +93,19 @@ Since #3905 has been merged this can be closed. In case you want improvements pl
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002239.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-31T07:58:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2078",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2078#event-2239"
+}
+```

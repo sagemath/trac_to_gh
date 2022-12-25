@@ -908,6 +908,22 @@ Apply trac-8807_induced_morphisms.patch
 
 ---
 
+archive/issue_events_008972.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-12T06:31:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8807",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8807#event-8972"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080703.json:
 ```json
 {

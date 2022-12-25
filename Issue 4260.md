@@ -994,6 +994,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_004499.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-10-12T07:34:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4260",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4499"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030975.json:
 ```json
 {
@@ -1164,6 +1180,22 @@ archive/issue_comments_030977.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_004500.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-11-03T09:01:11Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4260",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4500"
+}
+```
 
 
 
@@ -1404,6 +1436,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_004501.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-11-15T08:54:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4260",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030990.json:
 ```json
 {
@@ -1582,6 +1630,22 @@ archive/issue_comments_030995.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_004502.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-11-20T10:24:11Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4260",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4502"
+}
+```
 
 
 
@@ -1934,6 +1998,22 @@ archive/issue_comments_031007.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_004503.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-12-01T08:12:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4260",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4260#event-4503"
+}
+```
 
 
 

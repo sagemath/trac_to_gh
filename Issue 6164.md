@@ -402,6 +402,22 @@ Yep that works! positive review again!
 
 ---
 
+archive/issue_events_006413.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-06-26T17:45:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#event-6413"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049090.json:
 ```json
 {

@@ -293,6 +293,22 @@ mpoly-ideal-gfan.patch, and it's also good.  All doctests in sage/rings pass.
 
 ---
 
+archive/issue_events_002632.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-15T19:23:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2455",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2455#event-2632"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016593.json:
 ```json
 {

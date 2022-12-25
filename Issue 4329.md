@@ -129,6 +129,22 @@ Affirmative
 
 ---
 
+archive/issue_events_004576.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-15T09:53:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4329",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4329#event-4576"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031692.json:
 ```json
 {

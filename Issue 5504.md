@@ -72,6 +72,22 @@ Am I allowed to close this?
 
 ---
 
+archive/issue_events_005757.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-27T20:37:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5504",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5504#event-5757"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042671.json:
 ```json
 {

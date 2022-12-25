@@ -111,6 +111,22 @@ sage -t  ell_rational_field.py
 
 ---
 
+archive/issue_events_000621.json:
+```json
+{
+    "actor": "@aghitza",
+    "created_at": "2008-01-27T04:59:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/571",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/571#event-621"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002952.json:
 ```json
 {
@@ -164,6 +180,22 @@ archive/issue_comments_002954.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000622.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-01-27T12:54:07Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/571",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/571#event-622"
+}
+```
 
 
 
@@ -229,6 +261,22 @@ archive/issue_comments_002957.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000623.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-27T14:40:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/571",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/571#event-623"
+}
+```
 
 
 

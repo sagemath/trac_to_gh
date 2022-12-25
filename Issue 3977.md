@@ -68,6 +68,22 @@ Apply.
 
 ---
 
+archive/issue_events_004207.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-28T23:23:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3977",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3977#event-4207"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028515.json:
 ```json
 {

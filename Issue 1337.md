@@ -731,3 +731,19 @@ archive/issue_comments_008548.json:
 ```
 
 Merged trac_1337-workaround.patch in Sage 2.10.3.rc3. The fix is a workaround, that trades a segfault for a small leak. This will be dealt with at #2435.
+
+
+
+---
+
+archive/issue_events_001477.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-09T05:33:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1337",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1337#event-1477"
+}
+```

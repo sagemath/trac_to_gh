@@ -609,3 +609,19 @@ archive/issue_comments_092725.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009742.json:
+```json
+{
+    "actor": "@NathanDunfield",
+    "created_at": "2010-12-03T15:20:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#event-9742"
+}
+```

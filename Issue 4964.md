@@ -34,6 +34,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/4964
 
 ---
 
+archive/issue_events_005205.json:
+```json
+{
+    "actor": "dmhansen",
+    "created_at": "2009-01-25T16:50:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#event-5205"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037651.json:
 ```json
 {
@@ -138,6 +154,22 @@ archive/issue_comments_037656.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005206.json:
+```json
+{
+    "actor": "@JohnCremona",
+    "created_at": "2009-01-25T18:25:09Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#event-5206"
+}
+```
 
 
 
@@ -526,6 +558,22 @@ Merged all three patches in Sage 3.3.alpha6. Doctests do pass, but if another re
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005207.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-08T02:00:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#event-5207"
+}
+```
 
 
 

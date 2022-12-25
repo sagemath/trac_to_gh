@@ -360,6 +360,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_000180.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-24T17:07:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/172",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/172#event-180"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000789.json:
 ```json
 {

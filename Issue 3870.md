@@ -182,6 +182,22 @@ Changing keywords from "" to "scipy".
 
 ---
 
+archive/issue_events_004091.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2010-01-20T06:31:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3870",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3870#event-4091"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027530.json:
 ```json
 {

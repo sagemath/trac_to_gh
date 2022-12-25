@@ -50,6 +50,22 @@ Patch attached.
 
 ---
 
+archive/issue_events_000670.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T04:29:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/613",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/613#event-670"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003139.json:
 ```json
 {

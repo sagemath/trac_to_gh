@@ -86,6 +86,22 @@ Changing assignee from @robertwb to @dwbump.
 
 ---
 
+archive/issue_events_007939.json:
+```json
+{
+    "actor": "@dwbump",
+    "created_at": "2009-12-20T19:01:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7725",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7725#event-7939"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066262.json:
 ```json
 {

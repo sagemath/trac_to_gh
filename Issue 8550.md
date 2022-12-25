@@ -184,6 +184,22 @@ thanks
 
 ---
 
+archive/issue_events_008733.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2017-12-14T12:40:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8550",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8550#event-8733"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077199.json:
 ```json
 {

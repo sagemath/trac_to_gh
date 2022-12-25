@@ -155,3 +155,19 @@ archive/issue_comments_084982.json:
 ```
 
 This went away when I used a new tarball.   So it's some random corruption...
+
+
+
+---
+
+archive/issue_events_009289.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-04T14:25:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9131",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9131#event-9289"
+}
+```

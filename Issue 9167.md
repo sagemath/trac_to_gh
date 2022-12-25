@@ -3060,6 +3060,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009324.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-01-26T09:52:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9167",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9167#event-9324"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085581.json:
 ```json
 {

@@ -285,6 +285,22 @@ Merged trac-8390.patch in 4.4.alpha0
 
 ---
 
+archive/issue_events_008575.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T20:11:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8390",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8390#event-8575"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075014.json:
 ```json
 {

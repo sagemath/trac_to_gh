@@ -194,6 +194,22 @@ Looks good to me.  Michael says that the values in the doctest agree with those 
 
 ---
 
+archive/issue_events_006218.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-04T09:31:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5963",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5963#event-6218"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047142.json:
 ```json
 {

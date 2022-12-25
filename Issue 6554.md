@@ -194,6 +194,22 @@ They seem unrelated. As far as I am concerned, this gets a positive review.
 
 ---
 
+archive/issue_events_006791.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-29T12:57:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6554",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6554#event-6791"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053355.json:
 ```json
 {

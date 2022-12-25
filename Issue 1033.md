@@ -54,6 +54,22 @@ Anyway, this is now posted.
 
 ---
 
+archive/issue_events_001158.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-01T02:59:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1033",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1033#event-1158"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006297.json:
 ```json
 {

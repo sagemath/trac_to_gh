@@ -114,3 +114,19 @@ We will switch to eMPIRe anyway, so let's invalidate this ticket.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003726.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-30T02:57:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3508",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3508#event-3726"
+}
+```

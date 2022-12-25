@@ -152,3 +152,19 @@ Fixed via #3913.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001544.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-27T07:37:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1400",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1400#event-1544"
+}
+```

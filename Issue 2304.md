@@ -179,6 +179,22 @@ Fine by me.
 
 ---
 
+archive/issue_events_002481.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-23T00:04:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#event-2481"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015302.json:
 ```json
 {

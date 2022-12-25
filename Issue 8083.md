@@ -190,6 +190,22 @@ Merged [latex_T1_fonts.patch](http://trac.sagemath.org/sage_trac/attachment/tick
 
 ---
 
+archive/issue_events_008289.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-30T23:50:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8083",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8083#event-8289"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070720.json:
 ```json
 {

@@ -157,6 +157,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5813
 
 ---
 
+archive/issue_events_006062.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2011-01-17T00:33:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5813",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5813#event-6062"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045566.json:
 ```json
 {

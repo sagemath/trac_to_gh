@@ -223,6 +223,22 @@ Attachment [T789.hg](tarball://root/attachments/some-uuid/ticket789/T789.hg) by 
 
 ---
 
+archive/issue_events_000898.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-04T19:02:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/789",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/789#event-898"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004737.json:
 ```json
 {

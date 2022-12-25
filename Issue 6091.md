@@ -159,6 +159,22 @@ replaces previous
 
 ---
 
+archive/issue_events_006344.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T19:08:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6091",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6091#event-6344"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048450.json:
 ```json
 {

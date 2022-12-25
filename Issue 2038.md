@@ -259,6 +259,22 @@ This ticket is addressed now with #2517 and #2590 and should probably be marked 
 
 ---
 
+archive/issue_events_002194.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-19T02:17:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2038",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2038#event-2194"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013167.json:
 ```json
 {

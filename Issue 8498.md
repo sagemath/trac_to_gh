@@ -265,6 +265,22 @@ See #8502
 
 ---
 
+archive/issue_events_008679.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-12T04:53:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8498",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8498#event-8679"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076595.json:
 ```json
 {

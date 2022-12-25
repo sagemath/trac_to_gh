@@ -4981,6 +4981,22 @@ Yes, I've moved the patches from here to #13588 to make Jeroen's life easier.
 
 ---
 
+archive/issue_events_006638.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-12-27T10:30:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6391",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6391#event-6638"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051258.json:
 ```json
 {

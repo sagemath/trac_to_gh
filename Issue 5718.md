@@ -114,3 +114,19 @@ archive/issue_comments_044602.json:
 ```
 
 Looks good to me.  Merged in 4.0.1.rc1.
+
+
+
+---
+
+archive/issue_events_005962.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T18:31:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5718",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5718#event-5962"
+}
+```

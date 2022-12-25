@@ -640,6 +640,22 @@ Okay, I think that this is finally in shape.  Thanks for the back and forth on t
 
 ---
 
+archive/issue_events_007725.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-07-22T12:48:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7496#event-7725"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063268.json:
 ```json
 {

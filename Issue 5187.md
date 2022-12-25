@@ -127,6 +127,22 @@ I believe this ticket can be closed as it is superceded by #7870.
 
 ---
 
+archive/issue_events_005441.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2011-08-23T05:19:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5187",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5187#event-5441"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039708.json:
 ```json
 {

@@ -94,6 +94,22 @@ This seems good.
 
 ---
 
+archive/issue_events_002542.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-03T12:25:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2365",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2365#event-2542"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015927.json:
 ```json
 {

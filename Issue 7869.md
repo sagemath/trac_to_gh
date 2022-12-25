@@ -150,3 +150,19 @@ archive/issue_comments_068153.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_008084.json:
+```json
+{
+    "actor": "olazo",
+    "created_at": "2010-01-24T19:36:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7869",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7869#event-8084"
+}
+```

@@ -246,6 +246,22 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
+archive/issue_events_005054.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-22T22:14:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4812",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4812#event-5054"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036413.json:
 ```json
 {

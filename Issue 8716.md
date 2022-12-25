@@ -253,6 +253,22 @@ Apply trac_8716-gamma_h_modforms.patch, trac_8716-docfix.patch
 
 ---
 
+archive/issue_events_008886.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-25T08:14:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8716",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8716#event-8886"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079430.json:
 ```json
 {

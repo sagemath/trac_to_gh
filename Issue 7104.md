@@ -248,6 +248,22 @@ Please see #7367.
 
 ---
 
+archive/issue_events_007326.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-12T04:55:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7104",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7104#event-7326"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058700.json:
 ```json
 {

@@ -382,6 +382,22 @@ Thank you.
 
 ---
 
+archive/issue_events_009919.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2020-06-22T22:34:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9791",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9791#event-9919"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096002.json:
 ```json
 {

@@ -453,3 +453,19 @@ in Sage 3.3.rc2.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005354.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-17T19:50:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5106",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5106#event-5354"
+}
+```

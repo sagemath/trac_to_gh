@@ -391,6 +391,22 @@ ok, then let us close that.
 
 ---
 
+archive/issue_events_008106.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2016-06-12T12:02:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7893",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7893#event-8106"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068553.json:
 ```json
 {

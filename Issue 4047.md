@@ -121,6 +121,22 @@ The updated patch is good too :-)
 
 ---
 
+archive/issue_events_004279.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-06T00:52:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4047",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4047#event-4279"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029130.json:
 ```json
 {

@@ -425,3 +425,19 @@ It is good to have reached the end of this journey.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000483.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-15T06:44:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/454",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/454#event-483"
+}
+```

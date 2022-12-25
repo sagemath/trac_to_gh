@@ -493,6 +493,22 @@ Actually, in the case of `c = ...`, I would personally prefer the "no" option or
 
 ---
 
+archive/issue_events_006902.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-01-25T16:25:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6666",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6666#event-6902"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054630.json:
 ```json
 {

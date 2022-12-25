@@ -511,6 +511,22 @@ Rebase on sage-4.4.alpha0. Apply this patch only.
 
 ---
 
+archive/issue_events_007151.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-19T05:20:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6927",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6927#event-7151"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057146.json:
 ```json
 {

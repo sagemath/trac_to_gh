@@ -2482,6 +2482,22 @@ in fact this bug is already fixed upstream (in revision 1516), see
 
 ---
 
+archive/issue_events_008834.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-11T13:02:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8834"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078636.json:
 ```json
 {
@@ -2513,6 +2529,22 @@ archive/issue_comments_078637.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_008835.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-12T13:07:10Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8835"
+}
+```
 
 
 
@@ -3679,6 +3711,22 @@ Changing keywords from "sd32, GMP ECM execstack Fedora 14 extension module libra
 
 ---
 
+archive/issue_events_008836.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-12T19:03:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8836"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078687.json:
 ```json
 {
@@ -3867,6 +3915,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_008837.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-10-11T07:36:14Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8837"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078693.json:
 ```json
 {
@@ -3963,6 +4027,22 @@ Replying to [comment:134 leif]:
 Ooops, #11896 of course. XD
 
 (But I'll try to review #11698 anyway.)
+
+
+
+---
+
+archive/issue_events_008838.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-10-14T09:41:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8664",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8664#event-8838"
+}
+```
 
 
 

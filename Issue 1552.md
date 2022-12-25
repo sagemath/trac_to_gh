@@ -93,6 +93,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_001706.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-02-17T22:28:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1552",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1552#event-1706"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009871.json:
 ```json
 {

@@ -77,3 +77,19 @@ archive/issue_comments_006614.json:
 ```
 
 applied to 2.8.12.rc0
+
+
+
+---
+
+archive/issue_events_001222.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-06T21:41:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1096",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1096#event-1222"
+}
+```

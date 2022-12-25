@@ -190,6 +190,22 @@ I agree: it is better than the present situation.  If I have time I will try to 
 
 ---
 
+archive/issue_events_003859.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-26T17:09:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3640",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3640#event-3859"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025692.json:
 ```json
 {

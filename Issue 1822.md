@@ -90,6 +90,22 @@ Merged in Sage 3.0.alpha2
 
 ---
 
+archive/issue_events_001979.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-06T21:11:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1822",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1822#event-1979"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011500.json:
 ```json
 {
@@ -146,6 +162,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001980.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-04-06T21:41:29Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1822",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1822#event-1980"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011503.json:
 ```json
 {
@@ -177,6 +209,22 @@ archive/issue_comments_011504.json:
 ```
 
 I can confirm that 1822_problems.patch fixes the problems I reported in IRC. Positive review. Merged in Sage 3.0.alpha2
+
+
+
+---
+
+archive/issue_events_001981.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-06T22:00:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1822",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1822#event-1981"
+}
+```
 
 
 

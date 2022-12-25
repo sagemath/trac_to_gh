@@ -104,6 +104,22 @@ Attachment [pari_nf_docs_again.2.hg](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_000638.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-04T19:19:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/584",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/584#event-638"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003007.json:
 ```json
 {

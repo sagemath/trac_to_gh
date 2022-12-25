@@ -162,6 +162,22 @@ Merged in the experimental package repo
 
 ---
 
+archive/issue_events_002026.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-01T21:49:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1868",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1868#event-2026"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011805.json:
 ```json
 {

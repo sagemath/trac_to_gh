@@ -806,6 +806,22 @@ Ok, I've deleted the 17 bytes...
 
 ---
 
+archive/issue_events_000925.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-27T17:42:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/813",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/813#event-925"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005043.json:
 ```json
 {

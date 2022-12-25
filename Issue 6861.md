@@ -300,6 +300,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_007094.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-24T11:02:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#event-7094"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056498.json:
 ```json
 {

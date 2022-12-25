@@ -72,6 +72,22 @@ Duplicate of #10045 .
 
 ---
 
+archive/issue_events_009998.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-10-19T15:41:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9868",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9868#event-9998"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097329.json:
 ```json
 {

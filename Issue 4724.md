@@ -200,6 +200,22 @@ The code looks good to me and is nicely documented.  Positive review.
 
 ---
 
+archive/issue_events_004969.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-13T09:02:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4724#event-4969"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035598.json:
 ```json
 {

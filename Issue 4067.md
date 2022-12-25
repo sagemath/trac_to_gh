@@ -70,6 +70,22 @@ Patch looks good, I only read it though.
 
 ---
 
+archive/issue_events_004303.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-05T11:05:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4067",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4067#event-4303"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029294.json:
 ```json
 {

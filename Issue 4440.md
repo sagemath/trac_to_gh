@@ -366,6 +366,22 @@ Michael
 
 ---
 
+archive/issue_events_004684.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-28T18:04:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4440#event-4684"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032588.json:
 ```json
 {
@@ -397,6 +413,22 @@ archive/issue_comments_032589.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_004685.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2009-02-17T23:03:30Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4440#event-4685"
+}
+```
 
 
 
@@ -495,6 +527,22 @@ Merged in Sage 3.3.rc3 again :)
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004686.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-20T07:24:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4440#event-4686"
+}
+```
 
 
 

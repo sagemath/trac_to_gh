@@ -36,6 +36,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3372
 
 ---
 
+archive/issue_events_003588.json:
+```json
+{
+    "actor": "@garyfurnish",
+    "created_at": "2008-07-18T10:39:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3372",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3372#event-3588"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023544.json:
 ```json
 {

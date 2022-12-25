@@ -119,3 +119,19 @@ archive/issue_comments_067415.json:
 ```
 
 Merged "trac_7805.patch" into 4.4.alpha0
+
+
+
+---
+
+archive/issue_events_008020.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T23:42:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7805",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7805#event-8020"
+}
+```

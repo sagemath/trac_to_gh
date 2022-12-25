@@ -65,6 +65,22 @@ See http://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/mpir-
 
 ---
 
+archive/issue_events_006421.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T01:13:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6172",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6172#event-6421"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049135.json:
 ```json
 {

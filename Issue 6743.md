@@ -6509,6 +6509,22 @@ Of course, it does not really builds completely automatically because you have t
 
 ---
 
+archive/issue_events_006975.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-05-22T12:30:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#event-6975"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055384.json:
 ```json
 {

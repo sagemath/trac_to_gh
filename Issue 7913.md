@@ -375,3 +375,19 @@ archive/issue_comments_068735.json:
 ```
 
 Closing tickets in the sage-duplicate/invalid/wontfix module with positive_review (i.e. someone has confirmed they should be closed).
+
+
+
+---
+
+archive/issue_events_008128.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2017-07-13T07:54:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7913",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7913#event-8128"
+}
+```

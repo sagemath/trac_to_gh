@@ -186,3 +186,19 @@ sage: b-b/b.norm()
 (-1/2*sqrt(2) + 1, 0, -1/2*sqrt(2) + 1)
 ```
 
+
+
+
+---
+
+archive/issue_events_003268.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T23:05:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3058",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3058#event-3268"
+}
+```

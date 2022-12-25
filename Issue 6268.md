@@ -223,6 +223,22 @@ attachment:trac_6268-py_print_latex.patch fixes the reported problem. Apply only
 
 ---
 
+archive/issue_events_006512.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-14T22:21:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6268",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6268#event-6512"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049977.json:
 ```json
 {

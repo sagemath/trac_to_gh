@@ -179,3 +179,19 @@ archive/issue_comments_066149.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007932.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-19T22:48:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7715",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7715#event-7932"
+}
+```

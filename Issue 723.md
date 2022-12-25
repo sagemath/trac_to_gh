@@ -326,6 +326,22 @@ I *have* applied ntls-fp-lll.patch.  The patch that isn't clean is
 
 ---
 
+archive/issue_events_000806.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T17:32:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/723",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/723#event-806"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004205.json:
 ```json
 {

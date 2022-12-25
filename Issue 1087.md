@@ -371,6 +371,22 @@ All that's left is for the above files to be touched and 1087-combinat.patch to 
 
 ---
 
+archive/issue_events_001211.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-06T22:41:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1087",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1087#event-1211"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006562.json:
 ```json
 {

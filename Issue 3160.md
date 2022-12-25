@@ -83,6 +83,22 @@ archive/issue_comments_021876.json:
 
 ---
 
+archive/issue_events_003380.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-12T18:46:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3160",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3160#event-3380"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021877.json:
 ```json
 {

@@ -73,3 +73,19 @@ archive/issue_comments_014194.json:
 ```
 
 Sorry, I realized I was giving the wrong input. It appears to be implemented.
+
+
+
+---
+
+archive/issue_events_002334.json:
+```json
+{
+    "actor": "@bobmoretti",
+    "created_at": "2008-02-15T00:35:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2167",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2167#event-2334"
+}
+```

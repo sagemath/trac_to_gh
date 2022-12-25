@@ -87,6 +87,22 @@ Patch should be at #1367, sorry.  With #5066 and #1367, all doctests pass on sag
 
 ---
 
+archive/issue_events_005312.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-29T05:38:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5066",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5066#event-5312"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038522.json:
 ```json
 {

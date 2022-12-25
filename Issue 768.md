@@ -234,6 +234,22 @@ Added a proper patch;  this will be in sage-2.8.6.
 
 ---
 
+archive/issue_events_000865.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-04T04:46:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-865"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004536.json:
 ```json
 {
@@ -321,6 +337,22 @@ archive/issue_comments_004539.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000866.json:
+```json
+{
+    "actor": "@nbruin",
+    "created_at": "2007-10-05T23:57:39Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-866"
+}
+```
 
 
 
@@ -475,6 +507,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000867.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T22:20:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-867"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004547.json:
 ```json
 {
@@ -531,6 +579,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000868.json:
+```json
+{
+    "actor": "@nbruin",
+    "created_at": "2007-10-24T17:50:14Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-868"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004550.json:
 ```json
 {
@@ -544,6 +608,22 @@ archive/issue_comments_004550.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000869.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-24T18:01:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/768",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/768#event-869"
+}
+```
 
 
 

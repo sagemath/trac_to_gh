@@ -445,6 +445,22 @@ The revised patch looks good to me.
 
 ---
 
+archive/issue_events_000960.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-01T11:13:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/847#event-960"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005230.json:
 ```json
 {

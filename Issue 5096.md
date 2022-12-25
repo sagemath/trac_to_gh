@@ -395,6 +395,22 @@ add .function() method to create `CallableSymbolicExpressions`
 
 ---
 
+archive/issue_events_005342.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-02T17:20:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#event-5342"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038803.json:
 ```json
 {

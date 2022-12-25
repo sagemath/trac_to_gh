@@ -153,6 +153,22 @@ I fixed some typos and formatting issues. Both 2143.patch and 2143-2.patch shoul
 
 ---
 
+archive/issue_events_002305.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-16T02:57:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2143",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2143#event-2305"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014025.json:
 ```json
 {

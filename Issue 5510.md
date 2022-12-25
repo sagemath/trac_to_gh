@@ -380,6 +380,22 @@ With the spkg, works perfectly.  Sorry for the confusion.
 
 ---
 
+archive/issue_events_005762.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T23:25:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5510",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5510#event-5762"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042714.json:
 ```json
 {

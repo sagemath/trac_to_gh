@@ -549,3 +549,19 @@ archive/issue_comments_015925.json:
 ```
 
 Merged 2364-new.patch in Sage 3.2.alpha2
+
+
+
+---
+
+archive/issue_events_002541.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-30T16:20:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#event-2541"
+}
+```

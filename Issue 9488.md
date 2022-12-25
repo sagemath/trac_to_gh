@@ -121,3 +121,19 @@ archive/issue_comments_090947.json:
 ```
 
 Resolution: worksforme
+
+
+
+---
+
+archive/issue_events_009639.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-05-21T07:22:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9488",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9488#event-9639"
+}
+```

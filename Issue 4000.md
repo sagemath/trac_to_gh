@@ -2918,6 +2918,22 @@ Sebastian
 
 ---
 
+archive/issue_events_004228.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T11:13:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4000",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4000#event-4228"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028775.json:
 ```json
 {
@@ -2949,6 +2965,22 @@ archive/issue_comments_028776.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_004229.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-16T22:56:57Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4000",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4000#event-4229"
+}
+```
 
 
 
@@ -4504,6 +4536,22 @@ archive/issue_comments_028831.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_004230.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-08T22:48:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4000",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4000#event-4230"
+}
+```
 
 
 

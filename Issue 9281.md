@@ -446,3 +446,19 @@ archive/issue_comments_087301.json:
 ```
 
 ok, agreed.
+
+
+
+---
+
+archive/issue_events_009442.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-04-01T14:22:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#event-9442"
+}
+```

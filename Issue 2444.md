@@ -64,6 +64,22 @@ This applies for me against hg_scripts and works as intended.
 
 ---
 
+archive/issue_events_002621.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-15T22:57:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2444",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2444#event-2621"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016494.json:
 ```json
 {

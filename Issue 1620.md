@@ -117,3 +117,19 @@ archive/issue_comments_010289.json:
 ```
 
 Closing this as a duplicate of #6456.
+
+
+
+---
+
+archive/issue_events_001779.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-02T07:14:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1620",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1620#event-1779"
+}
+```

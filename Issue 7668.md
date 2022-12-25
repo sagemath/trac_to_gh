@@ -162,6 +162,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_007886.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-09-01T15:50:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7668",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7668#event-7886"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065612.json:
 ```json
 {
@@ -175,6 +191,22 @@ archive/issue_comments_065612.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_007887.json:
+```json
+{
+    "actor": "@kcrisman",
+    "created_at": "2020-09-01T21:34:33Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7668",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7668#event-7887"
+}
+```
 
 
 

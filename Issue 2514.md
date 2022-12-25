@@ -899,3 +899,19 @@ archive/issue_comments_017044.json:
 ```
 
 Merged all four patches in Sage 2.11.alpha1. If anybody has issues with this patch please open another ticket as a follow up since this ticket as is is messy enough.
+
+
+
+---
+
+archive/issue_events_002695.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-21T05:32:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2514",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2514#event-2695"
+}
+```

@@ -41,3 +41,19 @@ archive/issue_comments_008502.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_001472.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-12-02T06:18:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1332",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1332#event-1472"
+}
+```

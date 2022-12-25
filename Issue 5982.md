@@ -846,6 +846,22 @@ archive/issue_comments_047445.json:
 
 ---
 
+archive/issue_events_006237.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-03T12:28:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5982",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5982#event-6237"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047446.json:
 ```json
 {

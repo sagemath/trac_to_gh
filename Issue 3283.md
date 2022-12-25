@@ -487,6 +487,22 @@ Since the pending changes are in the updated patch, I give the patch a positive 
 
 ---
 
+archive/issue_events_003502.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-06T19:11:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#event-3502"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022674.json:
 ```json
 {

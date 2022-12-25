@@ -364,6 +364,22 @@ Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all 
 
 ---
 
+archive/issue_events_009677.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2016-08-30T13:32:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9529",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9529#event-9677"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091542.json:
 ```json
 {

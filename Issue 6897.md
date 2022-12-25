@@ -442,6 +442,22 @@ Jeroeon is the current release manager.
 
 ---
 
+archive/issue_events_007125.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-05-16T07:46:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6897",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6897#event-7125"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056878.json:
 ```json
 {

@@ -83,6 +83,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3491
 
 ---
 
+archive/issue_events_003711.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-14T22:49:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3491",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3491#event-3711"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024542.json:
 ```json
 {

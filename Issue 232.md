@@ -92,3 +92,19 @@ archive/issue_comments_001027.json:
 ```
 
 Fixed for sage > 2.0.
+
+
+
+---
+
+archive/issue_events_000247.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-29T20:41:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/232",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/232#event-247"
+}
+```

@@ -189,3 +189,19 @@ Merged the rebased trac_4937.patch in Sage 3.3.alpha3.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005180.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-28T17:42:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4937",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4937#event-5180"
+}
+```

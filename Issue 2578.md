@@ -245,6 +245,22 @@ Merged in Sage 3.3.alpha1
 
 ---
 
+archive/issue_events_002763.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T10:46:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2578",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2578#event-2763"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017601.json:
 ```json
 {

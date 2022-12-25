@@ -165,6 +165,22 @@ Resolution: worksforme
 
 ---
 
+archive/issue_events_004195.json:
+```json
+{
+    "actor": "@jvoight",
+    "created_at": "2008-09-20T17:05:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#event-4195"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028444.json:
 ```json
 {
@@ -178,6 +194,22 @@ archive/issue_comments_028444.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_004196.json:
+```json
+{
+    "actor": "@jvoight",
+    "created_at": "2008-09-20T17:05:35Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#event-4196"
+}
+```
 
 
 
@@ -318,6 +350,22 @@ archive/issue_comments_028451.json:
 Attachment [trac-3967-rebase.patch](tarball://root/attachments/some-uuid/ticket3967/trac-3967-rebase.patch) by mabshoff created at 2008-09-23 00:09:36
 
 Merged trac-3967-rebase.patch in Sage 3.1.3.alpha1
+
+
+
+---
+
+archive/issue_events_004197.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-23T00:09:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#event-4197"
+}
+```
 
 
 

@@ -76,6 +76,22 @@ Upadated patch -- use the last one and ignore the first one.
 
 ---
 
+archive/issue_events_001009.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-21T03:34:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/895",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/895#event-1009"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005494.json:
 ```json
 {
@@ -125,6 +141,38 @@ archive/issue_comments_005496.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_001010.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-21T03:34:46Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/895",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/895#event-1010"
+}
+```
+
+
+
+---
+
+archive/issue_events_001011.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T19:48:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/895",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/895#event-1011"
+}
+```
 
 
 

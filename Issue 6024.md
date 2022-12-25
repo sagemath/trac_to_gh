@@ -196,3 +196,19 @@ I also fixed deps and install accordingly.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_006279.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-16T00:27:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6024",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6024#event-6279"
+}
+```

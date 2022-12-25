@@ -132,3 +132,19 @@ archive/issue_comments_008366.json:
 ```
 
 Merged in 2.9.1.alpha1
+
+
+
+---
+
+archive/issue_events_001458.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-18T17:31:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1318",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1318#event-1458"
+}
+```

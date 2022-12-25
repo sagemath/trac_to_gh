@@ -247,6 +247,22 @@ Thanks John! That was quick. Time difference is a good thing :-)
 
 ---
 
+archive/issue_events_006828.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-24T21:57:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6591",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6591#event-6828"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053846.json:
 ```json
 {

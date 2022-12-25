@@ -996,6 +996,22 @@ All (long) tests pass -- positive review.
 
 ---
 
+archive/issue_events_009557.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T10:39:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9400",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9400#event-9557"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089426.json:
 ```json
 {

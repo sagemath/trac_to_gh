@@ -58,3 +58,19 @@ archive/issue_comments_000328.json:
 ```
 
 fixed.
+
+
+
+---
+
+archive/issue_events_000063.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-08-09T21:50:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/62",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/62#event-63"
+}
+```

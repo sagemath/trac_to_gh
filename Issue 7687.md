@@ -97,6 +97,22 @@ Changing status from new to needs_review.
 
 ---
 
+archive/issue_events_007904.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-10-25T21:44:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7687",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7687#event-7904"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065851.json:
 ```json
 {

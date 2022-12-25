@@ -146,3 +146,19 @@ archive/issue_comments_058294.json:
 ```
 
 agreed again
+
+
+
+---
+
+archive/issue_events_007276.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-04-01T14:21:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7056",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7056#event-7276"
+}
+```

@@ -250,6 +250,22 @@ I rebased this and think it looks okay.  Apply only  trac_8168-attached_reset.4.
 
 ---
 
+archive/issue_events_008372.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-12-22T13:06:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8168",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8168#event-8372"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071759.json:
 ```json
 {

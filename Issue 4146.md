@@ -87,6 +87,22 @@ William suggested that this probably got fixed in matplotlib as pdf rendering go
 
 ---
 
+archive/issue_events_004384.json:
+```json
+{
+    "actor": "shumow",
+    "created_at": "2009-01-23T10:28:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4146",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4146#event-4384"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030037.json:
 ```json
 {

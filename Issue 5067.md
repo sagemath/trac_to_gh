@@ -180,6 +180,22 @@ Thanks Robert!
 
 ---
 
+archive/issue_events_005313.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T15:29:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5067",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5067#event-5313"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038528.json:
 ```json
 {

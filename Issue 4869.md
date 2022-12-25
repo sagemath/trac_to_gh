@@ -69,6 +69,22 @@ This is fixed by the patches for #1367.  This should be closed as a dupe after #
 
 ---
 
+archive/issue_events_005112.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-29T05:45:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4869",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4869#event-5112"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036814.json:
 ```json
 {

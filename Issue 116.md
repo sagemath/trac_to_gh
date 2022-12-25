@@ -83,6 +83,22 @@ Is this a duplicate of #6357 ? This one is older, but #6357 has useful comments 
 
 ---
 
+archive/issue_events_000122.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-11T06:16:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/116",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/116#event-122"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000547.json:
 ```json
 {

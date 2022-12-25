@@ -339,6 +339,22 @@ Merged trac#9377_revised.patch in 4.5.2.alpha1.
 
 ---
 
+archive/issue_events_009532.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T08:21:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9377",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9377#event-9532"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088970.json:
 ```json
 {

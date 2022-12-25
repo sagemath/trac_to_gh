@@ -170,6 +170,22 @@ No.
 
 ---
 
+archive/issue_events_010117.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-07-17T20:06:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9993",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9993#event-10117"
+}
+```
+
+
+
+---
+
 archive/issue_comments_100260.json:
 ```json
 {

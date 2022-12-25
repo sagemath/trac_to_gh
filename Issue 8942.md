@@ -122,6 +122,22 @@ This can be closed. Thanks a lot !
 
 ---
 
+archive/issue_events_009094.json:
+```json
+{
+    "actor": "casamayou",
+    "created_at": "2010-05-27T15:49:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8942",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8942#event-9094"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082199.json:
 ```json
 {
@@ -135,6 +151,22 @@ archive/issue_comments_082199.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009095.json:
+```json
+{
+    "actor": "@kcrisman",
+    "created_at": "2010-05-27T15:55:06Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8942",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8942#event-9095"
+}
+```
 
 
 
@@ -302,6 +334,22 @@ archive/issue_comments_082207.json:
 > but this could be in a different ticket. 
 
 see #9480
+
+
+
+---
+
+archive/issue_events_009096.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T10:04:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8942",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8942#event-9096"
+}
+```
 
 
 

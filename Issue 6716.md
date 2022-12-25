@@ -198,6 +198,22 @@ Changing component from solaris to algebra.
 
 ---
 
+archive/issue_events_006951.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-11T08:02:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6716",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6716#event-6951"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055024.json:
 ```json
 {

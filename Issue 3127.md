@@ -186,6 +186,22 @@ Patch at #1284 fixes this.
 
 ---
 
+archive/issue_events_003343.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-26T16:43:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3127",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3127#event-3343"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021623.json:
 ```json
 {

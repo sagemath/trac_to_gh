@@ -279,6 +279,22 @@ Attachment [trac_3309-referee.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_003527.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-13T02:25:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3309",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3309#event-3527"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022842.json:
 ```json
 {

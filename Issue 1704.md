@@ -64,6 +64,22 @@ I can't speak to mathematical correctness, but the patch looks good to me.  Appl
 
 ---
 
+archive/issue_events_001863.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-21T05:52:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1704",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1704#event-1863"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010769.json:
 ```json
 {

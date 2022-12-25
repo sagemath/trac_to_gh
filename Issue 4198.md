@@ -88,6 +88,22 @@ Oops :-)  Patch looks good to me.
 
 ---
 
+archive/issue_events_004437.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-26T02:23:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4198",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4198#event-4437"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030410.json:
 ```json
 {

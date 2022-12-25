@@ -624,6 +624,22 @@ While we're on the topic, the errata ([http://wiki.sagemath.org/errata](http://w
 
 ---
 
+archive/issue_events_003347.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2016-07-08T07:09:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3131",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3131#event-3347"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021705.json:
 ```json
 {

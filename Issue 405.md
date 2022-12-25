@@ -135,6 +135,22 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_000431.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-22T18:00:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/405",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/405#event-431"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001983.json:
 ```json
 {

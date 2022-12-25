@@ -170,3 +170,19 @@ archive/issue_comments_007439.json:
 ```
 
 Merged in 2.8.13.alpha1.
+
+
+
+---
+
+archive/issue_events_001341.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-19T08:54:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1205",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1205#event-1341"
+}
+```

@@ -122,6 +122,22 @@ I read through the additional patch, applied it, doctested it, and I'm happy acr
 
 ---
 
+archive/issue_events_003722.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-20T21:59:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3502",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3502#event-3722"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024653.json:
 ```json
 {

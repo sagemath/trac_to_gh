@@ -181,3 +181,19 @@ archive/issue_comments_076003.json:
 ```
 
 Merged [trac_8457-doc_skip_builtins.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8457/trac_8457-doc_skip_builtins.2.patch).
+
+
+
+---
+
+archive/issue_events_008641.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-11T04:46:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8457",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8457#event-8641"
+}
+```

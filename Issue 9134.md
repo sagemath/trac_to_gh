@@ -60,6 +60,22 @@ Duplicate to #9135 (where a more informative error message is pasted), please cl
 
 ---
 
+archive/issue_events_009292.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-04T14:25:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9134",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9134#event-9292"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084995.json:
 ```json
 {

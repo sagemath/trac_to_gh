@@ -517,6 +517,22 @@ Paul
 
 ---
 
+archive/issue_events_006683.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-01-29T11:17:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6442",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6442#event-6683"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051676.json:
 ```json
 {

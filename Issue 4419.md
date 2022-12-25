@@ -200,6 +200,22 @@ The new ticket is here: #4569
 
 ---
 
+archive/issue_events_004664.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-21T10:56:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4419",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4419#event-4664"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032438.json:
 ```json
 {

@@ -286,6 +286,22 @@ timeit('bar()')
 
 ---
 
+archive/issue_events_000055.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-06-16T00:05:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/56",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/56#event-55"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000300.json:
 ```json
 {

@@ -257,6 +257,22 @@ They are ready to be tested for integration.
 
 ---
 
+archive/issue_events_002424.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-03T04:42:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#event-2424"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014902.json:
 ```json
 {

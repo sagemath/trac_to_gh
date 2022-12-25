@@ -108,6 +108,22 @@ This looks like a near duplicate of #2768, where it was decided that this functi
 
 ---
 
+archive/issue_events_002893.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-02T10:18:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2703",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2703#event-2893"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018607.json:
 ```json
 {

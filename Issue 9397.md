@@ -485,3 +485,19 @@ archive/issue_comments_089374.json:
 ```
 
 This problem was fixed by #8059  which was merged in sage 4.5.3.alpha1.
+
+
+
+---
+
+archive/issue_events_009554.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-09-13T08:58:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#event-9554"
+}
+```

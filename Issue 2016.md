@@ -50,6 +50,22 @@ Fixed in Sage 2.10.1rc4. No point in posting a spkg since it will be created vis
 
 ---
 
+archive/issue_events_002170.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-01T00:59:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2016",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2016#event-2170"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012989.json:
 ```json
 {

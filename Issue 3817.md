@@ -83,3 +83,19 @@ archive/issue_comments_027096.json:
 ```
 
 this is fixed by #3776
+
+
+
+---
+
+archive/issue_events_004041.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-08-12T22:17:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3817",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3817#event-4041"
+}
+```

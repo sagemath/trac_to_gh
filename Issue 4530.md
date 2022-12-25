@@ -93,6 +93,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_004776.json:
+```json
+{
+    "actor": "ronanpaixao",
+    "created_at": "2008-11-15T19:03:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4530",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4530#event-4776"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033681.json:
 ```json
 {

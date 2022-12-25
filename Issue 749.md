@@ -220,3 +220,19 @@ archive/issue_comments_004419.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000842.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-27T04:52:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/749",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/749#event-842"
+}
+```

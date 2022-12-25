@@ -52,6 +52,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5584
 
 ---
 
+archive/issue_events_005829.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2009-03-22T20:09:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5584",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5584#event-5829"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043446.json:
 ```json
 {

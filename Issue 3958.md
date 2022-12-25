@@ -56,6 +56,22 @@ This should be fixed with #3854.
 
 ---
 
+archive/issue_events_004186.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-08-27T00:46:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3958",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3958#event-4186"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028372.json:
 ```json
 {

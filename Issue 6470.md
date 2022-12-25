@@ -461,6 +461,22 @@ I'm not sure whether it is reasonable to try to link dynamically against libgcc 
 
 ---
 
+archive/issue_events_006708.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-07T20:19:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6470",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6470#event-6708"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052211.json:
 ```json
 {

@@ -157,3 +157,19 @@ archive/issue_comments_061489.json:
 ```
 
 merged into sagenb-0.4.2 (sage-4.2.1)
+
+
+
+---
+
+archive/issue_events_007577.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-11T20:07:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7354",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7354#event-7577"
+}
+```

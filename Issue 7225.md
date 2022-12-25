@@ -225,3 +225,19 @@ archive/issue_comments_059820.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_007447.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-11-14T11:12:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7225",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7225#event-7447"
+}
+```

@@ -79,6 +79,22 @@ Simple patch: just don't prefix the filename with the current directory if it al
 
 ---
 
+archive/issue_events_001069.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-20T22:30:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/949",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/949#event-1069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005777.json:
 ```json
 {

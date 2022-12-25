@@ -329,6 +329,22 @@ This is way too outdated to apply, it also incorrectly adds the libraries to `.p
 
 ---
 
+archive/issue_events_008202.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-07-17T20:05:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7987",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7987#event-8202"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069646.json:
 ```json
 {

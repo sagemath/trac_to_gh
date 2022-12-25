@@ -88,6 +88,22 @@ Changing assignee from @williamstein to somebody.
 
 ---
 
+archive/issue_events_000430.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-07-27T19:35:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/404",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/404#event-430"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001977.json:
 ```json
 {

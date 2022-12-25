@@ -2786,6 +2786,22 @@ spkg updated on the server + mirros.
 
 ---
 
+archive/issue_events_010022.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-04-02T21:10:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9893",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9893#event-10022"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098009.json:
 ```json
 {

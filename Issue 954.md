@@ -169,6 +169,22 @@ fi
 
 ---
 
+archive/issue_events_001074.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-20T21:32:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/954",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/954#event-1074"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005796.json:
 ```json
 {

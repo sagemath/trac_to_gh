@@ -101,6 +101,22 @@ Attachment [trac1143-part2.patch](tarball://root/attachments/some-uuid/ticket114
 
 ---
 
+archive/issue_events_001270.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T20:23:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1143",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1143#event-1270"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006929.json:
 ```json
 {

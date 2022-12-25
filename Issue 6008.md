@@ -91,6 +91,22 @@ Thanks Jim -- you could give the patch a positive review now, and it might get i
 
 ---
 
+archive/issue_events_006261.json:
+```json
+{
+    "actor": "stankewicz",
+    "created_at": "2009-05-09T21:15:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#event-6261"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047715.json:
 ```json
 {
@@ -122,6 +138,22 @@ archive/issue_comments_047716.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_006262.json:
+```json
+{
+    "actor": "stankewicz",
+    "created_at": "2009-05-09T21:18:56Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#event-6262"
+}
+```
 
 
 
@@ -254,6 +286,22 @@ Merged in Sage 4.0.alpha0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_006263.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-12T21:03:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#event-6263"
+}
+```
 
 
 

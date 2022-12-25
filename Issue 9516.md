@@ -117,6 +117,22 @@ This ticket seems the same as #9002...
 
 ---
 
+archive/issue_events_009665.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T02:54:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9516",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9516#event-9665"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091343.json:
 ```json
 {

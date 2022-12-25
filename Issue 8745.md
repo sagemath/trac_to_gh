@@ -130,6 +130,22 @@ Nathann
 
 ---
 
+archive/issue_events_008914.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T05:08:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8745",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8745#event-8914"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079888.json:
 ```json
 {

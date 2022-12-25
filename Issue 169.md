@@ -126,6 +126,22 @@ Michael
 
 ---
 
+archive/issue_events_000175.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-11-14T05:27:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/169",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/169#event-175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000753.json:
 ```json
 {
@@ -205,6 +221,22 @@ archive/issue_comments_000756.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000176.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-11-14T05:33:00Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/169",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/169#event-176"
+}
+```
 
 
 
@@ -717,3 +749,19 @@ archive/issue_comments_000778.json:
 ```
 
 Merged both patches in Sage 3.2.1.alpha0
+
+
+
+---
+
+archive/issue_events_000177.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-21T07:27:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/169",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/169#event-177"
+}
+```

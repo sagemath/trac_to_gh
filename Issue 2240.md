@@ -256,6 +256,22 @@ New patch posted.
 
 ---
 
+archive/issue_events_002410.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-26T07:39:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2240",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2240#event-2410"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014816.json:
 ```json
 {

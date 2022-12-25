@@ -116,6 +116,22 @@ Outdated spkg or build system ticket, should be closed
 
 ---
 
+archive/issue_events_010069.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-10-03T07:29:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9942",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9942#event-10069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098837.json:
 ```json
 {

@@ -146,6 +146,22 @@ http://sage.math.washington.edu/home/mvngu/patch/polybori-0.5rc.p9.spkg
 
 ---
 
+archive/issue_events_006764.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-24T00:29:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6528",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6528#event-6764"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053126.json:
 ```json
 {

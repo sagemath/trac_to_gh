@@ -255,6 +255,22 @@ Merged both patches in 4.0.1.alpha0.
 
 ---
 
+archive/issue_events_006360.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T00:00:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6109",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6109#event-6360"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048717.json:
 ```json
 {

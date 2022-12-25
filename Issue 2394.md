@@ -271,6 +271,22 @@ I say apply.
 
 ---
 
+archive/issue_events_002570.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-12T00:10:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2394",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2394#event-2570"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016120.json:
 ```json
 {

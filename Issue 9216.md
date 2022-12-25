@@ -177,6 +177,22 @@ Oops -- WJP just pointed out that I was wrong.
 
 ---
 
+archive/issue_events_009372.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-21T09:55:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9216",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9216#event-9372"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086227.json:
 ```json
 {

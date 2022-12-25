@@ -325,6 +325,22 @@ Merged jquery-javascript-cleanup.patch in Sage 3.3.alpha0
 
 ---
 
+archive/issue_events_004949.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-19T08:09:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4704",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4704#event-4949"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035381.json:
 ```json
 {

@@ -63,6 +63,22 @@ So I'm going to close this ticket.
 
 ---
 
+archive/issue_events_009657.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-07-15T20:11:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9510",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9510#event-9657"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091234.json:
 ```json
 {

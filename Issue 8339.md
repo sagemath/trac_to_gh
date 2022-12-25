@@ -163,3 +163,19 @@ archive/issue_comments_074330.json:
 ```
 
 close 3 old invalid tickets
+
+
+
+---
+
+archive/issue_events_008531.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2019-06-15T12:40:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8339",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8339#event-8531"
+}
+```

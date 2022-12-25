@@ -180,6 +180,22 @@ Jaap
 
 ---
 
+archive/issue_events_009347.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-09T02:14:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9189",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9189#event-9347"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085854.json:
 ```json
 {

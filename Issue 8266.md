@@ -227,6 +227,22 @@ Applies over the two precedent patches.
 
 ---
 
+archive/issue_events_008465.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-06T08:30:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8266",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8266#event-8465"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073054.json:
 ```json
 {

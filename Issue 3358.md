@@ -597,6 +597,22 @@ Changing keywords from "editor_mabshoff" to "".
 
 ---
 
+archive/issue_events_003575.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-08-06T13:13:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3358",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3358#event-3575"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023338.json:
 ```json
 {

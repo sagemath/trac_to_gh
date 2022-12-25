@@ -959,6 +959,22 @@ First responde: the option `--without-bison` is not a valid option of Singular's
 
 ---
 
+archive/issue_events_009863.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-16T00:48:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#event-9863"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095002.json:
 ```json
 {
@@ -1050,6 +1066,22 @@ archive/issue_comments_095006.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_009864.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-17T08:30:07Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#event-9864"
+}
+```
 
 
 
@@ -1405,6 +1437,22 @@ archive/issue_comments_095022.json:
 ```
 
 Hope you don't spend the weekend reading the build logs... ;-)
+
+
+
+---
+
+archive/issue_events_009865.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-17T21:32:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#event-9865"
+}
+```
 
 
 

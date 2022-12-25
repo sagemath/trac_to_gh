@@ -48,6 +48,22 @@ I've decided against this.  Instead I added a prominent easy-to-find link to sta
 
 ---
 
+archive/issue_events_002970.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-04-08T18:18:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2782",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2782#event-2970"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019065.json:
 ```json
 {

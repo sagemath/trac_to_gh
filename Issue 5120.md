@@ -69,6 +69,22 @@ Duplicate of #5119
 
 ---
 
+archive/issue_events_005367.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-28T22:17:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5120",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5120#event-5367"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039054.json:
 ```json
 {
@@ -82,6 +98,22 @@ archive/issue_comments_039054.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005368.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-28T23:06:29Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5120",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5120#event-5368"
+}
+```
 
 
 
@@ -549,6 +581,22 @@ Merged in Sage 4.0.rc0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005369.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-21T00:59:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5120",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5120#event-5369"
+}
+```
 
 
 

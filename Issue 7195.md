@@ -360,6 +360,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_007414.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-20T07:34:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7195",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7195#event-7414"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059572.json:
 ```json
 {

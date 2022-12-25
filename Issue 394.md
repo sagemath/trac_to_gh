@@ -55,3 +55,19 @@ archive/issue_comments_001923.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_000416.json:
+```json
+{
+    "actor": "mhampton",
+    "created_at": "2007-06-28T16:07:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/394",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/394#event-416"
+}
+```

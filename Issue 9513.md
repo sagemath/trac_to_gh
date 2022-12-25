@@ -106,6 +106,22 @@ Regards,
 
 ---
 
+archive/issue_events_009662.json:
+```json
+{
+    "actor": "@alexanderdreyer",
+    "created_at": "2010-08-19T06:47:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9513",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9513#event-9662"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091320.json:
 ```json
 {

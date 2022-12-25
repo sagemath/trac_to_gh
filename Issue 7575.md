@@ -758,6 +758,22 @@ If I replace `algorithm='mwrank_lib'` with `algorithm='mwrank_shell'` in both ar
 
 ---
 
+archive/issue_events_007802.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:32:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7575",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7575#event-7802"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064390.json:
 ```json
 {

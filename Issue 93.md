@@ -53,6 +53,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/93
 
 ---
 
+archive/issue_events_000093.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T20:38:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/93",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/93#event-93"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000448.json:
 ```json
 {

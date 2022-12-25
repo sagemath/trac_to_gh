@@ -243,6 +243,22 @@ Florent just checked it, and is ok to leave the positive review.
 
 ---
 
+archive/issue_events_009216.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-03T12:28:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9065",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9065#event-9216"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083993.json:
 ```json
 {

@@ -94,6 +94,22 @@ This builds on 32-bit OSX smoothly.
 
 ---
 
+archive/issue_events_003412.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-20T00:18:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3194",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3194#event-3412"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022039.json:
 ```json
 {

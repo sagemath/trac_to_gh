@@ -574,6 +574,22 @@ I've folded together the two #9056 patches on the combinat server together and m
 
 ---
 
+archive/issue_events_009209.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-09T03:30:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9056",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9056#event-9209"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083897.json:
 ```json
 {

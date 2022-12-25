@@ -115,6 +115,22 @@ Note: I applied #3686, #3687, #3688 and #3689 at the same time as my machine is 
 
 ---
 
+archive/issue_events_003911.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T09:48:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3689",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3689#event-3911"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026098.json:
 ```json
 {

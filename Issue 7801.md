@@ -127,6 +127,22 @@ LGTM. Nice job.
 
 ---
 
+archive/issue_events_008016.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T03:33:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7801",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7801#event-8016"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067384.json:
 ```json
 {

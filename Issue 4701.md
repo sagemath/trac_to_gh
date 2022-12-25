@@ -185,3 +185,19 @@ Nick: The issues I reported stem from the referee patch which I did apply accide
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004946.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-07T09:15:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4701",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4701#event-4946"
+}
+```

@@ -248,6 +248,22 @@ Thanks a lot Nicolas for your revision and advices :-)
 
 ---
 
+archive/issue_events_008581.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T21:40:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#event-8581"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075109.json:
 ```json
 {

@@ -287,6 +287,22 @@ Interesting.  In any case, that was clearly an unrelated error.
 
 ---
 
+archive/issue_events_008256.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-01-18T08:14:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8046",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8046#event-8256"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070216.json:
 ```json
 {

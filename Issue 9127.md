@@ -381,6 +381,22 @@ I am happy.  (I thought I had reviewed the new patch, but maybe I was dreaming!)
 
 ---
 
+archive/issue_events_009285.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-09T02:28:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9127",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9127#event-9285"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084789.json:
 ```json
 {

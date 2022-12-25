@@ -421,3 +421,19 @@ archive/issue_comments_076788.json:
 ```
 
 Merged 2010/04/20.
+
+
+
+---
+
+archive/issue_events_008694.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-20T22:51:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8514",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8514#event-8694"
+}
+```

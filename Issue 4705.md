@@ -896,6 +896,22 @@ The ghost-text.patch corrects the ghostly text mentioned above and should be app
 
 ---
 
+archive/issue_events_004950.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-19T08:11:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#event-4950"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035424.json:
 ```json
 {

@@ -381,6 +381,22 @@ For standard yes, but for optional, the main thing is to get somebody to referee
 
 ---
 
+archive/issue_events_007496.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-12T07:06:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7273",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7273#event-7496"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060412.json:
 ```json
 {

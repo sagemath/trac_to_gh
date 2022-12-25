@@ -210,6 +210,22 @@ I also tested it with the spyx file rhinton uploaded, and everything seems to wo
 
 ---
 
+archive/issue_events_002291.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-25T08:26:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2129",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2129#event-2291"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013943.json:
 ```json
 {

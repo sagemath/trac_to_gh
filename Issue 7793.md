@@ -152,6 +152,22 @@ sage: final3.show(aspect_ratio = 1)
 
 ---
 
+archive/issue_events_008007.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:56:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7793",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7793#event-8007"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067147.json:
 ```json
 {

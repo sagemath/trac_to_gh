@@ -203,6 +203,22 @@ Close as fixed by #8474.
 
 ---
 
+archive/issue_events_008647.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-11T04:53:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8463",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8463#event-8647"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076056.json:
 ```json
 {

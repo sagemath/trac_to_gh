@@ -762,6 +762,22 @@ Please can we have this in Sage-6.1!  It will help lmfdb development a lot.
 
 ---
 
+archive/issue_events_008792.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-02-03T22:59:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8621",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8621#event-8792"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078026.json:
 ```json
 {

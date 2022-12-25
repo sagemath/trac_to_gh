@@ -162,6 +162,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3414
 
 ---
 
+archive/issue_events_003630.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-06-13T22:33:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3414",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3414#event-3630"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023894.json:
 ```json
 {

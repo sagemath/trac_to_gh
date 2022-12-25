@@ -943,6 +943,22 @@ Yes, but it made it impossible for me to create a doctest for your fix!
 
 ---
 
+archive/issue_events_008008.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-30T14:52:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#event-8008"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067182.json:
 ```json
 {

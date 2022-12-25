@@ -135,6 +135,22 @@ Attachment [gmp_leak.patch](tarball://root/attachments/some-uuid/ticket566/gmp_l
 
 ---
 
+archive/issue_events_000612.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T03:16:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/566",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/566#event-612"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002923.json:
 ```json
 {
@@ -166,6 +182,22 @@ archive/issue_comments_002924.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000613.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T06:01:08Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/566",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/566#event-613"
+}
+```
 
 
 
@@ -268,3 +300,19 @@ archive/issue_comments_002929.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000614.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T18:38:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/566",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/566#event-614"
+}
+```

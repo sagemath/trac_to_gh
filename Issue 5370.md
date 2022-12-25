@@ -103,6 +103,22 @@ Apply only trac-5370-copy-matrix_double_dense.2.patch
 
 ---
 
+archive/issue_events_005625.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-28T17:10:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5370",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5370#event-5625"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041280.json:
 ```json
 {

@@ -268,6 +268,22 @@ Fix.
 
 ---
 
+archive/issue_events_001059.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-10-21T02:39:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/939",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/939#event-1059"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005729.json:
 ```json
 {

@@ -226,6 +226,22 @@ Thanks!
 
 ---
 
+archive/issue_events_010049.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-17T03:27:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9923",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9923#event-10049"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098633.json:
 ```json
 {

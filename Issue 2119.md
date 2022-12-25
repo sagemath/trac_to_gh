@@ -368,6 +368,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_002281.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T07:28:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#event-2281"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013871.json:
 ```json
 {

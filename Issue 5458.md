@@ -39,6 +39,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5458
 
 ---
 
+archive/issue_events_005713.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-23T14:30:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5458",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5458#event-5713"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042305.json:
 ```json
 {

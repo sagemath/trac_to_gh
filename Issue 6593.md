@@ -153,6 +153,22 @@ Jaap
 
 ---
 
+archive/issue_events_006830.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T06:04:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6593",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6593#event-6830"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053859.json:
 ```json
 {

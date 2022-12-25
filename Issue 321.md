@@ -64,6 +64,22 @@ There is no execute button anymore, so this bug is closed.
 
 ---
 
+archive/issue_events_000341.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-19T02:03:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/321",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/321#event-341"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001521.json:
 ```json
 {

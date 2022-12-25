@@ -119,3 +119,19 @@ archive/issue_comments_054961.json:
 ```
 
 Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.
+
+
+
+---
+
+archive/issue_events_006938.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-07-15T07:18:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6703",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6703#event-6938"
+}
+```

@@ -2437,6 +2437,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_008011.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-08-23T12:46:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-8011"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067315.json:
 ```json
 {
@@ -2498,6 +2514,22 @@ archive/issue_comments_067317.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_008012.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-08-24T20:24:40Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-8012"
+}
+```
 
 
 
@@ -3323,6 +3355,22 @@ archive/issue_comments_067350.json:
 ```
 
 Just realized, that I'm the reviewer: I'm fine with reestablishing to positive review.
+
+
+
+---
+
+archive/issue_events_008013.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-11-16T21:25:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7797",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7797#event-8013"
+}
+```
 
 
 

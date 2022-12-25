@@ -69,3 +69,19 @@ This is a duplicate of #3659 which has an spkg that updates ipython to 0.8.4.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003553.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-31T02:13:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3335",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3335#event-3553"
+}
+```

@@ -47,6 +47,22 @@ hmm... just curious, is this still issue? I cannot reproduce it any more (window
 
 ---
 
+archive/issue_events_000367.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-22T13:53:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/343",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/343#event-367"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001670.json:
 ```json
 {

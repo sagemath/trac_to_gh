@@ -84,6 +84,22 @@ referee followup
 
 ---
 
+archive/issue_events_009010.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-05-26T00:38:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8845",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8845#event-9010"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081193.json:
 ```json
 {

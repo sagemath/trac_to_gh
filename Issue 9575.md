@@ -162,6 +162,22 @@ Please remember to update the Author(s) and Reviewer(s) fields.  I've entered gu
 
 ---
 
+archive/issue_events_009722.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-09T09:46:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9575",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9575#event-9722"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092325.json:
 ```json
 {

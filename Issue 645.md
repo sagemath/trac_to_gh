@@ -118,6 +118,22 @@ Looks good to me, and doctests still pass in sage/calculus/*.
 
 ---
 
+archive/issue_events_000709.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-01T11:16:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/645#event-709"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003337.json:
 ```json
 {

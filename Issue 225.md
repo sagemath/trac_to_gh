@@ -125,6 +125,22 @@ diff -r 969de27b13ba -r a1d6af5dbe31 sage/server/notebook/worksheet.py
 
 ---
 
+archive/issue_events_000238.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-23T06:01:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/225",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/225#event-238"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001002.json:
 ```json
 {

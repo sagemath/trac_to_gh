@@ -766,6 +766,22 @@ New complete patch including trac_9591-g2red_remove_dist.patch
 
 ---
 
+archive/issue_events_009735.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-10T10:39:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#event-9735"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092623.json:
 ```json
 {

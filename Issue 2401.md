@@ -105,6 +105,22 @@ This patch is indeed covered by #2340. I confirm Cremona's comment above. This p
 
 ---
 
+archive/issue_events_002577.json:
+```json
+{
+    "actor": "@cswiercz",
+    "created_at": "2008-04-02T21:02:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2401",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2401#event-2577"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016184.json:
 ```json
 {

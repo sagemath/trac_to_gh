@@ -82,6 +82,22 @@ http://sage.math.washington.edu/home/jkantor/spkgs/fortran-20071120.p2.spkg
 
 ---
 
+archive/issue_events_001803.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-04T10:44:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1643",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1643#event-1803"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010424.json:
 ```json
 {

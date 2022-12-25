@@ -814,6 +814,22 @@ Yep, I confirm that normal tests in graphs/ and plot/ pass.  Positive review for
 
 ---
 
+archive/issue_events_009365.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-11-07T10:10:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9211",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9211#event-9365"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086176.json:
 ```json
 {

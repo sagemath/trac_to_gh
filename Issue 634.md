@@ -145,6 +145,22 @@ Michael
 
 ---
 
+archive/issue_events_000694.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-15T20:24:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/634#event-694"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003255.json:
 ```json
 {
@@ -199,6 +215,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000695.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-15T20:29:47Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/634#event-695"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003258.json:
 ```json
 {
@@ -219,6 +251,22 @@ http://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-add-expe
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000696.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-15T22:44:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/634#event-696"
+}
+```
 
 
 

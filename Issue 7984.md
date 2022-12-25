@@ -206,6 +206,22 @@ Robert: I have merged [7984-qqbar-cmp.patch](http://trac.sagemath.org/sage_trac/
 
 ---
 
+archive/issue_events_008199.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T21:06:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7984",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7984#event-8199"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069618.json:
 ```json
 {

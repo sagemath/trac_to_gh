@@ -1223,3 +1223,19 @@ archive/issue_comments_013891.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_002282.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-03-31T12:27:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#event-2282"
+}
+```

@@ -46,6 +46,22 @@ This is a duplicate of #5761 - Trac gave me a bunch of errors as I tried to make
 
 ---
 
+archive/issue_events_006009.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-11T23:03:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5762",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5762#event-6009"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044958.json:
 ```json
 {

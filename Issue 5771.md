@@ -264,6 +264,22 @@ The minute you lose control over the user's environment it gets quite messy.  Oh
 
 ---
 
+archive/issue_events_006018.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:44:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5771",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5771#event-6018"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045060.json:
 ```json
 {

@@ -535,6 +535,22 @@ Apply 9235_doctest_homset.patch trac_9235-doctest_homset-review-ts.patch
 
 ---
 
+archive/issue_events_009397.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-02-19T06:48:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9235",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9235#event-9397"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086566.json:
 ```json
 {

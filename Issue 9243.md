@@ -275,6 +275,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009404.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T07:51:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9243",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9243#event-9404"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086798.json:
 ```json
 {

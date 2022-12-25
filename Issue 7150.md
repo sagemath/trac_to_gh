@@ -142,3 +142,19 @@ archive/issue_comments_059133.json:
 ```
 
 Yep, I think we can close this.
+
+
+
+---
+
+archive/issue_events_007370.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-16T05:00:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7150",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7150#event-7370"
+}
+```

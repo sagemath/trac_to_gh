@@ -232,6 +232,22 @@ malloc work also for allocating zero bytes in M4RI, else it will crash
 
 ---
 
+archive/issue_events_001770.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2009-09-29T08:08:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1611",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1611#event-1770"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010229.json:
 ```json
 {

@@ -247,6 +247,22 @@ Dave
 
 ---
 
+archive/issue_events_008278.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T15:17:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#event-8278"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070608.json:
 ```json
 {

@@ -120,6 +120,22 @@ The patch is obviously correct and I've also tested it.
 
 ---
 
+archive/issue_events_003618.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-16T04:30:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3402",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3402#event-3618"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023824.json:
 ```json
 {

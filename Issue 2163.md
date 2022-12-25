@@ -161,6 +161,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_002329.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-09-03T00:54:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2163",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2163#event-2329"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014175.json:
 ```json
 {
@@ -192,6 +208,22 @@ archive/issue_comments_014176.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002330.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-09-03T00:54:23Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2163",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2163#event-2330"
+}
+```
 
 
 
@@ -270,3 +302,19 @@ archive/issue_comments_014180.json:
 ```
 
 Merged in Sage 3.2.2.alpha0
+
+
+
+---
+
+archive/issue_events_002331.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-05T09:37:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2163",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2163#event-2331"
+}
+```

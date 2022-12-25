@@ -90,6 +90,22 @@ Even on the settings page, it seems superfluous - makes more sense to put it in 
 
 ---
 
+archive/issue_events_004736.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:05:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4490",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4490#event-4736"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033102.json:
 ```json
 {

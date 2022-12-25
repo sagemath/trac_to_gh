@@ -199,3 +199,19 @@ archive/issue_comments_006596.json:
 ```
 
 Merge in 2.10.alpha0
+
+
+
+---
+
+archive/issue_events_001218.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-08T02:03:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1092",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1092#event-1218"
+}
+```

@@ -134,6 +134,22 @@ True
 
 ---
 
+archive/issue_events_003963.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T20:31:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3740",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3740#event-3963"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026514.json:
 ```json
 {

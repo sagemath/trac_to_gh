@@ -121,6 +121,22 @@ Merged in the optional spkg repo in Sage 3.1.2.rc4.
 
 ---
 
+archive/issue_events_003896.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-15T11:28:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3675",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3675#event-3896"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025965.json:
 ```json
 {

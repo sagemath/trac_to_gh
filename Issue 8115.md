@@ -405,6 +405,22 @@ Merged [cddlib-094f.p4.spkg](http://www.stp.dias.ie/~vbraun/cddlib-094f.p4.spkg)
 
 ---
 
+archive/issue_events_008321.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-31T22:50:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8115",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8115#event-8321"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071139.json:
 ```json
 {
@@ -490,6 +506,22 @@ archive/issue_comments_071142.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_008322.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-01T05:02:27Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8115",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8115#event-8322"
+}
+```
 
 
 
@@ -958,6 +990,22 @@ archive/issue_comments_071162.json:
 ```
 
 The package [cddlib-094f.p4.spkg](http://www.stp.dias.ie/~vbraun/cddlib-094f.p4.spkg) now builds on sage.math, bsd.math, rosemary.math, and machines on Skynet.
+
+
+
+---
+
+archive/issue_events_008323.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-17T20:58:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8115",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8115#event-8323"
+}
+```
 
 
 

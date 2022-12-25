@@ -52,6 +52,22 @@ This works now (3.1.3), so should be closed.
 
 ---
 
+archive/issue_events_002018.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-18T09:05:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1860",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1860#event-2018"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011742.json:
 ```json
 {

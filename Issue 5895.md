@@ -289,6 +289,22 @@ I applied this against 4.0.rc2, and it performs as advertised (and doesn't break
 
 ---
 
+archive/issue_events_006149.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T06:30:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5895",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5895#event-6149"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046529.json:
 ```json
 {

@@ -111,6 +111,22 @@ This works for me in sage-2.8.15alpha1.
 
 ---
 
+archive/issue_events_001429.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2007-12-02T02:38:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1286",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1286#event-1429"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008057.json:
 ```json
 {

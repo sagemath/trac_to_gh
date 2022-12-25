@@ -179,3 +179,19 @@ archive/issue_comments_070637.json:
 ```
 
 ok, John, as you wish
+
+
+
+---
+
+archive/issue_events_008281.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2021-02-05T14:58:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8075",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8075#event-8281"
+}
+```

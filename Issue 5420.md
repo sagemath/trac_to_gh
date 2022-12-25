@@ -110,6 +110,22 @@ sage: imag(complex(0,1))
 
 ---
 
+archive/issue_events_005675.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-26T02:37:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5420",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5420#event-5675"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041853.json:
 ```json
 {

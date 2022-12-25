@@ -64,6 +64,22 @@ This fixes it for me, and I have added a selenium test to verify that it is inde
 
 ---
 
+archive/issue_events_004326.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-19T04:04:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4088",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4088#event-4326"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029433.json:
 ```json
 {

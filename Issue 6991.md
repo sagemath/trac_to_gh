@@ -102,6 +102,22 @@ Changing priority from minor to trivial.
 
 ---
 
+archive/issue_events_007215.json:
+```json
+{
+    "actor": "@novoselt",
+    "created_at": "2009-12-19T00:43:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6991",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6991#event-7215"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057721.json:
 ```json
 {

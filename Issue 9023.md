@@ -216,6 +216,22 @@ ghmm is now gone.
 
 ---
 
+archive/issue_events_009175.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-22T17:56:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9023",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9023#event-9175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083355.json:
 ```json
 {

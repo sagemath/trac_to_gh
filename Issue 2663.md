@@ -102,3 +102,19 @@ dpkg-shlibdeps: warning: dependency on libblas.so.3gf could be avoided if "debia
 
 
 Since it seems that on other platforms one does need to link against all one's dependencies, not just one's direct dependencies (at least, I'm guessing this is what's going on; when we followed similar indications on genus2reduction it ended up breaking things on OS X), I'm not sure there's anything one should do about these.  Thus, I'm closing the ticket.
+
+
+
+---
+
+archive/issue_events_002855.json:
+```json
+{
+    "actor": "@timabbott",
+    "created_at": "2008-05-27T03:22:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2663",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2663#event-2855"
+}
+```

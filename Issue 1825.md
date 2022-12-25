@@ -66,6 +66,22 @@ This will make people editing and adding to the reference manual vastly easier.
 
 ---
 
+archive/issue_events_001984.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-01-18T23:11:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1825",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1825#event-1984"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011533.json:
 ```json
 {

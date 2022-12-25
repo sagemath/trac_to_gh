@@ -117,3 +117,19 @@ archive/issue_comments_015183.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002468.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-27T23:10:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2293",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2293#event-2468"
+}
+```

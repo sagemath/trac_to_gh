@@ -137,6 +137,22 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_009521.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-29T16:15:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9368",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9368#event-9521"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088845.json:
 ```json
 {
@@ -198,6 +214,22 @@ archive/issue_comments_088847.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_009522.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-07-15T12:22:55Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9368",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9368#event-9522"
+}
+```
 
 
 
@@ -366,6 +398,22 @@ The fix:  change the deps file, and make sure to include a comment in the deps f
 One could also add a check that $SAGE_LOCAL/bin/python exists in this spkg-install script. 
 
 Another good idea, would be to change the sage build system, so that when if spkg-install is a Python script, but Python hasn't been built yet, then an error is immediately raised.  This would keep this problem from ever happening again.  I've opened a ticket: #9507.
+
+
+
+---
+
+archive/issue_events_009523.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-07-15T13:18:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9368",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9368#event-9523"
+}
+```
 
 
 

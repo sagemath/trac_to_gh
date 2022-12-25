@@ -181,6 +181,22 @@ Looks good to me, probably.  It's just a format issue anyways.
 
 ---
 
+archive/issue_events_001114.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-20T15:51:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/991",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/991#event-1114"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006029.json:
 ```json
 {

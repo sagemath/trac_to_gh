@@ -244,6 +244,22 @@ Milestone sage-4.4.5 deleted
 
 ---
 
+archive/issue_events_009403.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T07:49:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9242",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9242#event-9403"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086785.json:
 ```json
 {

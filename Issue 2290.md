@@ -119,6 +119,22 @@ to me (it also fixes the extra 's' in CallableSymbolicExpressions which I did no
 
 ---
 
+archive/issue_events_002465.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-25T15:14:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2290",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2290#event-2465"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015159.json:
 ```json
 {

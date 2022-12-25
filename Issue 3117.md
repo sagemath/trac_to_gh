@@ -117,3 +117,19 @@ by all polynomials with constant leading term. Check a commutative
 algebra book about localisation.
 ```
 
+
+
+
+---
+
+archive/issue_events_003334.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-06-03T14:52:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3117",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3117#event-3334"
+}
+```

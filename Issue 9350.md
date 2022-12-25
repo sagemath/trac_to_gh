@@ -352,6 +352,22 @@ Please remember to fill in the "Author(s)" and "Reviewer(s)" fields.
 
 ---
 
+archive/issue_events_009503.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T22:52:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9350",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9350#event-9503"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088619.json:
 ```json
 {

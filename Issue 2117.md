@@ -56,6 +56,22 @@ As we don't get the URL at the beginning with the startup token, I'm going to ma
 
 ---
 
+archive/issue_events_002277.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-23T13:22:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2117",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2117#event-2277"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013849.json:
 ```json
 {
@@ -87,6 +103,22 @@ archive/issue_comments_013850.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002278.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T16:25:59Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2117",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2117#event-2278"
+}
+```
 
 
 
@@ -127,6 +159,22 @@ archive/issue_comments_013852.json:
 ```
 
 Resolution changed from invalid to 
+
+
+
+---
+
+archive/issue_events_002279.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-24T01:50:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2117",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2117#event-2279"
+}
+```
 
 
 

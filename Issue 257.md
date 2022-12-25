@@ -49,3 +49,19 @@ archive/issue_comments_001149.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000271.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2007-03-22T20:01:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/257",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/257#event-271"
+}
+```

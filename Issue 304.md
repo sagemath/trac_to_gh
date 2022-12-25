@@ -76,6 +76,22 @@ Fixed for sage-2.8.2
 
 ---
 
+archive/issue_events_000323.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-19T01:00:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/304",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/304#event-323"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001448.json:
 ```json
 {

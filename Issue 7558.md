@@ -60,3 +60,19 @@ archive/issue_comments_064182.json:
 ```
 
 Copy of #7559 :-)
+
+
+
+---
+
+archive/issue_events_007788.json:
+```json
+{
+    "actor": "@nathanncohen",
+    "created_at": "2009-11-30T12:24:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7558",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7558#event-7788"
+}
+```

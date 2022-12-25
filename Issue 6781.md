@@ -1226,6 +1226,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_007012.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T20:05:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#event-7012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055780.json:
 ```json
 {
@@ -1260,6 +1276,22 @@ archive/issue_comments_055781.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_007013.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T02:47:51Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#event-7013"
+}
+```
 
 
 
@@ -1339,6 +1371,22 @@ Changing status from needs_work to needs_review.
 
 ---
 
+archive/issue_events_007014.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T02:51:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#event-7014"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055786.json:
 ```json
 {
@@ -1370,6 +1418,22 @@ archive/issue_comments_055787.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_007015.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T02:51:22Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#event-7015"
+}
+```
 
 
 
@@ -1444,6 +1508,22 @@ archive/issue_comments_055791.json:
 It didn't occur to me that we need to update the dependencies, sorry for the trouble.
 
 I'm not sure what it takes to review the `deps` file. The proposed change definitely makes sense, but I don't think I can test it easily. I'm giving a positive review nevertheless.
+
+
+
+---
+
+archive/issue_events_007016.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T17:15:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#event-7016"
+}
+```
 
 
 

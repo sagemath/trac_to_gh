@@ -294,6 +294,22 @@ All doctests pass in my merge tree. So I'm changing #6404, #6401, #6377 and #624
 
 ---
 
+archive/issue_events_006488.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-03T00:32:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6243",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6243#event-6488"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049767.json:
 ```json
 {

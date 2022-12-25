@@ -102,6 +102,22 @@ I don't see how this can hurt anything. Tried building anyways, no problem.
 
 ---
 
+archive/issue_events_006976.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-31T08:20:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6744",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6744#event-6976"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055389.json:
 ```json
 {

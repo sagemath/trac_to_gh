@@ -197,6 +197,22 @@ Looks like a great patch, adding functionality, fixing a bug and correcting some
 
 ---
 
+archive/issue_events_001319.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-25T03:05:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#event-1319"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007313.json:
 ```json
 {

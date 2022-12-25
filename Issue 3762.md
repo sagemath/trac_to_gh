@@ -303,6 +303,22 @@ Followup for speed regression at #5084 and fpu_fix at #5085.
 
 ---
 
+archive/issue_events_003984.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-28T13:48:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3762",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3762#event-3984"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026698.json:
 ```json
 {

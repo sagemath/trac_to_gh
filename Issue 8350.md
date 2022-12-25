@@ -214,3 +214,19 @@ archive/issue_comments_074450.json:
 ```
 
 merged with #8330
+
+
+
+---
+
+archive/issue_events_008540.json:
+```json
+{
+    "actor": "@rhinton",
+    "created_at": "2010-03-02T02:56:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8350",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8350#event-8540"
+}
+```

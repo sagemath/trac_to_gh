@@ -275,6 +275,22 @@ Merged both patches in Sage 2.10.1.alpha1
 
 ---
 
+archive/issue_events_001731.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-21T05:47:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1577",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1577#event-1731"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010020.json:
 ```json
 {

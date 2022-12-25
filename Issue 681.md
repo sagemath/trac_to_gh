@@ -89,6 +89,22 @@ Attachment [mq-change_ring-bugfix.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
+archive/issue_events_000749.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-21T01:55:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/681",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/681#event-749"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003523.json:
 ```json
 {

@@ -8988,6 +8988,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009930.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-01T10:10:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9807",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9807#event-9930"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096573.json:
 ```json
 {

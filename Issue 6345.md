@@ -157,6 +157,22 @@ Changing status from new to needs_info.
 
 ---
 
+archive/issue_events_006589.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-05T19:57:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6345",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6345#event-6589"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050635.json:
 ```json
 {

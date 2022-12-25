@@ -634,6 +634,22 @@ I am moving this entirely out of Sage and into the psage library.   See
 
 ---
 
+archive/issue_events_009205.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-10-26T22:47:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9054",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9054#event-9205"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083743.json:
 ```json
 {
@@ -683,6 +699,22 @@ archive/issue_comments_083745.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009206.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-10-27T16:05:50Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9054",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9054#event-9206"
+}
+```
 
 
 
@@ -3059,3 +3091,19 @@ archive/issue_comments_083844.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009207.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-02-02T12:52:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9054",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9054#event-9207"
+}
+```

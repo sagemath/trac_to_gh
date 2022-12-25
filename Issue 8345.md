@@ -252,6 +252,22 @@ Apply [attachment:trac_8345-doctest.patch].
 
 ---
 
+archive/issue_events_008535.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-06-15T20:12:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8345",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8345#event-8535"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074389.json:
 ```json
 {

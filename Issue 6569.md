@@ -166,6 +166,22 @@ I hope you can address #12348 though next.  At least the trivial change of ind t
 
 ---
 
+archive/issue_events_006806.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-02-02T12:52:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6569",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6569#event-6806"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053540.json:
 ```json
 {

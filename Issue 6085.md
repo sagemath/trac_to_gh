@@ -951,6 +951,22 @@ Works for me!
 
 ---
 
+archive/issue_events_006338.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-25T17:52:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6085",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6085#event-6338"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048399.json:
 ```json
 {

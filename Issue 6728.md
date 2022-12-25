@@ -66,6 +66,22 @@ positive review, and only doc-text and comments touched by this patch.
 
 ---
 
+archive/issue_events_006962.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-14T11:03:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6728",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6728#event-6962"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055074.json:
 ```json
 {

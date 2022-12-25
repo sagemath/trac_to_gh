@@ -91,6 +91,22 @@ It's prominently featured in the Notebook "Help" page. Should this be closed?
 
 ---
 
+archive/issue_events_002309.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-17T05:38:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2145",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2145#event-2309"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014047.json:
 ```json
 {

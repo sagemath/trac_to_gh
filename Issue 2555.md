@@ -46,6 +46,22 @@ This is a dupe of #2553
 
 ---
 
+archive/issue_events_002738.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-16T21:53:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2555",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2555#event-2738"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017404.json:
 ```json
 {

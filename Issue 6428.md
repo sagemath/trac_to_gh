@@ -326,3 +326,19 @@ archive/issue_comments_051535.json:
 ```
 
 Merged [6428_ETuple_overflow.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6428/6428_ETuple_overflow.patch).
+
+
+
+---
+
+archive/issue_events_006670.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T09:05:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#event-6670"
+}
+```

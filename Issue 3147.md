@@ -79,6 +79,22 @@ The patch for #1230 resolves the issue for me, so once that ticket is closed, I 
 
 ---
 
+archive/issue_events_003363.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-05-10T23:23:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3147",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3147#event-3363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021789.json:
 ```json
 {

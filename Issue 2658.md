@@ -80,6 +80,22 @@ This is resolved in the matrix() rewrite in #2651.
 
 ---
 
+archive/issue_events_002849.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2008-03-25T21:23:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2658",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2658#event-2849"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018256.json:
 ```json
 {
@@ -129,6 +145,22 @@ archive/issue_comments_018258.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002850.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-25T23:39:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2658",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2658#event-2850"
+}
+```
 
 
 
@@ -271,3 +303,19 @@ archive/issue_comments_018264.json:
 ```
 
 Closing this since it has been fixed and doctested by #2651.
+
+
+
+---
+
+archive/issue_events_002851.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2008-04-14T19:07:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2658",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2658#event-2851"
+}
+```

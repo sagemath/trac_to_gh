@@ -437,6 +437,22 @@ Previous version of this patch didn't actually work. This should work fine. I di
 
 ---
 
+archive/issue_events_001008.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-03T21:07:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/894",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/894#event-1008"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005491.json:
 ```json
 {

@@ -163,3 +163,19 @@ archive/issue_comments_007800.json:
 ```
 
 This works for me in Sage 3.1.1 on 32-bit and 64-bit x86; maybe the "mwrank wrapper rewrite" referred to above did fix the problem?
+
+
+
+---
+
+archive/issue_events_001390.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2008-08-23T19:14:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1248",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1248#event-1390"
+}
+```

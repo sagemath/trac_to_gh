@@ -306,6 +306,22 @@ cell_output_nowrap.innerHTML;
 
 ---
 
+archive/issue_events_009791.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2018-08-10T09:46:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9656",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9656#event-9791"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093572.json:
 ```json
 {

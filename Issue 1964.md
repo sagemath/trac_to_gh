@@ -756,6 +756,22 @@ Yes, close this.  :-)
 
 ---
 
+archive/issue_events_002119.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-16T21:07:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1964",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1964#event-2119"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012702.json:
 ```json
 {

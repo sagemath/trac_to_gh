@@ -158,6 +158,22 @@ Technically the one who sets the ticket to invalid should not set it to a positi
 
 ---
 
+archive/issue_events_003109.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-01-13T01:15:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2907",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2907#event-3109"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019999.json:
 ```json
 {

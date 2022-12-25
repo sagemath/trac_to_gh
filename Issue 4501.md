@@ -221,3 +221,19 @@ archive/issue_comments_033277.json:
 ```
 
 See #5079
+
+
+
+---
+
+archive/issue_events_004747.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2009-01-24T11:42:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4501",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4501#event-4747"
+}
+```

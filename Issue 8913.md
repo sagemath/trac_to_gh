@@ -177,6 +177,22 @@ Thanks Rob, that was quick!
 
 ---
 
+archive/issue_events_009069.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T01:12:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8913",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8913#event-9069"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081975.json:
 ```json
 {

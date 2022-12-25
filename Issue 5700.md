@@ -141,3 +141,19 @@ archive/issue_comments_044471.json:
 ```
 
 As mentioned above, this ticket will be superseded by #5555, so this ticket should not be fixed.  After discussing it with mabshoff on irc, we decided to close this one.
+
+
+
+---
+
+archive/issue_events_005942.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2009-04-09T20:53:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5700",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5700#event-5942"
+}
+```

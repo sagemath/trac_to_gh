@@ -73,6 +73,22 @@ mabshoff (since I know you get CC'd on all trac changes):  Since you got this ch
 
 ---
 
+archive/issue_events_000562.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-27T02:29:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/523",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/523#event-562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002646.json:
 ```json
 {

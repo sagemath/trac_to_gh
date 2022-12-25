@@ -397,6 +397,22 @@ All looks fine to me. Positive review.
 
 ---
 
+archive/issue_events_007379.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-02T04:32:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7159",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7159#event-7379"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059225.json:
 ```json
 {

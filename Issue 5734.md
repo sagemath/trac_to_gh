@@ -219,6 +219,22 @@ I am happy.  Thanks for going through this carefully.   I also think that the co
 
 ---
 
+archive/issue_events_005981.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-15T19:57:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5734",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5734#event-5981"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044724.json:
 ```json
 {

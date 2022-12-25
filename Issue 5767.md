@@ -444,6 +444,22 @@ I'm pretty sure queues can be used to preserve metadata using qfold, but that's 
 
 ---
 
+archive/issue_events_006014.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-07T07:36:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5767",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5767#event-6014"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045034.json:
 ```json
 {

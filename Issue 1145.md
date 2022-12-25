@@ -199,6 +199,22 @@ since no progress was done in 2 years, I close that ticket.
 
 ---
 
+archive/issue_events_001272.json:
+```json
+{
+    "actor": "@zimmermann6",
+    "created_at": "2010-02-05T20:44:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1145",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1145#event-1272"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006944.json:
 ```json
 {
@@ -230,6 +246,22 @@ archive/issue_comments_006945.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_001273.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-02-05T21:53:13Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1145",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1145#event-1273"
+}
+```
 
 
 

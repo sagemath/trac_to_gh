@@ -82,3 +82,19 @@ Fixed:
 
 The main trick was to use float conversions instead of RR before
 calling into maxima.
+
+
+
+---
+
+archive/issue_events_000011.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-10-15T18:10:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/11",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/11#event-11"
+}
+```

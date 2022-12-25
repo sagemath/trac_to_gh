@@ -204,3 +204,19 @@ archive/issue_comments_006922.json:
 ```
 
 Merged in 2.8.15.alpha0 - 3rd time's the charm!
+
+
+
+---
+
+archive/issue_events_001268.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T07:30:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1141",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1141#event-1268"
+}
+```

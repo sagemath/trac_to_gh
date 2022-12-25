@@ -74,6 +74,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000187.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2008-03-17T04:21:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/179",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/179#event-187"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000821.json:
 ```json
 {

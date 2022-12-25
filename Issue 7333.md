@@ -305,6 +305,22 @@ Merged in with the optional packages.
 
 ---
 
+archive/issue_events_007555.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-09T02:54:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7333",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7333#event-7555"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061223.json:
 ```json
 {

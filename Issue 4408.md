@@ -109,6 +109,22 @@ Attachment [sage-4408-part3.patch](tarball://root/attachments/some-uuid/ticket44
 
 ---
 
+archive/issue_events_004653.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-11-24T03:37:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4408",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4408#event-4653"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032353.json:
 ```json
 {

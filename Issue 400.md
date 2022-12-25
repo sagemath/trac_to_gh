@@ -116,3 +116,19 @@ archive/issue_comments_001965.json:
 Attachment [5957.patch](tarball://root/attachments/some-uuid/ticket400/5957.patch) by @williamstein created at 2007-08-29 01:51:09
 
 Fixed for sage-2.8.3.
+
+
+
+---
+
+archive/issue_events_000426.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T01:51:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/400",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/400#event-426"
+}
+```

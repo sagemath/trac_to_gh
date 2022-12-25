@@ -84,6 +84,22 @@ I'm closing this.
 
 ---
 
+archive/issue_events_004697.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-09T16:25:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4451",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4451#event-4697"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032756.json:
 ```json
 {

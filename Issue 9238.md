@@ -4372,6 +4372,22 @@ Okay, that sounds good.
 
 ---
 
+archive/issue_events_009400.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-05T07:17:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9238",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9238#event-9400"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086750.json:
 ```json
 {

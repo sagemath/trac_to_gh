@@ -139,6 +139,22 @@ Merged trac_3662-1.patch, trac_3662-2.patch, trac_3662-3.patch, trac_3662-4.patc
 
 ---
 
+archive/issue_events_003881.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-08T22:19:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3662",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3662#event-3881"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025832.json:
 ```json
 {

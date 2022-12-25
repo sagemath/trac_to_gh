@@ -147,6 +147,22 @@ Looks good to me.  One of the doctests failed on my machine due to numerical noi
 
 ---
 
+archive/issue_events_001611.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T04:45:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1460#event-1611"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009384.json:
 ```json
 {

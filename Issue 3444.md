@@ -74,3 +74,19 @@ archive/issue_comments_024254.json:
 ```
 
 Resolution: worksforme
+
+
+
+---
+
+archive/issue_events_003663.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-07-11T21:03:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3444",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3444#event-3663"
+}
+```

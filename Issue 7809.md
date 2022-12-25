@@ -501,6 +501,22 @@ This ticket also fixes #5885, so that should be closed when this is.
 
 ---
 
+archive/issue_events_008023.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-13T11:24:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#event-8023"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067462.json:
 ```json
 {

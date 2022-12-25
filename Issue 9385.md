@@ -657,6 +657,22 @@ Dave
 
 ---
 
+archive/issue_events_009540.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-07-04T14:05:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9385",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9385#event-9540"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089123.json:
 ```json
 {
@@ -929,6 +945,22 @@ archive/issue_comments_089132.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009541.json:
+```json
+{
+    "actor": "olazo",
+    "created_at": "2010-07-04T15:54:34Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9385",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9385#event-9541"
+}
+```
 
 
 
@@ -1228,6 +1260,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_009542.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-07-13T00:35:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9385",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9385#event-9542"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089142.json:
 ```json
 {
@@ -1444,6 +1492,22 @@ archive/issue_comments_089149.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009543.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-10-18T11:42:11Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9385",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9385#event-9543"
+}
+```
 
 
 
@@ -1709,6 +1773,22 @@ archive/issue_comments_089159.json:
 ```
 
 It's not clear whether there really is a problem, I don't know any recent reports of this. Many people have *claimed* that ATLAS goes into an infinite loop, but in reality they are just too impatient to wait for ATLAS to finish compiling.
+
+
+
+---
+
+archive/issue_events_009544.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-05-24T12:25:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9385",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9385#event-9544"
+}
+```
 
 
 

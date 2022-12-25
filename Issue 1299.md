@@ -59,3 +59,19 @@ archive/issue_comments_008137.json:
 ```
 
 This isn't an issue so nevermind.
+
+
+
+---
+
+archive/issue_events_001441.json:
+```json
+{
+    "actor": "jkantor",
+    "created_at": "2007-11-30T05:28:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1299",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1299#event-1441"
+}
+```

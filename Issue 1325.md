@@ -340,6 +340,22 @@ This should be fixed once #3405 is in.
 
 ---
 
+archive/issue_events_001465.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-26T06:35:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1325",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1325#event-1465"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008469.json:
 ```json
 {

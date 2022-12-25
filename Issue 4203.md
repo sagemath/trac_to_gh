@@ -224,6 +224,22 @@ I guess my one last comment is to compute len(self.name) outside of the inner lo
 
 ---
 
+archive/issue_events_004442.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-25T21:22:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4203",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4203#event-4442"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030448.json:
 ```json
 {

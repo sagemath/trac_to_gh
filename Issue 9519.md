@@ -350,6 +350,22 @@ ok
 
 ---
 
+archive/issue_events_009668.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-09-21T16:41:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9519",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9519#event-9668"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091369.json:
 ```json
 {

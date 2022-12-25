@@ -135,6 +135,22 @@ void del_charstar(char* a) {
 
 ---
 
+archive/issue_events_000574.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-09-13T19:39:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/535",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/535#event-574"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002718.json:
 ```json
 {

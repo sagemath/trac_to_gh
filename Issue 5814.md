@@ -142,6 +142,22 @@ I'm marking this ticket as invalid.
 
 ---
 
+archive/issue_events_006063.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-08-15T07:56:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5814",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-6063"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045574.json:
 ```json
 {
@@ -229,6 +245,22 @@ archive/issue_comments_045578.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_006064.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-11T11:58:14Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5814",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-6064"
+}
+```
 
 
 
@@ -631,6 +663,22 @@ archive/issue_comments_045596.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006065.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-04-06T14:50:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5814",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5814#event-6065"
+}
+```
 
 
 

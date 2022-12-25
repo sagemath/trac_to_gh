@@ -84,6 +84,22 @@ Applies cleanly using hg_doc.apply and all the latex docs pass sage -t. Also, ev
 
 ---
 
+archive/issue_events_003011.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-25T04:14:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2821",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2821#event-3011"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019327.json:
 ```json
 {

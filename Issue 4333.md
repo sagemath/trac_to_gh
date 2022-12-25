@@ -147,6 +147,22 @@ Looks good and breaks no doctests.
 
 ---
 
+archive/issue_events_004580.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-26T00:49:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4333",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4333#event-4580"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031714.json:
 ```json
 {

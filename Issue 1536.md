@@ -99,6 +99,22 @@ Looks good to me.  Positive review.
 
 ---
 
+archive/issue_events_001690.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-03T16:23:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1536",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1536#event-1690"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009784.json:
 ```json
 {

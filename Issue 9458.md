@@ -86,3 +86,19 @@ archive/issue_comments_090528.json:
 ```
 
 This is basically a duplicate of #8734.
+
+
+
+---
+
+archive/issue_events_009613.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-07-08T19:37:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9458",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9458#event-9613"
+}
+```

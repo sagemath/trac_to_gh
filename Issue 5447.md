@@ -501,6 +501,22 @@ SageNB patches rebased against #7196, plus this queue: #7158, #4551, #3646, #645
 
 ---
 
+archive/issue_events_005699.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-17T07:43:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5447",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5447#event-5699"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042049.json:
 ```json
 {

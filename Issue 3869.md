@@ -157,6 +157,22 @@ I like the extra doctest!  Thanks.
 
 ---
 
+archive/issue_events_004090.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-25T02:58:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3869",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3869#event-4090"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027524.json:
 ```json
 {

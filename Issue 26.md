@@ -213,6 +213,22 @@ tut/node44.html:sage: eigA = A.eigenvectors()
 
 ---
 
+archive/issue_events_000025.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-22T18:35:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/26#event-25"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000193.json:
 ```json
 {

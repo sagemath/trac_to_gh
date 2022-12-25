@@ -123,6 +123,22 @@ This is obviously right.
 
 ---
 
+archive/issue_events_003210.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-24T14:38:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3005",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3005#event-3210"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020628.json:
 ```json
 {

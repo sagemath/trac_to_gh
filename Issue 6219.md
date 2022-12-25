@@ -47,6 +47,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006467.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-05T07:29:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6219",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6219#event-6467"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049577.json:
 ```json
 {

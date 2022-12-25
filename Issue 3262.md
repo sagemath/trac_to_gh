@@ -215,6 +215,22 @@ Attachment [sage-3262-final.patch](tarball://root/attachments/some-uuid/ticket32
 
 ---
 
+archive/issue_events_003479.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T11:06:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3262",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-3479"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022523.json:
 ```json
 {
@@ -304,6 +320,22 @@ archive/issue_comments_022527.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003480.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-07-10T08:04:04Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3262",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-3480"
+}
+```
 
 
 
@@ -408,6 +440,22 @@ archive/issue_comments_022532.json:
 ```
 
 Changing component from notebook to interact.
+
+
+
+---
+
+archive/issue_events_003481.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-30T02:15:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3262",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3262#event-3481"
+}
+```
 
 
 

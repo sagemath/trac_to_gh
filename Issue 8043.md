@@ -151,3 +151,19 @@ archive/issue_comments_070175.json:
 ```
 
 Merged in 4.4.alpha2.
+
+
+
+---
+
+archive/issue_events_008253.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-23T19:10:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8043",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8043#event-8253"
+}
+```

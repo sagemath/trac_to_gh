@@ -41,6 +41,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/2373
 
 ---
 
+archive/issue_events_002550.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2008-03-16T19:01:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2373",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2373#event-2550"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015980.json:
 ```json
 {

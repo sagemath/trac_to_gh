@@ -145,6 +145,22 @@ I re-uploaded the patch with the typo fixed.
 
 ---
 
+archive/issue_events_003919.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-31T17:56:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3697",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3697#event-3919"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026181.json:
 ```json
 {

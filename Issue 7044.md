@@ -304,6 +304,22 @@ The goal of these tickets is laudable, but:
 
 ---
 
+archive/issue_events_007265.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-07-15T07:18:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#event-7265"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058210.json:
 ```json
 {

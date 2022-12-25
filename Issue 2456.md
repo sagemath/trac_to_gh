@@ -162,6 +162,22 @@ replaced patch addresses my concern.
 
 ---
 
+archive/issue_events_002633.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-10T17:19:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2456",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2456#event-2633"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016601.json:
 ```json
 {

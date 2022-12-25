@@ -194,6 +194,22 @@ Thanks. The rebase looks good to me.
 
 ---
 
+archive/issue_events_006865.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-24T02:22:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6625",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6625#event-6865"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054182.json:
 ```json
 {

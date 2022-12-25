@@ -95,3 +95,19 @@ archive/issue_comments_063874.json:
 ```
 
 Done in #7966
+
+
+
+---
+
+archive/issue_events_007770.json:
+```json
+{
+    "actor": "@nathanncohen",
+    "created_at": "2010-01-19T06:22:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7540",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7540#event-7770"
+}
+```

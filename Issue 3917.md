@@ -65,6 +65,22 @@ Jason, you should probably just use TinyMCE text cells for this.
 
 ---
 
+archive/issue_events_004144.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-22T06:47:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3917",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3917#event-4144"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027968.json:
 ```json
 {

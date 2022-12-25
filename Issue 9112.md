@@ -635,6 +635,22 @@ Version without tabs - apply only this patch
 
 ---
 
+archive/issue_events_009271.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-21T01:43:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9112",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9112#event-9271"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084655.json:
 ```json
 {

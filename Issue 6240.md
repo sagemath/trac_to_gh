@@ -300,6 +300,22 @@ Note that this is still fixed by lowering the optimization level, so i'm lowerin
 
 ---
 
+archive/issue_events_006485.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-04-20T20:57:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6240",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6240#event-6485"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049748.json:
 ```json
 {

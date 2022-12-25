@@ -96,6 +96,22 @@ hosting it.
 
 ---
 
+archive/issue_events_005099.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-01-02T15:42:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4856",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4856#event-5099"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036736.json:
 ```json
 {

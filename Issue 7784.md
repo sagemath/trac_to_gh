@@ -402,6 +402,22 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_008000.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-03T02:17:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7784",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7784#event-8000"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067023.json:
 ```json
 {

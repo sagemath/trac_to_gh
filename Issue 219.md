@@ -45,6 +45,22 @@ This ticket is too vague to be useful at this point in time.  Please open up a m
 
 ---
 
+archive/issue_events_000232.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-11-14T04:51:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/219",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/219#event-232"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000981.json:
 ```json
 {

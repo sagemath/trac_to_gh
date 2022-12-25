@@ -189,6 +189,22 @@ Yep, this fully works now, and is implemented in ntl_wrap.cpp.  Nice.
 
 ---
 
+archive/issue_events_000752.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:10:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/684",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/684#event-752"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003540.json:
 ```json
 {

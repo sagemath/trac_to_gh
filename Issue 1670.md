@@ -128,6 +128,22 @@ This replaces one of the same name and merges cleanly (but doctests will fail)
 
 ---
 
+archive/issue_events_001829.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-04T11:15:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1670",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1670#event-1829"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010581.json:
 ```json
 {

@@ -414,6 +414,22 @@ That patch enables easy creation of text cells--just shift-click on the "new cel
 
 ---
 
+archive/issue_events_004494.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-06T06:37:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4255",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4255#event-4494"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030907.json:
 ```json
 {

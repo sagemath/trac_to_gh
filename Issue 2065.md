@@ -55,6 +55,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_002226.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-01-19T22:18:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2065",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2065#event-2226"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013345.json:
 ```json
 {

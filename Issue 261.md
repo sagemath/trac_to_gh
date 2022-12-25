@@ -275,3 +275,19 @@ archive/issue_comments_001239.json:
 Attachment [trac_261-trivial.patch](tarball://root/attachments/some-uuid/ticket261/trac_261-trivial.patch) by @jhpalmieri created at 2010-04-15 05:18:48
 
 Merged both patches in 4.4.alpha0.
+
+
+
+---
+
+archive/issue_events_000276.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T05:18:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/261",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/261#event-276"
+}
+```

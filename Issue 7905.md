@@ -167,6 +167,22 @@ Closing very old sun/solaris tickets. Any tentative for this OS should start afr
 
 ---
 
+archive/issue_events_008120.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-07-15T07:18:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7905",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7905#event-8120"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068620.json:
 ```json
 {

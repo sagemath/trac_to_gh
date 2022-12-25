@@ -114,3 +114,19 @@ Since #3952 was merged this is fixed.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002585.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-26T21:54:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2409",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2409#event-2585"
+}
+```

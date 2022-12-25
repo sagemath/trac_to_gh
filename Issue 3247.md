@@ -84,6 +84,22 @@ Looks good to me and passes tests, but it depends on #3244 .
 
 ---
 
+archive/issue_events_003466.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-25T14:13:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3247",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3247#event-3466"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022428.json:
 ```json
 {

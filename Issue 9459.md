@@ -204,3 +204,19 @@ archive/issue_comments_090537.json:
 ```
 
 Attachment [9459.patch](tarball://root/attachments/some-uuid/ticket9459/9459.patch) by @jdemeyer created at 2011-01-12 06:32:30
+
+
+
+---
+
+archive/issue_events_009614.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-12T06:32:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9459",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9459#event-9614"
+}
+```

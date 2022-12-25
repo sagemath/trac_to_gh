@@ -48,6 +48,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_008604.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-06-11T19:20:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8419",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8419#event-8604"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075327.json:
 ```json
 {

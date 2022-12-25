@@ -876,6 +876,22 @@ Dave
 
 ---
 
+archive/issue_events_009909.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-29T08:40:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9779",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9779#event-9909"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095848.json:
 ```json
 {

@@ -130,6 +130,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006860.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-24T13:42:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6620",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6620#event-6860"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054152.json:
 ```json
 {

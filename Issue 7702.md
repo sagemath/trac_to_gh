@@ -137,6 +137,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_007919.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-07T11:26:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7702",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7702#event-7919"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065965.json:
 ```json
 {

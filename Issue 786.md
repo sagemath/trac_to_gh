@@ -52,6 +52,22 @@ The previous attachement was filled with all sorts of other changes. This should
 
 ---
 
+archive/issue_events_000893.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-04T18:57:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/786",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/786#event-893"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004696.json:
 ```json
 {

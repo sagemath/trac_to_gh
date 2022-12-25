@@ -58,6 +58,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/8812
 
 ---
 
+archive/issue_events_008977.json:
+```json
+{
+    "actor": "acleone",
+    "created_at": "2010-04-29T01:16:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8812",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8812#event-8977"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080762.json:
 ```json
 {

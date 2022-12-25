@@ -67,6 +67,22 @@ Attachment [7053.patch](tarball://root/attachments/some-uuid/ticket250/7053.patc
 
 ---
 
+archive/issue_events_000264.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-21T02:54:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/250",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/250#event-264"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001099.json:
 ```json
 {

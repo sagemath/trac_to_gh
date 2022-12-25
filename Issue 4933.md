@@ -455,6 +455,22 @@ Thanks John -- I am quite happy with your adjustments.
 
 ---
 
+archive/issue_events_005176.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-18T01:52:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#event-5176"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037381.json:
 ```json
 {

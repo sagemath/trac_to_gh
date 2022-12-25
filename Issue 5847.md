@@ -2263,6 +2263,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006099.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-11T19:37:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-6099"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045975.json:
 ```json
 {
@@ -2294,6 +2310,22 @@ archive/issue_comments_045976.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_006100.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-12T13:06:45Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-6100"
+}
+```
 
 
 
@@ -4297,6 +4329,22 @@ archive/issue_comments_046051.json:
 ```
 
 Changing keywords from "MPIR elliptic curves libecm ecm spkg" to "sd32 MPIR elliptic curves libecm ecm spkg".
+
+
+
+---
+
+archive/issue_events_006101.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-12T18:58:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5847",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5847#event-6101"
+}
+```
 
 
 

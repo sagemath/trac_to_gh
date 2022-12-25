@@ -83,6 +83,22 @@ William's doc patch looks good.
 
 ---
 
+archive/issue_events_005420.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-04T03:09:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5170",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5170#event-5420"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039531.json:
 ```json
 {

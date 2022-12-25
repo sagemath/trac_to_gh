@@ -114,6 +114,22 @@ I deleted lapack-20071123.p0.spkg per the above instructions.
 
 ---
 
+archive/issue_events_008257.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-24T14:05:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8047",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8047#event-8257"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070219.json:
 ```json
 {

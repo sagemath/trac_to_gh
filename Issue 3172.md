@@ -118,6 +118,22 @@ Merge din Sage 3.0.2.alpha1
 
 ---
 
+archive/issue_events_003390.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-19T00:10:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3172",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3172#event-3390"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021934.json:
 ```json
 {

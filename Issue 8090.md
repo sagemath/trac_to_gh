@@ -139,6 +139,22 @@ Yes, you are correct. This is a duplicate. I'm marking it as a duplicate.
 
 ---
 
+archive/issue_events_008298.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-01-28T14:47:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8090",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8090#event-8298"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070781.json:
 ```json
 {

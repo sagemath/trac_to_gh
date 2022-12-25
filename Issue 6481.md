@@ -94,3 +94,19 @@ archive/issue_comments_052303.json:
 ```
 
 Dupe of #6482
+
+
+
+---
+
+archive/issue_events_006717.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2009-09-09T20:13:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6481",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6481#event-6717"
+}
+```

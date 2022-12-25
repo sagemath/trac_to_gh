@@ -173,6 +173,22 @@ Merged both patches in Sage 3.0.alpha4
 
 ---
 
+archive/issue_events_002102.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-13T02:20:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1948",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1948#event-2102"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012364.json:
 ```json
 {
@@ -260,6 +276,38 @@ archive/issue_comments_012368.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002103.json:
+```json
+{
+    "actor": "@aghitza",
+    "created_at": "2008-04-13T14:47:59Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1948",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1948#event-2103"
+}
+```
+
+
+
+---
+
+archive/issue_events_002104.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-13T15:01:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1948",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1948#event-2104"
+}
+```
 
 
 

@@ -125,6 +125,22 @@ The package is at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spk
 
 ---
 
+archive/issue_events_009113.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-07-11T06:06:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8961",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8961#event-9113"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082468.json:
 ```json
 {

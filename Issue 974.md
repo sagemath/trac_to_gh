@@ -113,6 +113,22 @@ applied to 2.8.9.alpha0
 
 ---
 
+archive/issue_events_001095.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T19:42:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/974",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/974#event-1095"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005926.json:
 ```json
 {

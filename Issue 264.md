@@ -46,6 +46,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/264
 
 ---
 
+archive/issue_events_000279.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-21T02:01:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/264",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/264#event-279"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001244.json:
 ```json
 {

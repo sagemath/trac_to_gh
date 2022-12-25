@@ -361,3 +361,19 @@ archive/issue_comments_067738.json:
 ```
 
 Indeed, see #13237.
+
+
+
+---
+
+archive/issue_events_008047.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-13T22:37:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7832",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7832#event-8047"
+}
+```

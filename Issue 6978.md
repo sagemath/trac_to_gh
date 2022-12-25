@@ -70,6 +70,22 @@ I'll do so. I don't know why I used 0.98.5. I will first build femhub with this 
 
 ---
 
+archive/issue_events_007200.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-09-22T09:10:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6978",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-7200"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057601.json:
 ```json
 {
@@ -124,6 +140,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_007201.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-22T16:59:38Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6978",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-7201"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057604.json:
 ```json
 {
@@ -155,3 +187,19 @@ archive/issue_comments_057605.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_007202.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-22T16:59:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6978",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6978#event-7202"
+}
+```

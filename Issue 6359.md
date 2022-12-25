@@ -330,6 +330,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006607.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-25T08:44:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6359",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6359#event-6607"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050767.json:
 ```json
 {
@@ -343,6 +359,22 @@ archive/issue_comments_050767.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_006608.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-25T09:58:05Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6359",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6359#event-6608"
+}
+```
 
 
 
@@ -421,6 +453,22 @@ archive/issue_comments_050771.json:
 ```
 
 I meant to say, for example, ..., and is used by `Modules/_ssl.c` in Python 2.6.2.
+
+
+
+---
+
+archive/issue_events_006609.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-25T17:16:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6359",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6359#event-6609"
+}
+```
 
 
 

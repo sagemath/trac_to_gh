@@ -143,6 +143,22 @@ Fixed in Sage 2.10.1.rc4 via merging the fix at #1988
 
 ---
 
+archive/issue_events_002145.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-31T06:23:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1989",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1989#event-2145"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012854.json:
 ```json
 {

@@ -226,3 +226,19 @@ archive/issue_comments_013127.json:
 ```
 
 Acaccording to Yi this is fixed, so close this.
+
+
+
+---
+
+archive/issue_events_002189.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-24T16:58:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2033",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2033#event-2189"
+}
+```

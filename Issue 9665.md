@@ -379,6 +379,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009800.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-04T02:11:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9665",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9665#event-9800"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093683.json:
 ```json
 {

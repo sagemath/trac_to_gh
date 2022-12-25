@@ -105,3 +105,19 @@ archive/issue_comments_008475.json:
 Merged in 2.8.15.alpha2.
 
 Works on Solaris :)
+
+
+
+---
+
+archive/issue_events_001467.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-01T22:27:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1327",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1327#event-1467"
+}
+```

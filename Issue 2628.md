@@ -202,3 +202,19 @@ archive/issue_comments_018028.json:
 ```
 
 I put a link on #66 back to this ticket.  I think we can close this now as being fixed by TinyMCE.
+
+
+
+---
+
+archive/issue_events_002819.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-22T09:38:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2628",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2628#event-2819"
+}
+```

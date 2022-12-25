@@ -210,6 +210,22 @@ yes!
 
 ---
 
+archive/issue_events_004887.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-10T20:43:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4640",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4640#event-4887"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034865.json:
 ```json
 {

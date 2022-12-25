@@ -298,6 +298,22 @@ incorporates all of the patches, based on sage 4.4.2
 
 ---
 
+archive/issue_events_009276.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T19:49:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9120",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9120#event-9276"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084693.json:
 ```json
 {

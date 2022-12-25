@@ -157,6 +157,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_000237.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-19T13:25:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/224",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/224#event-237"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000999.json:
 ```json
 {

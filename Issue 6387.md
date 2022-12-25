@@ -67,6 +67,22 @@ Don't know how this made it so long without being hit...
 
 ---
 
+archive/issue_events_006635.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-03T17:22:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6387",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6387#event-6635"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051047.json:
 ```json
 {

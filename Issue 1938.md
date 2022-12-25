@@ -492,3 +492,19 @@ archive/issue_comments_012276.json:
 ```
 
 Merged 1938-fast-float-fixes.hg and trac-1938-fix_some_docstrings.patch in Sage 2.10.1.rc3
+
+
+
+---
+
+archive/issue_events_002094.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-30T09:21:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1938",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1938#event-2094"
+}
+```

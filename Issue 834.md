@@ -182,6 +182,22 @@ to improve rapidly, IMHO.
 
 ---
 
+archive/issue_events_000947.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-02-27T12:30:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/834",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/834#event-947"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005148.json:
 ```json
 {

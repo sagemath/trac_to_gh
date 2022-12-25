@@ -88,6 +88,22 @@ Looks good. This should be merged in the optional packages repository.
 
 ---
 
+archive/issue_events_007270.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-23T09:09:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7049",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7049#event-7270"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058248.json:
 ```json
 {

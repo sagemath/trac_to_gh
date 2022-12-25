@@ -350,6 +350,22 @@ merged into sagenb-0.4.2 (sage-4.2.1)
 
 ---
 
+archive/issue_events_007328.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-11T19:55:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7106",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7106#event-7328"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058732.json:
 ```json
 {

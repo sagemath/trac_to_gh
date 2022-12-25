@@ -81,6 +81,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_003889.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-08-23T08:14:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3670",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3670#event-3889"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025891.json:
 ```json
 {

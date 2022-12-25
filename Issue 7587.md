@@ -243,6 +243,22 @@ Sorry for the noise...
 
 ---
 
+archive/issue_events_007812.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-04T05:40:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7587",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7587#event-7812"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064577.json:
 ```json
 {

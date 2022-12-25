@@ -100,6 +100,22 @@ Installs successfully, poset and graph doctests pass.
 
 ---
 
+archive/issue_events_004023.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-11T00:47:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3801",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3801#event-4023"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026969.json:
 ```json
 {

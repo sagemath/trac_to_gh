@@ -119,6 +119,22 @@ Attachment [matrix-derivative.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_004739.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-07T09:59:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4493",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4493#event-4739"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033162.json:
 ```json
 {

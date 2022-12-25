@@ -98,6 +98,22 @@ This must be FIXED.
 
 ---
 
+archive/issue_events_002171.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-19T13:17:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2017",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2017#event-2171"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012992.json:
 ```json
 {

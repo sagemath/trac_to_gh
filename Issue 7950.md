@@ -306,3 +306,19 @@ archive/issue_comments_069257.json:
 ```
 
 Merged [trac_7950-zero_variable_factor.take2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7950/trac_7950-zero_variable_factor.take2.patch).
+
+
+
+---
+
+archive/issue_events_008166.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T09:32:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7950",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7950#event-8166"
+}
+```

@@ -240,6 +240,22 @@ Merged linear_code20080127.hg in Sage 2.10.2.alpha0
 
 ---
 
+archive/issue_events_001811.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-16T17:25:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1651",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1651#event-1811"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010487.json:
 ```json
 {

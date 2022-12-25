@@ -358,6 +358,22 @@ Rob
 
 ---
 
+archive/issue_events_008241.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-03T04:18:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8030",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8030#event-8241"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070032.json:
 ```json
 {

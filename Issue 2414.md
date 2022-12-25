@@ -83,3 +83,19 @@ archive/issue_comments_016252.json:
 ```
 
 Yes, this example was fixed in 2.10.3 by #1186, and I can't find any other examples with problems, so I'm declaring this bug fixed.
+
+
+
+---
+
+archive/issue_events_002590.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2008-03-21T06:20:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2414",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2414#event-2590"
+}
+```

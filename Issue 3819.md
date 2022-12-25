@@ -140,6 +140,22 @@ I agree with this patch.
 
 ---
 
+archive/issue_events_004043.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-13T00:20:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3819",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3819#event-4043"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027106.json:
 ```json
 {

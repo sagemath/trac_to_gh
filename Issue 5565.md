@@ -156,6 +156,22 @@ It seems that problem has gone away with Sage 4.3.1.
 
 ---
 
+archive/issue_events_005811.json:
+```json
+{
+    "actor": "@zimmermann6",
+    "created_at": "2010-02-05T20:17:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5565",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5565#event-5811"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043246.json:
 ```json
 {

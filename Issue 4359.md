@@ -108,6 +108,22 @@ OK, I'm happy.
 
 ---
 
+archive/issue_events_004604.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-26T01:35:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4359",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4359#event-4604"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031963.json:
 ```json
 {

@@ -409,6 +409,22 @@ Next time I feel inspired to do something similar I'll do so in a new ticket in 
 
 ---
 
+archive/issue_events_005868.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-24T09:54:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5627",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5627#event-5868"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043859.json:
 ```json
 {

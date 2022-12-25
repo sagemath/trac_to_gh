@@ -336,6 +336,22 @@ I've merged the sagenb repository patch into SageNB 0.8.2 at #9572.
 
 ---
 
+archive/issue_events_003560.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-27T02:30:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3342",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3342#event-3560"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023170.json:
 ```json
 {

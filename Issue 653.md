@@ -99,6 +99,22 @@ Hopefully we don't have to re-implement every computer algebra algorithm that us
 
 ---
 
+archive/issue_events_000719.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-26T05:05:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/653",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/653#event-719"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003389.json:
 ```json
 {

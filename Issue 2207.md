@@ -130,6 +130,22 @@ Michael
 
 ---
 
+archive/issue_events_002375.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-03-05T00:38:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#event-2375"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014540.json:
 ```json
 {
@@ -202,6 +218,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_002376.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-03-05T01:09:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#event-2376"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014544.json:
 ```json
 {
@@ -217,6 +249,22 @@ archive/issue_comments_014544.json:
 Attachment [2207.patch](tarball://root/attachments/some-uuid/ticket2207/2207.patch) by @mwhansen created at 2008-03-05 01:09:01
 
 New patch against 2.10.3.rc1 attached which adds missing doctests
+
+
+
+---
+
+archive/issue_events_002377.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-05T05:35:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#event-2377"
+}
+```
 
 
 

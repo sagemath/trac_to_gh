@@ -81,3 +81,19 @@ archive/issue_comments_002041.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000443.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-08-09T21:29:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/415",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/415#event-443"
+}
+```

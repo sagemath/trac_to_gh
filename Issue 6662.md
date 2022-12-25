@@ -176,6 +176,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_006898.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-09T10:40:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6662",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6662#event-6898"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054585.json:
 ```json
 {

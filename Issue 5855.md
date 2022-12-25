@@ -230,6 +230,22 @@ See #5921 for improved handling of the content in integer poly factorization.  I
 
 ---
 
+archive/issue_events_006111.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-30T05:51:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5855",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5855#event-6111"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046176.json:
 ```json
 {

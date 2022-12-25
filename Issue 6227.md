@@ -67,3 +67,19 @@ archive/issue_comments_049610.json:
 ```
 
 Dupe of #6223.
+
+
+
+---
+
+archive/issue_events_006474.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-01-14T05:50:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6227",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6227#event-6474"
+}
+```

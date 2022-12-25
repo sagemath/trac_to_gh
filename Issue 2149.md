@@ -178,6 +178,22 @@ I vote against renaming it.
 
 ---
 
+archive/issue_events_002313.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-29T00:09:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2149",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2149#event-2313"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014079.json:
 ```json
 {

@@ -377,6 +377,22 @@ I just checked that the tutorial, developer guide, and constructions guide are [
 
 ---
 
+archive/issue_events_003386.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-03T17:09:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3167",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3167#event-3386"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021906.json:
 ```json
 {

@@ -111,6 +111,22 @@ I believe that this is fixed by #6674.  That is, the failure here is because the
 
 ---
 
+archive/issue_events_006911.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-12T15:40:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6675",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6675#event-6911"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054768.json:
 ```json
 {

@@ -62,6 +62,22 @@ sage -testall log, with tracebacks.
 
 ---
 
+archive/issue_events_009443.json:
+```json
+{
+    "actor": "retry",
+    "created_at": "2010-06-22T07:45:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9282",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9282#event-9443"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087303.json:
 ```json
 {

@@ -65,6 +65,22 @@ so this is no longer even a problem.
 
 ---
 
+archive/issue_events_006644.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-07-09T05:07:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6398",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6398#event-6644"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051301.json:
 ```json
 {

@@ -301,6 +301,22 @@ archive/issue_comments_019971.json:
 
 ---
 
+archive/issue_events_003104.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T02:58:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2902",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2902#event-3104"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019972.json:
 ```json
 {

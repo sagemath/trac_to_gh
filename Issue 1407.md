@@ -80,6 +80,22 @@ Minor doctest touchups.
 
 ---
 
+archive/issue_events_001555.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T11:57:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1407",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1407#event-1555"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009058.json:
 ```json
 {

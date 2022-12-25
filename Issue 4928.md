@@ -195,6 +195,22 @@ Attachment [Sage-3.2.3-release-notes-final.txt](tarball://root/attachments/some-
 
 ---
 
+archive/issue_events_005171.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-19T05:10:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4928",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4928#event-5171"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037322.json:
 ```json
 {

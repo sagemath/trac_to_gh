@@ -49,6 +49,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_008812.json:
+```json
+{
+    "actor": "boussica",
+    "created_at": "2010-04-02T14:52:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8643",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8643#event-8812"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078268.json:
 ```json
 {

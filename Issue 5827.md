@@ -177,6 +177,22 @@ Changing assignee from somebody to jkantor.
 
 ---
 
+archive/issue_events_006077.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T18:52:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5827",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5827#event-6077"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045724.json:
 ```json
 {

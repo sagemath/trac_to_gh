@@ -65,6 +65,22 @@ Without this patch, "Boom!" popped up 5 times.
 
 ---
 
+archive/issue_events_004065.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-14T16:42:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3842",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3842#event-4065"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027269.json:
 ```json
 {

@@ -69,6 +69,22 @@ After this change, positive review.
 
 ---
 
+archive/issue_events_005165.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-24T18:45:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4922",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4922#event-5165"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037283.json:
 ```json
 {

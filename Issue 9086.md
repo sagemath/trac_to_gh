@@ -295,6 +295,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009243.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-03T16:01:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9086",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9086#event-9243"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084244.json:
 ```json
 {
@@ -326,6 +342,22 @@ archive/issue_comments_084245.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009244.json:
+```json
+{
+    "actor": "damm",
+    "created_at": "2010-06-21T20:25:20Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9086",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9086#event-9244"
+}
+```
 
 
 
@@ -412,3 +444,19 @@ archive/issue_comments_084249.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009245.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2010-06-22T18:50:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9086",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9086#event-9245"
+}
+```

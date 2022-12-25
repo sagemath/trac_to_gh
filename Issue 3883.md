@@ -329,6 +329,22 @@ Thanks for the review!
 
 ---
 
+archive/issue_events_004108.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-28T02:01:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3883",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3883#event-4108"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027651.json:
 ```json
 {

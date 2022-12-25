@@ -293,6 +293,22 @@ I put Richard's name in the authors list since he should get the credit for fixi
 
 ---
 
+archive/issue_events_010015.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-27T12:01:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9890",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9890#event-10015"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097878.json:
 ```json
 {

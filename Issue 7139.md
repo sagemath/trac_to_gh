@@ -59,6 +59,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/7139
 
 ---
 
+archive/issue_events_007359.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-01-02T06:52:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7139",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7139#event-7359"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059061.json:
 ```json
 {

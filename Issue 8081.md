@@ -146,6 +146,22 @@ Nathann, the ticket number is very useful for tracking down changes. You might c
 
 ---
 
+archive/issue_events_008287.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-31T00:14:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8081",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8081#event-8287"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070703.json:
 ```json
 {

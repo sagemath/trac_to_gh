@@ -319,6 +319,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009959.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-01T10:11:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#event-9959"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096937.json:
 ```json
 {
@@ -332,6 +348,22 @@ archive/issue_comments_096937.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_009960.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-02T15:34:34Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#event-9960"
+}
+```
 
 
 
@@ -395,6 +427,22 @@ forget the patch.)
 
 ---
 
+archive/issue_events_009961.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-11-04T11:43:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#event-9961"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096941.json:
 ```json
 {
@@ -408,6 +456,22 @@ archive/issue_comments_096941.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009962.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-11-04T11:43:42Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#event-9962"
+}
+```
 
 
 
@@ -483,6 +547,22 @@ Replying to [comment:13 bump]:
 > I don't think I can revert the fixed status: trac admin has to do that.
 
 Done.
+
+
+
+---
+
+archive/issue_events_009963.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-10T22:20:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#event-9963"
+}
+```
 
 
 

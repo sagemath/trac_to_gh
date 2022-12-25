@@ -201,3 +201,19 @@ Merged in Sage 3.3.rc1.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005522.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-14T16:09:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5266",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5266#event-5522"
+}
+```

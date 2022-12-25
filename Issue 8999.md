@@ -125,3 +125,19 @@ archive/issue_comments_083084.json:
 bug disappeared when I rebuilt sage.
 ```
 
+
+
+
+---
+
+archive/issue_events_009153.json:
+```json
+{
+    "actor": "mariah",
+    "created_at": "2010-05-20T19:06:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8999",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8999#event-9153"
+}
+```

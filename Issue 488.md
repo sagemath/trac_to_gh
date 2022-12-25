@@ -51,6 +51,22 @@ Changing component from algebraic geometry to packages.
 
 ---
 
+archive/issue_events_000519.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T03:49:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/488",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/488#event-519"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002424.json:
 ```json
 {

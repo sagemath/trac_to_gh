@@ -120,6 +120,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_003150.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-18T06:15:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2946",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2946#event-3150"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020273.json:
 ```json
 {
@@ -225,6 +241,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_003151.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-18T06:19:30Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2946",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2946#event-3151"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020278.json:
 ```json
 {
@@ -256,6 +288,22 @@ archive/issue_comments_020279.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_003152.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-18T06:49:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2946",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2946#event-3152"
+}
+```
 
 
 

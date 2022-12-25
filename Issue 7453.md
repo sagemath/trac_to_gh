@@ -397,6 +397,22 @@ I've added the spkg here:
 
 ---
 
+archive/issue_events_007680.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-02-07T05:37:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7453",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7453#event-7680"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062671.json:
 ```json
 {

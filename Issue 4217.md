@@ -333,6 +333,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_004454.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T00:51:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4217",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4217#event-4454"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030591.json:
 ```json
 {

@@ -319,3 +319,19 @@ archive/issue_comments_068772.json:
 ```
 
 Merged [trac_7916-same_name_method.take2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7916/trac_7916-same_name_method.take2.patch).
+
+
+
+---
+
+archive/issue_events_008131.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-18T21:47:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7916",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7916#event-8131"
+}
+```

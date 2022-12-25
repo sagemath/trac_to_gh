@@ -309,6 +309,22 @@ Typo in the word "seperated" on line 990:
 
 ---
 
+archive/issue_events_006778.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-29T11:12:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6542",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6542#event-6778"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053242.json:
 ```json
 {

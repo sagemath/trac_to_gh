@@ -180,6 +180,22 @@ Positive review, since I just tested that %auto still works (as well as #auto); 
 
 ---
 
+archive/issue_events_007226.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-24T07:16:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7002",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7002#event-7226"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057785.json:
 ```json
 {

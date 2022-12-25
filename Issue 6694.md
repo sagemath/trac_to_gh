@@ -288,6 +288,22 @@ No problem.  To really tax a browser, try "evaluating all" cells in a long secti
 
 ---
 
+archive/issue_events_006929.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-24T09:46:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6694",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6694#event-6929"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054915.json:
 ```json
 {

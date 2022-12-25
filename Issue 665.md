@@ -82,6 +82,22 @@ Changing assignee from boothby to @williamstein.
 
 ---
 
+archive/issue_events_000733.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-21T00:19:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/665",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/665#event-733"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003439.json:
 ```json
 {

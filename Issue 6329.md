@@ -534,6 +534,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006575.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-12T19:27:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#event-6575"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050444.json:
 ```json
 {

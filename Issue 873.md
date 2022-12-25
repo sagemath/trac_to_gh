@@ -101,6 +101,22 @@ Attachment [466.patch](tarball://root/attachments/some-uuid/ticket873/466.patch)
 
 ---
 
+archive/issue_events_000987.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:14:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/873",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/873#event-987"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005370.json:
 ```json
 {

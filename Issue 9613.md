@@ -108,6 +108,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_009754.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2017-07-13T07:54:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9613",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9613#event-9754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092944.json:
 ```json
 {

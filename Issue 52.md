@@ -60,6 +60,22 @@ O(5^1)
 
 ---
 
+archive/issue_events_000051.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-13T02:11:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/52",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/52#event-51"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000288.json:
 ```json
 {

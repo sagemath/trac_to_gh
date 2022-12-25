@@ -647,3 +647,19 @@ archive/issue_comments_012132.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002074.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-06T09:20:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1918",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1918#event-2074"
+}
+```

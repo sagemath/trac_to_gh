@@ -311,6 +311,22 @@ I just want to add that I'm ok with this being merged since there are a 1000 oth
 
 ---
 
+archive/issue_events_005542.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-20T06:40:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5287",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5287#event-5542"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040556.json:
 ```json
 {

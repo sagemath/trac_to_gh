@@ -100,3 +100,19 @@ My guess is that the credit goes to was.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000173.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-08-22T19:49:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/167",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/167#event-173"
+}
+```

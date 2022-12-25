@@ -69,6 +69,22 @@ On second thought, it was stupid of me to open this ticket. So marked as duplica
 
 ---
 
+archive/issue_events_007055.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-25T00:17:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6821",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6821#event-7055"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056158.json:
 ```json
 {

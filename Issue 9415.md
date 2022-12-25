@@ -71,6 +71,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_009571.json:
+```json
+{
+    "actor": "rkirov",
+    "created_at": "2011-01-10T22:45:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9415",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9415#event-9571"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089599.json:
 ```json
 {

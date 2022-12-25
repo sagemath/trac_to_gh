@@ -47,6 +47,22 @@ Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket45
 
 ---
 
+archive/issue_events_004778.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-20T09:33:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4532",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4532#event-4778"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033694.json:
 ```json
 {

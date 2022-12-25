@@ -142,6 +142,22 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
 ---
 
+archive/issue_events_007658.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T01:09:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7435",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7435#event-7658"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062451.json:
 ```json
 {
@@ -238,6 +254,22 @@ Changing status from closed to needs_work.
 
 ---
 
+archive/issue_events_007659.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T03:18:50Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7435",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7435#event-7659"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062455.json:
 ```json
 {
@@ -307,6 +339,22 @@ archive/issue_comments_062458.json:
 ```
 
 LGTM.
+
+
+
+---
+
+archive/issue_events_007660.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T03:22:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7435",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7435#event-7660"
+}
+```
 
 
 

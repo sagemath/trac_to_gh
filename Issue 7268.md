@@ -386,6 +386,22 @@ Depends on #7270 !!!!!!!!!!!!!!!
 
 ---
 
+archive/issue_events_007489.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-02T07:32:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7268",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7268#event-7489"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060296.json:
 ```json
 {

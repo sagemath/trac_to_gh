@@ -195,6 +195,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009967.json:
+```json
+{
+    "actor": "gagansekhon",
+    "created_at": "2011-01-08T01:12:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9841",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9841#event-9967"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096973.json:
 ```json
 {
@@ -208,6 +224,22 @@ archive/issue_comments_096973.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_009968.json:
+```json
+{
+    "actor": "gagansekhon",
+    "created_at": "2011-01-08T02:08:40Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9841",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9841#event-9968"
+}
+```
 
 
 
@@ -227,6 +259,22 @@ archive/issue_comments_096974.json:
 
 Replying to [comment:2 gagansekhon]:
 I didn't know stating resolved would close the ticket. I just email Jeroen to close the ticket instead since he is the release manger.
+
+
+
+---
+
+archive/issue_events_009969.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-08T05:11:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9841",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9841#event-9969"
+}
+```
 
 
 

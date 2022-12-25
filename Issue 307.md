@@ -63,6 +63,22 @@ sage: b.dot_product(u)
 
 ---
 
+archive/issue_events_000326.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-03-04T21:22:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/307",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/307#event-326"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001458.json:
 ```json
 {

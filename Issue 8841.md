@@ -237,6 +237,22 @@ To close this ticket, I think we need a quick update to README.txt to indicate w
 
 ---
 
+archive/issue_events_009006.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-09T00:48:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8841",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8841#event-9006"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081154.json:
 ```json
 {

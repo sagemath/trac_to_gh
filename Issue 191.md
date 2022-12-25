@@ -143,6 +143,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_000198.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-07-08T14:17:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-198"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000868.json:
 ```json
 {
@@ -192,6 +208,22 @@ archive/issue_comments_000870.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_000199.json:
+```json
+{
+    "actor": "@loefflerd",
+    "created_at": "2010-07-08T19:20:26Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-199"
+}
+```
 
 
 
@@ -284,6 +316,22 @@ archive/issue_comments_000875.json:
 ```
 
 I'm resolving this as a "duplicate," simply because the only relevant milestone is "sage-duplicate/invalid/wontfix."
+
+
+
+---
+
+archive/issue_events_000200.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T09:40:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/191#event-200"
+}
+```
 
 
 

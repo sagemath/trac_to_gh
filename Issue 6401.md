@@ -252,3 +252,19 @@ I applied patches in the following order:
 4. `trac_6377-exp_infinity.patch`
 5. `trac_6243-fderivative_hash.patch`
 All doctests pass in my merge tree. So I'm changing #6404, #6401, #6377 and #6243 to positive review as per Golam's request.
+
+
+
+---
+
+archive/issue_events_006646.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-03T00:30:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6401",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6401#event-6646"
+}
+```

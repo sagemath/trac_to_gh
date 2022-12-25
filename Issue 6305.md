@@ -127,3 +127,19 @@ archive/issue_comments_050230.json:
 ```
 
 Resolution: worksforme
+
+
+
+---
+
+archive/issue_events_006551.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T07:19:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6305",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6305#event-6551"
+}
+```

@@ -82,3 +82,19 @@ archive/issue_comments_050141.json:
 ```
 
 Yep, this is a great idea. There's no hg repository there, but I've added the changes.
+
+
+
+---
+
+archive/issue_events_006537.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-18T00:03:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6295",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6295#event-6537"
+}
+```

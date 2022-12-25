@@ -193,6 +193,22 @@ I'm not sure, but post-#7650, these imports should be unnecessary.  The patch ab
 
 ---
 
+archive/issue_events_008314.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-30T23:52:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#event-8314"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071037.json:
 ```json
 {

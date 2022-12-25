@@ -289,3 +289,19 @@ archive/issue_comments_091338.json:
 ```
 
 Thank you, Minh.
+
+
+
+---
+
+archive/issue_events_009664.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-15T06:55:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9515",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9515#event-9664"
+}
+```

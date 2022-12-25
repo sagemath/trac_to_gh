@@ -200,6 +200,22 @@ The patch for #2050 was merged in 2.10.3.rc0 .
 
 ---
 
+archive/issue_events_001865.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-02-28T01:13:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1706",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1706#event-1865"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010783.json:
 ```json
 {

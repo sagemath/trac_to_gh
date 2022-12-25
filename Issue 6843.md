@@ -184,3 +184,19 @@ archive/issue_comments_056351.json:
 ```
 
 This was fixed in my rewrite of how notebook evaluates code.  In particular "When creating a new worksheet manually this directory is 755 and evaluating cells in that worksheet works properly." isn't an issue since all code gets evaluated in a special /tmp directory that is created by the server and has permissions carefully set.  Moreover, the code in the worksheet storage directory now has all permissions very carefully set using platform independent Python functions.
+
+
+
+---
+
+archive/issue_events_007076.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-08T20:08:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6843",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6843#event-7076"
+}
+```

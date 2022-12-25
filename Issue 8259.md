@@ -395,6 +395,22 @@ Thanks! I haven't rerun the tests, but the review patch looks good to me.
 
 ---
 
+archive/issue_events_008458.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T21:27:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8259",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8259#event-8458"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072980.json:
 ```json
 {

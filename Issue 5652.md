@@ -109,3 +109,19 @@ archive/issue_comments_044057.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_005893.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-21T03:20:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5652",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5652#event-5893"
+}
+```

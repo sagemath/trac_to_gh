@@ -181,6 +181,22 @@ I don't have the right to close tickets on trac, feel free to close this.
 
 ---
 
+archive/issue_events_005598.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-06-15T13:36:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5341",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5341#event-5598"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041072.json:
 ```json
 {

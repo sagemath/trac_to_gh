@@ -99,6 +99,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_009432.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-21T10:06:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9270",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9270#event-9432"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087181.json:
 ```json
 {

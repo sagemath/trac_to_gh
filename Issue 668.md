@@ -98,6 +98,22 @@ Attachment [Sage-2.9-fix-numerical-doctests-in-calculus.py-Solaris10.patch](tarb
 
 ---
 
+archive/issue_events_000736.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-22T01:06:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/668",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/668#event-736"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003452.json:
 ```json
 {

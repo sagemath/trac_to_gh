@@ -371,6 +371,22 @@ The patch at #2523 fixes this, too. (It was the same problem with data generated
 
 ---
 
+archive/issue_events_003140.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-04-26T18:27:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2938",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2938#event-3140"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020196.json:
 ```json
 {
@@ -460,6 +476,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_003141.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-04-26T23:04:54Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2938",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2938#event-3141"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020200.json:
 ```json
 {
@@ -509,6 +541,22 @@ archive/issue_comments_020202.json:
 ```
 
 Attachment [trac-2938-doc.patch](tarball://root/attachments/some-uuid/ticket2938/trac-2938-doc.patch) by @craigcitro created at 2008-04-26 23:05:12
+
+
+
+---
+
+archive/issue_events_003142.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-26T23:08:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2938",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2938#event-3142"
+}
+```
 
 
 

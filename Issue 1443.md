@@ -135,6 +135,22 @@ diff(f(g(x)), x, 1)
 
 ---
 
+archive/issue_events_001590.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-12-15T23:40:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1443",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1443#event-1590"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009290.json:
 ```json
 {

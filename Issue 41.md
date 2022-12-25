@@ -199,6 +199,22 @@ From Ifti
 
 ---
 
+archive/issue_events_000040.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-25T20:04:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/41#event-40"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000258.json:
 ```json
 {

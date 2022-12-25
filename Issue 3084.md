@@ -242,6 +242,22 @@ sage: %timeit sage.games.sudoku.Sudoku('..............3.85..1.2.......5.7.....4.
 
 ---
 
+archive/issue_events_003298.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-24T10:12:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3084",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3084#event-3298"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021257.json:
 ```json
 {

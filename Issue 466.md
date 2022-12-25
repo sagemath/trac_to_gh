@@ -238,6 +238,22 @@ Applied for sage-2.8.3
 
 ---
 
+archive/issue_events_000495.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T02:54:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/466#event-495"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002309.json:
 ```json
 {

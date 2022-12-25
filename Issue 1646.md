@@ -267,3 +267,19 @@ Thanks for finding the dupe. Closed as duplicate.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001806.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-06T22:54:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#event-1806"
+}
+```

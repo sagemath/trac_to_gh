@@ -232,6 +232,22 @@ So apply this safe package and close this.
 
 ---
 
+archive/issue_events_003631.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-15T18:39:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3415",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3415#event-3631"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023899.json:
 ```json
 {

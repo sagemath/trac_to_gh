@@ -591,6 +591,22 @@ Looks good, and I'm very happy with the changes.
 
 ---
 
+archive/issue_events_005324.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-24T09:50:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5080",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5080#event-5324"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038635.json:
 ```json
 {
@@ -622,6 +638,22 @@ archive/issue_comments_038636.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005325.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-06-28T15:00:48Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5080",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5080#event-5325"
+}
+```
 
 
 
@@ -779,6 +811,22 @@ archive/issue_comments_038643.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_005326.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-29T20:56:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5080",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5080#event-5326"
+}
+```
 
 
 

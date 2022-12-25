@@ -88,6 +88,22 @@ Looks good to me.  I've updated the website to include this.
 
 ---
 
+archive/issue_events_008719.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2011-12-18T09:50:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8538",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8538#event-8719"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077061.json:
 ```json
 {

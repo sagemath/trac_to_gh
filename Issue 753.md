@@ -270,6 +270,22 @@ Merged all three patches in Sage 2.10.3.rc1
 
 ---
 
+archive/issue_events_000846.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-02T18:32:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/753",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/753#event-846"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004444.json:
 ```json
 {

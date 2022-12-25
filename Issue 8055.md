@@ -188,6 +188,22 @@ Proposing to close all sagenb tickets as outdated, so that all remaining open ti
 
 ---
 
+archive/issue_events_008264.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-09-02T07:48:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8055",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8055#event-8264"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070364.json:
 ```json
 {

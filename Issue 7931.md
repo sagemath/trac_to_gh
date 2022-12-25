@@ -1495,6 +1495,22 @@ Great!  Thanks to all of the reviewers for looking at this.
 
 ---
 
+archive/issue_events_008147.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-02-07T08:14:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7931",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7931#event-8147"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068997.json:
 ```json
 {

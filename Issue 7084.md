@@ -110,6 +110,22 @@ Tests look good. Doctests run perfectly. Positive review.
 
 ---
 
+archive/issue_events_007306.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T07:20:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7084",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7084#event-7306"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058448.json:
 ```json
 {

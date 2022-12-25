@@ -92,6 +92,22 @@ Merged in Sage 2.10.1.rc1: the bundle and updated scipy_sandbox as well as cwitt
 
 ---
 
+archive/issue_events_002004.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-27T07:18:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1845",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1845#event-2004"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011657.json:
 ```json
 {

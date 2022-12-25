@@ -185,6 +185,22 @@ The first two hunks of the first patch didn't apply to sage-3.4.2.alpha0, but th
 
 ---
 
+archive/issue_events_006098.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-29T23:38:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5846",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5846#event-6098"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045902.json:
 ```json
 {

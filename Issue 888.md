@@ -226,6 +226,22 @@ Ok, it's easy enough to check that dsage.setup() has been run (i.e. check that D
 
 ---
 
+archive/issue_events_001002.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-21T23:39:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/888",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/888#event-1002"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005469.json:
 ```json
 {

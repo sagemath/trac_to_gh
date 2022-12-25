@@ -168,3 +168,19 @@ archive/issue_comments_065373.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_007876.json:
+```json
+{
+    "actor": "@videlec",
+    "created_at": "2020-03-29T15:54:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#event-7876"
+}
+```

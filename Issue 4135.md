@@ -798,6 +798,22 @@ rebased against mvngu's 4.1.2.alpha0 merge tree
 
 ---
 
+archive/issue_events_004373.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-03T10:40:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#event-4373"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029966.json:
 ```json
 {

@@ -138,3 +138,19 @@ archive/issue_comments_070378.json:
 ```
 
 Merged [boehm_gc-7.1.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/boehm_gc-7.1.p3.spkg) in the standard spkg repository.
+
+
+
+---
+
+archive/issue_events_008266.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-01T00:41:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8057",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8057#event-8266"
+}
+```

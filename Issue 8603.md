@@ -558,6 +558,22 @@ My concern was just that the *correct* nature was doctested, not the wrong one, 
 
 ---
 
+archive/issue_events_008775.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2017-12-12T08:23:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8603",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8603#event-8775"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077805.json:
 ```json
 {

@@ -403,3 +403,19 @@ archive/issue_comments_047847.json:
 ```
 
 Closed as requested (fixed by #6671).
+
+
+
+---
+
+archive/issue_events_006275.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T05:56:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#event-6275"
+}
+```

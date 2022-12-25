@@ -99,6 +99,22 @@ next attempt, patch updated
 
 ---
 
+archive/issue_events_001362.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-21T15:26:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1224",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1224#event-1362"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007602.json:
 ```json
 {

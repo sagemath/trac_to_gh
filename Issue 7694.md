@@ -118,3 +118,19 @@ Interestingly, I just looked in sage-4.4.3.alpha2, and this is already fixed:
 ```
 
 Cool.
+
+
+
+---
+
+archive/issue_events_007911.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-03T04:09:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#event-7911"
+}
+```

@@ -187,3 +187,19 @@ archive/issue_comments_009856.json:
 ```
 
 Merged both patches in Sage 3.0.1.alpha1
+
+
+
+---
+
+archive/issue_events_001703.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-28T00:08:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1549",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1549#event-1703"
+}
+```

@@ -176,6 +176,22 @@ Can anybody replicate this?
 
 ---
 
+archive/issue_events_000652.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:36:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/596#event-652"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003066.json:
 ```json
 {
@@ -247,6 +263,38 @@ archive/issue_comments_003069.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000653.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-02T18:30:24Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/596#event-653"
+}
+```
+
+
+
+---
+
+archive/issue_events_000654.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2008-02-10T03:16:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/596#event-654"
+}
+```
 
 
 

@@ -130,6 +130,22 @@ archive/issue_comments_063273.json:
 
 ---
 
+archive/issue_events_007726.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T03:15:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7497",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7497#event-7726"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063274.json:
 ```json
 {

@@ -53,6 +53,22 @@ The patch is good, but I accidentally cut it from my symbolics branch.  Not real
 
 ---
 
+archive/issue_events_006268.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-12T05:52:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6013",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6013#event-6268"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047758.json:
 ```json
 {

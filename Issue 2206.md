@@ -174,3 +174,19 @@ archive/issue_comments_014534.json:
 ```
 
 Merged factorization.2.patch in Sage 2.10.3.alpha0
+
+
+
+---
+
+archive/issue_events_002374.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-25T04:17:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2206",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2206#event-2374"
+}
+```

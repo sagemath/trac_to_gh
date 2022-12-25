@@ -196,6 +196,22 @@ Burcin agrees that this is a positive review now.
 
 ---
 
+archive/issue_events_003163.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-28T14:11:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#event-3163"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020362.json:
 ```json
 {

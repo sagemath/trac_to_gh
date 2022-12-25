@@ -683,6 +683,22 @@ There are no library patches needed, and nothing needs to be added to the packag
 
 ---
 
+archive/issue_events_008076.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-09T09:36:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7861",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7861#event-8076"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068046.json:
 ```json
 {

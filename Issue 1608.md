@@ -105,6 +105,22 @@ Image fonts are already included in sagenb. Please close this.
 
 ---
 
+archive/issue_events_001766.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-15T15:58:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-1766"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010190.json:
 ```json
 {
@@ -174,6 +190,22 @@ archive/issue_comments_010193.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_001767.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-16T19:15:52Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-1767"
+}
+```
 
 
 
@@ -291,6 +323,22 @@ archive/issue_comments_010199.json:
 ```
 
 Changing status from needs_review to needs_work.
+
+
+
+---
+
+archive/issue_events_001768.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:02:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1608",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1608#event-1768"
+}
+```
 
 
 

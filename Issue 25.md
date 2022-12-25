@@ -46,6 +46,22 @@ I made this change for sage-1.5.  It's the right thing to do.
 
 ---
 
+archive/issue_events_000024.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-11-06T08:33:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/25",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/25#event-24"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000186.json:
 ```json
 {

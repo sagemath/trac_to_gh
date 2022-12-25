@@ -314,6 +314,22 @@ David: I'm not sure how to deal with this one, since ticket #6528 contains the l
 
 ---
 
+archive/issue_events_006678.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-24T00:53:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6437",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6437#event-6678"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051582.json:
 ```json
 {

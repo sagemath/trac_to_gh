@@ -213,6 +213,22 @@ This patch looks trivial enough.  The changes look reasonable, and mabshoff ran 
 
 ---
 
+archive/issue_events_005495.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-14T13:24:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5239",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5239#event-5495"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040065.json:
 ```json
 {

@@ -253,3 +253,19 @@ archive/issue_comments_015032.json:
 ```
 
 Merged 2271_adds_DLX.patch and 2271_doctests.patch in Sage 2.10.3.alpha0 - w00t
+
+
+
+---
+
+archive/issue_events_002442.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-25T20:35:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2271",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2271#event-2442"
+}
+```

@@ -2080,6 +2080,22 @@ Thanks!  Patches apply fine now.  Sorry for the mess.
 
 ---
 
+archive/issue_events_009845.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-27T09:13:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9713",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9713#event-9845"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094598.json:
 ```json
 {
@@ -2149,6 +2165,22 @@ archive/issue_comments_094600.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009846.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-29T09:21:26Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9713",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9713#event-9846"
+}
+```
 
 
 
@@ -2385,3 +2417,19 @@ archive/issue_comments_094612.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009847.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-02-07T08:13:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9713",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9713#event-9847"
+}
+```

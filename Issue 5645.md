@@ -124,6 +124,22 @@ based on Sage 4.1.2.alpha4
 
 ---
 
+archive/issue_events_005887.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-29T16:10:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5645#event-5887"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044004.json:
 ```json
 {

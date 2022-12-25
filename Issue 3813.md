@@ -430,6 +430,22 @@ Merged in Sage 3.1.2.alpha0
 
 ---
 
+archive/issue_events_004035.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-21T22:12:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3813",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3813#event-4035"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027065.json:
 ```json
 {
@@ -551,6 +567,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_004036.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-22T00:36:06Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3813",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3813#event-4036"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027070.json:
 ```json
 {
@@ -606,6 +638,22 @@ archive/issue_comments_027072.json:
 Attachment [trac_3813-final.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-final.patch) by @mwhansen created at 2008-08-27 00:15:44
 
 The latest trac_3813-final.patch should apply to the latest Sage.
+
+
+
+---
+
+archive/issue_events_004037.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-27T00:59:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3813",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3813#event-4037"
+}
+```
 
 
 

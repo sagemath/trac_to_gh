@@ -75,3 +75,19 @@ archive/issue_comments_063882.json:
 ```
 
 GNUTLS is no longer part of Sage.
+
+
+
+---
+
+archive/issue_events_007772.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-10-05T09:13:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7542",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7542#event-7772"
+}
+```

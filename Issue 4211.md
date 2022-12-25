@@ -155,6 +155,22 @@ Nice.  +1 to the optional spkg
 
 ---
 
+archive/issue_events_004448.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-27T23:02:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4211",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4211#event-4448"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030542.json:
 ```json
 {

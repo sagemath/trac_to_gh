@@ -90,6 +90,22 @@ sage: (latex(a\v), a)
 
 ---
 
+archive/issue_events_003362.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T22:57:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3146",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3146#event-3362"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021786.json:
 ```json
 {

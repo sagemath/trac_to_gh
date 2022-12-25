@@ -101,6 +101,22 @@ http://sage.math.washington.edu/home/rlmill/release/merged-sage-2.9.1.rc0/fix_pr
 
 ---
 
+archive/issue_events_001742.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-22T10:11:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1586",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1586#event-1742"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010067.json:
 ```json
 {

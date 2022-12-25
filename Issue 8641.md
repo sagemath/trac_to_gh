@@ -942,3 +942,19 @@ archive/issue_comments_078260.json:
 ```
 
 Merged attachment:trac_8641-doctest_exit_codes.3.patch in 4.5.2.alpha1.
+
+
+
+---
+
+archive/issue_events_008810.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T07:39:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8641",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8641#event-8810"
+}
+```

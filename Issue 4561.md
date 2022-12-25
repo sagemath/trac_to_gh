@@ -100,6 +100,22 @@ Applies to 3.2 and passes tests.
 
 ---
 
+archive/issue_events_004806.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-21T19:13:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4561",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4561#event-4806"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034103.json:
 ```json
 {

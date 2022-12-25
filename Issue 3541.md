@@ -336,6 +336,22 @@ Attachment [trac_3541-reviewer-doctest.patch](tarball://root/attachments/some-uu
 
 ---
 
+archive/issue_events_003761.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-14T13:31:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3541",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3541#event-3761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024990.json:
 ```json
 {

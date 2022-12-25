@@ -217,3 +217,19 @@ Merged in Sage 2.10.alpha1. Specifically I merged
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001887.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-09T14:54:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1729",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1729#event-1887"
+}
+```

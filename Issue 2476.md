@@ -119,6 +119,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/2476
 
 ---
 
+archive/issue_events_002655.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T21:26:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2476",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2476#event-2655"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016735.json:
 ```json
 {

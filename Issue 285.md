@@ -57,3 +57,19 @@ archive/issue_comments_001352.json:
 ```
 
 Done.
+
+
+
+---
+
+archive/issue_events_000302.json:
+```json
+{
+    "actor": "@roed314",
+    "created_at": "2007-05-20T04:10:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/285",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/285#event-302"
+}
+```

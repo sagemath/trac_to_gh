@@ -1019,6 +1019,22 @@ Yes, only the alternate patch is fine.
 
 ---
 
+archive/issue_events_009157.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-09T09:49:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9003",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9003#event-9157"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083157.json:
 ```json
 {

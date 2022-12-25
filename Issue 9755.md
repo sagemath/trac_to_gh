@@ -337,6 +337,22 @@ No worries.  V2 looks good.  Thanks!
 
 ---
 
+archive/issue_events_009887.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-29T04:25:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9755",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9755#event-9887"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095403.json:
 ```json
 {

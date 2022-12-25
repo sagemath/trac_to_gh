@@ -454,6 +454,22 @@ That was #6437 as mentioned above.
 
 ---
 
+archive/issue_events_003204.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-04T21:25:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#event-3204"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020594.json:
 ```json
 {

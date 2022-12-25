@@ -206,6 +206,22 @@ Good.
 
 ---
 
+archive/issue_events_006097.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:12:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5845",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5845#event-6097"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045894.json:
 ```json
 {

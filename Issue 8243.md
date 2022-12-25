@@ -68,6 +68,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_008444.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-12T03:44:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8243",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8243#event-8444"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072772.json:
 ```json
 {

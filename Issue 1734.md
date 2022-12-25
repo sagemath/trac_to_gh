@@ -84,6 +84,22 @@ I added two additional doctest patches, which should be applied.
 
 ---
 
+archive/issue_events_001892.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-16T17:27:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1734",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1734#event-1892"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010952.json:
 ```json
 {

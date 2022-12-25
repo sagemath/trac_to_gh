@@ -85,6 +85,22 @@ This is an exact duplicate of #2477. Make sure to check before posting tickets!
 
 ---
 
+archive/issue_events_002912.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2008-03-29T20:05:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2724#event-2912"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018734.json:
 ```json
 {

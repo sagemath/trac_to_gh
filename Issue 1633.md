@@ -68,6 +68,22 @@ But please *don't* include it, because Sage tests didn't run for me. I need to i
 
 ---
 
+archive/issue_events_001792.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-16T09:52:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1633",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1633#event-1792"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010367.json:
 ```json
 {

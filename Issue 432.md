@@ -130,6 +130,22 @@ Works for me.
 
 ---
 
+archive/issue_events_000459.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-17T04:01:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/432#event-459"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002161.json:
 ```json
 {

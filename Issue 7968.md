@@ -153,6 +153,22 @@ Yep, this looks good. As William pointed out to me when I asked, the issue is ju
 
 ---
 
+archive/issue_events_008183.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-18T22:26:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7968",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7968#event-8183"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069401.json:
 ```json
 {

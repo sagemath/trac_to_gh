@@ -247,6 +247,22 @@ Patch passes doctests. Note that the patch needs the updated eclib.spkg and the 
 
 ---
 
+archive/issue_events_001181.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-27T20:19:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1058",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1058#event-1181"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006420.json:
 ```json
 {

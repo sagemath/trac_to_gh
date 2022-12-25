@@ -123,6 +123,22 @@ The patch applies cleanly to 4.5.1 and the html documentation looks fine.
 
 ---
 
+archive/issue_events_009819.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T11:38:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9687",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9687#event-9819"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094015.json:
 ```json
 {

@@ -97,6 +97,22 @@ sage: M * V
 
 ---
 
+archive/issue_events_000111.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-07T19:42:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/107",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/107#event-111"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000507.json:
 ```json
 {

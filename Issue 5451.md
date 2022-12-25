@@ -217,6 +217,22 @@ This ticket can therefore be closed.
 
 ---
 
+archive/issue_events_005703.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-03-25T17:55:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5451",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5451#event-5703"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042125.json:
 ```json
 {
@@ -336,6 +352,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_005704.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-03-25T20:33:16Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5451",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5451#event-5704"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042131.json:
 ```json
 {
@@ -393,6 +425,22 @@ Merged in Sage 3.4.1.alpha0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005705.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-25T23:01:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5451",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5451#event-5705"
+}
+```
 
 
 

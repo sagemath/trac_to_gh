@@ -107,6 +107,22 @@ src/QS/mpQS.c
 
 ---
 
+archive/issue_events_005494.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-06-16T02:09:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5238",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5238#event-5494"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040059.json:
 ```json
 {

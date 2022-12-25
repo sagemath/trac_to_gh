@@ -118,6 +118,22 @@ rings/polynomial/padics/polynomial_padic_capped_relative_dense.py:840:    def re
 
 ---
 
+archive/issue_events_009187.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T01:24:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9035",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9035#event-9187"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083514.json:
 ```json
 {

@@ -506,3 +506,19 @@ archive/issue_comments_006485.json:
 ```
 
 Resolved in 2.8.15.rc1.
+
+
+
+---
+
+archive/issue_events_001196.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-03T14:52:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1074",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1074#event-1196"
+}
+```

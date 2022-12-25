@@ -559,6 +559,22 @@ There is another patch at #6085 now: You should be working on top of `part-1` an
 
 ---
 
+archive/issue_events_006296.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-12-05T23:29:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#event-6296"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048019.json:
 ```json
 {

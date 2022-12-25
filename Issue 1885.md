@@ -45,6 +45,22 @@ duplicate of #1886
 
 ---
 
+archive/issue_events_002043.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-01-22T04:49:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1885",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1885#event-2043"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011916.json:
 ```json
 {

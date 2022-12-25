@@ -74,6 +74,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_001562.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-08-23T23:04:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1414",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1414#event-1562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009101.json:
 ```json
 {

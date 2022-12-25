@@ -267,3 +267,19 @@ archive/issue_comments_077763.json:
 ```
 
 Merged "fibonaccy-graph.patch" in 4.4.alpha0
+
+
+
+---
+
+archive/issue_events_008772.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T18:51:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8600",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8600#event-8772"
+}
+```

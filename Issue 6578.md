@@ -223,6 +223,22 @@ The patch `trac_6578-referee.patch` adds a missing double colon "::". It also de
 
 ---
 
+archive/issue_events_006815.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T05:38:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6578",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6578#event-6815"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053605.json:
 ```json
 {

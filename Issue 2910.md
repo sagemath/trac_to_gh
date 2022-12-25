@@ -125,6 +125,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_003112.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-01-23T10:10:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2910",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2910#event-3112"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020012.json:
 ```json
 {

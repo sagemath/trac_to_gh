@@ -544,3 +544,19 @@ archive/issue_comments_062844.json:
 ```
 
 Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-review.patch) by @rlmill created at 2010-01-18 22:57:36
+
+
+
+---
+
+archive/issue_events_007698.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-18T22:57:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7472",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7472#event-7698"
+}
+```

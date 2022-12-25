@@ -694,6 +694,22 @@ This might be totally wrong, but we will see :)
 
 ---
 
+archive/issue_events_001134.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-28T10:13:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#event-1134"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006171.json:
 ```json
 {

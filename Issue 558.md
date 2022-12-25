@@ -160,6 +160,22 @@ Patch 6170.patch makes sure no new elements are added tot he pool once its free'
 
 ---
 
+archive/issue_events_000600.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T03:11:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/558",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-600"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002873.json:
 ```json
 {
@@ -214,6 +230,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000601.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T03:49:50Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/558",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-601"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002876.json:
 ```json
 {
@@ -243,6 +275,22 @@ on exit SAGE hangs with
 In the official version of SAGE, I'm commenting out the line in all.py that calls the cleanup until
 this gets fixed.   Note that all the code mentioned above is in the offical repo, but calling
 it is commented out.
+
+
+
+---
+
+archive/issue_events_000602.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-09-07T11:10:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/558",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/558#event-602"
+}
+```
 
 
 

@@ -59,3 +59,19 @@ archive/issue_comments_049809.json:
 ```
 
 Done.
+
+
+
+---
+
+archive/issue_events_006493.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-18T10:32:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6248",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6248#event-6493"
+}
+```

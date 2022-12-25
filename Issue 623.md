@@ -121,6 +121,22 @@ I'm closing this, since the directory above points to an old version of cython.
 
 ---
 
+archive/issue_events_000681.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-20T18:14:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/623",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/623#event-681"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003194.json:
 ```json
 {

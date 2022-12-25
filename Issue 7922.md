@@ -537,6 +537,22 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_008136.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-31T17:11:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-8136"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068839.json:
 ```json
 {
@@ -595,6 +611,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_008137.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-06-22T20:17:49Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-8137"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068842.json:
 ```json
 {
@@ -608,6 +640,22 @@ archive/issue_comments_068842.json:
 ```
 
 Resolution changed from fixed to 
+
+
+
+---
+
+archive/issue_events_008138.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-06-03T12:54:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7922",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7922#event-8138"
+}
+```
 
 
 

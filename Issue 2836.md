@@ -64,6 +64,22 @@ Looks good to me.  Passes on alpha1 + new twisted spkg.
 
 ---
 
+archive/issue_events_003026.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-07T01:22:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2836",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2836#event-3026"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019421.json:
 ```json
 {

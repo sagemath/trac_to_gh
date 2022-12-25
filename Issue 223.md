@@ -129,3 +129,19 @@ sage: plot(f)
 Graphics object consisting of 4 graphics primitives
 ```
 
+
+
+
+---
+
+archive/issue_events_000236.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-08-21T12:36:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/223",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/223#event-236"
+}
+```

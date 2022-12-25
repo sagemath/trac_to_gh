@@ -159,6 +159,22 @@ Merged `trac_6556.patch`.
 
 ---
 
+archive/issue_events_006793.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-31T07:00:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6556",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6556#event-6793"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053366.json:
 ```json
 {

@@ -125,6 +125,22 @@ Apply only the second patch.
 
 ---
 
+archive/issue_events_003348.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T06:43:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3132",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3132#event-3348"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021711.json:
 ```json
 {

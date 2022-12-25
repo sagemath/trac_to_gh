@@ -268,3 +268,19 @@ Merged in the following order:
 1. [trac_8132.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8132/trac_8132.patch)
 2. [trac_8132_fixed_doctests.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8132/trac_8132_fixed_doctests.patch)
 3. [trac_8132_fixed_reference_manual.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8132/trac_8132_fixed_reference_manual.patch)
+
+
+
+---
+
+archive/issue_events_008342.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-02T02:21:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8132",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8132#event-8342"
+}
+```

@@ -253,6 +253,22 @@ I'm going to close this as invalid for now.  If we have a discussion and decide 
 
 ---
 
+archive/issue_events_009046.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-22T21:57:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8889",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8889#event-9046"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081598.json:
 ```json
 {

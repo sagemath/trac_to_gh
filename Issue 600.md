@@ -72,6 +72,22 @@ Michael
 
 ---
 
+archive/issue_events_000658.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-22T14:37:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/600",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/600#event-658"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003089.json:
 ```json
 {

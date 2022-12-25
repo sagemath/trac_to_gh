@@ -606,6 +606,22 @@ The plots look fine. This patch applies to Sage 3.4.2 and passes its doctests. P
 
 ---
 
+archive/issue_events_005690.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-14T06:49:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5438",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5438#event-5690"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041996.json:
 ```json
 {

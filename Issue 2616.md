@@ -87,6 +87,22 @@ Thanks! Patch looks good. I say apply!
 
 ---
 
+archive/issue_events_002806.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-14T20:39:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2616",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2616#event-2806"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017920.json:
 ```json
 {

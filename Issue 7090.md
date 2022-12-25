@@ -254,3 +254,19 @@ Finished installing r-2.10.1.spkg
 ```
 
 Closing this ticket as fixed by #6532.
+
+
+
+---
+
+archive/issue_events_007312.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-03T06:59:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7090",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7090#event-7312"
+}
+```

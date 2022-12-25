@@ -64,6 +64,22 @@ This is fixed by the patch up at #3124, so should be closed when #3124 gets clos
 
 ---
 
+archive/issue_events_003351.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T08:36:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3135",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3135#event-3351"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021733.json:
 ```json
 {

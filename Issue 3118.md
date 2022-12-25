@@ -331,6 +331,22 @@ directory. Since John already did sage -testall, I give a positive review.
 
 ---
 
+archive/issue_events_003335.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-25T22:41:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3118",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3118#event-3335"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021547.json:
 ```json
 {

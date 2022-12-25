@@ -101,6 +101,22 @@ See patch at #1311.
 
 ---
 
+archive/issue_events_001453.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-25T20:47:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1313",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1313#event-1453"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008250.json:
 ```json
 {

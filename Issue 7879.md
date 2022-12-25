@@ -625,6 +625,22 @@ Attached a rebased patch because of fuzz.
 
 ---
 
+archive/issue_events_008094.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-13T12:16:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7879",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7879#event-8094"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068364.json:
 ```json
 {

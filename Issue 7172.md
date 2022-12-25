@@ -126,3 +126,19 @@ archive/issue_comments_059327.json:
 ```
 
 Since Sage ships `gmp.h` (by MPIR), this is a non-issue.
+
+
+
+---
+
+archive/issue_events_007391.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-06-03T15:03:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7172",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7172#event-7391"
+}
+```

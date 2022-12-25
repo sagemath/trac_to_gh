@@ -157,6 +157,22 @@ Changing priority from minor to critical.
 
 ---
 
+archive/issue_events_008153.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-19T05:04:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7937",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7937#event-8153"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069094.json:
 ```json
 {

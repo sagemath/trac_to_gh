@@ -95,6 +95,22 @@ Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.pat
 
 ---
 
+archive/issue_events_003713.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-23T22:12:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3493",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3493#event-3713"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024554.json:
 ```json
 {

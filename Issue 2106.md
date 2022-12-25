@@ -53,6 +53,22 @@ duplicate of #4302.
 
 ---
 
+archive/issue_events_002266.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-11-01T22:18:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2106",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2106#event-2266"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013703.json:
 ```json
 {

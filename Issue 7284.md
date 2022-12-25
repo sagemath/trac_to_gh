@@ -380,6 +380,22 @@ Based on this, I'm going to put this spkg in experimental now and close this tic
 
 ---
 
+archive/issue_events_007507.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-14T03:48:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#event-7507"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060511.json:
 ```json
 {

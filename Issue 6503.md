@@ -967,6 +967,22 @@ As far as the parallel compilation and parallel doctesting of Sage is concerned,
 
 ---
 
+archive/issue_events_006741.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-03T01:58:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6503",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6503#event-6741"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052882.json:
 ```json
 {

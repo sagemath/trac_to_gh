@@ -262,6 +262,22 @@ Resolution: worksforme
 
 ---
 
+archive/issue_events_009843.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2018-08-14T17:16:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#event-9843"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094497.json:
 ```json
 {

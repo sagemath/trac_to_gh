@@ -136,6 +136,22 @@ This can be closed.
 
 ---
 
+archive/issue_events_003960.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-24T19:57:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3737",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3737#event-3960"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026471.json:
 ```json
 {

@@ -82,6 +82,22 @@ Merged in 2.8.13.alpha0.
 
 ---
 
+archive/issue_events_001267.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-18T13:48:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1140",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1140#event-1267"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006914.json:
 ```json
 {

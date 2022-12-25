@@ -255,6 +255,22 @@ Since this is a second opinion I think it is time to give a full positive review
 
 ---
 
+archive/issue_events_000432.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-12T10:59:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/406#event-432"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001993.json:
 ```json
 {

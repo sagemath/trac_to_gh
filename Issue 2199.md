@@ -634,6 +634,22 @@ Changing assignee from @timabbott to mabshoff.
 
 ---
 
+archive/issue_events_002365.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-12T17:55:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2199",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2199#event-2365"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014442.json:
 ```json
 {

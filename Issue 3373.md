@@ -79,6 +79,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_003589.json:
+```json
+{
+    "actor": "@garyfurnish",
+    "created_at": "2008-07-18T09:06:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3373",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3373#event-3589"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023549.json:
 ```json
 {

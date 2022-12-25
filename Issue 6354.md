@@ -55,6 +55,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_006598.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-24T10:02:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6354",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6354#event-6598"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050700.json:
 ```json
 {
@@ -124,6 +140,22 @@ archive/issue_comments_050703.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_006599.json:
+```json
+{
+    "actor": "@nthiery",
+    "created_at": "2009-11-17T20:25:07Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6354",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6354#event-6599"
+}
+```
 
 
 
@@ -199,6 +231,22 @@ archive/issue_comments_050707.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_006600.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-19T17:37:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6354",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6354#event-6600"
+}
+```
 
 
 

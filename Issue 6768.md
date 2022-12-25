@@ -101,6 +101,22 @@ Sorry... look at hecke.patch, not 12538.patch. The first one I posted accidental
 
 ---
 
+archive/issue_events_007000.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-26T22:14:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6768",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6768#event-7000"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055643.json:
 ```json
 {

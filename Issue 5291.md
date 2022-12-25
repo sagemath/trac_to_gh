@@ -137,6 +137,22 @@ See Trac #5300 which will be about doing the same thing more efficiently.
 
 ---
 
+archive/issue_events_005545.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-18T00:58:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5291",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5291#event-5545"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040585.json:
 ```json
 {

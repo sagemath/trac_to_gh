@@ -217,3 +217,19 @@ archive/issue_comments_000500.json:
 ```
 
 closing positively reviewed duplicates
+
+
+
+---
+
+archive/issue_events_000109.json:
+```json
+{
+    "actor": "@videlec",
+    "created_at": "2018-05-18T17:16:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/105",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/105#event-109"
+}
+```

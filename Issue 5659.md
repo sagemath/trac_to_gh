@@ -49,6 +49,22 @@ Attachment [solve_mod.patch](tarball://root/attachments/some-uuid/ticket5659/sol
 
 ---
 
+archive/issue_events_005902.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-13T02:16:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5659",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5659#event-5902"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044159.json:
 ```json
 {

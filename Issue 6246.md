@@ -384,6 +384,22 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_006491.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-28T21:55:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6246",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6246#event-6491"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049801.json:
 ```json
 {

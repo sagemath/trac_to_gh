@@ -45,6 +45,22 @@ archive/issue_comments_022497.json:
 
 ---
 
+archive/issue_events_003475.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T02:58:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3258",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3258#event-3475"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022498.json:
 ```json
 {

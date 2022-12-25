@@ -104,3 +104,19 @@ archive/issue_comments_050848.json:
 ```
 
 Closing deprecated notebook tickets
+
+
+
+---
+
+archive/issue_events_006618.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:13:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6369",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6369#event-6618"
+}
+```

@@ -89,6 +89,22 @@ Looks good to me.  I've merged the patch in 4.3.alpha0, but used the spkg from #
 
 ---
 
+archive/issue_events_007245.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-17T11:05:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7023",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7023#event-7245"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058056.json:
 ```json
 {

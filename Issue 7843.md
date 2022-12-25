@@ -160,6 +160,22 @@ Oops!  Positive review.
 
 ---
 
+archive/issue_events_008058.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-05T03:47:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7843",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7843#event-8058"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067826.json:
 ```json
 {

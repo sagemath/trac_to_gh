@@ -80,3 +80,19 @@ This is a dupe of #4340.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004585.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-22T19:07:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4338",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4338#event-4585"
+}
+```

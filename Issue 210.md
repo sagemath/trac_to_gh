@@ -163,6 +163,22 @@ Excellent work!  The code looks nice and is well-documented.  All tests pass as 
 
 ---
 
+archive/issue_events_000221.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-04T21:43:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/210",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/210#event-221"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000940.json:
 ```json
 {

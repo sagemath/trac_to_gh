@@ -174,6 +174,22 @@ Another followup - I changed the script back to include spkg-check, sage -f'ed t
 
 ---
 
+archive/issue_events_007329.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-14T16:09:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7107",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7107#event-7329"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058737.json:
 ```json
 {

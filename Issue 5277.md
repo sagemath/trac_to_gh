@@ -105,6 +105,22 @@ This seems to work fine for me, on an intel mac running 10.5.6.
 
 ---
 
+archive/issue_events_005532.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-16T11:31:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5277",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5277#event-5532"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040418.json:
 ```json
 {

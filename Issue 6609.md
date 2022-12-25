@@ -758,3 +758,19 @@ A mysterious error (perhaps a memory error?) occurred, which may have crashed do
 * lena on SkyNet (x86_64 RHEL 5.3 with GCC 4.4.1) --- compiles OK; all doctests passed with option `-long`.
 
 The point is that lcalc now builds on t2.math. So fine by me. Merged in the standard packages repository.
+
+
+
+---
+
+archive/issue_events_006849.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-16T01:10:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6609",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6609#event-6849"
+}
+```

@@ -131,6 +131,22 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
+archive/issue_events_000710.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-13T06:20:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/646",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-710"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003343.json:
 ```json
 {
@@ -228,6 +244,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000711.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-13T15:52:26Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/646",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-711"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003347.json:
 ```json
 {
@@ -261,3 +293,19 @@ archive/issue_comments_003348.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000712.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-13T18:20:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/646",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/646#event-712"
+}
+```

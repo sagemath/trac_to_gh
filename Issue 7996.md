@@ -118,6 +118,22 @@ LGTM.
 
 ---
 
+archive/issue_events_008210.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T01:01:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7996",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7996#event-8210"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069732.json:
 ```json
 {
@@ -230,6 +246,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_008211.json:
+```json
+{
+    "actor": "acleone",
+    "created_at": "2010-01-25T02:43:59Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7996",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7996#event-8211"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069738.json:
 ```json
 {
@@ -335,3 +367,19 @@ archive/issue_comments_069743.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008212.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T03:40:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7996",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7996#event-8212"
+}
+```

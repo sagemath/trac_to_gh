@@ -311,6 +311,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_004100.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-19T01:49:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3877",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3877#event-4100"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027609.json:
 ```json
 {
@@ -346,6 +362,22 @@ archive/issue_comments_027610.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_004101.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-19T01:49:56Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3877",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3877#event-4101"
+}
+```
 
 
 
@@ -422,6 +454,22 @@ archive/issue_comments_027614.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_004102.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-04T02:04:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3877",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3877#event-4102"
+}
+```
 
 
 

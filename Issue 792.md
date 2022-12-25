@@ -70,6 +70,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/792
 
 ---
 
+archive/issue_events_000901.json:
+```json
+{
+    "actor": "justin",
+    "created_at": "2007-10-03T03:15:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/792",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/792#event-901"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004747.json:
 ```json
 {

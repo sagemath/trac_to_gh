@@ -788,6 +788,22 @@ REVIEW:
 
 ---
 
+archive/issue_events_003752.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-06T18:08:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3533",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3533#event-3752"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024893.json:
 ```json
 {

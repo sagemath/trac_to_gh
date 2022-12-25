@@ -46,6 +46,22 @@ Attachment [12159-gaski.patch](tarball://root/attachments/some-uuid/ticket6167/1
 
 ---
 
+archive/issue_events_006416.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T05:22:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6167",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6167#event-6416"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049108.json:
 ```json
 {

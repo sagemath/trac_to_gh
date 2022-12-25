@@ -137,3 +137,19 @@ archive/issue_comments_002406.json:
 ```
 
 applied for sage-2.8.3.
+
+
+
+---
+
+archive/issue_events_000514.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T03:11:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/483",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/483#event-514"
+}
+```

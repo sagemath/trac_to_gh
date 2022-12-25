@@ -73,6 +73,22 @@ I think the said typo has been fixed in #1389 by the patch **copying.patch**. Al
 
 ---
 
+archive/issue_events_004610.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-10-25T17:20:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4365",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4365#event-4610"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032005.json:
 ```json
 {

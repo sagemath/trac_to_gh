@@ -217,6 +217,22 @@ Real test will sage-4.0.2.alpha1.
 
 ---
 
+archive/issue_events_006479.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-12T08:07:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6234",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6234#event-6479"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049648.json:
 ```json
 {

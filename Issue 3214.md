@@ -48,6 +48,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3214
 
 ---
 
+archive/issue_events_003431.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-27T06:12:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-3431"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022195.json:
 ```json
 {
@@ -151,6 +167,22 @@ archive/issue_comments_022199.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003432.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-27T06:19:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-3432"
+}
+```
 
 
 
@@ -479,6 +511,22 @@ archive/issue_comments_022214.json:
 Looks good.
 
 Thanks a lot, Burcin.
+
+
+
+---
+
+archive/issue_events_003433.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-09T08:25:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3214",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3214#event-3433"
+}
+```
 
 
 

@@ -88,6 +88,22 @@ I think this is good for now.
 
 ---
 
+archive/issue_events_004336.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-19T03:19:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4099",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4099#event-4336"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029521.json:
 ```json
 {

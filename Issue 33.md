@@ -121,6 +121,22 @@ Changing component from user interface to notebook.
 
 ---
 
+archive/issue_events_000032.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2007-09-07T02:35:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/33",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/33#event-32"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000218.json:
 ```json
 {

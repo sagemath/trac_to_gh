@@ -165,6 +165,22 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_009899.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-12-17T09:12:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9769#event-9899"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095573.json:
 ```json
 {
@@ -214,6 +230,22 @@ archive/issue_comments_095575.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009900.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-12-21T09:22:27Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9769#event-9900"
+}
+```
 
 
 
@@ -613,6 +645,22 @@ archive/issue_comments_095592.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_009901.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-21T22:03:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9769#event-9901"
+}
+```
 
 
 

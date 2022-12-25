@@ -150,3 +150,19 @@ archive/issue_comments_027141.json:
 Attachment [trac_3823_sage.patch](tarball://root/attachments/some-uuid/ticket3823/trac_3823_sage.patch) by mabshoff created at 2008-08-29 00:58:22
 
 Merged trac_3823_sage.patch in Sage 3.1.2.alpha2
+
+
+
+---
+
+archive/issue_events_004047.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-29T00:58:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3823",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3823#event-4047"
+}
+```

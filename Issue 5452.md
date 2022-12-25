@@ -143,6 +143,22 @@ Haven't tried testing since I'm about to get on a plane, but this patch looks st
 
 ---
 
+archive/issue_events_005706.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-20T20:23:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5452",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5452#event-5706"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042140.json:
 ```json
 {

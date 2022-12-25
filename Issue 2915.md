@@ -128,6 +128,22 @@ REFEREE REPORT:
 
 ---
 
+archive/issue_events_003117.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-15T00:55:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2915",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2915#event-3117"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020042.json:
 ```json
 {

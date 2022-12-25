@@ -149,6 +149,22 @@ IGNORE THIS - THE ATTACHMENT DID NOT GET ATTACHED - SEE THE NEXT TICKET (6276)
 
 ---
 
+archive/issue_events_006519.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-13T21:12:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6275",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6275#event-6519"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050027.json:
 ```json
 {

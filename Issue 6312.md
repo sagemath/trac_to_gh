@@ -438,6 +438,22 @@ The `optional - database_gap` tests do pass. I don't know about `magma`, but let
 
 ---
 
+archive/issue_events_006560.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-09-09T14:53:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6312",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6312#event-6560"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050298.json:
 ```json
 {

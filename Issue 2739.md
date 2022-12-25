@@ -67,6 +67,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/2739
 
 ---
 
+archive/issue_events_002927.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-31T03:32:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2739",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2739#event-2927"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018797.json:
 ```json
 {

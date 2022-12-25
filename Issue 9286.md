@@ -127,6 +127,22 @@ http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg
 
 ---
 
+archive/issue_events_009446.json:
+```json
+{
+    "actor": "@gvol",
+    "created_at": "2010-06-24T03:09:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9286",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9286#event-9446"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087325.json:
 ```json
 {
@@ -219,6 +235,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_009447.json:
+```json
+{
+    "actor": "@gvol",
+    "created_at": "2010-06-24T03:13:31Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9286",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9286#event-9447"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087329.json:
 ```json
 {
@@ -286,3 +318,19 @@ archive/issue_comments_087332.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009448.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-25T15:52:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9286",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9286#event-9448"
+}
+```

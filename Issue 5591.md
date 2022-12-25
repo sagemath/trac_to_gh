@@ -55,6 +55,22 @@ Reported "upstream" at https://github.com/sagemath/sagenb/issues/222
 
 ---
 
+archive/issue_events_005835.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:09:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5591",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5591#event-5835"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043477.json:
 ```json
 {

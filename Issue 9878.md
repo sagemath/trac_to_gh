@@ -466,6 +466,22 @@ Speaking of these doc issues, when reading through the doc in symbolic/expressio
 
 ---
 
+archive/issue_events_010007.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-06T03:20:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9878",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9878#event-10007"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097648.json:
 ```json
 {

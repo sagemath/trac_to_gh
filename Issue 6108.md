@@ -59,3 +59,19 @@ archive/issue_comments_048706.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006359.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T22:56:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6108",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6108#event-6359"
+}
+```

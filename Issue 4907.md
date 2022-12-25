@@ -125,6 +125,22 @@ I've attached a patch which fixes this.
 
 ---
 
+archive/issue_events_005150.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-24T18:36:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4907",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4907#event-5150"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037179.json:
 ```json
 {

@@ -301,6 +301,22 @@ Okay, that's good enough for me.  Thanks for checking that.
 
 ---
 
+archive/issue_events_009431.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-29T16:45:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9269",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9269#event-9431"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087176.json:
 ```json
 {

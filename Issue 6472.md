@@ -256,3 +256,19 @@ archive/issue_comments_052230.json:
 ```
 
 Resolution: worksforme
+
+
+
+---
+
+archive/issue_events_006710.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2018-08-14T17:30:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6472",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6472#event-6710"
+}
+```

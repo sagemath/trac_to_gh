@@ -367,6 +367,22 @@ Merged only `trac_6724-spell-check-modules.patch`.
 
 ---
 
+archive/issue_events_006958.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-14T08:10:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#event-6958"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055063.json:
 ```json
 {

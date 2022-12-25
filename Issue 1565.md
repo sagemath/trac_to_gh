@@ -213,6 +213,22 @@ This is fixed as of 3.0.3.alpha2.  Please close
 
 ---
 
+archive/issue_events_001719.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-16T19:05:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1565",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1565#event-1719"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009938.json:
 ```json
 {

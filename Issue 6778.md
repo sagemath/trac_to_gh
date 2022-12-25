@@ -66,6 +66,22 @@ This is a simple patch for a simple bug.  I filed a duplicate ticket for this at
 
 ---
 
+archive/issue_events_007009.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-23T02:45:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6778",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6778#event-7009"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055727.json:
 ```json
 {

@@ -739,6 +739,22 @@ Positive review on words-import-fix.patch
 
 ---
 
+archive/issue_events_004902.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-17T16:58:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4653",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4653#event-4902"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034981.json:
 ```json
 {

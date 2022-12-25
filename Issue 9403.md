@@ -346,6 +346,22 @@ Please include the ticket number in your commit messages! Also, Jeremy, you migh
 
 ---
 
+archive/issue_events_009559.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-27T00:50:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9403#event-9559"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089476.json:
 ```json
 {

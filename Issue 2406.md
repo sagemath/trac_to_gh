@@ -51,6 +51,22 @@ I can't find this in the latex version of the file in sage-2.10.3.rc2.
 
 ---
 
+archive/issue_events_002582.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-07T21:01:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2406",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2406#event-2582"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016215.json:
 ```json
 {

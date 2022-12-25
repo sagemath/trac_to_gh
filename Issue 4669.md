@@ -112,6 +112,22 @@ THANKS!!
 
 ---
 
+archive/issue_events_004917.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-07T09:59:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4669",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4669#event-4917"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035104.json:
 ```json
 {

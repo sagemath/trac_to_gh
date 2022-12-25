@@ -102,6 +102,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/1726
 
 ---
 
+archive/issue_events_001884.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-09T02:12:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1726",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1726#event-1884"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010903.json:
 ```json
 {

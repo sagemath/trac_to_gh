@@ -171,3 +171,19 @@ archive/issue_comments_065109.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007859.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-07-05T10:34:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7633",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7633#event-7859"
+}
+```

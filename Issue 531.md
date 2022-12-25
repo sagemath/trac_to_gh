@@ -86,6 +86,22 @@ http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-20070830.spkg
 
 ---
 
+archive/issue_events_000570.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-09-05T21:02:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/531",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/531#event-570"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002704.json:
 ```json
 {

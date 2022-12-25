@@ -235,6 +235,22 @@ Rebased to sage-5.3.beta0.
 
 ---
 
+archive/issue_events_005763.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-08-12T18:58:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#event-5763"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042737.json:
 ```json
 {

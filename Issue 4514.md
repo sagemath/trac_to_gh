@@ -117,3 +117,19 @@ archive/issue_comments_033445.json:
 ```
 
 That's fine with me. I left it as is in case someone else might have something to say, but I think it has been long enough.
+
+
+
+---
+
+archive/issue_events_004759.json:
+```json
+{
+    "actor": "@saliola",
+    "created_at": "2008-11-14T17:49:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4514",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4514#event-4759"
+}
+```

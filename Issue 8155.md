@@ -86,6 +86,22 @@ Testing the whole library (without -long):  all test pass.   Positive review!
 
 ---
 
+archive/issue_events_008360.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:30:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8155",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8155#event-8360"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071579.json:
 ```json
 {

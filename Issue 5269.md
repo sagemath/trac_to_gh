@@ -122,6 +122,22 @@ Patch looks good and doctests pass.
 
 ---
 
+archive/issue_events_005525.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-15T07:56:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5269",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5269#event-5525"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040373.json:
 ```json
 {

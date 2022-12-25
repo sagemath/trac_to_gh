@@ -43,6 +43,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/6933
 
 ---
 
+archive/issue_events_007156.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-17T22:13:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6933",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6933#event-7156"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057183.json:
 ```json
 {

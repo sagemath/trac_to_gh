@@ -492,6 +492,22 @@ Changing component from doctest to documentation.
 
 ---
 
+archive/issue_events_008380.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-22T15:19:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8177",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8177#event-8380"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071937.json:
 ```json
 {

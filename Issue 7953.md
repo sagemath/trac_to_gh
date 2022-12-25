@@ -208,6 +208,22 @@ The original patch uses TABs, so I changed them to spaces leaving the rest the s
 
 ---
 
+archive/issue_events_008169.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-01T10:05:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7953",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7953#event-8169"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069284.json:
 ```json
 {

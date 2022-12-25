@@ -106,6 +106,22 @@ I agree. Passes tests for me, so let's merge it.
 
 ---
 
+archive/issue_events_000380.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-06T17:06:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/358",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/358#event-380"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001724.json:
 ```json
 {

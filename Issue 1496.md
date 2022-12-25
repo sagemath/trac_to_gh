@@ -113,3 +113,19 @@ archive/issue_comments_009586.json:
 ```
 
 Resolution: wontfix
+
+
+
+---
+
+archive/issue_events_001650.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2018-08-14T17:18:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1496#event-1650"
+}
+```

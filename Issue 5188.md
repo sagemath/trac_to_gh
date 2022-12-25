@@ -216,3 +216,19 @@ sage: sage: (factor(-1)^2).value() == -1
 False
 ```
 
+
+
+
+---
+
+archive/issue_events_005442.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T20:46:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5188",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5188#event-5442"
+}
+```

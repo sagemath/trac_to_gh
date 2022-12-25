@@ -45,6 +45,22 @@ I did this -- didn't see anything interesting.
 
 ---
 
+archive/issue_events_000552.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-30T00:01:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/513",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/513#event-552"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002588.json:
 ```json
 {

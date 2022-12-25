@@ -2851,6 +2851,22 @@ Thanks, Minh.
 
 ---
 
+archive/issue_events_004692.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-30T00:48:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4446",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4446#event-4692"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032731.json:
 ```json
 {

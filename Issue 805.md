@@ -140,6 +140,22 @@ GOOD -- I especially like Nick's improvements.
 
 ---
 
+archive/issue_events_000916.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-19T22:32:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/805",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/805#event-916"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004852.json:
 ```json
 {

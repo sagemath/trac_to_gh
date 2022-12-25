@@ -49,6 +49,22 @@ Attachment [trac_6587_partition_conjugate_doc.patch](tarball://root/attachments/
 
 ---
 
+archive/issue_events_006824.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T05:52:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6587",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6587#event-6824"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053772.json:
 ```json
 {

@@ -152,6 +152,22 @@ This looks very good to me.  The maths is sound, the examples I tried worked, do
 
 ---
 
+archive/issue_events_005087.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-21T22:00:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4842",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4842#event-5087"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036653.json:
 ```json
 {

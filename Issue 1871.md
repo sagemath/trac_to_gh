@@ -297,6 +297,22 @@ Applies okay to 4.0.2.rc3 and passes sage -testall on an intel macbook running 1
 
 ---
 
+archive/issue_events_002029.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-24T09:48:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#event-2029"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011827.json:
 ```json
 {

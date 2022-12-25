@@ -120,6 +120,22 @@ close 3 old invalid tickets
 
 ---
 
+archive/issue_events_006322.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2019-06-15T12:40:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6067",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6067#event-6322"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048196.json:
 ```json
 {

@@ -99,6 +99,22 @@ Attachment [sr_polybori.3.patch](tarball://root/attachments/some-uuid/ticket4044
 
 ---
 
+archive/issue_events_004276.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-03T15:42:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4044",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4044#event-4276"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029109.json:
 ```json
 {

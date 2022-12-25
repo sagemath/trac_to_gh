@@ -132,6 +132,22 @@ BTW, It compiles fine with gcc without the c99 flag, but I figured I'd put it th
 
 ---
 
+archive/issue_events_005864.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-31T06:18:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5622",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5622#event-5864"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043820.json:
 ```json
 {

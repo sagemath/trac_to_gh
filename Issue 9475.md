@@ -1675,6 +1675,22 @@ The newly uploaded patch contains only the desired changes.
 
 ---
 
+archive/issue_events_009627.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-15T08:03:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9475",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9475#event-9627"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090806.json:
 ```json
 {

@@ -442,6 +442,22 @@ All tests pass on a clean install, so most probably my previous failure was due 
 
 ---
 
+archive/issue_events_008254.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:45:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8044",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8044#event-8254"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070192.json:
 ```json
 {

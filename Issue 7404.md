@@ -251,6 +251,22 @@ A [related] possibility: Use [tablesorter](http://tablesorter.com/docs/) to sort
 
 ---
 
+archive/issue_events_007629.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:12:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7404",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7404#event-7629"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062194.json:
 ```json
 {

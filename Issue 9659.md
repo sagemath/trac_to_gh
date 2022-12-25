@@ -409,6 +409,22 @@ I'm merging the patch into my working copy of 4.5.2.rc1.
 
 ---
 
+archive/issue_events_009794.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-04T02:18:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9659",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9659#event-9794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093614.json:
 ```json
 {

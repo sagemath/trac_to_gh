@@ -100,6 +100,22 @@ Looks good to me.  Patch applies fine to 4.0 and tests in sage/modular/{modform,
 
 ---
 
+archive/issue_events_006249.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T06:16:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5995",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5995#event-6249"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047599.json:
 ```json
 {

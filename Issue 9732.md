@@ -27,6 +27,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/9732
 
 ---
 
+archive/issue_events_009862.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2017-07-04T13:52:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9732",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9732#event-9862"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094958.json:
 ```json
 {

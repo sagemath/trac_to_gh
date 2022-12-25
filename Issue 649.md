@@ -187,3 +187,19 @@ archive/issue_comments_003365.json:
 ```
 
 merged in 2.9.1 rc0
+
+
+
+---
+
+archive/issue_events_000715.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-22T18:37:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/649",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/649#event-715"
+}
+```

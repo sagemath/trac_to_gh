@@ -62,6 +62,22 @@ What about `1 == None` or `1 != None`, should those throw errors as well? (They 
 
 ---
 
+archive/issue_events_004165.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-01-23T07:38:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3936",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3936#event-4165"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028149.json:
 ```json
 {

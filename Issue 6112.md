@@ -173,6 +173,22 @@ The last test will be to actually roll an alpha and make sure everything still w
 
 ---
 
+archive/issue_events_006363.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-24T09:58:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6112",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6112#event-6363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048745.json:
 ```json
 {

@@ -117,6 +117,22 @@ This is fixed -- but it caused #601.
 
 ---
 
+archive/issue_events_000590.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-06T19:03:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/549",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/549#event-590"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002817.json:
 ```json
 {

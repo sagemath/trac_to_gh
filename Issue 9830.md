@@ -225,6 +225,22 @@ Now, I would like to send this to review, because I see no more error (maybe I o
 
 ---
 
+archive/issue_events_009952.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-22T15:28:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9830",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9830#event-9952"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096854.json:
 ```json
 {

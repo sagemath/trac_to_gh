@@ -301,3 +301,19 @@ archive/issue_comments_026851.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_004006.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-10-27T16:25:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3784",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3784#event-4006"
+}
+```

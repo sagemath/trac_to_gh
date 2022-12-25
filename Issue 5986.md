@@ -231,6 +231,22 @@ Much less intrusive--too bad we didn't pursue this just a bit more back in June.
 
 ---
 
+archive/issue_events_006241.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T07:05:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5986",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5986#event-6241"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047487.json:
 ```json
 {

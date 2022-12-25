@@ -254,6 +254,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_005430.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2011-06-23T23:48:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5178",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5178#event-5430"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039621.json:
 ```json
 {
@@ -285,6 +301,22 @@ archive/issue_comments_039622.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_005431.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2011-06-24T03:40:27Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5178",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5178#event-5431"
+}
+```
 
 
 
@@ -496,6 +528,22 @@ Possible follow-up improvements:
 
 - Add cross-references in the documentation to/from any similar
   methods, e.g. provided by fplll.
+
+
+
+---
+
+archive/issue_events_005432.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2020-09-23T21:27:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5178",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5178#event-5432"
+}
+```
 
 
 

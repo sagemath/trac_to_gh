@@ -225,3 +225,19 @@ Reviewed in Sage 3.4.1.rc1.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005818.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-06T05:47:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5573",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5573#event-5818"
+}
+```

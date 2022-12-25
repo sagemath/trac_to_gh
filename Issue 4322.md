@@ -275,6 +275,22 @@ The attached patch removes the uses of polydict.
 
 ---
 
+archive/issue_events_004567.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-25T02:20:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4322",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4322#event-4567"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031609.json:
 ```json
 {

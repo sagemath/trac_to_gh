@@ -631,6 +631,22 @@ Attachment [trac_7197.patch](tarball://root/attachments/some-uuid/ticket7197/tra
 
 ---
 
+archive/issue_events_007416.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-29T05:07:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#event-7416"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059606.json:
 ```json
 {

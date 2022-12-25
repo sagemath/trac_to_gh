@@ -126,6 +126,22 @@ The patch **5529-new.patch** applies fine against Sage 3.4, all doctests passed 
 
 ---
 
+archive/issue_events_005778.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-23T21:02:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5529",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5529#event-5778"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042921.json:
 ```json
 {

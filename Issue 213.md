@@ -42,3 +42,19 @@ archive/issue_comments_000954.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000224.json:
+```json
+{
+    "actor": "TimothyClemans",
+    "created_at": "2007-03-26T03:34:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/213",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/213#event-224"
+}
+```

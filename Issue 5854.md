@@ -516,6 +516,22 @@ I have been using this for real as I try to fix #6381, since this should make it
 
 ---
 
+archive/issue_events_006110.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-02T22:00:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#event-6110"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046166.json:
 ```json
 {

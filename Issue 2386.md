@@ -55,6 +55,22 @@ Discuss!
 
 ---
 
+archive/issue_events_002562.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2008-03-04T20:46:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2386",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2386#event-2562"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016073.json:
 ```json
 {

@@ -149,6 +149,22 @@ Michael
 
 ---
 
+archive/issue_events_005334.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T18:04:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5090",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5090#event-5334"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038712.json:
 ```json
 {
@@ -207,6 +223,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_005335.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T18:04:52Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5090",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5090#event-5335"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038715.json:
 ```json
 {
@@ -238,6 +270,22 @@ archive/issue_comments_038716.json:
 ```
 
 Actually, I just remembered that I removed the patch which silenced deprecation warnings.  This was because I was hoping this spkg would be merged with the new scipy 0.7, and the deprecated calls would be fixed.  So we should hold off on this upgrade for now.
+
+
+
+---
+
+archive/issue_events_005336.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-12T06:56:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5090",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5090#event-5336"
+}
+```
 
 
 

@@ -641,6 +641,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_007603.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-07-11T06:05:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7379",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7379#event-7603"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061963.json:
 ```json
 {

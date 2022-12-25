@@ -107,6 +107,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_001827.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-13T18:03:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1668",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1668#event-1827"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010571.json:
 ```json
 {

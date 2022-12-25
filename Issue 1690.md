@@ -77,3 +77,19 @@ archive/issue_comments_010712.json:
 ```
 
 trying this again... fixed by #2840
+
+
+
+---
+
+archive/issue_events_001849.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2008-04-08T04:37:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1690",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1690#event-1849"
+}
+```

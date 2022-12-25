@@ -267,6 +267,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009137.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-09T03:58:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8984",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8984#event-9137"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082766.json:
 ```json
 {
@@ -316,6 +332,22 @@ archive/issue_comments_082768.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009138.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-09T19:18:37Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8984",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8984#event-9138"
+}
+```
 
 
 
@@ -456,6 +488,22 @@ archive/issue_comments_082775.json:
 ```
 
 sage-4.5 is in feature freeze mode. Nothing but essential fixes will be merged until final release. I am strongly suggesting that the next release be patches to the sage library only (other than essential spkg fixes), and tickets like these deserve to go in then. (I would have had an alpha for such tickets in the 4.5 series, but the spkg issues are already holding things up long enough.)
+
+
+
+---
+
+archive/issue_events_009139.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-21T01:55:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8984",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8984#event-9139"
+}
+```
 
 
 

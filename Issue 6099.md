@@ -393,6 +393,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006350.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-17T06:18:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6099",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6099#event-6350"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048556.json:
 ```json
 {
@@ -442,6 +458,22 @@ archive/issue_comments_048558.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_006351.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-17T14:56:30Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6099",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6099#event-6351"
+}
+```
 
 
 
@@ -678,6 +710,22 @@ archive/issue_comments_048569.json:
 ```
 
 rebased version of patch. apply only this file.
+
+
+
+---
+
+archive/issue_events_006352.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-29T04:55:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6099",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6099#event-6352"
+}
+```
 
 
 

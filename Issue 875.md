@@ -127,6 +127,22 @@ Also, re: William's note above about "hacking the Python/C API" -- that's not fo
 
 ---
 
+archive/issue_events_000989.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-27T19:45:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/875",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/875#event-989"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005398.json:
 ```json
 {

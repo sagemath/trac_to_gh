@@ -1435,6 +1435,22 @@ What should we do about #5602, #5603, #5604, and #5605?  Close them and open new
 
 ---
 
+archive/issue_events_005845.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-03-06T15:50:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#event-5845"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043646.json:
 ```json
 {

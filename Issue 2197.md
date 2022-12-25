@@ -50,6 +50,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_002363.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-17T21:16:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2197",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2197#event-2363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014404.json:
 ```json
 {

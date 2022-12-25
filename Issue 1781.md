@@ -285,3 +285,19 @@ archive/issue_comments_011253.json:
 ```
 
 Resolution: worksforme
+
+
+
+---
+
+archive/issue_events_001938.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-08-19T16:17:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1781",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1781#event-1938"
+}
+```

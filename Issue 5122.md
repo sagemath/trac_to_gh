@@ -115,6 +115,22 @@ This was about 5 months ago.
 
 ---
 
+archive/issue_events_005371.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-01-29T00:55:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5122",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5122#event-5371"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039087.json:
 ```json
 {

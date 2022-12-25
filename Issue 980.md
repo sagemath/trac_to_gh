@@ -349,6 +349,22 @@ Uploaded bundle which applies against 2.9.alpha7 and doctests pass.
 
 ---
 
+archive/issue_events_001101.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-20T23:38:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/980",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-1101"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005972.json:
 ```json
 {
@@ -416,6 +432,22 @@ archive/issue_comments_005975.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_001102.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-21T00:24:46Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/980",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-1102"
+}
+```
 
 
 
@@ -662,6 +694,22 @@ archive/issue_comments_005984.json:
 ```
 
 Merged random_element.hg  in Sage 2.10.1.rc1
+
+
+
+---
+
+archive/issue_events_001103.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-27T02:20:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/980",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/980#event-1103"
+}
+```
 
 
 

@@ -175,6 +175,22 @@ Patch reads good, since in SR really everything != 0 is a unit.
 
 ---
 
+archive/issue_events_005500.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-15T07:17:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#event-5500"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040132.json:
 ```json
 {

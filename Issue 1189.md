@@ -206,6 +206,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_001321.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-18T06:15:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1189",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1189#event-1321"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007342.json:
 ```json
 {
@@ -316,6 +332,22 @@ archive/issue_comments_007345.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_001322.json:
+```json
+{
+    "actor": "@certik",
+    "created_at": "2007-11-18T13:59:08Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1189",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1189#event-1322"
+}
+```
 
 
 
@@ -472,6 +504,22 @@ Merged in 2.8.15.rc0 - finally ;)
 
 ---
 
+archive/issue_events_001323.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T23:23:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1189",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1189#event-1323"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007353.json:
 ```json
 {
@@ -521,6 +569,22 @@ archive/issue_comments_007355.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_001324.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-03T00:30:05Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1189",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1189#event-1324"
+}
+```
 
 
 
@@ -627,6 +691,22 @@ Well, the segfault happened to me on sage.math.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001325.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-10T22:30:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1189",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1189#event-1325"
+}
+```
 
 
 

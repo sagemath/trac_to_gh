@@ -444,6 +444,22 @@ That fixes it for me, and all else works well.
 
 ---
 
+archive/issue_events_003571.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-04T20:36:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#event-3571"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023263.json:
 ```json
 {

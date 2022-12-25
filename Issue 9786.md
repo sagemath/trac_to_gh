@@ -720,6 +720,22 @@ Vincent
 
 ---
 
+archive/issue_events_009916.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-04-21T00:10:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9786",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9786#event-9916"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095917.json:
 ```json
 {

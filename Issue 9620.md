@@ -173,6 +173,22 @@ thank you
 
 ---
 
+archive/issue_events_009761.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-12-24T17:36:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9620",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9620#event-9761"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093036.json:
 ```json
 {

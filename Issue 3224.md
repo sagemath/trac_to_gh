@@ -110,6 +110,22 @@ Positive review.  It works.
 
 ---
 
+archive/issue_events_003443.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-18T23:45:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3224",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3224#event-3443"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022271.json:
 ```json
 {

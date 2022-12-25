@@ -118,6 +118,22 @@ I took the liberties of marking this fixed since it has been in the documentatio
 
 ---
 
+archive/issue_events_000436.json:
+```json
+{
+    "actor": "jbmohler",
+    "created_at": "2007-10-04T19:32:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/410",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/410#event-436"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002014.json:
 ```json
 {

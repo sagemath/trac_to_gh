@@ -263,6 +263,22 @@ Positive review:  apply second patch only.
 
 ---
 
+archive/issue_events_008980.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-08T21:53:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8815",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8815#event-8980"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080783.json:
 ```json
 {

@@ -192,6 +192,22 @@ Great. Thank you Franco for the quick review.
 
 ---
 
+archive/issue_events_007748.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-29T05:45:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7519",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7519#event-7748"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063585.json:
 ```json
 {

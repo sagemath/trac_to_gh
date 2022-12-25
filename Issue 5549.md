@@ -94,6 +94,22 @@ FWIW this appears to be fixed.  I don't know since when, but it's probably been 
 
 ---
 
+archive/issue_events_005794.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2018-08-10T09:37:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5549",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5549#event-5794"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043085.json:
 ```json
 {

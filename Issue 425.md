@@ -102,6 +102,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_000452.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-08-23T23:19:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/425",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/425#event-452"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002125.json:
 ```json
 {

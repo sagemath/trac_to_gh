@@ -151,6 +151,22 @@ It was not clear to me, even upon rereading the documentation, that `@`interact 
 
 ---
 
+archive/issue_events_003082.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-17T18:45:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2884",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2884#event-3082"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019801.json:
 ```json
 {

@@ -178,6 +178,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009981.json:
+```json
+{
+    "actor": "maldun",
+    "created_at": "2010-09-04T20:51:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9853",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-9981"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097098.json:
 ```json
 {
@@ -209,6 +225,22 @@ archive/issue_comments_097099.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_009982.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-09-05T05:12:53Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9853",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-9982"
+}
+```
 
 
 
@@ -249,3 +281,19 @@ archive/issue_comments_097101.json:
 ```
 
 Resolution changed from fixed to invalid
+
+
+
+---
+
+archive/issue_events_009983.json:
+```json
+{
+    "actor": "@kiwifb",
+    "created_at": "2010-09-05T08:47:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9853",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9853#event-9983"
+}
+```

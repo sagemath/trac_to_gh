@@ -353,3 +353,19 @@ archive/issue_comments_081516.json:
 ```
 
 Merged [trac_8882-freemod_interface_cleanup-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8882/trac_8882-freemod_interface_cleanup-fh.patch).
+
+
+
+---
+
+archive/issue_events_009039.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-08T21:42:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8882",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8882#event-9039"
+}
+```

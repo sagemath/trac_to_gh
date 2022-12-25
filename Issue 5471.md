@@ -64,6 +64,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_005725.json:
+```json
+{
+    "actor": "GeorgSWeber",
+    "created_at": "2009-03-10T20:19:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5471",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5471#event-5725"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042375.json:
 ```json
 {

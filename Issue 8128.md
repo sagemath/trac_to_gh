@@ -211,6 +211,22 @@ Just a quick note: This is for the sage repository.
 
 ---
 
+archive/issue_events_008338.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:38:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8128",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8128#event-8338"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071352.json:
 ```json
 {

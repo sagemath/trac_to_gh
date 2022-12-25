@@ -142,6 +142,22 @@ Should we close this?
 
 ---
 
+archive/issue_events_006511.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-02T05:04:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6267",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6267#event-6511"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049968.json:
 ```json
 {

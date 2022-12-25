@@ -45,6 +45,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5103
 
 ---
 
+archive/issue_events_005349.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-01-26T16:49:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5103",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5103#event-5349"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038896.json:
 ```json
 {

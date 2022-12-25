@@ -263,6 +263,22 @@ Note that the patch applies to the scripts repo.
 
 ---
 
+archive/issue_events_004891.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-13T20:17:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4644",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4644#event-4891"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034895.json:
 ```json
 {

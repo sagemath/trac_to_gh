@@ -256,6 +256,22 @@ Setting this to positive_review so the release manager will see it.
 
 ---
 
+archive/issue_events_001342.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-05-21T08:03:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1206",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1206#event-1342"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007450.json:
 ```json
 {

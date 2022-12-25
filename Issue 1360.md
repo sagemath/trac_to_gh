@@ -165,6 +165,22 @@ Wall time: 0.15
 
 ---
 
+archive/issue_events_001501.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-19T22:25:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1360",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1360#event-1501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008693.json:
 ```json
 {

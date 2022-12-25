@@ -514,6 +514,22 @@ Merged trac_9501.2.patch in 4.5.2.alpha1.
 
 ---
 
+archive/issue_events_009649.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T08:32:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9501",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9501#event-9649"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091105.json:
 ```json
 {

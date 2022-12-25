@@ -122,3 +122,19 @@ archive/issue_comments_000936.json:
 ```
 
 It disappeared with sage-1.8.2.1
+
+
+
+---
+
+archive/issue_events_000220.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-25T07:08:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/209",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/209#event-220"
+}
+```

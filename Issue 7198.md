@@ -163,6 +163,22 @@ Mike, please apply only attachment:trac_7198-free_algebra_iterator.patch.
 
 ---
 
+archive/issue_events_007417.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-19T05:52:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7198",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7198#event-7417"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059614.json:
 ```json
 {
@@ -214,6 +230,22 @@ archive/issue_comments_059616.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_007418.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-19T13:00:38Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7198",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7198#event-7418"
+}
+```
 
 
 
@@ -295,3 +327,19 @@ archive/issue_comments_059620.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_007419.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-19T06:14:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7198",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7198#event-7419"
+}
+```

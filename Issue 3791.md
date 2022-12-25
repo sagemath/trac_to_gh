@@ -222,3 +222,19 @@ archive/issue_comments_026905.json:
 ```
 
 You are supposed to change the milestone to "duplicate/invalid/wontfix" then...
+
+
+
+---
+
+archive/issue_events_004013.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-01-13T01:13:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3791",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3791#event-4013"
+}
+```

@@ -90,6 +90,22 @@ looks good to me, but i haven't tried applying the patch or testing...
 
 ---
 
+archive/issue_events_003494.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-23T08:20:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3275",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3275#event-3494"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022609.json:
 ```json
 {

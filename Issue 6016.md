@@ -194,6 +194,22 @@ So Michael's worry is a reasonable one but this should definitely be included.  
 
 ---
 
+archive/issue_events_006271.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T04:59:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6016",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6016#event-6271"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047781.json:
 ```json
 {

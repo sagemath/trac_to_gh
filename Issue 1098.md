@@ -46,6 +46,22 @@ Attachment [1098.patch](tarball://root/attachments/some-uuid/ticket1098/1098.pat
 
 ---
 
+archive/issue_events_001224.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-06T22:22:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1098",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1098#event-1224"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006619.json:
 ```json
 {

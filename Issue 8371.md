@@ -219,3 +219,19 @@ archive/issue_comments_074714.json:
 ```
 
 Closing this as wontfix since #6503 removes pyprocessing from the standard spkg repository.
+
+
+
+---
+
+archive/issue_events_008559.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-03T02:03:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8371",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8371#event-8559"
+}
+```

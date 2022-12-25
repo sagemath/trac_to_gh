@@ -156,6 +156,22 @@ Fixed by an earlier patch of Yi according to the original reporter.
 
 ---
 
+archive/issue_events_000458.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T22:21:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/431",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/431#event-458"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002155.json:
 ```json
 {

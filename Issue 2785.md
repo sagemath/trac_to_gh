@@ -450,6 +450,22 @@ It looks like this will never happen.
 
 ---
 
+archive/issue_events_002975.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2009-01-22T23:05:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2785",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2785#event-2975"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019097.json:
 ```json
 {

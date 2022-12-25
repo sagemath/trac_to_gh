@@ -113,6 +113,22 @@ Thanks!
 
 ---
 
+archive/issue_events_006993.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-07T04:59:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6761",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6761#event-6993"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055569.json:
 ```json
 {

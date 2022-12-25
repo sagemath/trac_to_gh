@@ -170,3 +170,19 @@ archive/issue_comments_017543.json:
 ```
 
 Merged in Sage 2.11.alpha1
+
+
+
+---
+
+archive/issue_events_002755.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-22T04:03:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2572",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2572#event-2755"
+}
+```

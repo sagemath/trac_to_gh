@@ -255,6 +255,22 @@ Merged 2268-alt.patch in Sage 2.10.3.rc1
 
 ---
 
+archive/issue_events_002439.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-29T19:59:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2268",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2268#event-2439"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015005.json:
 ```json
 {

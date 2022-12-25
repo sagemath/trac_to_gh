@@ -63,6 +63,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_007364.json:
+```json
+{
+    "actor": "@robert-marik",
+    "created_at": "2009-10-07T11:43:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7144",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7144#event-7364"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059077.json:
 ```json
 {

@@ -326,6 +326,22 @@ Manually patched the file `SAGE_ROOT/makefile` using `makefile.patch`, together 
 
 ---
 
+archive/issue_events_006527.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-25T06:30:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6283",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6283#event-6527"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050080.json:
 ```json
 {

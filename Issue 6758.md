@@ -325,3 +325,19 @@ archive/issue_comments_055538.json:
 ```
 
 We should upgrade to libgcrypt 1.4.4 and not worry about libgcrypt 1.4.3 any longer. See ticket #7045 for this.
+
+
+
+---
+
+archive/issue_events_006988.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-28T01:36:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6758",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6758#event-6988"
+}
+```

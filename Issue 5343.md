@@ -47,6 +47,22 @@ This ticket can be closed now. There's no patch to merge. I can confirm that whe
 
 ---
 
+archive/issue_events_005599.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-04T01:23:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5343",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5343#event-5599"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041076.json:
 ```json
 {

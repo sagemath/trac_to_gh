@@ -341,6 +341,22 @@ I bet someone is looking forward to seeing how many things fail when all the is_
 
 ---
 
+archive/issue_events_004387.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-24T20:51:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4149",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4149#event-4387"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030066.json:
 ```json
 {

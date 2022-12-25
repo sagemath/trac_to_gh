@@ -419,6 +419,22 @@ As far as I can see this is ready to go in.
 
 ---
 
+archive/issue_events_004429.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-14T18:48:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#event-4429"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030353.json:
 ```json
 {

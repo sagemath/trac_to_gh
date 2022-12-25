@@ -333,6 +333,22 @@ combinat/words/word_generators.py
 
 ---
 
+archive/issue_events_007536.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:40:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7313",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7313#event-7536"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061005.json:
 ```json
 {

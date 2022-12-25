@@ -225,6 +225,22 @@ Nice catch to close this; tests pass.
 
 ---
 
+archive/issue_events_007735.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-25T12:51:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7507",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7507#event-7735"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063406.json:
 ```json
 {

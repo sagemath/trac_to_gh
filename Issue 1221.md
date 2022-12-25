@@ -479,3 +479,19 @@ archive/issue_comments_007582.json:
 ```
 
 I'm closing this as fixed. See comment:8 for more info.
+
+
+
+---
+
+archive/issue_events_001359.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2010-09-08T12:29:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1221",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1221#event-1359"
+}
+```

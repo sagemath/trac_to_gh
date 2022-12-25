@@ -176,6 +176,22 @@ I have a performance concern, but this is #5086 now.
 
 ---
 
+archive/issue_events_003974.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T19:31:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#event-3974"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026608.json:
 ```json
 {

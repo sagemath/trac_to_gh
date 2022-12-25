@@ -101,3 +101,19 @@ archive/issue_comments_004693.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_000891.json:
+```json
+{
+    "actor": "@nbruin",
+    "created_at": "2007-10-02T13:46:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/784",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/784#event-891"
+}
+```

@@ -245,6 +245,22 @@ hopefully better now
 
 ---
 
+archive/issue_events_000567.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-04T18:24:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/528",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/528#event-567"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002685.json:
 ```json
 {

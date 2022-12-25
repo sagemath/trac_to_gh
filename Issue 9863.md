@@ -1489,6 +1489,22 @@ Positive review implicit by #10359.
 
 ---
 
+archive/issue_events_009993.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-12-05T11:57:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9863",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9863#event-9993"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097290.json:
 ```json
 {

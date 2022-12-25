@@ -800,6 +800,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_004510.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2008-12-05T01:23:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4267",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4267#event-4510"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031093.json:
 ```json
 {
@@ -813,6 +829,22 @@ archive/issue_comments_031093.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_004511.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-19T08:16:05Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4267",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4267#event-4511"
+}
+```
 
 
 
@@ -875,6 +907,22 @@ archive/issue_comments_031096.json:
 ```
 
 Merged trac_4267_extcode-remove-javascript-packages.patch in Sage 3.3.alpha0
+
+
+
+---
+
+archive/issue_events_004512.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-19T08:16:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4267",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4267#event-4512"
+}
+```
 
 
 

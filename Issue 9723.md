@@ -351,6 +351,22 @@ Yes, this was my mistake and can be closed as invalid.
 
 ---
 
+archive/issue_events_009856.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2011-03-04T22:30:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9723",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9723#event-9856"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094832.json:
 ```json
 {

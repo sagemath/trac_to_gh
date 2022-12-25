@@ -142,3 +142,19 @@ archive/issue_comments_071366.json:
 ```
 
 I don't think you're misinterpreting my question, I think I just don't understand unicode.  Let's close this, and if someone who wants or needs unicode (unlike me -- I was just playing around) has problems with view from the command line, we can open a new ticket.
+
+
+
+---
+
+archive/issue_events_008340.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-01-31T00:57:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8130",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8130#event-8340"
+}
+```

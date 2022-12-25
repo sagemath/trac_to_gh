@@ -72,6 +72,22 @@ Works for me, all tests in QQbar pass.
 
 ---
 
+archive/issue_events_002829.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T19:31:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2638",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2638#event-2829"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018099.json:
 ```json
 {

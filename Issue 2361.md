@@ -125,6 +125,22 @@ This should definately get changed.
 
 ---
 
+archive/issue_events_002538.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-04-16T11:02:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2361",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2361#event-2538"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015888.json:
 ```json
 {

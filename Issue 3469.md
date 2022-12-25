@@ -99,6 +99,22 @@ TypeError: no coercion of this rational to integer
 
 ---
 
+archive/issue_events_003690.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2010-01-18T05:00:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3469",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3469#event-3690"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024414.json:
 ```json
 {

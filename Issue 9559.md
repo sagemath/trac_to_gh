@@ -227,6 +227,22 @@ Tests pass, formatting updated as requested by jdemeyer.
 
 ---
 
+archive/issue_events_009704.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-01-21T21:07:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9559",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9559#event-9704"
+}
+```
+
+
+
+---
+
 archive/issue_comments_092001.json:
 ```json
 {

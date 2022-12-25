@@ -55,6 +55,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/2596
 
 ---
 
+archive/issue_events_002785.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-22T22:19:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2596",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2596#event-2785"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017721.json:
 ```json
 {
@@ -126,6 +142,22 @@ archive/issue_comments_017724.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002786.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-22T22:27:52Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2596",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2596#event-2786"
+}
+```
 
 
 
@@ -204,6 +236,22 @@ archive/issue_comments_017728.json:
 ```
 
 Patch looks good to me. Positive review.
+
+
+
+---
+
+archive/issue_events_002787.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-28T07:25:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2596",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2596#event-2787"
+}
+```
 
 
 

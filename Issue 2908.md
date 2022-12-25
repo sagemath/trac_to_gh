@@ -112,6 +112,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_003110.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2008-04-13T18:51:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2908",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2908#event-3110"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020002.json:
 ```json
 {

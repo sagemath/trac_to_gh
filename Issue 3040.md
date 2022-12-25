@@ -184,6 +184,22 @@ Merged sage-3040-rebase.patch and sage-3040-doctest-rebase.patch in Sage 3.0.3.a
 
 ---
 
+archive/issue_events_003247.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-09T07:42:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#event-3247"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020879.json:
 ```json
 {

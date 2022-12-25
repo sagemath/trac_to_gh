@@ -132,6 +132,22 @@ Note to release manager: this depends on #4898.
 
 ---
 
+archive/issue_events_007219.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-12T06:57:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6995",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6995#event-7219"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057753.json:
 ```json
 {

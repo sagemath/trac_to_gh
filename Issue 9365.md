@@ -95,6 +95,22 @@ This has been fixed by the fortran spkg updates in sage-4.5.alpha1.
 
 ---
 
+archive/issue_events_009518.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-30T22:10:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9365",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9365#event-9518"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088825.json:
 ```json
 {

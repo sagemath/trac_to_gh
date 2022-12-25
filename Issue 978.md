@@ -124,3 +124,19 @@ archive/issue_comments_005950.json:
 ```
 
 applied to 2.8.9.alpha1
+
+
+
+---
+
+archive/issue_events_001099.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-24T19:18:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/978",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/978#event-1099"
+}
+```

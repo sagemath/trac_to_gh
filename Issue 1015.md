@@ -90,6 +90,22 @@ Changing component from algebraic geometry to basic arithmetic.
 
 ---
 
+archive/issue_events_001139.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-28T18:03:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1015",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1015#event-1139"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006216.json:
 ```json
 {

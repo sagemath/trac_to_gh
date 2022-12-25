@@ -149,6 +149,22 @@ Attachment [trac1366.patch](tarball://root/attachments/some-uuid/ticket1366/trac
 
 ---
 
+archive/issue_events_001507.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-10T05:30:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1366",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1366#event-1507"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008730.json:
 ```json
 {
@@ -198,6 +214,22 @@ archive/issue_comments_008732.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_001508.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-10T23:43:35Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1366",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1366#event-1508"
+}
+```
 
 
 
@@ -423,6 +455,22 @@ archive/issue_comments_008742.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_001509.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-10T01:26:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1366",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1366#event-1509"
+}
+```
 
 
 

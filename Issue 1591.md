@@ -222,3 +222,19 @@ The first check, i.e. the Cygwin one was already there, but was missing the `exi
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001749.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-03T15:21:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1591",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1591#event-1749"
+}
+```

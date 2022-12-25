@@ -142,6 +142,22 @@ easily be extractable via a file.
 
 ---
 
+archive/issue_events_000166.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-19T09:31:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/160",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/160#event-166"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000713.json:
 ```json
 {

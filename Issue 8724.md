@@ -176,3 +176,19 @@ archive/issue_comments_079568.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008894.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T04:56:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8724#event-8894"
+}
+```

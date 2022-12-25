@@ -41,6 +41,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/9660
 
 ---
 
+archive/issue_events_009795.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-09-10T12:27:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9660",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9660#event-9795"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093615.json:
 ```json
 {

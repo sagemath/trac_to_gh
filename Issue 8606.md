@@ -384,6 +384,22 @@ I'm still changing this to positive review since the patch fixes a bug and a mor
 
 ---
 
+archive/issue_events_008778.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T08:28:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8606",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8606#event-8778"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077848.json:
 ```json
 {

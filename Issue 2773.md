@@ -32,6 +32,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/2773
 
 ---
 
+archive/issue_events_002961.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-04-02T16:18:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2773",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2773#event-2961"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019018.json:
 ```json
 {

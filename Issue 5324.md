@@ -247,6 +247,22 @@ Attachment [sagenb_5324-part2.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_005578.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-09T17:19:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5324",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5324#event-5578"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040915.json:
 ```json
 {

@@ -546,3 +546,19 @@ WARNING: /scratch/mvngu/release/sage-4.1.2.alpha1/local/lib/python2.6/site-packa
 ```
 
 See #6916 for a follow-up to this ticket.
+
+
+
+---
+
+archive/issue_events_006981.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-10T12:02:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6749",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6749#event-6981"
+}
+```

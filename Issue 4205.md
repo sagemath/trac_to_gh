@@ -683,6 +683,22 @@ This ticket can probably be closed once #6140 and #3391 are closed.
 
 ---
 
+archive/issue_events_004443.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-12T06:57:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4205",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4205#event-4443"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030463.json:
 ```json
 {

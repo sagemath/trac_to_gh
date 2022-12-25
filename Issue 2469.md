@@ -139,3 +139,19 @@ In #3947 we fixed the python.spkg LDFLAGS to pick up Sage's python, so I conside
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002648.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-28T00:22:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2469",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2469#event-2648"
+}
+```

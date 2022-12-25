@@ -159,6 +159,22 @@ Michael
 
 ---
 
+archive/issue_events_001986.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-01-19T13:27:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1827",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1827#event-1986"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011545.json:
 ```json
 {

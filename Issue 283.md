@@ -64,6 +64,22 @@ It would be nice if there was a upgrade login that would upgrade the whole vmwar
 
 ---
 
+archive/issue_events_000300.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-03T15:17:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/283",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/283#event-300"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001348.json:
 ```json
 {

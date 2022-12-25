@@ -114,6 +114,22 @@ Yes.
 
 ---
 
+archive/issue_events_008536.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-04-05T06:15:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8346",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8346#event-8536"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074394.json:
 ```json
 {

@@ -104,3 +104,19 @@ Closed as too generic. If something more concrete pops up please open a new tick
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000563.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-01T01:07:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/524",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/524#event-563"
+}
+```

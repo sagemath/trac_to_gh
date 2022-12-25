@@ -288,6 +288,22 @@ It passed on my 5.5.rc0 and 5.6.rc0 'make ptest' and just did so on my 5.7.beta1
 
 ---
 
+archive/issue_events_009328.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-01-31T20:35:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9171",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9171#event-9328"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085644.json:
 ```json
 {

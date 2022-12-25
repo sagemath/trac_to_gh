@@ -186,6 +186,22 @@ Merged 4708_bin-2.patch in Sage 3.2.2.alpha0
 
 ---
 
+archive/issue_events_004953.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-05T06:38:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4708",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4708#event-4953"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035441.json:
 ```json
 {

@@ -463,3 +463,19 @@ Merged in this order:
 
 1. [trac-8459.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8459/trac-8459.patch)
 2. [trac_8459-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8459/trac_8459-doctest.patch)
+
+
+
+---
+
+archive/issue_events_008643.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-08T22:11:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8459",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8459#event-8643"
+}
+```

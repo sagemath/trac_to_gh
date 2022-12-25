@@ -458,6 +458,22 @@ instead of what I had.  I've made this fix.
 
 ---
 
+archive/issue_events_007405.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-12T19:30:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7186",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7186#event-7405"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059423.json:
 ```json
 {

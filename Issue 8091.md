@@ -125,6 +125,22 @@ Jaap
 
 ---
 
+archive/issue_events_008299.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-08-12T14:30:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8091",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8091#event-8299"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070783.json:
 ```json
 {

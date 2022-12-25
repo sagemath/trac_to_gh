@@ -64,6 +64,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_001274.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-18T13:49:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1146",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1146#event-1274"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006976.json:
 ```json
 {

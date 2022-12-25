@@ -102,6 +102,22 @@ Nobody seems to care...
 
 ---
 
+archive/issue_events_009501.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-10-05T09:39:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9348",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9348#event-9501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088600.json:
 ```json
 {

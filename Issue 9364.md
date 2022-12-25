@@ -158,6 +158,22 @@ The patch `trac9364-BooleanFunction_is_symmetric.patch` uses tabs for indentatio
 
 ---
 
+archive/issue_events_009517.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T10:07:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9364",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9364#event-9517"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088821.json:
 ```json
 {

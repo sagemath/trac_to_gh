@@ -115,3 +115,19 @@ archive/issue_comments_012722.json:
 ```
 
 Merged trac-1970-notebook-gnutls.2.patch in Sage 2.10.1.rc3
+
+
+
+---
+
+archive/issue_events_002124.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-29T16:19:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1970",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1970#event-2124"
+}
+```

@@ -154,6 +154,22 @@ Oops... ignore the patch `trac_6098-reviewer.patch`. Just to let people know, on
 
 ---
 
+archive/issue_events_006349.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-16T21:18:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6098",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6098#event-6349"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048540.json:
 ```json
 {

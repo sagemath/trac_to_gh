@@ -465,6 +465,22 @@ Note that this is Ryan's first contribution (along with #8838 and #7154)
 
 ---
 
+archive/issue_events_009353.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T10:40:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9199",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9199#event-9353"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085923.json:
 ```json
 {

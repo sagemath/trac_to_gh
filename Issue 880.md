@@ -86,6 +86,22 @@ There was a copy-and-paste error that ended up reading uninitialized local varia
 
 ---
 
+archive/issue_events_000994.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-14T22:55:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/880",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/880#event-994"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005435.json:
 ```json
 {

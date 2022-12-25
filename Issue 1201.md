@@ -145,6 +145,22 @@ I think this can go in.
 
 ---
 
+archive/issue_events_001337.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T05:54:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1201",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1201#event-1337"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007424.json:
 ```json
 {

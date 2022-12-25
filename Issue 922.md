@@ -94,6 +94,22 @@ Attachment [922.patch](tarball://root/attachments/some-uuid/ticket922/922.patch)
 
 ---
 
+archive/issue_events_001042.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-21T00:55:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/922",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/922#event-1042"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005637.json:
 ```json
 {

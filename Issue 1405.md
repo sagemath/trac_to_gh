@@ -34,6 +34,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/1405
 
 ---
 
+archive/issue_events_001553.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-06T02:07:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1405",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1405#event-1553"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009044.json:
 ```json
 {

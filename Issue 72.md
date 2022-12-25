@@ -153,3 +153,19 @@ archive/issue_comments_000377.json:
 ```
 
 This is not a SAGE issue.
+
+
+
+---
+
+archive/issue_events_000072.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-14T02:58:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/72#event-72"
+}
+```

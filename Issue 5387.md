@@ -147,6 +147,22 @@ Excellent job - thanks for making this patch!
 
 ---
 
+archive/issue_events_005642.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-28T16:27:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5387",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5387#event-5642"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041412.json:
 ```json
 {
@@ -218,6 +234,22 @@ archive/issue_comments_041415.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005643.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-03-01T04:37:40Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5387",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5387#event-5643"
+}
+```
 
 
 
@@ -314,6 +346,22 @@ archive/issue_comments_041420.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_005644.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-01T04:41:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5387",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5387#event-5644"
+}
+```
 
 
 

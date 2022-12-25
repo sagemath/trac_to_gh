@@ -380,6 +380,22 @@ Merge in Sage 3.0.4.alpha2
 
 ---
 
+archive/issue_events_003770.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-05T23:31:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#event-3770"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025080.json:
 ```json
 {

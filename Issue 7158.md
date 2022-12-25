@@ -255,6 +255,22 @@ apply this *after* applying trac_7158-captcha_v2.patch; it just makes a few mino
 
 ---
 
+archive/issue_events_007378.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-17T06:01:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7158",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7158#event-7378"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059206.json:
 ```json
 {

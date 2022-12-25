@@ -198,6 +198,22 @@ Release manager:  please apply both patches.
 
 ---
 
+archive/issue_events_009816.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T11:38:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9684",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9684#event-9816"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093989.json:
 ```json
 {

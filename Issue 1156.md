@@ -111,3 +111,19 @@ After feedback from Mike Hansen closed.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001286.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-19T21:16:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1156",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1156#event-1286"
+}
+```

@@ -52,6 +52,22 @@ Michael
 
 ---
 
+archive/issue_events_000729.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-08-23T23:12:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/661",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/661#event-729"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003424.json:
 ```json
 {

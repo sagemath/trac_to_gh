@@ -67,6 +67,22 @@ I can't test the exact setup, but in all cases using sage-native-execute is a go
 
 ---
 
+archive/issue_events_007148.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-23T06:36:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6921",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6921#event-7148"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057027.json:
 ```json
 {

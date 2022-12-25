@@ -142,6 +142,22 @@ One of the links is dead, and the wiki hasn't been updated since 2011. I think i
 
 ---
 
+archive/issue_events_007973.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-07-14T16:33:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7759",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7759#event-7973"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066702.json:
 ```json
 {

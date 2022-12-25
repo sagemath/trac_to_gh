@@ -181,6 +181,22 @@ Changing keywords from "" to "editor_wstein".
 
 ---
 
+archive/issue_events_001821.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-06-20T08:20:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1662",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1662#event-1821"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010537.json:
 ```json
 {

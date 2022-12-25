@@ -209,3 +209,19 @@ John: If you disagree please open another ticket that takes into consideration #
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002607.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-26T18:48:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#event-2607"
+}
+```

@@ -103,6 +103,22 @@ I *really* like the examples.
 
 ---
 
+archive/issue_events_004252.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-28T18:15:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4022",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4022#event-4252"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028952.json:
 ```json
 {

@@ -48,6 +48,22 @@ Attachment [trac1392-part2.patch](tarball://root/attachments/some-uuid/ticket139
 
 ---
 
+archive/issue_events_001536.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-12-04T07:19:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1392",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1392#event-1536"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008933.json:
 ```json
 {

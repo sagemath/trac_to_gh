@@ -131,6 +131,22 @@ The patch looks good. =)
 
 ---
 
+archive/issue_events_008163.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:54:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7947",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7947#event-8163"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069220.json:
 ```json
 {

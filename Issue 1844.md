@@ -205,3 +205,19 @@ archive/issue_comments_011653.json:
 ```
 
 Merged 1844-2.patch and 1844-2a.patch in Sage 2.10.1.alpha1 - finally :)
+
+
+
+---
+
+archive/issue_events_002003.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-21T04:26:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1844",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1844#event-2003"
+}
+```

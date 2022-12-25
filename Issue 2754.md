@@ -121,6 +121,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_002940.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2009-09-29T15:50:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2754",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2754#event-2940"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018879.json:
 ```json
 {
@@ -156,6 +172,22 @@ archive/issue_comments_018880.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002941.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2009-09-29T15:50:41Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2754",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2754#event-2941"
+}
+```
 
 
 
@@ -212,6 +244,22 @@ archive/issue_comments_018883.json:
 Attachment [plot-sin.png](tarball://root/attachments/some-uuid/ticket2754/plot-sin.png) by mvngu created at 2009-09-29 15:57:04
 
 based on Sage 4.1.2.alpha4
+
+
+
+---
+
+archive/issue_events_002942.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-29T15:58:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2754",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2754#event-2942"
+}
+```
 
 
 

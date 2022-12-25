@@ -92,6 +92,22 @@ Now the javascript message is also gone, but still no search box.  This is alrea
 
 ---
 
+archive/issue_events_006619.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:12:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6370",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6370#event-6619"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050851.json:
 ```json
 {

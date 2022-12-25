@@ -66,6 +66,22 @@ I don't see why this is not ok, give the "..." in the Expected text (assuming wh
 
 ---
 
+archive/issue_events_006985.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-02T16:16:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6754",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6754#event-6985"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055499.json:
 ```json
 {

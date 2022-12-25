@@ -82,3 +82,19 @@ ArithmeticError: self must be simple.
 
 ```
 
+
+
+
+---
+
+archive/issue_events_000030.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-13T02:04:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/31",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/31#event-30"
+}
+```

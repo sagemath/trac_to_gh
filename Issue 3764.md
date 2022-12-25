@@ -229,6 +229,22 @@ Merged sage-3764_1.patch-sage-3764_7.patch in Sage 3.1.alpha1
 
 ---
 
+archive/issue_events_003986.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-10T04:29:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3764",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3764#event-3986"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026715.json:
 ```json
 {

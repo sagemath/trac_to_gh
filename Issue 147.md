@@ -52,6 +52,22 @@ build log for gd
 
 ---
 
+archive/issue_events_000153.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-12T23:40:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/147",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/147#event-153"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000670.json:
 ```json
 {

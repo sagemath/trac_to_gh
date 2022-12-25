@@ -291,6 +291,22 @@ Fixes the error, and makes the same change throughout.  Positive review.
 
 ---
 
+archive/issue_events_008173.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-18T21:44:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#event-8173"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069319.json:
 ```json
 {

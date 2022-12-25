@@ -207,6 +207,22 @@ On your other question, it seems rather random.  I'm not sure what we can do abo
 
 ---
 
+archive/issue_events_006084.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-04T18:15:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5834",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5834#event-6084"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045768.json:
 ```json
 {

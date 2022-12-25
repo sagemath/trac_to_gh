@@ -184,6 +184,22 @@ Rob
 
 ---
 
+archive/issue_events_005685.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-25T07:52:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5433",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5433#event-5685"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041958.json:
 ```json
 {

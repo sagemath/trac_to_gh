@@ -129,6 +129,22 @@ Nice work!  This all looks great.  Doctests in these files pass as well.  Positi
 
 ---
 
+archive/issue_events_006543.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-19T14:50:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6301",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6301#event-6543"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050174.json:
 ```json
 {

@@ -377,3 +377,19 @@ archive/issue_comments_012036.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002061.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-17T05:47:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#event-2061"
+}
+```

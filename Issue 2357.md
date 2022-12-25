@@ -520,6 +520,22 @@ I looked over the new patch added by Craig (the referee) and I'm happy with it.
 
 ---
 
+archive/issue_events_002534.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-02T19:07:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2357",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2357#event-2534"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015863.json:
 ```json
 {

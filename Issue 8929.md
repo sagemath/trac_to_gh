@@ -88,6 +88,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_009084.json:
+```json
+{
+    "actor": "jasonbhill",
+    "created_at": "2010-05-23T19:22:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8929",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8929#event-9084"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082115.json:
 ```json
 {

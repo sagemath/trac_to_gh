@@ -157,6 +157,22 @@ Merged 2326-final.patch in Sage 2.10.3.rc1
 
 ---
 
+archive/issue_events_002504.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-01T23:55:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2326",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2326#event-2504"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015453.json:
 ```json
 {

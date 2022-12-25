@@ -142,6 +142,22 @@ I think it would be very natural to have a class for the set of cusps modulo a c
 
 ---
 
+archive/issue_events_006072.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-23T07:19:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#event-6072"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045669.json:
 ```json
 {

@@ -398,6 +398,22 @@ Same patch with fixed commit message
 
 ---
 
+archive/issue_events_008942.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-11T13:42:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8775",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8775#event-8942"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080210.json:
 ```json
 {

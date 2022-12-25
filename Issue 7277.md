@@ -100,6 +100,22 @@ Since I opened it as a request, I hope it's okay that I ask for it to be closed 
 
 ---
 
+archive/issue_events_007500.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-01-13T01:18:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#event-7500"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060460.json:
 ```json
 {

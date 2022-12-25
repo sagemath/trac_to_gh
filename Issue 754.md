@@ -84,6 +84,22 @@ clisp build error fixed by installing GNU sed instead of the BusyBox version.
 
 ---
 
+archive/issue_events_000847.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-11-14T09:48:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/754#event-847"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004448.json:
 ```json
 {

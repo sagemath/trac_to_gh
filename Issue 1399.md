@@ -339,6 +339,22 @@ Apply the last three patches in order.
 
 ---
 
+archive/issue_events_001543.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-24T21:19:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1399",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1399#event-1543"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009002.json:
 ```json
 {

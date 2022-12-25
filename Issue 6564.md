@@ -623,6 +623,22 @@ Oh... I didn't apply the patch at #6699. No wonder I got the doctest failures.
 
 ---
 
+archive/issue_events_006801.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-02T10:45:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6564",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6564#event-6801"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053452.json:
 ```json
 {

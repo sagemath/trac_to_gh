@@ -117,6 +117,22 @@ Now should we do the same thing with GF(2)(), CDF(), etc.?
 
 ---
 
+archive/issue_events_006451.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:19:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6201",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6201#event-6451"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049449.json:
 ```json
 {

@@ -109,6 +109,22 @@ I am changing it to "resolved as fixed";  hope that's ok.
 
 ---
 
+archive/issue_events_002060.json:
+```json
+{
+    "actor": "@JohnCremona",
+    "created_at": "2008-09-09T14:09:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1903",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1903#event-2060"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012020.json:
 ```json
 {

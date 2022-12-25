@@ -163,3 +163,19 @@ archive/issue_comments_001903.json:
 ```
 
 applied to 2.8.11.rc2, spkg updated.
+
+
+
+---
+
+archive/issue_events_000411.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-02T19:41:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/389",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/389#event-411"
+}
+```

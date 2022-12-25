@@ -365,6 +365,22 @@ If you disagree we can discuss this on the sage-devel, but its such a pervasive 
 
 ---
 
+archive/issue_events_007293.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-04T21:19:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7071",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7071#event-7293"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058387.json:
 ```json
 {

@@ -40,6 +40,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/844
 
 ---
 
+archive/issue_events_000957.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-01T03:07:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/844",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/844#event-957"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005205.json:
 ```json
 {

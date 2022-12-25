@@ -79,6 +79,22 @@ Rolled into #5079
 
 ---
 
+archive/issue_events_005048.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-01-23T22:30:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4806",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4806#event-5048"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036366.json:
 ```json
 {

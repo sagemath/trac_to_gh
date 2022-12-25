@@ -796,6 +796,22 @@ I have one minor gripe: there are one or two cases where the new Conic classes i
 
 ---
 
+archive/issue_events_000810.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-25T08:13:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/727#event-810"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004260.json:
 ```json
 {

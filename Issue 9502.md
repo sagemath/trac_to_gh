@@ -332,6 +332,22 @@ Changing component from algebra to linear algebra.
 
 ---
 
+archive/issue_events_009650.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T10:00:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9502",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9502#event-9650"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091120.json:
 ```json
 {

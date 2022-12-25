@@ -87,6 +87,22 @@ To Minh (if it's not October 1 where you are): please close.
 
 ---
 
+archive/issue_events_007297.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-30T15:01:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7075",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7075#event-7297"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058406.json:
 ```json
 {

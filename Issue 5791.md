@@ -127,6 +127,22 @@ So this is ready to go - positive review.
 
 ---
 
+archive/issue_events_006038.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-30T04:09:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5791",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5791#event-6038"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045269.json:
 ```json
 {

@@ -174,6 +174,22 @@ Just to let people know, the updated spkg has been merged in sage-4.1.1-alpha0. 
 
 ---
 
+archive/issue_events_006692.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-16T21:12:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6451",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6451#event-6692"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051797.json:
 ```json
 {

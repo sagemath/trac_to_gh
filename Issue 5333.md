@@ -73,6 +73,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_005586.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-02-26T11:10:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5333",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5333#event-5586"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041002.json:
 ```json
 {
@@ -149,6 +165,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_005587.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-02-26T11:10:38Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5333",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5333#event-5587"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041005.json:
 ```json
 {
@@ -189,6 +221,22 @@ But you are right -> invalid.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005588.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-26T11:50:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5333",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5333#event-5588"
+}
+```
 
 
 

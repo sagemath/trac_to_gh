@@ -28,6 +28,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/326
 
 ---
 
+archive/issue_events_000348.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-03-21T22:35:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/326",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/326#event-348"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001537.json:
 ```json
 {
@@ -87,6 +103,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000349.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-03-22T02:21:02Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/326",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/326#event-349"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001540.json:
 ```json
 {
@@ -100,6 +132,22 @@ archive/issue_comments_001540.json:
 ```
 
 Resolution changed from invalid to 
+
+
+
+---
+
+archive/issue_events_000350.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-03-22T02:21:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/326",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/326#event-350"
+}
+```
 
 
 

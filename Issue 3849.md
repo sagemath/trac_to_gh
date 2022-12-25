@@ -294,3 +294,19 @@ archive/issue_comments_027328.json:
 ```
 
 merged into sage-4.3
+
+
+
+---
+
+archive/issue_events_004072.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-08T05:29:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3849",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3849#event-4072"
+}
+```

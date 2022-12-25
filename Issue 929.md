@@ -127,6 +127,22 @@ This is applied to 2.8.9.alpha0 and thus fixed.
 
 ---
 
+archive/issue_events_001048.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T19:39:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/929",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/929#event-1048"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005667.json:
 ```json
 {

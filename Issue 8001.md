@@ -184,6 +184,22 @@ Done!
 
 ---
 
+archive/issue_events_008216.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T14:58:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8001",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8001#event-8216"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069805.json:
 ```json
 {

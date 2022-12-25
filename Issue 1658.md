@@ -80,3 +80,19 @@ Looks good to me. Merged in 2.9.2.alpha0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001818.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-03T13:40:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1658",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1658#event-1818"
+}
+```

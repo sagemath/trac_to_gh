@@ -335,6 +335,22 @@ I had to merge the above patch as well since the ordering between Simplex object
 
 ---
 
+archive/issue_events_006557.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-07T06:13:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6309",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6309#event-6557"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050268.json:
 ```json
 {

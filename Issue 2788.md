@@ -87,6 +87,22 @@ I'm not trying to criticise you here, I'm just trying to identify exactly what o
 
 ---
 
+archive/issue_events_002977.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-03T19:08:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2788",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2788#event-2977"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019112.json:
 ```json
 {

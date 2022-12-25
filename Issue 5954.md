@@ -185,6 +185,22 @@ I'm ok with the positive review.
 
 ---
 
+archive/issue_events_006209.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-19T00:37:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5954",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5954#event-6209"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047011.json:
 ```json
 {

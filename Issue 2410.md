@@ -173,6 +173,22 @@ Merged trac_2140.patch in Sage 3.1.2.alpha1
 
 ---
 
+archive/issue_events_002586.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-26T03:44:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2410",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2410#event-2586"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016239.json:
 ```json
 {

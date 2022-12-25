@@ -188,3 +188,19 @@ Hence: Invalid, sorry for the noise.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004642.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-30T23:59:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4397",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4397#event-4642"
+}
+```

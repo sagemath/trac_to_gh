@@ -267,6 +267,22 @@ http://sage.math.washington.edu/home/was/patches/linbox-1.1.6rc0.p1.spkg
 
 ---
 
+archive/issue_events_003890.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-21T14:15:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3671",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-3890"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025897.json:
 ```json
 {
@@ -416,6 +432,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_003891.json:
+```json
+{
+    "actor": "@ClementPernet",
+    "created_at": "2008-08-12T19:02:09Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3671",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-3891"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025905.json:
 ```json
 {
@@ -451,3 +483,19 @@ archive/issue_comments_025906.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_003892.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-13T00:10:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3671",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3671#event-3892"
+}
+```

@@ -46,6 +46,22 @@ Attachment [scripts-2464.patch](tarball://root/attachments/some-uuid/ticket2464/
 
 ---
 
+archive/issue_events_002643.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-11T02:12:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2464",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2464#event-2643"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016668.json:
 ```json
 {

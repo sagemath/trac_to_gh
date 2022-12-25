@@ -169,6 +169,22 @@ Although I didn't test on a system, where the test already went fine before the 
 
 ---
 
+archive/issue_events_006952.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-12T00:03:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6717",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6717#event-6952"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055031.json:
 ```json
 {

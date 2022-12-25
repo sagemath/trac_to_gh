@@ -169,6 +169,22 @@ Sometimes I want to search the source with case-sensitivity on. For example, I m
 
 ---
 
+archive/issue_events_007542.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-31T15:50:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7320",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7320#event-7542"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061060.json:
 ```json
 {

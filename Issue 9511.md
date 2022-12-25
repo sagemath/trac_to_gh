@@ -1485,6 +1485,22 @@ Superseded by #13164, close this ticket as duplicate.
 
 ---
 
+archive/issue_events_009658.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-05T09:38:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9511",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9511#event-9658"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091302.json:
 ```json
 {

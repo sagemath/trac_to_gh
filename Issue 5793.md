@@ -78,6 +78,22 @@ http://trac.sagemath.org/sage_trac/ticket/6355
 
 ---
 
+archive/issue_events_006040.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-22T22:35:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#event-6040"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045281.json:
 ```json
 {
@@ -167,6 +183,22 @@ archive/issue_comments_045284.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_006041.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2009-07-01T05:45:26Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#event-6041"
+}
+```
 
 
 
@@ -1277,3 +1309,19 @@ archive/issue_comments_045326.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006042.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-31T23:32:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#event-6042"
+}
+```

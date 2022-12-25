@@ -207,6 +207,22 @@ Merged debian1.patch-debian5.patch in Sage 2.10.2.alpha0
 
 ---
 
+archive/issue_events_002258.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-14T15:18:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2098",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2098#event-2258"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013547.json:
 ```json
 {

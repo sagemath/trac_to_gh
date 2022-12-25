@@ -296,6 +296,22 @@ There are three patches to be applied here, in this order:
 
 ---
 
+archive/issue_events_002065.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-14T18:37:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1908",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1908#event-2065"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012067.json:
 ```json
 {

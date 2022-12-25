@@ -944,6 +944,22 @@ I'm almost ready to give this a positive review, but it makes me uneasy, since i
 
 ---
 
+archive/issue_events_006592.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-02T07:37:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6348",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6348#event-6592"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050676.json:
 ```json
 {

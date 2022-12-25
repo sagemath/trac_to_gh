@@ -114,6 +114,22 @@ Should work on 4.0.
 
 ---
 
+archive/issue_events_004556.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-24T10:05:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4313",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4313#event-4556"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031520.json:
 ```json
 {

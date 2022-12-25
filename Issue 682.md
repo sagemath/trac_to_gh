@@ -130,6 +130,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_000750.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-11-27T07:33:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/682",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/682#event-750"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003529.json:
 ```json
 {

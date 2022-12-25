@@ -498,6 +498,22 @@ Minh and Rob---thank you both of you for reviewing this!
 
 ---
 
+archive/issue_events_007166.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:33:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6942",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6942#event-7166"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057301.json:
 ```json
 {

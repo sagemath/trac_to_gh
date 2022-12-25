@@ -180,6 +180,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_007823.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-06-05T06:43:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7597",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7597#event-7823"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064691.json:
 ```json
 {

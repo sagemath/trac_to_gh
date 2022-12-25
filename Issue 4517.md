@@ -102,6 +102,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/4517
 
 ---
 
+archive/issue_events_004762.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-12-11T05:00:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4517",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4517#event-4762"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033462.json:
 ```json
 {

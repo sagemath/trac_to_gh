@@ -85,3 +85,19 @@ This is fixed. It just build fine with Sage 3.1.1 in 64 bit OSX mode.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003398.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-19T23:35:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3180",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3180#event-3398"
+}
+```

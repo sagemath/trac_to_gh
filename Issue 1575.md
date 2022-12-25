@@ -280,3 +280,19 @@ archive/issue_comments_010000.json:
 ```
 
 vector-plot-updated.patch merged in Sage 2.10.1.rc1.
+
+
+
+---
+
+archive/issue_events_001729.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-27T03:32:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1575",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1575#event-1729"
+}
+```

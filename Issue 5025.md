@@ -513,6 +513,22 @@ Changing assignee from boothby to @mwhansen.
 
 ---
 
+archive/issue_events_005269.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-29T06:50:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5025",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5025#event-5269"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038213.json:
 ```json
 {

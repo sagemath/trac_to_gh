@@ -128,6 +128,22 @@ I noticed that it only works with Fortran 77 code. Not a bug, really, but Fortra
 
 ---
 
+archive/issue_events_006166.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-30T07:02:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5912",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5912#event-6166"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046645.json:
 ```json
 {

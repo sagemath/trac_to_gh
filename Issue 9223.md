@@ -239,6 +239,22 @@ In the meantime, it's better to get the things on this ticket going.
 
 ---
 
+archive/issue_events_009381.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-22T07:48:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9223",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9223#event-9381"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086392.json:
 ```json
 {

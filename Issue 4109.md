@@ -114,3 +114,19 @@ archive/issue_comments_029695.json:
 ```
 
 Since this is a design decision and not a bug, I'm invalidating the ticket. If you think it's a bad design decision, take it to the mailing list. If you think path graphs shouldn't layout in lines, make a new ticket.
+
+
+
+---
+
+archive/issue_events_004346.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2008-09-13T18:45:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4109",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4109#event-4346"
+}
+```

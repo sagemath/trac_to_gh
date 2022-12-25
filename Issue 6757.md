@@ -123,6 +123,22 @@ I suspect this should be closed in that case.
 
 ---
 
+archive/issue_events_006987.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-28T01:34:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6757",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6757#event-6987"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055528.json:
 ```json
 {

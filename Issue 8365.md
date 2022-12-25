@@ -138,6 +138,22 @@ Looks like I forgot one line in polynomial_rings.rst, indeed (sorry for that). T
 
 ---
 
+archive/issue_events_008553.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T22:27:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8365",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8365#event-8553"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074651.json:
 ```json
 {

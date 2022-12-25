@@ -262,6 +262,22 @@ find . -not \( \( -type f -perm 0644 \) -or \( -type f -perm 0755 \) -or \( -typ
 
 ---
 
+archive/issue_events_008622.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-10-05T09:47:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#event-8622"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075622.json:
 ```json
 {

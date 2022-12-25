@@ -359,3 +359,19 @@ archive/issue_comments_049839.json:
 ```
 
 Merged both patches.
+
+
+
+---
+
+archive/issue_events_006495.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-29T12:11:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#event-6495"
+}
+```

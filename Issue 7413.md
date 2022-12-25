@@ -60,3 +60,19 @@ archive/issue_comments_062264.json:
 ```
 
 This is a dupe of #5324.
+
+
+
+---
+
+archive/issue_events_007638.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-09T02:03:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7413",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7413#event-7638"
+}
+```

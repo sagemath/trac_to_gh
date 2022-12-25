@@ -76,6 +76,22 @@ sage: sage: sage: s([2]).plethysm(s.zero_element())
 
 ---
 
+archive/issue_events_006723.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-05-06T16:02:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6487",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6487#event-6723"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052363.json:
 ```json
 {

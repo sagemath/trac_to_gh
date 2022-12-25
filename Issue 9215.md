@@ -101,6 +101,22 @@ reviewed against sage-4.4.3
 
 ---
 
+archive/issue_events_009371.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-21T09:55:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9215",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9215#event-9371"
+}
+```
+
+
+
+---
+
 archive/issue_comments_086218.json:
 ```json
 {

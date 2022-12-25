@@ -82,6 +82,22 @@ The issue of ever-slowing comparisons doesn't occur anymore.
 
 ---
 
+archive/issue_events_007034.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-12-05T08:24:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6799",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6799#event-7034"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055890.json:
 ```json
 {

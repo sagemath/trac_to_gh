@@ -97,3 +97,19 @@ archive/issue_comments_005619.json:
 ```
 
 I've applied this.
+
+
+
+---
+
+archive/issue_events_001039.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-20T18:00:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/919",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/919#event-1039"
+}
+```

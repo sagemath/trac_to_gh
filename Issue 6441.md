@@ -1670,3 +1670,19 @@ Merged patches in this order:
 
 1. `trac_6441_a_rings_412rebase.patch`
 2. `trac_6441_b_df_charpoly_412rebase.patch`
+
+
+
+---
+
+archive/issue_events_006682.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-09T05:56:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6441",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6441#event-6682"
+}
+```

@@ -142,3 +142,19 @@ Fixed by William and me when we fixed up the new biopython-1.44.spkg
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000397.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-03T12:04:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/375",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/375#event-397"
+}
+```

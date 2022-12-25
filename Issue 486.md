@@ -140,6 +140,22 @@ Attachment [partition_updates.hg](tarball://root/attachments/some-uuid/ticket486
 
 ---
 
+archive/issue_events_000517.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:47:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/486",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/486#event-517"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002419.json:
 ```json
 {

@@ -200,6 +200,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_002757.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-20T00:46:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2574",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2574#event-2757"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017550.json:
 ```json
 {

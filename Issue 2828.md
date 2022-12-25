@@ -115,6 +115,22 @@ I provide a partial fix for the issues mentioned above. The patch does not fix a
 
 ---
 
+archive/issue_events_003018.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-06T14:09:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2828",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2828#event-3018"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019375.json:
 ```json
 {

@@ -56,6 +56,22 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
+archive/issue_events_001160.json:
+```json
+{
+    "actor": "@ClementPernet",
+    "created_at": "2008-03-03T05:01:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1035",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1035#event-1160"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006304.json:
 ```json
 {

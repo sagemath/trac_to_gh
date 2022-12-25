@@ -120,6 +120,22 @@ I'm going to close this as invalid.  I made a copy of this ticket on the Cython 
 
 ---
 
+archive/issue_events_000121.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-08-26T20:22:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/115",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/115#event-121"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000543.json:
 ```json
 {

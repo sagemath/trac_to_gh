@@ -64,6 +64,22 @@ We might think about optimizing this function for speed later. Specialcasing Int
 
 ---
 
+archive/issue_events_005455.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-09T07:53:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5199",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5199#event-5455"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039763.json:
 ```json
 {

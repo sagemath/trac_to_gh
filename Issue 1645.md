@@ -94,3 +94,19 @@ archive/issue_comments_010439.json:
 ```
 
 Looks good to me; and this patch was already applied in 2.9.2.
+
+
+
+---
+
+archive/issue_events_001805.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2008-01-15T03:21:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1645#event-1805"
+}
+```

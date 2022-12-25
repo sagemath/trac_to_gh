@@ -118,6 +118,22 @@ I think this ticket is a duplicate of #9735, #9689, and/or #9693.  Is that right
 
 ---
 
+archive/issue_events_009824.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-08-16T22:09:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9692",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9692#event-9824"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094049.json:
 ```json
 {

@@ -551,6 +551,22 @@ Note that Maxima functions we didn't usually have a good precision interface wit
 
 ---
 
+archive/issue_events_009421.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-05-19T06:43:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9263",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9263#event-9421"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087038.json:
 ```json
 {

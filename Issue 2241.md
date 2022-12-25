@@ -72,6 +72,22 @@ JV
 
 ---
 
+archive/issue_events_002411.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-15T04:43:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2241",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2241#event-2411"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014819.json:
 ```json
 {

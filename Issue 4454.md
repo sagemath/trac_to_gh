@@ -142,6 +142,22 @@ Have you verified that this is not taken care of by #5106?
 
 ---
 
+archive/issue_events_004700.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T23:35:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4454",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4454#event-4700"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032802.json:
 ```json
 {

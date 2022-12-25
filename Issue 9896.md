@@ -505,6 +505,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_010025.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-12-10T14:15:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9896",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9896#event-10025"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098229.json:
 ```json
 {

@@ -310,6 +310,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_008971.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-03T07:25:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8806",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8806#event-8971"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080671.json:
 ```json
 {

@@ -125,6 +125,22 @@ The translation x1 -> x_1 far outweight the potential ambiguity in my mind. Howe
 
 ---
 
+archive/issue_events_001588.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-19T19:45:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1441",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1441#event-1588"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009278.json:
 ```json
 {

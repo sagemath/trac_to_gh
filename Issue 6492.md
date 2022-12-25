@@ -303,6 +303,22 @@ Changing priority from major to blocker.
 
 ---
 
+archive/issue_events_006728.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-09T18:41:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6492",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6492#event-6728"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052441.json:
 ```json
 {
@@ -375,6 +391,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_006729.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-07-09T22:08:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6492",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6492#event-6729"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052445.json:
 ```json
 {
@@ -388,6 +420,22 @@ archive/issue_comments_052445.json:
 ```
 
 Resolution changed from fixed to 
+
+
+
+---
+
+archive/issue_events_006730.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-09T23:33:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6492",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6492#event-6730"
+}
+```
 
 
 

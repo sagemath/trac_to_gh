@@ -192,3 +192,19 @@ archive/issue_comments_047495.json:
 ```
 
 Presuming these are all correctly reviewed as either duplicate, invalid, or wontfix.
+
+
+
+---
+
+archive/issue_events_006242.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2019-02-26T13:58:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5987",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5987#event-6242"
+}
+```

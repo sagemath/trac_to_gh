@@ -310,6 +310,22 @@ These three patches together look good to me.
 
 ---
 
+archive/issue_events_001219.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-08T02:07:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1093",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1093#event-1219"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006604.json:
 ```json
 {

@@ -64,6 +64,22 @@ However, while reviewing the patch I noticed that there are more formatting issu
 
 ---
 
+archive/issue_events_005783.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-20T21:20:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5536",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5536#event-5783"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042964.json:
 ```json
 {

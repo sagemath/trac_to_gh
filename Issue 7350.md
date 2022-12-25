@@ -110,6 +110,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_007573.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:12:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7350",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7350#event-7573"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061468.json:
 ```json
 {

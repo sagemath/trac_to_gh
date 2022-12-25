@@ -64,6 +64,22 @@ This looks good to me.  All doctests still pass, and the cython example in the d
 
 ---
 
+archive/issue_events_004194.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-29T03:20:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3966",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3966#event-4194"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028435.json:
 ```json
 {

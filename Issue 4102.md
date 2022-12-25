@@ -2620,6 +2620,22 @@ Thanks!
 
 ---
 
+archive/issue_events_004339.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-07-31T12:52:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4102",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4102#event-4339"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029645.json:
 ```json
 {

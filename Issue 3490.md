@@ -123,6 +123,22 @@ nice
 
 ---
 
+archive/issue_events_003710.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-25T06:34:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#event-3710"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024540.json:
 ```json
 {

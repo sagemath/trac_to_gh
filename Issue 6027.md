@@ -171,6 +171,22 @@ sage: %timeit sage.misc.darwin_utilities.darwin_memory_usage()
 
 ---
 
+archive/issue_events_006282.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-06-24T09:47:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6027",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6027#event-6282"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047903.json:
 ```json
 {

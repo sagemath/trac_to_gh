@@ -334,6 +334,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009422.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-25T15:45:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9264",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9264#event-9422"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087046.json:
 ```json
 {
@@ -365,6 +381,22 @@ archive/issue_comments_087047.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009423.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-07-11T19:16:40Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9264",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9264#event-9423"
+}
+```
 
 
 
@@ -651,6 +683,22 @@ Replying to [comment:18 kcrisman]:
 > Well, unpack ecl-11.1.1.p1.spkg and find out.  At any rate, that is on the ticket description at #9493 still, so this ticket should be closed.
 
 Could be the first time I ever use `sage -info ...` (which ought to dump `SPKG.txt` to the screen, but unfortunately currently doesn't: #11021). :D
+
+
+
+---
+
+archive/issue_events_009424.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-07-05T10:08:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9264",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9264#event-9424"
+}
+```
 
 
 

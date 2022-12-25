@@ -176,6 +176,22 @@ Merger in Sage 3.0.1.alpha1
 
 ---
 
+archive/issue_events_002929.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-30T05:47:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2741",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2741#event-2929"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018812.json:
 ```json
 {

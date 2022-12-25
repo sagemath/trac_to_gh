@@ -99,3 +99,19 @@ archive/issue_comments_043417.json:
 ```
 
 stupid trac...
+
+
+
+---
+
+archive/issue_events_005824.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-03-21T17:09:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5579",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5579#event-5824"
+}
+```

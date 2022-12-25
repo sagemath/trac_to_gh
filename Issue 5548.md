@@ -157,6 +157,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_005793.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2019-05-17T11:45:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5548",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5548#event-5793"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043075.json:
 ```json
 {

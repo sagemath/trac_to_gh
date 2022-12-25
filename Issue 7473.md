@@ -459,6 +459,22 @@ On the grounds that this is an improvement on some systems and I hope isn't any 
 
 ---
 
+archive/issue_events_007699.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-29T05:41:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#event-7699"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062865.json:
 ```json
 {
@@ -549,6 +565,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_007700.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-04T08:06:31Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#event-7700"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062870.json:
 ```json
 {
@@ -634,3 +666,19 @@ archive/issue_comments_062874.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_007701.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-06T08:24:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#event-7701"
+}
+```

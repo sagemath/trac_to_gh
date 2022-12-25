@@ -80,3 +80,19 @@ archive/issue_comments_006342.json:
 ```
 
 applied to 2.8.11.alpha0
+
+
+
+---
+
+archive/issue_events_001170.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T09:59:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1045",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1045#event-1170"
+}
+```

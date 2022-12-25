@@ -103,6 +103,22 @@ These doctests don't convince me that the the results are correct, but I don't s
 
 ---
 
+archive/issue_events_006697.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-18T20:00:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6457",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6457#event-6697"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052088.json:
 ```json
 {

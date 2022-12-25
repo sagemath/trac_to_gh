@@ -176,3 +176,19 @@ archive/issue_comments_024018.json:
 ```
 
 Merged promotion_reflection-3418-submitted.patch in Sage 3.0.3.rc0
+
+
+
+---
+
+archive/issue_events_003634.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-15T22:27:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3418",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3418#event-3634"
+}
+```

@@ -76,6 +76,22 @@ See #9017
 
 ---
 
+archive/issue_events_006650.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2010-07-11T16:00:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6405",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6405#event-6650"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051344.json:
 ```json
 {

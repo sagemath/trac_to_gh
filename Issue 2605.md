@@ -76,6 +76,22 @@ JV
 
 ---
 
+archive/issue_events_002795.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-05-10T21:22:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2605",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2605#event-2795"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017775.json:
 ```json
 {

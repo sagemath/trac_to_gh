@@ -211,6 +211,22 @@ Merged implicit-plot-no-fill.patch in Sage 3.2.rc0
 
 ---
 
+archive/issue_events_004710.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-08T07:13:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4462",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4462#event-4710"
+}
+```
+
+
+
+---
+
 archive/issue_comments_032888.json:
 ```json
 {

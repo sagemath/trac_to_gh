@@ -115,6 +115,22 @@ Now at: trac_6751.patch
 
 ---
 
+archive/issue_events_006983.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-30T09:29:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6751",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6751#event-6983"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055495.json:
 ```json
 {

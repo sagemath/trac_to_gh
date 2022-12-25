@@ -968,6 +968,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006753.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-20T05:42:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6517",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6517#event-6753"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053016.json:
 ```json
 {
@@ -1021,6 +1037,22 @@ archive/issue_comments_053018.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_006754.json:
+```json
+{
+    "actor": "@hemmecke",
+    "created_at": "2010-06-17T15:07:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6517",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6517#event-6754"
+}
+```
 
 
 
@@ -1386,6 +1418,22 @@ archive/issue_comments_053028.json:
 I am not sure of the procedure of who should give the positive review and in any case several people should look at it. As I have not been very active lately I will just give a comment. This seems to be a simple upgrade of two optional packages and so I don't have any major concerns. I installed the packages on two Linux systems (32 bit SL 5.1, 64 bit Ubuntu 10.04) and ran some tests without severe problems (small issues noted above). I am aware that there are problems with the Sage interface but I think that is a separate issue. Therefore, I would give the packages a positive review.
 
 Adam
+
+
+
+---
+
+archive/issue_events_006755.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-27T20:07:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6517",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6517#event-6755"
+}
+```
 
 
 

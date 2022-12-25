@@ -177,3 +177,19 @@ archive/issue_comments_001899.json:
 Attachment [ticket_388.hg](tarball://root/attachments/some-uuid/ticket388/ticket_388.hg) by @williamstein created at 2007-09-01 18:12:07
 
 looks good to me.
+
+
+
+---
+
+archive/issue_events_000410.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-01T18:12:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/388#event-410"
+}
+```

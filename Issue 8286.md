@@ -115,6 +115,22 @@ Yes, it works for me now.
 
 ---
 
+archive/issue_events_008484.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2011-02-24T06:15:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8286",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8286#event-8484"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073254.json:
 ```json
 {

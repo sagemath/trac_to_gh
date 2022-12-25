@@ -117,3 +117,19 @@ archive/issue_comments_006739.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_001244.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2009-08-25T19:20:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1118",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1118#event-1244"
+}
+```

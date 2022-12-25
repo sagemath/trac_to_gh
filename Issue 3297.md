@@ -459,6 +459,22 @@ be closed.
 
 ---
 
+archive/issue_events_003516.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-02-24T10:02:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3297",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3297#event-3516"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022776.json:
 ```json
 {

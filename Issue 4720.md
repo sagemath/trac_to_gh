@@ -180,6 +180,22 @@ rebased version of John's patch
 
 ---
 
+archive/issue_events_004965.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-10T09:19:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4720",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4720#event-4965"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035539.json:
 ```json
 {

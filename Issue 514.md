@@ -190,6 +190,22 @@ Michael
 
 ---
 
+archive/issue_events_000553.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T23:34:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/514",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/514#event-553"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002594.json:
 ```json
 {

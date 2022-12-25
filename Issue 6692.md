@@ -48,6 +48,22 @@ based on Sage 4.1.1.rc2
 
 ---
 
+archive/issue_events_006927.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-12T05:08:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6692",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6692#event-6927"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054899.json:
 ```json
 {

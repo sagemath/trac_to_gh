@@ -101,6 +101,22 @@ Merged [ecl-10.2.1.spkg](http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.s
 
 ---
 
+archive/issue_events_008474.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T23:01:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8275",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8275#event-8474"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073143.json:
 ```json
 {

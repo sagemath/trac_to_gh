@@ -124,3 +124,19 @@ Hence this is invalid.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004079.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-26T09:58:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3856",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3856#event-4079"
+}
+```

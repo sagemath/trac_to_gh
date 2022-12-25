@@ -591,6 +591,22 @@ Good!
 
 ---
 
+archive/issue_events_008956.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-28T10:02:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8791",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8791#event-8956"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080382.json:
 ```json
 {

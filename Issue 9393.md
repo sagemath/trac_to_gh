@@ -150,6 +150,22 @@ Thanks for looking into this.
 
 ---
 
+archive/issue_events_009550.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-01-18T08:13:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9393",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9393#event-9550"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089291.json:
 ```json
 {

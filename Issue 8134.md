@@ -204,6 +204,22 @@ Done!
 
 ---
 
+archive/issue_events_008344.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-10T18:31:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8134",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8134#event-8344"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071419.json:
 ```json
 {

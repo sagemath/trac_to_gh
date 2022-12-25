@@ -211,6 +211,22 @@ I thought about it, but it seems to me that such objects should be "special" rat
 
 ---
 
+archive/issue_events_008877.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-19T05:18:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8707",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8707#event-8877"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079296.json:
 ```json
 {

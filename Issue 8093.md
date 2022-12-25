@@ -148,6 +148,22 @@ Alright with the modifs as far as I'm concerned.
 
 ---
 
+archive/issue_events_008301.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:47:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8093",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8093#event-8301"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070801.json:
 ```json
 {

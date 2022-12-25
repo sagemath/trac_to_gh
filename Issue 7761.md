@@ -606,6 +606,22 @@ Too late for sage-3.4.1, but we'll still merge it ;-)
 
 ---
 
+archive/issue_events_007975.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-13T06:10:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#event-7975"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066726.json:
 ```json
 {
@@ -637,6 +653,22 @@ archive/issue_comments_066727.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_007976.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-01-29T23:59:54Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#event-7976"
+}
+```
 
 
 
@@ -1105,3 +1137,19 @@ archive/issue_comments_066745.json:
 ```
 
 Merged [python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg) in the standard spkg repository.
+
+
+
+---
+
+archive/issue_events_007977.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T23:31:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#event-7977"
+}
+```

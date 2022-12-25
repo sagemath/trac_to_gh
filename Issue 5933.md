@@ -68,6 +68,22 @@ Positive review, based on eyeballing the patch and applying it successfully.
 
 ---
 
+archive/issue_events_006187.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-29T23:26:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5933",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5933#event-6187"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046830.json:
 ```json
 {

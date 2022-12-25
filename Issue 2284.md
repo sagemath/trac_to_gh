@@ -120,6 +120,22 @@ Applies cleanly to 2.10.3.alpha0 and passes tests for me.
 
 ---
 
+archive/issue_events_002459.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-28T06:50:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2284",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2284#event-2459"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015125.json:
 ```json
 {

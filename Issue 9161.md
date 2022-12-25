@@ -107,6 +107,22 @@ Forgot to say this, but I think only my changes need review at this point, I'm h
 
 ---
 
+archive/issue_events_009318.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-07T05:06:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9161",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9161#event-9318"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085393.json:
 ```json
 {

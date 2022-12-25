@@ -145,6 +145,22 @@ merged into sagenb-0.4.2 (sage-4.2.1)
 
 ---
 
+archive/issue_events_007610.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-11T22:15:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7385",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7385#event-7610"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062001.json:
 ```json
 {

@@ -52,6 +52,22 @@ implementation
 
 ---
 
+archive/issue_events_000894.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-04T18:45:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-894"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004698.json:
 ```json
 {
@@ -149,6 +165,22 @@ archive/issue_comments_004702.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000895.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-05T07:54:16Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-895"
+}
+```
 
 
 
@@ -401,6 +433,22 @@ archive/issue_comments_004714.json:
 Attachment [trac787-bundle.hg](tarball://root/attachments/some-uuid/ticket787/trac787-bundle.hg) by @williamstein created at 2007-12-02 03:14:44
 
 instead of applying those three patches, this is a clean bundle.
+
+
+
+---
+
+archive/issue_events_000896.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T04:50:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/787",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/787#event-896"
+}
+```
 
 
 

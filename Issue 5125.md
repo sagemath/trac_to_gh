@@ -168,6 +168,22 @@ The attached patch fixes the issue for me. I've added a second patch which docum
 
 ---
 
+archive/issue_events_005374.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-02T02:46:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#event-5374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039100.json:
 ```json
 {

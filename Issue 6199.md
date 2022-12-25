@@ -62,6 +62,22 @@ We could make an action on Integers by ints.
 
 ---
 
+archive/issue_events_006447.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2010-01-21T00:22:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6199",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-6447"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049410.json:
 ```json
 {
@@ -243,6 +259,22 @@ archive/issue_comments_049415.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_006448.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2010-01-22T06:57:13Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6199",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-6448"
+}
+```
 
 
 
@@ -768,6 +800,22 @@ archive/issue_comments_049438.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_006449.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:51:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6199",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6199#event-6449"
+}
+```
 
 
 

@@ -246,6 +246,22 @@ Yep, I'm happy with the changes. I didn't get a chance to do a full doctest run,
 
 ---
 
+archive/issue_events_006034.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-11T08:28:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5787",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5787#event-6034"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045218.json:
 ```json
 {

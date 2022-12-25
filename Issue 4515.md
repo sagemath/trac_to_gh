@@ -248,6 +248,22 @@ Works fine. And now back to #3761.
 
 ---
 
+archive/issue_events_004760.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-15T05:11:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4515",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4515#event-4760"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033456.json:
 ```json
 {

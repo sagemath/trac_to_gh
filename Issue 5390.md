@@ -139,6 +139,22 @@ Cheers
 
 ---
 
+archive/issue_events_005647.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-27T22:58:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5390",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5390#event-5647"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041434.json:
 ```json
 {

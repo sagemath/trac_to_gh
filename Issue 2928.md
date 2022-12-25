@@ -76,6 +76,22 @@ Michael
 
 ---
 
+archive/issue_events_003128.json:
+```json
+{
+    "actor": "@kedlaya",
+    "created_at": "2008-04-15T11:14:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2928",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2928#event-3128"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020114.json:
 ```json
 {
@@ -169,6 +185,22 @@ archive/issue_comments_020118.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003129.json:
+```json
+{
+    "actor": "@kedlaya",
+    "created_at": "2008-04-16T11:27:27Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2928",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2928#event-3129"
+}
+```
 
 
 
@@ -283,6 +315,22 @@ archive/issue_comments_020124.json:
 ```
 
 Applied against 3.0.rc0, this fixes the problem on my 32-bit machine (where I was able to replicate the problem before). It seems like a pretty clean way to do it without imposing a serious performance hit. Positive review.
+
+
+
+---
+
+archive/issue_events_003130.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-21T00:37:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2928",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2928#event-3130"
+}
+```
 
 
 

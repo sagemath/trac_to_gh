@@ -191,6 +191,22 @@ I've made a new spkg at  http://sage.math.washington.edu/home/burcin/pynac/pynac
 
 ---
 
+archive/issue_events_009059.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-05-28T19:32:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#event-9059"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081823.json:
 ```json
 {

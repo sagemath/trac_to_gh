@@ -187,6 +187,22 @@ From my understanding, we need to do both since we have to verify that it is a d
 
 ---
 
+archive/issue_events_003538.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-03-29T18:58:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3320",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3320#event-3538"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022977.json:
 ```json
 {

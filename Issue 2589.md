@@ -125,6 +125,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_002778.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-18T23:22:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2589",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2589#event-2778"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017684.json:
 ```json
 {

@@ -91,3 +91,19 @@ archive/issue_comments_059370.json:
 ```
 
 Fixed by #7352
+
+
+
+---
+
+archive/issue_events_007401.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-20T06:22:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7182",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7182#event-7401"
+}
+```

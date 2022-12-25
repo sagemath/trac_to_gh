@@ -1759,3 +1759,19 @@ archive/issue_comments_088085.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009490.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T09:58:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#event-9490"
+}
+```

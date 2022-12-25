@@ -28,6 +28,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3722
 
 ---
 
+archive/issue_events_003942.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-23T13:44:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3722",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3722#event-3942"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026349.json:
 ```json
 {

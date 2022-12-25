@@ -123,6 +123,22 @@ True
 
 ---
 
+archive/issue_events_001135.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T09:41:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1011",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1011#event-1135"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006176.json:
 ```json
 {

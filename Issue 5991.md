@@ -436,6 +436,22 @@ Attachment [trac_5991_dynamic_class-nt.2.patch](tarball://root/attachments/some-
 
 ---
 
+archive/issue_events_006246.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T07:15:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#event-6246"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047532.json:
 ```json
 {

@@ -219,6 +219,22 @@ Nevermind, you already attached one. Looks good.
 
 ---
 
+archive/issue_events_005753.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-23T20:34:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5500",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5500#event-5753"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042644.json:
 ```json
 {

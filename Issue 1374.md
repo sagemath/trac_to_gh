@@ -239,6 +239,22 @@ Merged in 2.8.15.rc0.
 
 ---
 
+archive/issue_events_001517.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T21:37:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1374",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-1517"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008795.json:
 ```json
 {
@@ -311,6 +327,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001518.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-12-02T23:20:43Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1374",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-1518"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008799.json:
 ```json
 {
@@ -348,6 +380,22 @@ Merged cwitty's patch in 2.8.15.rc0. All doctests pass.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001519.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-03T00:28:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1374",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1374#event-1519"
+}
+```
 
 
 

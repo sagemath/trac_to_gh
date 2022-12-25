@@ -504,6 +504,22 @@ This ticket is marked as "needs review", but is there anything still to review h
 
 ---
 
+archive/issue_events_008670.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-28T03:23:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#event-8670"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076433.json:
 ```json
 {

@@ -242,6 +242,22 @@ Remarks:
 
 ---
 
+archive/issue_events_004796.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-17T07:01:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4551",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4551#event-4796"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034051.json:
 ```json
 {

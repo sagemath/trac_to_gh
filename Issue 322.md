@@ -50,6 +50,22 @@ applications, so you know about it.  Hmm.
 
 ---
 
+archive/issue_events_000342.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-03-21T22:46:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/322#event-342"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001523.json:
 ```json
 {
@@ -81,6 +97,22 @@ archive/issue_comments_001524.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000343.json:
+```json
+{
+    "actor": "TimothyClemans",
+    "created_at": "2007-03-26T03:58:37Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/322#event-343"
+}
+```
 
 
 
@@ -153,6 +185,22 @@ archive/issue_comments_001528.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_000344.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:12:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/322#event-344"
+}
+```
 
 
 

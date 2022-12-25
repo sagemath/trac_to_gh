@@ -251,3 +251,19 @@ archive/issue_comments_011767.json:
 ```
 
 Merged 1862.patch in Sage 2.10.4.rc0
+
+
+
+---
+
+archive/issue_events_002020.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-16T02:53:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1862",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1862#event-2020"
+}
+```

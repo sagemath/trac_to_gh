@@ -47,6 +47,22 @@ Changing assignee from @williamstein to @rlmill.
 
 ---
 
+archive/issue_events_000215.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-08-18T20:45:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/206",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/206#event-215"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000921.json:
 ```json
 {
@@ -96,6 +112,22 @@ archive/issue_comments_000923.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000216.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-08-18T21:07:39Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/206",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/206#event-216"
+}
+```
 
 
 
@@ -186,6 +218,22 @@ archive/issue_comments_000928.json:
 ```
 
 Changing status from reopened to new.
+
+
+
+---
+
+archive/issue_events_000217.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-19T01:06:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/206",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/206#event-217"
+}
+```
 
 
 

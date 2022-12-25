@@ -68,6 +68,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/96
 
 ---
 
+archive/issue_events_000098.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-19T11:29:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/96",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/96#event-98"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000458.json:
 ```json
 {

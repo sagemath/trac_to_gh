@@ -1054,6 +1054,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009122.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T07:42:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9122"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082575.json:
 ```json
 {
@@ -1085,6 +1101,22 @@ archive/issue_comments_082576.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_009123.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T08:19:19Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9123"
+}
+```
 
 
 
@@ -1417,6 +1449,22 @@ I don't know if the patch would still apply (probably not), but at least I verif
 
 ---
 
+archive/issue_events_009124.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-11-30T08:59:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9124"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082588.json:
 ```json
 {
@@ -1430,6 +1478,22 @@ archive/issue_comments_082588.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009125.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-11-30T09:00:13Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9125"
+}
+```
 
 
 
@@ -2765,6 +2829,22 @@ archive/issue_comments_082636.json:
 ```
 
 Thanks. LGTM.
+
+
+
+---
+
+archive/issue_events_009126.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2021-03-01T00:21:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8972",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8972#event-9126"
+}
+```
 
 
 

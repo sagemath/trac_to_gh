@@ -582,6 +582,22 @@ Attachment [#774.patch](tarball://root/attachments/some-uuid/ticket774/#774.patc
 
 ---
 
+archive/issue_events_000877.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-10-04T19:53:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/774",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/774#event-877"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004610.json:
 ```json
 {

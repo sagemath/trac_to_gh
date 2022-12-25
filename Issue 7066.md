@@ -184,6 +184,22 @@ yup, that appears to be the case
 
 ---
 
+archive/issue_events_007286.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-21T11:36:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7066",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7066#event-7286"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058339.json:
 ```json
 {

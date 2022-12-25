@@ -53,6 +53,22 @@ I've fixed the indicated problem, cleaned up the code, and documented the heck o
 
 ---
 
+archive/issue_events_003424.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T07:01:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3206",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3206#event-3424"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022115.json:
 ```json
 {

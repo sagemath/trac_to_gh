@@ -152,6 +152,22 @@ Ah, but *does* it?  For me, it first prints out the (empty) lines every second, 
 
 ---
 
+archive/issue_events_003111.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:03:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#event-3111"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020007.json:
 ```json
 {

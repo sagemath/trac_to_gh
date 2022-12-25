@@ -4618,6 +4618,22 @@ Agreed!  This will get merged in sage-4.7.alpha0.  I still expect breakage here 
 
 ---
 
+archive/issue_events_009588.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-03-08T21:44:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9433",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9433#event-9588"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090098.json:
 ```json
 {

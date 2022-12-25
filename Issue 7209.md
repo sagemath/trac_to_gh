@@ -168,6 +168,22 @@ Florent
 
 ---
 
+archive/issue_events_007430.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-21T04:01:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#event-7430"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059723.json:
 ```json
 {

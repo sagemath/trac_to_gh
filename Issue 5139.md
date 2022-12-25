@@ -64,6 +64,22 @@ archive/issue_comments_039223.json:
 
 ---
 
+archive/issue_events_005387.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-02T02:30:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5139",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5139#event-5387"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039224.json:
 ```json
 {

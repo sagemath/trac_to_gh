@@ -989,6 +989,22 @@ Fixed by #12415.
 
 ---
 
+archive/issue_events_008878.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-03-07T08:17:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8708",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8708#event-8878"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079333.json:
 ```json
 {

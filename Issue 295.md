@@ -136,3 +136,19 @@ archive/issue_comments_001396.json:
 Fixed in ncalexan's local tree by 34c022ed2482.
 
 This requires the doctest.ELLIPSIS option be added to local/bin/sage-doctest, so I haven't sent it upstream yet.  When I finish touching the testing infrastructure, I'll send it along, or ask for it :)
+
+
+
+---
+
+archive/issue_events_000312.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2007-02-28T20:33:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/295",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/295#event-312"
+}
+```

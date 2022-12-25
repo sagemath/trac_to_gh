@@ -1284,6 +1284,22 @@ Of course, this assumes #7650 is reviewed.
 
 ---
 
+archive/issue_events_007490.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-04T23:12:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7269",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7269#event-7490"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060354.json:
 ```json
 {

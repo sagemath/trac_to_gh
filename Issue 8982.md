@@ -103,6 +103,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_009135.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-06T01:30:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8982",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8982#event-9135"
+}
+```
+
+
+
+---
+
 archive/issue_comments_082731.json:
 ```json
 {

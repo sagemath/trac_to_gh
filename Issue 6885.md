@@ -78,3 +78,19 @@ archive/issue_comments_056787.json:
 ```
 
 Close this ticket as duplicate of #6988.
+
+
+
+---
+
+archive/issue_events_007116.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-22T20:14:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6885",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6885#event-7116"
+}
+```

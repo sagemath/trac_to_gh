@@ -78,6 +78,22 @@ This is fixed in the maxima upgrade at #8731
 
 ---
 
+archive/issue_events_008899.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-25T11:23:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8729",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8729#event-8899"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079609.json:
 ```json
 {

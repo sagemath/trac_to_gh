@@ -145,6 +145,22 @@ Installs fine, all tests passed, works ad advertised. Positive review and thanks
 
 ---
 
+archive/issue_events_008744.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T04:13:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8565",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8565#event-8744"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077421.json:
 ```json
 {

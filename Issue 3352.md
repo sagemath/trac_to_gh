@@ -60,3 +60,19 @@ archive/issue_comments_023253.json:
 ```
 
 As of Sage 4.3.1, ticket #7975 removed dsage from the standard spkg repository. I'm closing this ticket as invalid.
+
+
+
+---
+
+archive/issue_events_003570.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-02T06:21:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3352",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3352#event-3570"
+}
+```

@@ -132,6 +132,22 @@ Naturally not all of these would be implemented here, but any that aren't could 
 
 ---
 
+archive/issue_events_007066.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:12:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6833",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6833#event-7066"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056253.json:
 ```json
 {

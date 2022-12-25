@@ -571,6 +571,22 @@ The updated eclib package [eclib-20080310.p10.spkg](http://sage.math.washington.
 
 ---
 
+archive/issue_events_008547.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-07T00:23:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8357",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8357#event-8547"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074550.json:
 ```json
 {

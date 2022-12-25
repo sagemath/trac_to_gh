@@ -86,3 +86,19 @@ archive/issue_comments_000896.json:
 ```
 
 This will be replaced by many smaller tickets.
+
+
+
+---
+
+archive/issue_events_000207.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-24T02:54:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/198",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/198#event-207"
+}
+```

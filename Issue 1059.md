@@ -92,3 +92,19 @@ archive/issue_comments_006424.json:
 ```
 
 applied to 2.8.11.rc1 - via with new lcalc-20070107.p0.spkg
+
+
+
+---
+
+archive/issue_events_001182.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-02T00:41:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1059",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1059#event-1182"
+}
+```

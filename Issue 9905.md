@@ -1062,6 +1062,22 @@ Looks good to me. Builds and passes tests, and works when upgrading.
 
 ---
 
+archive/issue_events_010032.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-06T05:23:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9905",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9905#event-10032"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098350.json:
 ```json
 {

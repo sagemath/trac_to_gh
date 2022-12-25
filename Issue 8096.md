@@ -1969,6 +1969,22 @@ Changing status from needs_review to positive_review.
 
 ---
 
+archive/issue_events_008304.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-21T22:04:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8096",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8096#event-8304"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070912.json:
 ```json
 {

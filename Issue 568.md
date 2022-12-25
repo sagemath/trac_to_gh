@@ -172,3 +172,19 @@ archive/issue_comments_002936.json:
 Attachment [coding-trac568fix-20070905.hg](tarball://root/attachments/some-uuid/ticket568/coding-trac568fix-20070905.hg) by @williamstein created at 2007-09-06 17:21:03
 
 This works.
+
+
+
+---
+
+archive/issue_events_000616.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-06T17:21:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/568",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/568#event-616"
+}
+```

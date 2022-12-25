@@ -76,3 +76,19 @@ archive/issue_comments_010107.json:
 ```
 
 Merged in 2.9.2.rc1 via some of the other jmol/3D plotting bundles.
+
+
+
+---
+
+archive/issue_events_001750.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-05T03:05:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1592",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1592#event-1750"
+}
+```

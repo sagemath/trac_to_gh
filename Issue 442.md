@@ -98,6 +98,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_000469.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-08-18T20:33:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/442",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/442#event-469"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002203.json:
 ```json
 {

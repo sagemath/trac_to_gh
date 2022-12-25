@@ -132,6 +132,22 @@ This looks good. **Tons** of nice cleanup, and it's clearly the right fix for th
 
 ---
 
+archive/issue_events_006722.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T06:11:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6486",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6486#event-6722"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052361.json:
 ```json
 {

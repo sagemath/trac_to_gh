@@ -167,6 +167,22 @@ This is fixed by #6699.
 
 ---
 
+archive/issue_events_007020.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-02T10:59:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6785",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6785#event-7020"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055824.json:
 ```json
 {

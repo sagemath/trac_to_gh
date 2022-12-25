@@ -249,6 +249,22 @@ Tim Dumol has kindly merged v2 with #6840's v1.  Please close this ticket when #
 
 ---
 
+archive/issue_events_005615.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-31T12:12:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5360",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5360#event-5615"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041225.json:
 ```json
 {

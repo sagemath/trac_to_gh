@@ -123,6 +123,22 @@ Total time for all tests: 15.3 seconds
 
 ---
 
+archive/issue_events_007275.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-29T11:39:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7055",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7055#event-7275"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058290.json:
 ```json
 {

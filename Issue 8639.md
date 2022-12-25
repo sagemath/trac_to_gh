@@ -169,3 +169,19 @@ archive/issue_comments_078212.json:
 ```
 
 Merged "trac_8639.patch" in 4.4.alpha0.
+
+
+
+---
+
+archive/issue_events_008808.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T18:55:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8639",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8639#event-8808"
+}
+```

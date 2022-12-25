@@ -126,6 +126,22 @@ fixes the problem
 
 ---
 
+archive/issue_events_000110.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-06T18:45:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/106",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/106#event-110"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000503.json:
 ```json
 {

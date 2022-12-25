@@ -615,6 +615,22 @@ The patches (here and at #5919) can be merged in either order.
 
 ---
 
+archive/issue_events_006012.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-29T23:17:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5765",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5765#event-6012"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044999.json:
 ```json
 {

@@ -580,3 +580,19 @@ archive/issue_comments_070120.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_008249.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-05-04T04:44:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8038",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8038#event-8249"
+}
+```

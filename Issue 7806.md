@@ -68,6 +68,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_008021.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-10-09T08:28:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7806",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7806#event-8021"
+}
+```
+
+
+
+---
+
 archive/issue_comments_067418.json:
 ```json
 {

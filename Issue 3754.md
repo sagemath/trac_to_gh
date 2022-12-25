@@ -71,6 +71,22 @@ My work at #5159 hopefully provides something a bit closer to what Lloyd was aft
 
 ---
 
+archive/issue_events_003976.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-12T01:39:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3754",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3754#event-3976"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026617.json:
 ```json
 {

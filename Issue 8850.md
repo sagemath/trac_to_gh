@@ -82,6 +82,22 @@ looks fine and safe; it can't break anything.
 
 ---
 
+archive/issue_events_009015.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-05-25T02:22:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8850",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8850#event-9015"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081222.json:
 ```json
 {

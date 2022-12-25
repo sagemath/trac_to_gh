@@ -327,6 +327,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_002674.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-22T05:19:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#event-2674"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016880.json:
 ```json
 {
@@ -430,6 +446,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_002675.json:
+```json
+{
+    "actor": "@jaapspies",
+    "created_at": "2008-03-27T15:14:27Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#event-2675"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016883.json:
 ```json
 {
@@ -489,6 +521,22 @@ Updated the spkg with Jaap's latest. So I am closing this again since I just mir
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002676.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-31T11:27:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#event-2676"
+}
+```
 
 
 

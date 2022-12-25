@@ -156,6 +156,22 @@ Michael
 
 ---
 
+archive/issue_events_003606.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-27T07:38:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3391",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3391#event-3606"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023695.json:
 ```json
 {
@@ -205,6 +221,22 @@ archive/issue_comments_023697.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003607.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-27T22:21:54Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3391",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3391#event-3607"
+}
+```
 
 
 
@@ -359,6 +391,22 @@ archive/issue_comments_023705.json:
 ```
 
 spkg and patch merged in 4.0.2.alpha0.
+
+
+
+---
+
+archive/issue_events_003608.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-12T06:58:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3391",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3391#event-3608"
+}
+```
 
 
 

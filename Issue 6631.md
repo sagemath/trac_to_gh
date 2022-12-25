@@ -242,6 +242,22 @@ The patch `trac_6631-reviewer.patch` fixes a typo introduced by `trac_6631-is_ly
 
 ---
 
+archive/issue_events_006870.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-25T00:43:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6631",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6631#event-6870"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054247.json:
 ```json
 {

@@ -124,3 +124,19 @@ archive/issue_comments_001682.json:
 ```
 
 This hasn't been an issue since we removed syntax hilighting.
+
+
+
+---
+
+archive/issue_events_000370.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2008-03-17T04:48:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/346",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/346#event-370"
+}
+```

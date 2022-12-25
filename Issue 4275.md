@@ -233,6 +233,22 @@ above.
 
 ---
 
+archive/issue_events_004520.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-18T19:48:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4275",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4275#event-4520"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031161.json:
 ```json
 {

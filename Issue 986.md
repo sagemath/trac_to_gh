@@ -61,6 +61,22 @@ I've attached a patch that just sorts the output of .variety().
 
 ---
 
+archive/issue_events_001109.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-25T06:44:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/986",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/986#event-1109"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006008.json:
 ```json
 {

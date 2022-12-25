@@ -107,6 +107,22 @@ Looks and works well for me. Lets get this pickle stuff in.
 
 ---
 
+archive/issue_events_006361.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:53:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6110",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6110#event-6361"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048722.json:
 ```json
 {

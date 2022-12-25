@@ -128,6 +128,22 @@ As noted there, we should remove `EllipticCurve(j)` from the possible ways of de
 
 ---
 
+archive/issue_events_004533.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-15T20:29:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4289",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4289#event-4533"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031335.json:
 ```json
 {

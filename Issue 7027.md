@@ -829,6 +829,22 @@ I made `spkg-check` executable, as it should be.
 
 ---
 
+archive/issue_events_007249.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-02-27T11:19:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7027",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7027#event-7249"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058109.json:
 ```json
 {

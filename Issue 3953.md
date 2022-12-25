@@ -52,6 +52,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3953
 
 ---
 
+archive/issue_events_004181.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-12T16:35:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3953",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3953#event-4181"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028321.json:
 ```json
 {

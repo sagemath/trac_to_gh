@@ -639,6 +639,22 @@ Jennifer: you should put the ticket number in your patch.
 
 ---
 
+archive/issue_events_008143.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-03T14:40:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7927",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7927#event-8143"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068907.json:
 ```json
 {

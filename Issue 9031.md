@@ -167,3 +167,19 @@ archive/issue_comments_083449.json:
 ```
 
 You are supposed to set milestone to duplicate/invalid/wontfix and then positive review...
+
+
+
+---
+
+archive/issue_events_009183.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-11-07T14:56:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9031",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9031#event-9183"
+}
+```

@@ -226,3 +226,19 @@ drkirkby@redstart:~/sage-4.5.1$ cat /etc/release
 drkirkby@redstart:~/sage-4.5.1$ 
 ```
 
+
+
+
+---
+
+archive/issue_events_009641.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-07-21T12:54:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9490",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9490#event-9641"
+}
+```

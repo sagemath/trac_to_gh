@@ -84,6 +84,22 @@ revisid version by mabshoff
 
 ---
 
+archive/issue_events_001559.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-10T05:12:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1411",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1411#event-1559"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009080.json:
 ```json
 {

@@ -127,6 +127,22 @@ Wow, that was quick - thanks!
 
 ---
 
+archive/issue_events_006274.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-12T04:55:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6019",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6019#event-6274"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047834.json:
 ```json
 {

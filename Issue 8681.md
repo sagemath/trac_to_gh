@@ -217,6 +217,22 @@ Positive review!
 
 ---
 
+archive/issue_events_008855.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T05:19:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8681",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8681#event-8855"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078993.json:
 ```json
 {

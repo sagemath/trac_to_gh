@@ -1957,6 +1957,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_008994.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2017-08-29T19:51:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8829",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8829#event-8994"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081075.json:
 ```json
 {

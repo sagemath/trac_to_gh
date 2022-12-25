@@ -98,6 +98,22 @@ IU fixed that #5018 was never actually uploaded.
 
 ---
 
+archive/issue_events_007910.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-16T08:19:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7693",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7693#event-7910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065895.json:
 ```json
 {

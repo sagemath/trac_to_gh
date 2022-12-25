@@ -84,6 +84,22 @@ Referee edit of Emily's patch
 
 ---
 
+archive/issue_events_006190.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T04:57:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5936",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5936#event-6190"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046846.json:
 ```json
 {

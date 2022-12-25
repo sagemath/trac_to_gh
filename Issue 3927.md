@@ -185,6 +185,22 @@ Last patch is fine -- thanks.
 
 ---
 
+archive/issue_events_004152.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-25T02:59:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3927",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3927#event-4152"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028056.json:
 ```json
 {

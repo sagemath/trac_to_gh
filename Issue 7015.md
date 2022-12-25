@@ -127,6 +127,22 @@ Looks good to me.  I included the changes that Minh made to William's spkg and l
 
 ---
 
+archive/issue_events_007237.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-16T08:53:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7015",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7015#event-7237"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057955.json:
 ```json
 {

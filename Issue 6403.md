@@ -128,3 +128,19 @@ archive/issue_comments_051333.json:
 ```
 
 I'm closing this, since #6559 just got merged. It adds a `latex_name` keyword argument to `var()`, which is the functionality requested here.
+
+
+
+---
+
+archive/issue_events_006648.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2010-02-19T11:56:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6403#event-6648"
+}
+```

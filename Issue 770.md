@@ -109,6 +109,22 @@ Attachment [patch.770](tarball://root/attachments/some-uuid/ticket770/patch.770)
 
 ---
 
+archive/issue_events_000873.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-04T14:41:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/770",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/770#event-873"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004563.json:
 ```json
 {

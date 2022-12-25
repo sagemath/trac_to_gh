@@ -161,3 +161,19 @@ archive/issue_comments_013503.json:
 ```
 
 This was fixed by #5413. This call behavior is deprecated in 3.4.1.
+
+
+
+---
+
+archive/issue_events_002253.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-04-16T13:57:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2093",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2093#event-2253"
+}
+```

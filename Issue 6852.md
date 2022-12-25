@@ -94,6 +94,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/6852
 
 ---
 
+archive/issue_events_007085.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-20T13:54:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6852",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6852#event-7085"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056397.json:
 ```json
 {

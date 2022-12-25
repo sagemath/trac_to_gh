@@ -52,6 +52,22 @@ This is a dupe of #4313
 
 ---
 
+archive/issue_events_004557.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-10-18T10:15:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4314",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4314#event-4557"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031522.json:
 ```json
 {

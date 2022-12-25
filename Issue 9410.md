@@ -237,6 +237,22 @@ Done!
 
 ---
 
+archive/issue_events_009566.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2016-08-30T13:32:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9410",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9410#event-9566"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089547.json:
 ```json
 {

@@ -70,3 +70,19 @@ archive/issue_comments_000698.json:
 ```
 
 This is now fixed.
+
+
+
+---
+
+archive/issue_events_000160.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-19T11:39:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/154",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/154#event-160"
+}
+```

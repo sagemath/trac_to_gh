@@ -62,3 +62,19 @@ archive/issue_comments_021894.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_003385.json:
+```json
+{
+    "actor": "@NathanDunfield",
+    "created_at": "2008-05-12T00:54:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3166",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3166#event-3385"
+}
+```

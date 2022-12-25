@@ -205,6 +205,22 @@ I've updated the Author(s) and Reviewer(s) fields with full names.  Please corre
 
 ---
 
+archive/issue_events_007519.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T10:08:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-7519"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060648.json:
 ```json
 {
@@ -257,6 +273,22 @@ archive/issue_comments_060650.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_007520.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-21T00:19:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-7520"
+}
+```
 
 
 
@@ -2104,3 +2136,19 @@ archive/issue_comments_060722.json:
 ```
 
 Thanks for the review. Now I can build on this for #16650.
+
+
+
+---
+
+archive/issue_events_007521.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-08-27T14:04:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7298",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7298#event-7521"
+}
+```

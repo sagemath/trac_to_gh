@@ -208,3 +208,19 @@ With the second patch doctests do pass again. Positive review.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004234.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-31T06:02:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4004",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4004#event-4234"
+}
+```

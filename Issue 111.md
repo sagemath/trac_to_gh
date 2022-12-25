@@ -83,6 +83,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/111
 
 ---
 
+archive/issue_events_000115.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-10-05T08:07:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/111",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/111#event-115"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000515.json:
 ```json
 {
@@ -168,6 +184,22 @@ archive/issue_comments_000519.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000116.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-10-05T08:45:09Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/111",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/111#event-116"
+}
+```
 
 
 
@@ -447,6 +479,22 @@ archive/issue_comments_000531.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000117.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-18T18:07:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/111",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/111#event-117"
+}
+```
 
 
 

@@ -97,3 +97,19 @@ archive/issue_comments_053297.json:
 ```
 
 The module `sage/plot/axes.py` is being deprecated and its functionality has been implemented in matplotlib. Closing this ticket as fixed by #5448.
+
+
+
+---
+
+archive/issue_events_006783.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-29T16:04:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6548",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6548#event-6783"
+}
+```

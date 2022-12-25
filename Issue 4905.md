@@ -357,6 +357,22 @@ Attachment [sage.coding-final.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_005148.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-24T18:58:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4905",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4905#event-5148"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037150.json:
 ```json
 {

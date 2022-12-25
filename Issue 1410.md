@@ -131,3 +131,19 @@ archive/issue_comments_009076.json:
 Attachment [cremona-link-binaries-dynamically.patch](tarball://root/attachments/some-uuid/ticket1410/cremona-link-binaries-dynamically.patch) by mabshoff created at 2007-12-06 17:46:59
 
 Merged in 2.9.alpha1. Doctests and builds fine in Linux and OSX.
+
+
+
+---
+
+archive/issue_events_001558.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-06T17:46:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1410",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1410#event-1558"
+}
+```

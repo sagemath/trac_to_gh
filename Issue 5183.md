@@ -89,3 +89,19 @@ archive/issue_comments_039671.json:
 ```
 
 These two examples seem to work now, so I think we can close this.
+
+
+
+---
+
+archive/issue_events_005437.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-02-20T00:49:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5183",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5183#event-5437"
+}
+```

@@ -122,3 +122,19 @@ archive/issue_comments_012812.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_002137.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-06-19T12:21:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1981",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1981#event-2137"
+}
+```

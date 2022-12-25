@@ -101,6 +101,22 @@ Patches and reviews my Mike Hansen and Nicolas Thiery.
 
 ---
 
+archive/issue_events_005041.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-15T17:58:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4799",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4799#event-5041"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036318.json:
 ```json
 {

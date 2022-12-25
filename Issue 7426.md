@@ -211,6 +211,22 @@ Since the updated MPIR package now allows Sage 4.2.1.alpha0 to build on OS X 10.
 
 ---
 
+archive/issue_events_007650.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-13T06:32:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7426",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7426#event-7650"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062385.json:
 ```json
 {

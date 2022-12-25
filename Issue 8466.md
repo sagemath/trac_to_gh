@@ -107,6 +107,22 @@ Yes, and #8740 can be closed too.
 
 ---
 
+archive/issue_events_008650.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-08-20T20:33:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8466",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8466#event-8650"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076114.json:
 ```json
 {

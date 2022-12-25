@@ -111,3 +111,19 @@ archive/issue_comments_050065.json:
 ```
 
 Done by ncalexan for 4.0.2.alpha0.
+
+
+
+---
+
+archive/issue_events_006526.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-14T22:18:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6282",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6282#event-6526"
+}
+```

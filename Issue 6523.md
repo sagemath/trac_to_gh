@@ -189,3 +189,19 @@ archive/issue_comments_053104.json:
 Looks good to me.
 
 Merged trac_6523-derivative_is_zero.patch.
+
+
+
+---
+
+archive/issue_events_006761.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-06T08:33:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6523",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6523#event-6761"
+}
+```

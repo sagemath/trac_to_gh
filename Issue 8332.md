@@ -246,6 +246,22 @@ Sorry that should read #8218.
 
 ---
 
+archive/issue_events_008525.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T23:40:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8332",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8332#event-8525"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074082.json:
 ```json
 {

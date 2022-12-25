@@ -499,6 +499,22 @@ http://boxen.math.washington.edu/home/kirkby/patches/numpy-1.3.0.p4.spkg
 
 ---
 
+archive/issue_events_008292.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-09T09:37:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8086",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8086#event-8292"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070749.json:
 ```json
 {

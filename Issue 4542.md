@@ -88,6 +88,22 @@ Positive review.
 
 ---
 
+archive/issue_events_004787.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-23T06:43:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4542",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4542#event-4787"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033964.json:
 ```json
 {

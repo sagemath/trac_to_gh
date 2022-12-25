@@ -48,6 +48,22 @@ Looks good.  I assume Jonathan knows how to spell his own name... :)
 
 ---
 
+archive/issue_events_002287.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-10T00:57:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2125",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2125#event-2287"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013909.json:
 ```json
 {

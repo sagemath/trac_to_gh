@@ -723,6 +723,22 @@ Yes, I agree.
 
 ---
 
+archive/issue_events_006220.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2021-04-01T06:40:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5965",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5965#event-6220"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047182.json:
 ```json
 {

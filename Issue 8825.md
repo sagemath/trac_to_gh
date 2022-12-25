@@ -441,6 +441,22 @@ No, that was my (or Mercurial's) mistake. It just happened that I'd changed the 
 
 ---
 
+archive/issue_events_008988.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-28T09:08:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8825",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8825#event-8988"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080916.json:
 ```json
 {

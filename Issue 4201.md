@@ -315,6 +315,22 @@ I just indented the examples on Jason's patches.  +1 to them.  Apply only the la
 
 ---
 
+archive/issue_events_004440.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-27T04:24:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4201",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4201#event-4440"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030435.json:
 ```json
 {

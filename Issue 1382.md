@@ -428,3 +428,19 @@ archive/issue_comments_008853.json:
 ```
 
 Merged 1382_5.patch and 1382_5-part2of2.patch in Sage 2.10.3.alpha0. Thanks William for the clarification.
+
+
+
+---
+
+archive/issue_events_001526.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-24T21:25:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#event-1526"
+}
+```

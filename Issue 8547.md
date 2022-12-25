@@ -603,6 +603,22 @@ Merged in 4.4.alpha0:
 
 ---
 
+archive/issue_events_008728.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T18:43:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8547",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8547#event-8728"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077167.json:
 ```json
 {

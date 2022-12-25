@@ -101,6 +101,22 @@ Applies against 2.10.3.alpha0 and passes tests for me.
 
 ---
 
+archive/issue_events_002513.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-28T00:51:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2336",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2336#event-2513"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015590.json:
 ```json
 {

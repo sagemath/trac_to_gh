@@ -144,6 +144,22 @@ Merged both patches in Sage 3.1.alpha2
 
 ---
 
+archive/issue_events_004031.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-13T08:57:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3809",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3809#event-4031"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027009.json:
 ```json
 {

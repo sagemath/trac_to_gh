@@ -180,6 +180,22 @@ As the comments above point out, I was too hasty in commenting out the other doc
 
 ---
 
+archive/issue_events_000716.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:48:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/650#event-716"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003373.json:
 ```json
 {

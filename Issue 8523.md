@@ -1571,6 +1571,22 @@ Simon
 
 ---
 
+archive/issue_events_008703.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-20T22:54:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8523",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8523#event-8703"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076908.json:
 ```json
 {

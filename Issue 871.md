@@ -47,6 +47,22 @@ Attachment [circulant-graph.patch](tarball://root/attachments/some-uuid/ticket87
 
 ---
 
+archive/issue_events_000983.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:56:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/871",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/871#event-983"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005354.json:
 ```json
 {

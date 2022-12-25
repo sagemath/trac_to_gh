@@ -460,6 +460,22 @@ OK, I'll move my patch from here to #7535.  I'll also take a look at those other
 
 ---
 
+archive/issue_events_007760.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-20T09:41:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7532",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7532#event-7760"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063747.json:
 ```json
 {
@@ -509,6 +525,22 @@ archive/issue_comments_063749.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_007761.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-20T09:41:46Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7532",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7532#event-7761"
+}
+```
 
 
 
@@ -802,3 +834,19 @@ Thank you for pointing out the addendum, jhpalmieri.  Merged in this order:
 1. patches at #7535
 2. [trac_7532.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7532/trac_7532.patch)
 3. [trac_7532-rings.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7532/trac_7532-rings.patch)
+
+
+
+---
+
+archive/issue_events_007762.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T20:03:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7532",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7532#event-7762"
+}
+```

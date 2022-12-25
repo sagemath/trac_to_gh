@@ -109,6 +109,22 @@ See #6906 for apparently the solution (upgrade mercurial)
 
 ---
 
+archive/issue_events_006681.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T09:44:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6440#event-6681"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051598.json:
 ```json
 {

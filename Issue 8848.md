@@ -95,3 +95,19 @@ archive/issue_comments_081213.json:
 ```
 
 This is really mind bending, but I'm convinced...
+
+
+
+---
+
+archive/issue_events_009013.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-05-25T06:31:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8848",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8848#event-9013"
+}
+```

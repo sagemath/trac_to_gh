@@ -88,3 +88,19 @@ This issue has been fixed in Sage 3.1.2 via #3194.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004130.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-10T19:00:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3903",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3903#event-4130"
+}
+```

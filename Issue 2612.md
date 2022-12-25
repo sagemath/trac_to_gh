@@ -107,6 +107,22 @@ Merged in Sage 2.11.alpha2. I had to merge the first hunk of 2612-integer_plus.p
 
 ---
 
+archive/issue_events_002802.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-28T08:37:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2612",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2612#event-2802"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017891.json:
 ```json
 {

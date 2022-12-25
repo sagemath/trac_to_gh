@@ -152,6 +152,22 @@ NotImplementedError
 
 ---
 
+archive/issue_events_005910.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-18T22:41:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5666",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5666#event-5910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044253.json:
 ```json
 {

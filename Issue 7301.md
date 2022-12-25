@@ -1144,6 +1144,22 @@ Thanks again Nathann!
 
 ---
 
+archive/issue_events_007523.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-13T08:56:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7301",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7301#event-7523"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060775.json:
 ```json
 {

@@ -130,6 +130,22 @@ As part of working on other documentation items, I have addressed this at #9783.
 
 ---
 
+archive/issue_events_009826.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-23T09:42:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9695",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9695#event-9826"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094067.json:
 ```json
 {
@@ -179,6 +195,22 @@ archive/issue_comments_094069.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009827.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-23T09:49:17Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9695",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9695#event-9827"
+}
+```
 
 
 
@@ -292,3 +324,19 @@ archive/issue_comments_094075.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_009828.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-05T03:22:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9695",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9695#event-9828"
+}
+```

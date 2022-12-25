@@ -157,6 +157,22 @@ I installed this on the Trac server, but it doesn't seem to work.
 
 ---
 
+archive/issue_events_005273.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-01-24T12:53:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5029",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5029#event-5273"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038240.json:
 ```json
 {

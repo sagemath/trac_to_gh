@@ -102,3 +102,19 @@ http://boxen.math.washington.edu:8100/rev/65d6838cefd8
 Ondrej
 ```
 
+
+
+
+---
+
+archive/issue_events_009461.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-22T04:57:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9303",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9303#event-9461"
+}
+```

@@ -70,6 +70,22 @@ See #694 instead!
 
 ---
 
+archive/issue_events_000762.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-19T20:35:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/696",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/696#event-762"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003631.json:
 ```json
 {

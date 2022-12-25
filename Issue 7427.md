@@ -105,6 +105,22 @@ This should be moved to ipywidgets.
 
 ---
 
+archive/issue_events_007651.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2017-07-04T14:27:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7427",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7427#event-7651"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062391.json:
 ```json
 {

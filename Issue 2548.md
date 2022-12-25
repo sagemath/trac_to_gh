@@ -133,6 +133,22 @@ sage: f
 
 ---
 
+archive/issue_events_002731.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-16T20:47:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2548",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2548#event-2731"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017368.json:
 ```json
 {

@@ -154,6 +154,22 @@ Merged in 2.8.15.alpha2.
 
 ---
 
+archive/issue_events_001290.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T05:51:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1160",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1160#event-1290"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007076.json:
 ```json
 {
@@ -208,6 +224,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001291.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-12-02T18:49:47Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1160",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1160#event-1291"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007079.json:
 ```json
 {
@@ -221,6 +253,22 @@ archive/issue_comments_007079.json:
 ```
 
 Resolution changed from fixed to 
+
+
+
+---
+
+archive/issue_events_001292.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T18:55:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1160",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1160#event-1292"
+}
+```
 
 
 

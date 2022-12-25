@@ -88,6 +88,22 @@ Michael
 
 ---
 
+archive/issue_events_002163.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-01T02:01:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2009",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2009#event-2163"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012962.json:
 ```json
 {

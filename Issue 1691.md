@@ -254,6 +254,22 @@ Apply only 1691v2.patch.
 
 ---
 
+archive/issue_events_001850.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-15T03:19:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1691",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1691#event-1850"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010719.json:
 ```json
 {

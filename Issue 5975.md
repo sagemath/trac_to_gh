@@ -1318,6 +1318,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_006230.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T22:33:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5975",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5975#event-6230"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047330.json:
 ```json
 {

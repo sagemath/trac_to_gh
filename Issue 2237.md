@@ -67,6 +67,22 @@ This ticket should likely be marked as a dupe.
 
 ---
 
+archive/issue_events_002407.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-02-21T06:58:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2237",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2237#event-2407"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014784.json:
 ```json
 {

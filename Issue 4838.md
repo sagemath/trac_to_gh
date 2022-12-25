@@ -198,6 +198,22 @@ The patch commit string is insufficiently descriptive.  I've refreshed it to
 
 ---
 
+archive/issue_events_005083.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:57:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4838",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4838#event-5083"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036617.json:
 ```json
 {

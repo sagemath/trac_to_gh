@@ -397,6 +397,22 @@ I just updated the path to replace MATH by math :-)
 
 ---
 
+archive/issue_events_007818.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-19T21:06:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#event-7818"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064637.json:
 ```json
 {

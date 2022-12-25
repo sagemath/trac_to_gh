@@ -503,6 +503,22 @@ Thanks!
 
 ---
 
+archive/issue_events_007157.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T09:55:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6934",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6934#event-7157"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057208.json:
 ```json
 {

@@ -73,3 +73,19 @@ archive/issue_comments_001516.json:
 ```
 
 this is apparently fixed at least as of 2.8
+
+
+
+---
+
+archive/issue_events_000339.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2007-08-18T17:13:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/319",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/319#event-339"
+}
+```

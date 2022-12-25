@@ -125,3 +125,19 @@ Replying to [ticket:124 moretti]:
 > }}}
 
 Fixed in patch #1410:d981cce6baa2
+
+
+
+---
+
+archive/issue_events_000130.json:
+```json
+{
+    "actor": "@bobmoretti",
+    "created_at": "2006-10-10T23:29:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/124",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/124#event-130"
+}
+```

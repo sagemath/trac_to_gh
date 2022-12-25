@@ -212,6 +212,22 @@ I assume that there errors have not changed from rc0 to rc3?
 
 ---
 
+archive/issue_events_002548.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-11T02:33:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2371",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2371#event-2548"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015966.json:
 ```json
 {

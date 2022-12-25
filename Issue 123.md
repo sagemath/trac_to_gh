@@ -29,6 +29,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/123
 
 ---
 
+archive/issue_events_000129.json:
+```json
+{
+    "actor": "@bobmoretti",
+    "created_at": "2006-10-10T05:48:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/123",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/123#event-129"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000562.json:
 ```json
 {

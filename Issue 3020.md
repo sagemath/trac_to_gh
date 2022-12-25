@@ -405,6 +405,22 @@ My guess is that he covers NTL, but we can always open another ticket and addres
 
 ---
 
+archive/issue_events_003225.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-06T19:28:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3020",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3020#event-3225"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020720.json:
 ```json
 {

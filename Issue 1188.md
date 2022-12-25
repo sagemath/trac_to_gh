@@ -451,6 +451,22 @@ I would like to close this ticket. I did apply the doctest.patch and updated to 
 
 ---
 
+archive/issue_events_001320.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-20T15:55:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1188",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1188#event-1320"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007333.json:
 ```json
 {

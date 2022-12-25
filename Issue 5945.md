@@ -974,6 +974,22 @@ Doctests are fixed.
 
 ---
 
+archive/issue_events_006201.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-19T22:19:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5945",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5945#event-6201"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046955.json:
 ```json
 {

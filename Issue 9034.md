@@ -290,6 +290,22 @@ Jaap
 
 ---
 
+archive/issue_events_009186.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-25T15:48:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9034",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9034#event-9186"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083509.json:
 ```json
 {

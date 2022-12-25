@@ -323,6 +323,22 @@ Thanks :-)
 
 ---
 
+archive/issue_events_007945.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-03-08T20:57:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7733",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7733#event-7945"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066339.json:
 ```json
 {

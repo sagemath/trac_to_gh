@@ -207,3 +207,19 @@ archive/issue_comments_022512.json:
 ```
 
 Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all resolution).
+
+
+
+---
+
+archive/issue_events_003477.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2016-08-30T13:32:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3260",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3260#event-3477"
+}
+```

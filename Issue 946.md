@@ -88,6 +88,22 @@ GOOD -- if when applied the tests still work then by definition this patch is go
 
 ---
 
+archive/issue_events_001066.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-11-27T06:25:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/946#event-1066"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005766.json:
 ```json
 {

@@ -198,3 +198,19 @@ archive/issue_comments_055817.json:
 ```
 
 This is fixed by #6699.
+
+
+
+---
+
+archive/issue_events_007019.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-02T10:58:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6784",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6784#event-7019"
+}
+```

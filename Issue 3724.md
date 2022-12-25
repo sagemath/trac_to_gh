@@ -199,6 +199,22 @@ Merged in Sage 3.1.2.alpha1
 
 ---
 
+archive/issue_events_003944.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-26T09:53:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3944"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026362.json:
 ```json
 {
@@ -249,6 +265,22 @@ archive/issue_comments_026363.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003945.json:
+```json
+{
+    "actor": "@simon-king-jena",
+    "created_at": "2008-08-26T13:06:19Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3945"
+}
+```
 
 
 
@@ -420,6 +452,22 @@ Merged m4ri_hash2.patch in Sage 3.1.2.alpha1
 
 ---
 
+archive/issue_events_003946.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-26T21:50:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3946"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026371.json:
 ```json
 {
@@ -469,6 +517,22 @@ archive/issue_comments_026373.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003947.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-08-27T16:59:34Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3947"
+}
+```
 
 
 
@@ -529,3 +593,19 @@ archive/issue_comments_026376.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_003948.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-08-27T19:51:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3724",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3724#event-3948"
+}
+```

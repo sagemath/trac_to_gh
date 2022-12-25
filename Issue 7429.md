@@ -84,3 +84,19 @@ archive/issue_comments_062401.json:
 ```
 
 NOTE: I just forced a rebuild of PARI on my box and the above problem vanished.  I think I fixed #7426 but did not force a rebuild of PARI after applying that fix.  So fortunately this problem is invalid :-)
+
+
+
+---
+
+archive/issue_events_007653.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-11T18:56:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7429",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7429#event-7653"
+}
+```

@@ -482,6 +482,22 @@ In the future, make sure the "apply" instructions in the ticket description rema
 
 ---
 
+archive/issue_events_004183.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-12-29T19:32:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3955",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3955#event-4183"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028351.json:
 ```json
 {

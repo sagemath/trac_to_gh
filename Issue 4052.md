@@ -147,6 +147,22 @@ contains the fixes.
 
 ---
 
+archive/issue_events_004284.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-04T01:39:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#event-4284"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029157.json:
 ```json
 {

@@ -255,3 +255,19 @@ archive/issue_comments_023617.json:
 ```
 
 Merged 3379.patch in Sage 3.0.4.alpha0
+
+
+
+---
+
+archive/issue_events_003595.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T12:24:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3379",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3379#event-3595"
+}
+```

@@ -47,6 +47,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_002453.json:
+```json
+{
+    "actor": "@yqiang",
+    "created_at": "2008-02-24T00:57:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2280",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-2453"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015096.json:
 ```json
 {
@@ -125,6 +141,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_002454.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-24T00:58:41Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2280",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-2454"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015100.json:
 ```json
 {
@@ -138,6 +170,22 @@ archive/issue_comments_015100.json:
 ```
 
 Merged via the patch from #2322 in Sage 2.10.4.alpha0
+
+
+
+---
+
+archive/issue_events_002455.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-14T17:50:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2280",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2280#event-2455"
+}
+```
 
 
 

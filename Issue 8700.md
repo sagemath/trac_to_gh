@@ -181,6 +181,22 @@ spkg-install  SPKG.txt  src
 
 ---
 
+archive/issue_events_008871.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-06-16T01:59:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8700",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8700#event-8871"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079144.json:
 ```json
 {

@@ -83,6 +83,22 @@ I've checked it on a Mac with Safari and Firefox, and also on a linux box with F
 
 ---
 
+archive/issue_events_003281.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2008-05-13T19:30:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3069",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3069#event-3281"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021139.json:
 ```json
 {
@@ -140,6 +156,22 @@ archive/issue_comments_021141.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003282.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-13T19:34:38Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3069",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3069#event-3282"
+}
+```
 
 
 
@@ -216,6 +248,22 @@ archive/issue_comments_021145.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_003283.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-17T18:41:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3069",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3069#event-3283"
+}
+```
 
 
 

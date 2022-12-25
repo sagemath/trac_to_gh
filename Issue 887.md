@@ -78,6 +78,22 @@ My original code was buggy, but the bug was masked by a Cython bug.  But I was t
 
 ---
 
+archive/issue_events_001001.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-14T22:56:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/887",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/887#event-1001"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005459.json:
 ```json
 {

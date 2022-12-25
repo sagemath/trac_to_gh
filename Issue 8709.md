@@ -237,6 +237,22 @@ Yes.
 
 ---
 
+archive/issue_events_008879.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-19T05:18:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8709",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8709#event-8879"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079344.json:
 ```json
 {

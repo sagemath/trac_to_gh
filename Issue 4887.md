@@ -65,6 +65,22 @@ See comment:ticket:4886:3
 
 ---
 
+archive/issue_events_005131.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-09T14:27:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4887",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4887#event-5131"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036975.json:
 ```json
 {

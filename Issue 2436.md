@@ -100,6 +100,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_002613.json:
+```json
+{
+    "actor": "@garyfurnish",
+    "created_at": "2008-04-03T01:16:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2436",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2436#event-2613"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016451.json:
 ```json
 {

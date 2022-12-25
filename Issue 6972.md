@@ -101,6 +101,22 @@ See palmieri's and my reports at #6849.
 
 ---
 
+archive/issue_events_007195.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-27T02:17:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6972",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6972#event-7195"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057561.json:
 ```json
 {

@@ -600,6 +600,22 @@ Merged all four patches.
 
 ---
 
+archive/issue_events_006744.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-29T13:46:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6506",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6506#event-6744"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052919.json:
 ```json
 {

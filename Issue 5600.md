@@ -247,6 +247,22 @@ Thanks much for fixing all those typos! positive review on your reviewer's patch
 
 ---
 
+archive/issue_events_005844.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-23T01:04:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5600",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5600#event-5844"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043584.json:
 ```json
 {

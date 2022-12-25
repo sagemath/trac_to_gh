@@ -455,3 +455,19 @@ archive/issue_comments_083627.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_009198.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-06-19T12:17:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9046",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9046#event-9198"
+}
+```

@@ -85,6 +85,22 @@ Michael
 
 ---
 
+archive/issue_events_005330.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-05-16T07:53:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5085",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5085#event-5330"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038684.json:
 ```json
 {

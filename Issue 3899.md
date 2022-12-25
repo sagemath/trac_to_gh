@@ -128,3 +128,19 @@ archive/issue_comments_027840.json:
 ```
 
 Closing as obsolete...
+
+
+
+---
+
+archive/issue_events_004126.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2017-03-08T13:18:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3899",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3899#event-4126"
+}
+```

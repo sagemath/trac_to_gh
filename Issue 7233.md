@@ -62,6 +62,22 @@ Attachment [categories-symmetric_group_algebra-6138-nt.patch](tarball://root/att
 
 ---
 
+archive/issue_events_007454.json:
+```json
+{
+    "actor": "@hivert",
+    "created_at": "2009-10-16T11:12:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7233",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7233#event-7454"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059890.json:
 ```json
 {

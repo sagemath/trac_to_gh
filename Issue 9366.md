@@ -120,6 +120,22 @@ Looks good, doctests pass.
 
 ---
 
+archive/issue_events_009519.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T10:05:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9366",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9366#event-9519"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088831.json:
 ```json
 {

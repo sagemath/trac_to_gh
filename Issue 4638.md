@@ -192,3 +192,19 @@ wontfix since this was unsupported anyway. Upgrades from 3.2 to 3.2.1 are workin
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004885.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-02T05:34:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4638",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4638#event-4885"
+}
+```

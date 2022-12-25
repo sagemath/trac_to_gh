@@ -388,6 +388,22 @@ apply on top of previous patch
 
 ---
 
+archive/issue_events_005141.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-12T06:53:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4898",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4898#event-5141"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037088.json:
 ```json
 {

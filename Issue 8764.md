@@ -322,3 +322,19 @@ archive/issue_comments_080065.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_008932.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2021-04-30T18:21:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8764",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8764#event-8932"
+}
+```

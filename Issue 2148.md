@@ -315,3 +315,19 @@ archive/issue_comments_014071.json:
 ```
 
 Merged 2148-polybori-fix_degrevlex.patch in Sage 2.11.alpha0
+
+
+
+---
+
+archive/issue_events_002312.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-18T00:08:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2148",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2148#event-2312"
+}
+```

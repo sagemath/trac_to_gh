@@ -76,6 +76,22 @@ Changing component from notebook to misc.
 
 ---
 
+archive/issue_events_006886.json:
+```json
+{
+    "actor": "acleone",
+    "created_at": "2010-01-19T08:41:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6650",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6650#event-6886"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054491.json:
 ```json
 {

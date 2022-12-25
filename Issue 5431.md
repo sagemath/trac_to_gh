@@ -88,6 +88,22 @@ Patch adds doctest.
 
 ---
 
+archive/issue_events_005683.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:50:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5431",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5431#event-5683"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041945.json:
 ```json
 {

@@ -483,6 +483,22 @@ I merged this in as lcalc-20100428-1.23.spkg , since using lcalc-1.23.spkg would
 
 ---
 
+archive/issue_events_005036.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-28T19:29:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4793",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4793#event-5036"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036272.json:
 ```json
 {

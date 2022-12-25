@@ -975,6 +975,22 @@ Nathann
 
 ---
 
+archive/issue_events_008375.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T05:16:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8172",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8172#event-8375"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071870.json:
 ```json
 {

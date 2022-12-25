@@ -248,3 +248,19 @@ archive/issue_comments_034069.json:
 ```
 
 Merged finitefieldelement_new.patch in Sage 3.2.1.alpha1
+
+
+
+---
+
+archive/issue_events_004798.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-25T13:41:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#event-4798"
+}
+```

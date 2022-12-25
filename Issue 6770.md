@@ -91,6 +91,22 @@ Chris.
 
 ---
 
+archive/issue_events_007001.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-25T05:01:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6770",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6770#event-7001"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055648.json:
 ```json
 {

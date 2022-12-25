@@ -155,6 +155,22 @@ was-1162: #1162 is ready.
 
 ---
 
+archive/issue_events_001294.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T11:45:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1162",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1162#event-1294"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007092.json:
 ```json
 {

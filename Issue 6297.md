@@ -115,6 +115,22 @@ Fine by me.
 
 ---
 
+archive/issue_events_006539.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-18T00:07:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6297",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6297#event-6539"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050153.json:
 ```json
 {

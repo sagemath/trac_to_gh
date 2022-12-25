@@ -201,6 +201,22 @@ I'll leave this as positive review until the release manager decides what order 
 
 ---
 
+archive/issue_events_009247.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T10:12:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#event-9247"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084268.json:
 ```json
 {

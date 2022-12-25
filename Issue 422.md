@@ -105,6 +105,22 @@ Michael
 
 ---
 
+archive/issue_events_000449.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-02-08T07:06:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/422",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/422#event-449"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002110.json:
 ```json
 {

@@ -625,6 +625,22 @@ ptestlong: No doctest failures related to this patch (Ubuntu 9.04 x86/32-bit).
 
 ---
 
+archive/issue_events_008924.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-03T04:05:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8756",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8756#event-8924"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079992.json:
 ```json
 {

@@ -1623,6 +1623,22 @@ Milestone sage-4.7.3 deleted
 
 ---
 
+archive/issue_events_009488.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-11-07T10:11:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9334",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9334#event-9488"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088001.json:
 ```json
 {

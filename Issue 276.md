@@ -64,6 +64,22 @@ Attachment [trac276.patch](tarball://root/attachments/some-uuid/ticket276/trac27
 
 ---
 
+archive/issue_events_000293.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-21T02:17:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/276",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/276#event-293"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001309.json:
 ```json
 {

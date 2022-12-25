@@ -821,6 +821,22 @@ All tests pass with trac_5598.patch.
 
 ---
 
+archive/issue_events_005842.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-19T13:23:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5598",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5598#event-5842"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043564.json:
 ```json
 {

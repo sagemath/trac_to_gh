@@ -120,3 +120,19 @@ This is a dupe of #3838.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004062.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-13T17:30:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3839",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3839#event-4062"
+}
+```

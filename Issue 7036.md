@@ -172,6 +172,22 @@ Dave
 
 ---
 
+archive/issue_events_007257.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-17T06:12:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7036",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7036#event-7257"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058152.json:
 ```json
 {

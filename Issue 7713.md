@@ -28,6 +28,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/7713
 
 ---
 
+archive/issue_events_007930.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T16:14:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7713",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7713#event-7930"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066129.json:
 ```json
 {

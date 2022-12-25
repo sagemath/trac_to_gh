@@ -86,3 +86,19 @@ archive/issue_comments_044807.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_005987.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-06-26T23:12:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5740",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5740#event-5987"
+}
+```

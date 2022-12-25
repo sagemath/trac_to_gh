@@ -102,3 +102,19 @@ Also: Cygwin might come back, so leave it in there for now :)
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001277.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-18T13:54:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1149",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1149#event-1277"
+}
+```

@@ -910,3 +910,19 @@ Merged both patches in Sage 4.0.alpha0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005983.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-04T17:57:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5736",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5736#event-5983"
+}
+```

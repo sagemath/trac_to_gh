@@ -108,3 +108,19 @@ archive/issue_comments_046247.json:
 ```
 
 SAGE_SIMD_MODE is deprecated.
+
+
+
+---
+
+archive/issue_events_006121.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-06-02T21:53:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5865",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5865#event-6121"
+}
+```

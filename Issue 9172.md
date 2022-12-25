@@ -319,6 +319,22 @@ I really doubt Cygwin on XP would have a different behavior for this one, so let
 
 ---
 
+archive/issue_events_009329.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-02-08T13:20:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9172",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9172#event-9329"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085659.json:
 ```json
 {

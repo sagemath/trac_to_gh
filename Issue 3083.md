@@ -413,6 +413,22 @@ Positive review for your changes, but I've added a new patch that moves the modu
 
 ---
 
+archive/issue_events_003297.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T00:57:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3083",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3083#event-3297"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021244.json:
 ```json
 {

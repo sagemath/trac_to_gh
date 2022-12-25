@@ -60,6 +60,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/44
 
 ---
 
+archive/issue_events_000043.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-05-14T22:23:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/44",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/44#event-43"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000266.json:
 ```json
 {

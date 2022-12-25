@@ -80,6 +80,22 @@ Merged in 2.8.15.rc0.
 
 ---
 
+archive/issue_events_001515.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T22:10:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1372",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1372#event-1515"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008783.json:
 ```json
 {

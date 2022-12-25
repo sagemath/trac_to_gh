@@ -331,6 +331,22 @@ Looks good to me.
 
 ---
 
+archive/issue_events_009545.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T07:17:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9387",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9387#event-9545"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089212.json:
 ```json
 {

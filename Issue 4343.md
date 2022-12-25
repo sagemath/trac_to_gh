@@ -98,6 +98,22 @@ Doctests pass, Jim's original problem is fixed, and the code looks good. Positiv
 
 ---
 
+archive/issue_events_004590.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-26T04:05:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4343",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4343#event-4590"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031854.json:
 ```json
 {

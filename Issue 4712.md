@@ -91,6 +91,22 @@ Fine by me.
 
 ---
 
+archive/issue_events_004957.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-06-26T17:46:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4712",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4712#event-4957"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035459.json:
 ```json
 {

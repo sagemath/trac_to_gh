@@ -50,6 +50,22 @@ Attachment [subst_hash.hg](tarball://root/attachments/some-uuid/ticket1075/subst
 
 ---
 
+archive/issue_events_001197.json:
+```json
+{
+    "actor": "jbmohler",
+    "created_at": "2007-11-15T22:08:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1075",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1075#event-1197"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006487.json:
 ```json
 {

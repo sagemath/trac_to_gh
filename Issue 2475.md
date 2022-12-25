@@ -179,6 +179,22 @@ Attachment [trac_2475-part5.patch](tarball://root/attachments/some-uuid/ticket24
 
 ---
 
+archive/issue_events_002654.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-15T08:32:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2475",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2475#event-2654"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016733.json:
 ```json
 {

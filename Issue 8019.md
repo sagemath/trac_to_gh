@@ -90,6 +90,22 @@ I think the problem is that in the save routine (actually, in the .matplotlib() 
 
 ---
 
+archive/issue_events_008230.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-12-21T20:36:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8019",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8019#event-8230"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069956.json:
 ```json
 {

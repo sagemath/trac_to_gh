@@ -56,6 +56,22 @@ Looks good.  I tested a command from each package and it seemed to work great.  
 
 ---
 
+archive/issue_events_005265.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-28T18:04:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5021",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5021#event-5265"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038176.json:
 ```json
 {

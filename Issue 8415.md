@@ -264,6 +264,22 @@ I'm marking this as "positive review", to bring it to the attention of the relea
 
 ---
 
+archive/issue_events_008600.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T05:14:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#event-8600"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075293.json:
 ```json
 {

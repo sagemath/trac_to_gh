@@ -117,6 +117,22 @@ Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
+archive/issue_events_001142.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-28T18:08:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1018",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1018#event-1142"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006225.json:
 ```json
 {

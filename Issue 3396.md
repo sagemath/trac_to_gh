@@ -72,6 +72,22 @@ apply this after the other patch
 
 ---
 
+archive/issue_events_003613.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-15T20:07:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3396",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3396#event-3613"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023735.json:
 ```json
 {

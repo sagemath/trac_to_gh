@@ -111,6 +111,22 @@ the problem for me.
 
 ---
 
+archive/issue_events_000518.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-06T09:19:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/487",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/487#event-518"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002421.json:
 ```json
 {

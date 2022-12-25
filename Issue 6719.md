@@ -97,6 +97,22 @@ I will produce a revised ecl .spkg file, as per trac #6564
 
 ---
 
+archive/issue_events_006954.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-11T08:03:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6719",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6719#event-6954"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055039.json:
 ```json
 {

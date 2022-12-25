@@ -140,6 +140,22 @@ Looks good. The changes make sense, and testing `sage/modular/` works fine.
 
 ---
 
+archive/issue_events_003730.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-07T01:38:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3513",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3513#event-3730"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024702.json:
 ```json
 {

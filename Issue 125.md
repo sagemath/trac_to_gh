@@ -64,6 +64,22 @@ fixed for a while...
 
 ---
 
+archive/issue_events_000131.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-12T22:58:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/125",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/125#event-131"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000568.json:
 ```json
 {

@@ -143,6 +143,22 @@ So not a sage issue; case closed.
 
 ---
 
+archive/issue_events_008937.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-26T21:17:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8769#event-8937"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080125.json:
 ```json
 {

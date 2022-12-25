@@ -49,6 +49,22 @@ Attachment [5720-new-worksheet.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
+archive/issue_events_005964.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-09T21:22:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5720",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5720#event-5964"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044608.json:
 ```json
 {

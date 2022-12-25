@@ -164,6 +164,22 @@ Attachment [firefox-crash-bugfix.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
+archive/issue_events_000730.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:39:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/662",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/662#event-730"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003433.json:
 ```json
 {

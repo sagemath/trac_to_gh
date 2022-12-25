@@ -132,6 +132,22 @@ Fixed since #1626 has been merged in Sage 3.0.alpha5.
 
 ---
 
+archive/issue_events_000476.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-14T03:57:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/449",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/449#event-476"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002234.json:
 ```json
 {

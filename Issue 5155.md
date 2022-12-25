@@ -809,6 +809,22 @@ Thanks for the review!
 
 ---
 
+archive/issue_events_005405.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-01-21T21:06:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5155",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5155#event-5405"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039412.json:
 ```json
 {

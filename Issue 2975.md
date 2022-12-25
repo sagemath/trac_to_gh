@@ -94,6 +94,22 @@ Works for me on 64-bit Linux.
 
 ---
 
+archive/issue_events_003180.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-21T04:06:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2975",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2975#event-3180"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020458.json:
 ```json
 {

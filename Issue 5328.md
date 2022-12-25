@@ -132,6 +132,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_005581.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-05-16T07:52:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5328",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5328#event-5581"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040936.json:
 ```json
 {

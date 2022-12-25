@@ -71,6 +71,22 @@ Please delete
 
 ---
 
+archive/issue_events_009765.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-07-28T14:09:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9624",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9624#event-9765"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093126.json:
 ```json
 {

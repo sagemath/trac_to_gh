@@ -558,6 +558,22 @@ Finally merged in Sage 3.0.6.rc0 :)
 
 ---
 
+archive/issue_events_000010.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-21T20:28:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/10#event-10"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000055.json:
 ```json
 {

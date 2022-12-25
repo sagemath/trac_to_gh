@@ -1888,6 +1888,22 @@ So, I am moving David Green from "Reviewer(s)" to "Author(s)".
 
 ---
 
+archive/issue_events_006982.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-11T17:51:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6750",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6750#event-6982"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055489.json:
 ```json
 {

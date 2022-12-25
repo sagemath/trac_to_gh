@@ -177,6 +177,22 @@ Merged trac_3949.patch and extcode_3949.patch in Sage 3.2.alpha1
 
 ---
 
+archive/issue_events_004177.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-25T23:01:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3949",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3949#event-4177"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028295.json:
 ```json
 {

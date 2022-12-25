@@ -366,6 +366,22 @@ So with that, I think this ticket should be closed, as the two spkgs listed on i
 
 ---
 
+archive/issue_events_008814.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-13T07:28:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8645#event-8814"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078287.json:
 ```json
 {
@@ -473,6 +489,22 @@ archive/issue_comments_078292.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_008815.json:
+```json
+{
+    "actor": "@nbruin",
+    "created_at": "2010-06-16T00:43:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8645#event-8815"
+}
+```
 
 
 
@@ -656,6 +688,22 @@ Dave
 
 ---
 
+archive/issue_events_008816.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-25T15:46:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8645#event-8816"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078300.json:
 ```json
 {
@@ -823,6 +871,22 @@ archive/issue_comments_078307.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_008817.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-07-11T19:13:57Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/8645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8645#event-8817"
+}
+```
 
 
 
@@ -1105,3 +1169,19 @@ archive/issue_comments_078319.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_008818.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-01-19T22:11:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8645#event-8818"
+}
+```

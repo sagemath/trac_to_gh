@@ -302,6 +302,22 @@ Great work!
 
 ---
 
+archive/issue_events_008662.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-08T22:13:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8479",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8479#event-8662"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076301.json:
 ```json
 {

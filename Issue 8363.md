@@ -374,6 +374,22 @@ I've opened another ticket, #8419, to resolve the issue which Jaap found - i.e. 
 
 ---
 
+archive/issue_events_008551.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T23:35:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8363",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8363#event-8551"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074615.json:
 ```json
 {

@@ -85,6 +85,22 @@ Fine by me.
 
 ---
 
+archive/issue_events_006470.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:16:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6222",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6222#event-6470"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049586.json:
 ```json
 {

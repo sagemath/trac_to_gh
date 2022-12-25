@@ -172,6 +172,22 @@ Ok, I consider John's review to be a positive one. Changing the subject accordin
 
 ---
 
+archive/issue_events_002143.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-16T20:45:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1987",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1987#event-2143"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012842.json:
 ```json
 {

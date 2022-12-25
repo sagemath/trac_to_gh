@@ -115,6 +115,22 @@ Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/tra
 
 ---
 
+archive/issue_events_001552.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T13:27:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1404",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1404#event-1552"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009042.json:
 ```json
 {

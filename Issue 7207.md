@@ -366,6 +366,22 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
 ---
 
+archive/issue_events_007428.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T00:52:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#event-7428"
+}
+```
+
+
+
+---
+
 archive/issue_comments_059703.json:
 ```json
 {

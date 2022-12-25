@@ -181,3 +181,19 @@ archive/issue_comments_006376.json:
 ```
 
 Merged in the optional spkg repo and mirrored out.
+
+
+
+---
+
+archive/issue_events_001173.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-25T20:39:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1050",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1050#event-1173"
+}
+```

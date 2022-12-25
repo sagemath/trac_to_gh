@@ -197,6 +197,22 @@ Wall time: 0.55 s
 
 ---
 
+archive/issue_events_005979.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-03T20:19:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5732",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5732#event-5979"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044712.json:
 ```json
 {

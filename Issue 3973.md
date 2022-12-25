@@ -144,6 +144,22 @@ Applies cleanly to 3.1.1, and all doctests in elliptic_curves pass.  I think thi
 
 ---
 
+archive/issue_events_004203.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-28T20:39:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3973",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3973#event-4203"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028492.json:
 ```json
 {

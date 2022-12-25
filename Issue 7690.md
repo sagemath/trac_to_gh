@@ -184,6 +184,22 @@ No patch, so deferring...
 
 ---
 
+archive/issue_events_007907.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-07-08T18:33:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#event-7907"
+}
+```
+
+
+
+---
+
 archive/issue_comments_065869.json:
 ```json
 {

@@ -163,3 +163,19 @@ archive/issue_comments_093142.json:
 The page http://wiki.sagemath.org/Sage_Spkg_Tracking
 now redirects to http://wiki.sagemath.org/spkg
 so this can indeed be closed.
+
+
+
+---
+
+archive/issue_events_009766.json:
+```json
+{
+    "actor": "@slel",
+    "created_at": "2020-08-14T00:54:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9626",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9626#event-9766"
+}
+```

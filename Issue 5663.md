@@ -77,6 +77,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5663
 
 ---
 
+archive/issue_events_005905.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-05T03:07:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5663",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5663#event-5905"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044206.json:
 ```json
 {

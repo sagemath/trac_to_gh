@@ -122,6 +122,22 @@ With the merge of #7514, should we close this ticket?
 
 ---
 
+archive/issue_events_006162.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-01T08:12:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5908",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5908#event-6162"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046609.json:
 ```json
 {

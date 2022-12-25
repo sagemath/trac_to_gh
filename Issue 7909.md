@@ -198,6 +198,22 @@ Jaap
 
 ---
 
+archive/issue_events_008124.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-14T03:03:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7909",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7909#event-8124"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068667.json:
 ```json
 {

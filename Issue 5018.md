@@ -156,3 +156,19 @@ Uploaded in the optional spkg repo in Sage 3.3.alpha4.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005262.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-02T06:32:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5018",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5018#event-5262"
+}
+```

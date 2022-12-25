@@ -353,6 +353,22 @@ I like the new version.  Doctests pass in sage/rings.  (Apply trac_1129.hg, then
 
 ---
 
+archive/issue_events_001255.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T20:19:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#event-1255"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006817.json:
 ```json
 {

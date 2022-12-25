@@ -262,6 +262,22 @@ OK, I see the problem and the solution is good. Will keep this in mind for the c
 
 ---
 
+archive/issue_events_001871.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-11T19:25:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1712",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1712#event-1871"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010831.json:
 ```json
 {

@@ -323,3 +323,19 @@ Merged trac_4900_typo.patch only in Sage 3.3.alpha2.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005143.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T19:55:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4900",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4900#event-5143"
+}
+```

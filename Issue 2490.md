@@ -48,6 +48,22 @@ Japp, I'm marking this as duplicate since it is a duplicate of #2372 . Reviews f
 
 ---
 
+archive/issue_events_002669.json:
+```json
+{
+    "actor": "@dfdeshom",
+    "created_at": "2008-03-12T12:47:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2490",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2490#event-2669"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016842.json:
 ```json
 {

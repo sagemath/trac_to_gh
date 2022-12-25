@@ -44,6 +44,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/631
 
 ---
 
+archive/issue_events_000689.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-13T15:28:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/631",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/631#event-689"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003236.json:
 ```json
 {
@@ -98,6 +114,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000690.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-13T15:31:52Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/631",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/631#event-690"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003239.json:
 ```json
 {
@@ -111,3 +143,19 @@ archive/issue_comments_003239.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000691.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-13T16:18:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/631",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/631#event-691"
+}
+```

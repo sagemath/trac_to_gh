@@ -2087,6 +2087,22 @@ This ticket might have got a bit confusing. Just to recap, these things need goi
 
 ---
 
+archive/issue_events_007733.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-01-04T01:47:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#event-7733"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063379.json:
 ```json
 {

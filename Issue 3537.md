@@ -167,6 +167,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_003756.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-01T04:40:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3537",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-3756"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024918.json:
 ```json
 {
@@ -180,6 +196,22 @@ archive/issue_comments_024918.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_003757.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2010-12-11T11:58:59Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3537",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-3757"
+}
+```
 
 
 
@@ -834,6 +866,22 @@ archive/issue_comments_024945.json:
 ```
 
 Apologies for not be clear.  I first applied the patch to the sage-4.7.rc2 source, then built the source, then did make testlong.
+
+
+
+---
+
+archive/issue_events_003758.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-17T08:47:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3537",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3537#event-3758"
+}
+```
 
 
 

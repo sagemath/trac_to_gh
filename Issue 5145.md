@@ -238,6 +238,22 @@ The code looks good; passes doctests in the affected file.
 
 ---
 
+archive/issue_events_005395.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-15T20:27:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#event-5395"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039290.json:
 ```json
 {

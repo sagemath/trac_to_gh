@@ -223,3 +223,19 @@ archive/issue_comments_096638.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_009937.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-06-24T06:29:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9814",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9814#event-9937"
+}
+```

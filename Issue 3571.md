@@ -130,6 +130,22 @@ Attachment [trac-3571.patch](tarball://root/attachments/some-uuid/ticket3571/tra
 
 ---
 
+archive/issue_events_003789.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T09:39:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3571",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3571#event-3789"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025177.json:
 ```json
 {

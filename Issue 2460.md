@@ -241,6 +241,22 @@ There are non-trivial issues involved with fixing this (namely, moving things to
 
 ---
 
+archive/issue_events_002637.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-06-20T04:46:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#event-2637"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016630.json:
 ```json
 {
@@ -314,6 +330,22 @@ archive/issue_comments_016633.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002638.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-06-27T20:20:25Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#event-2638"
+}
+```
 
 
 
@@ -460,6 +492,22 @@ archive/issue_comments_016639.json:
 I think the issues raised here have all been dealt with by the patches I put up at #3927 (which started out as a separate enhancement, hence the new ticket).  In particular the good parts of the patch attached to this ticket have been used there.
 
 I suggest that this ticket be closed, with a link to #3927 instead.
+
+
+
+---
+
+archive/issue_events_002639.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2008-11-14T08:52:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#event-2639"
+}
+```
 
 
 

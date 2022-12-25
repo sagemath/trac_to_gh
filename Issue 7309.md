@@ -171,6 +171,22 @@ To the extent that it counts, my review is positive.
 
 ---
 
+archive/issue_events_007532.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-11T19:32:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7309",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7309#event-7532"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060933.json:
 ```json
 {

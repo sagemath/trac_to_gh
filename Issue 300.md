@@ -46,6 +46,22 @@ It never came up again, closing this for now.
 
 ---
 
+archive/issue_events_000317.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-21T22:55:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/300",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/300#event-317"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001426.json:
 ```json
 {

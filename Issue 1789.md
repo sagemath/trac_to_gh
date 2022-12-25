@@ -152,6 +152,22 @@ This seems like a reasonable change to make.  The situation is tricky and it app
 
 ---
 
+archive/issue_events_001946.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-19T20:02:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1789",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1789#event-1946"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011294.json:
 ```json
 {

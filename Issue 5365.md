@@ -75,6 +75,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_005620.json:
+```json
+{
+    "actor": "ekirkman",
+    "created_at": "2009-02-24T23:56:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5365",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5365#event-5620"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041249.json:
 ```json
 {

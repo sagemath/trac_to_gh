@@ -109,3 +109,19 @@ archive/issue_comments_009536.json:
 ```
 
 I'm closing this as a duplicate of !#378.
+
+
+
+---
+
+archive/issue_events_001636.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-16T00:04:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1484",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1484#event-1636"
+}
+```

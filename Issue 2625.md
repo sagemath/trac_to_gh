@@ -163,6 +163,22 @@ You are correct about `__interaface`, sorry. Still trying to figure out all the 
 
 ---
 
+archive/issue_events_002816.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2008-04-01T13:17:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2625",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2625#event-2816"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018003.json:
 ```json
 {

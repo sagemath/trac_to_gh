@@ -186,6 +186,22 @@ Fine!  Patch applies fine to 4.4.4.alpha1.
 
 ---
 
+archive/issue_events_009220.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-20T08:20:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9069",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9069#event-9220"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084032.json:
 ```json
 {

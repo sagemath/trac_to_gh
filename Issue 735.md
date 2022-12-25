@@ -72,3 +72,19 @@ archive/issue_comments_004295.json:
 ```
 
 Fixed for 2.8.5.1.
+
+
+
+---
+
+archive/issue_events_000822.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-30T04:04:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/735",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/735#event-822"
+}
+```

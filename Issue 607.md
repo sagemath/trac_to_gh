@@ -150,6 +150,22 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
+archive/issue_events_000664.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T04:27:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/607",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/607#event-664"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003115.json:
 ```json
 {

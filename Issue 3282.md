@@ -47,6 +47,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_003501.json:
+```json
+{
+    "actor": "@garyfurnish",
+    "created_at": "2008-05-23T16:31:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3282",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3282#event-3501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022653.json:
 ```json
 {

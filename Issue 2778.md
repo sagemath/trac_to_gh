@@ -67,3 +67,19 @@ This is a duplicate of #2744.
 <mabs> Unles you want to implement #2744 obviously :)
 ```
 
+
+
+
+---
+
+archive/issue_events_002966.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-04-16T11:25:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2778",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2778#event-2966"
+}
+```

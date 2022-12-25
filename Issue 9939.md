@@ -654,6 +654,22 @@ Well, I was helped a lot by Mitesh's pointer to the Python docs for `__cmp__`.
 
 ---
 
+archive/issue_events_010066.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-12-02T16:09:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9939",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9939#event-10066"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098807.json:
 ```json
 {

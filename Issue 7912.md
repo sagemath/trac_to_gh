@@ -147,6 +147,22 @@ I'm listing this as positive review -- I used this spkg as the base when I made 
 
 ---
 
+archive/issue_events_008127.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-01-14T21:08:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7912",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7912#event-8127"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068721.json:
 ```json
 {

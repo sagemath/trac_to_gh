@@ -41,6 +41,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/474
 
 ---
 
+archive/issue_events_000507.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-08-21T01:17:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/474",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/474#event-507"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002362.json:
 ```json
 {

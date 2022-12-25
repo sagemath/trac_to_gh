@@ -48,6 +48,22 @@ Dupe of #8995 (though this description is slightly more informative). If it's no
 
 ---
 
+archive/issue_events_009150.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2010-05-20T02:47:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8996",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8996#event-9150"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083047.json:
 ```json
 {

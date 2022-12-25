@@ -72,6 +72,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/7070
 
 ---
 
+archive/issue_events_007292.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-29T13:27:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7070",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7070#event-7292"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058369.json:
 ```json
 {

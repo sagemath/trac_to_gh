@@ -170,6 +170,22 @@ Attachment [trac_5629-rebase.patch](tarball://root/attachments/some-uuid/ticket5
 
 ---
 
+archive/issue_events_005870.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-31T08:49:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5629",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5629#event-5870"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043879.json:
 ```json
 {

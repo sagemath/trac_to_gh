@@ -77,6 +77,22 @@ Changing assignee from @williamstein to @malb.
 
 ---
 
+archive/issue_events_000446.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-09-03T13:55:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/419",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/419#event-446"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002101.json:
 ```json
 {

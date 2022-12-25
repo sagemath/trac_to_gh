@@ -159,6 +159,22 @@ Didn't seem to be the case when I applied the patch. The boxen.math url is just 
 
 ---
 
+archive/issue_events_009452.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-07-11T05:57:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9294",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9294#event-9452"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087385.json:
 ```json
 {

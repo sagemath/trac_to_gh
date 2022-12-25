@@ -71,6 +71,22 @@ I also need sage-valgrind.
 
 ---
 
+archive/issue_events_000493.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-29T02:48:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/464",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/464#event-493"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002298.json:
 ```json
 {

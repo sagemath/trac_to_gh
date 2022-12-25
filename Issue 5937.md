@@ -116,3 +116,19 @@ archive/issue_comments_046851.json:
 ```
 
 This has been open for 8 weeks with zero comment, so I'm assuming this is no longer valid.
+
+
+
+---
+
+archive/issue_events_006191.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-13T21:40:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5937",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5937#event-6191"
+}
+```

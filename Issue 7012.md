@@ -603,6 +603,22 @@ This is a known failure and has been reported before at ticket #6825. I then ins
 
 ---
 
+archive/issue_events_007235.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-23T09:05:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7012",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7012#event-7235"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057888.json:
 ```json
 {

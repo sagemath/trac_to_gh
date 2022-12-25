@@ -87,3 +87,19 @@ Oops, I opened a dupe of this at #4472, but since I will post a patch there I am
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004702.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-09T00:29:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4456",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4456#event-4702"
+}
+```

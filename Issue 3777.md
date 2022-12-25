@@ -145,6 +145,22 @@ foo.html shows that firefox gives the same behavior.
 
 ---
 
+archive/issue_events_003999.json:
+```json
+{
+    "actor": "acleone",
+    "created_at": "2010-01-19T06:57:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3777",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3777#event-3999"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026806.json:
 ```json
 {

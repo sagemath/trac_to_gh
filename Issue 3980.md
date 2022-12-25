@@ -329,6 +329,22 @@ and an empty plot.  It would be nice to speed up that failure if you know an eas
 
 ---
 
+archive/issue_events_004210.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-01T10:32:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#event-4210"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028575.json:
 ```json
 {

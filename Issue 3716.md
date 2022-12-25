@@ -110,3 +110,19 @@ archive/issue_comments_026317.json:
 ```
 
 Merged in the optinal repo in Sage 3.0.6.final
+
+
+
+---
+
+archive/issue_events_003936.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-29T17:11:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3716",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3716#event-3936"
+}
+```

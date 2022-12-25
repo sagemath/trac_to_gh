@@ -365,6 +365,22 @@ Thanks Paul.  The patch I sent is incomplete because it breaks doctests for the 
 
 ---
 
+archive/issue_events_008529.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2011-12-18T15:43:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8336",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8336#event-8529"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074309.json:
 ```json
 {

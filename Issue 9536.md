@@ -608,6 +608,22 @@ This looks like the right approach, thanks.
 
 ---
 
+archive/issue_events_009686.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2016-11-08T23:42:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9536",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9536#event-9686"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091718.json:
 ```json
 {
@@ -657,6 +673,22 @@ archive/issue_comments_091720.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_009687.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2016-11-09T20:47:14Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9536",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9536#event-9687"
+}
+```
 
 
 
@@ -994,6 +1026,22 @@ archive/issue_comments_091737.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_009688.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2017-01-21T16:35:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9536",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9536#event-9688"
+}
+```
 
 
 

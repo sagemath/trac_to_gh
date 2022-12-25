@@ -33,6 +33,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/3114
 
 ---
 
+archive/issue_events_003332.json:
+```json
+{
+    "actor": "@wjp",
+    "created_at": "2010-01-17T06:32:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3114",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3114#event-3332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021519.json:
 ```json
 {

@@ -105,6 +105,22 @@ Merged spkg from #8638 in 4.4.alpha0.
 
 ---
 
+archive/issue_events_008805.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T17:22:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8636",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8636#event-8805"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078192.json:
 ```json
 {

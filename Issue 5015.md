@@ -91,6 +91,22 @@ Looks good.  Great work fixing this so quickly!
 
 ---
 
+archive/issue_events_005259.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-19T04:14:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5015",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5015#event-5259"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038146.json:
 ```json
 {

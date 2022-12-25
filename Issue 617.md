@@ -85,6 +85,22 @@ Turns out this was due to a bug in the rational __pow__ function. Fixed.
 
 ---
 
+archive/issue_events_000674.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T17:35:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/617",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/617#event-674"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003156.json:
 ```json
 {

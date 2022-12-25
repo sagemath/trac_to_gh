@@ -564,6 +564,22 @@ Florent
 
 ---
 
+archive/issue_events_008195.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-28T10:02:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7980",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7980#event-8195"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069518.json:
 ```json
 {

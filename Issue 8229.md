@@ -1090,6 +1090,22 @@ Changing component from packages to optional packages.
 
 ---
 
+archive/issue_events_008430.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-17T21:23:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8229",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8229#event-8430"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072579.json:
 ```json
 {

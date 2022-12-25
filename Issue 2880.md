@@ -167,6 +167,22 @@ Patches look good.
 
 ---
 
+archive/issue_events_003078.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-13T16:03:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#event-3078"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019777.json:
 ```json
 {

@@ -264,6 +264,22 @@ archive/issue_comments_048214.json:
 
 ---
 
+archive/issue_events_006324.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-05-04T04:42:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6069",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6069#event-6324"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048215.json:
 ```json
 {

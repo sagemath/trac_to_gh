@@ -87,6 +87,22 @@ Note that this should be applied after #2164.
 
 ---
 
+archive/issue_events_002335.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-15T05:32:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2168",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2168#event-2335"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014198.json:
 ```json
 {

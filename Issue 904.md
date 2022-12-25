@@ -107,6 +107,22 @@ This patch looks ready for inclusion. Jason -- do you notice any other functions
 
 ---
 
+archive/issue_events_001020.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T22:17:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/904",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/904#event-1020"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005552.json:
 ```json
 {

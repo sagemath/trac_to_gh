@@ -305,6 +305,22 @@ Attachment [trac_8403-rebased.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_008588.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-29T16:49:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8403",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8403#event-8588"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075147.json:
 ```json
 {

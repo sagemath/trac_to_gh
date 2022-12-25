@@ -368,6 +368,22 @@ Replying to [comment:15 kcrisman]:
 
 ---
 
+archive/issue_events_009693.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-06-28T09:36:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#event-9693"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091858.json:
 ```json
 {

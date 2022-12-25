@@ -198,6 +198,22 @@ Only the relevant lines from Kevin's patch
 
 ---
 
+archive/issue_events_004918.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-19T01:15:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4670",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4670#event-4918"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035114.json:
 ```json
 {

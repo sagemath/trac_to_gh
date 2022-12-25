@@ -779,3 +779,19 @@ archive/issue_comments_033339.json:
 ```
 
 Merged trac_4504_scripts_sdist.patch and trac_4504-draft2.txt in 4.0.1.alpha0.
+
+
+
+---
+
+archive/issue_events_004750.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T04:38:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4504",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4504#event-4750"
+}
+```

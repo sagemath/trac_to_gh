@@ -336,6 +336,22 @@ AttributeError: 'QuotientRingElement' object has no attribute 'degree'
 
 ---
 
+archive/issue_events_004192.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-18T23:44:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3964",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3964#event-4192"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028428.json:
 ```json
 {

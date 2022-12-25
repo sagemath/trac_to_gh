@@ -145,3 +145,19 @@ This has been fixed in Sage 3.0.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001563.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-20T06:27:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1415",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1415#event-1563"
+}
+```

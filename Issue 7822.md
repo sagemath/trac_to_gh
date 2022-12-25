@@ -357,3 +357,19 @@ archive/issue_comments_067602.json:
 ```
 
 Merged [trac_7822-py_log.take2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7822/trac_7822-py_log.take2.patch).
+
+
+
+---
+
+archive/issue_events_008037.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-18T21:38:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7822",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7822#event-8037"
+}
+```

@@ -83,6 +83,22 @@ Apparently I'm the only person who has ever requested this, and I don't particul
 
 ---
 
+archive/issue_events_000005.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2008-03-16T13:49:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5#event-5"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000019.json:
 ```json
 {

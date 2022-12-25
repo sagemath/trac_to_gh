@@ -142,6 +142,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_002049.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2010-06-25T04:12:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1891",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1891#event-2049"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011952.json:
 ```json
 {

@@ -482,6 +482,22 @@ Cheers,
 
 ---
 
+archive/issue_events_007640.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-12T06:50:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#event-7640"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062289.json:
 ```json
 {

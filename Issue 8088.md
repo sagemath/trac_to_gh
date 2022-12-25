@@ -615,6 +615,22 @@ Dave
 
 ---
 
+archive/issue_events_008294.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-12-12T12:24:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8088",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8088#event-8294"
+}
+```
+
+
+
+---
+
 archive/issue_comments_070766.json:
 ```json
 {

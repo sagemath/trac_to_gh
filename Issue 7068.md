@@ -343,6 +343,22 @@ Looking at the above, it seems g++ was used, not the Sun compiler, since g++ was
 
 ---
 
+archive/issue_events_007288.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-01-05T03:43:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-7288"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058353.json:
 ```json
 {
@@ -410,6 +426,22 @@ archive/issue_comments_058356.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_007289.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-01-05T03:46:08Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-7289"
+}
+```
 
 
 
@@ -508,6 +540,22 @@ The goal of these tickets is laudable, but:
 * We need at least one user who is able to test.
 * The package/OS information on this ticket is outdated beyond usefulness.
 * Upstream is a better place to report portability issues these days.
+
+
+
+---
+
+archive/issue_events_007290.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-07-15T07:18:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7068",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7068#event-7290"
+}
+```
 
 
 

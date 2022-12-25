@@ -421,6 +421,22 @@ As far as I understand, this new SPKG doesn't depend on #5793. So I'm merging th
 
 ---
 
+archive/issue_events_006601.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-23T04:41:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6355",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6355#event-6601"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050727.json:
 ```json
 {
@@ -475,6 +491,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_006602.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-26T08:30:25Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/6355",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6355#event-6602"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050730.json:
 ```json
 {
@@ -524,6 +556,22 @@ archive/issue_comments_050732.json:
 ```
 
 The code/doctest related to cliquer is to be found in #5793 : almost all the functions of the Graph class related to cliques use it, and if I make no mistake I documented all of them ;-)
+
+
+
+---
+
+archive/issue_events_006603.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-31T23:30:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6355",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6355#event-6603"
+}
+```
 
 
 

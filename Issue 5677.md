@@ -77,6 +77,22 @@ sage: _
 
 ---
 
+archive/issue_events_005920.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-23T12:56:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5677",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5677#event-5920"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044327.json:
 ```json
 {

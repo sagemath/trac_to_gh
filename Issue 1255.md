@@ -142,6 +142,22 @@ David also says that he cannot reproduce the crash.
 
 ---
 
+archive/issue_events_001397.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-31T04:25:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1255",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1255#event-1397"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007827.json:
 ```json
 {

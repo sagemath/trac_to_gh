@@ -267,6 +267,22 @@ I don't know if it fixes the "mysterious error" issue, since I couldn't cause th
 
 ---
 
+archive/issue_events_007325.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-13T04:57:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7103",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7103#event-7325"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058687.json:
 ```json
 {

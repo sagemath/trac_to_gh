@@ -127,3 +127,19 @@ Hunk #4 succeeded at 330 with fuzz 1 (offset 0 lines).
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001246.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-19T21:27:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1120",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1120#event-1246"
+}
+```

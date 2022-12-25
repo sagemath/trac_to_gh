@@ -107,6 +107,22 @@ Looks good to me.  Yep, this should also be done for the javascript code that is
 
 ---
 
+archive/issue_events_006974.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-02T05:15:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6742",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6742#event-6974"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055146.json:
 ```json
 {

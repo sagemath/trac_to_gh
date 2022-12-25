@@ -121,6 +121,22 @@ Upon applying all the patches involved, this disappears, quite mysteriously.
 
 ---
 
+archive/issue_events_007216.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-25T22:47:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6992",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6992#event-7216"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057727.json:
 ```json
 {

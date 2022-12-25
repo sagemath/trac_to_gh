@@ -197,6 +197,22 @@ Yes it is. Positive review.
 
 ---
 
+archive/issue_events_006433.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T20:43:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6185",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6185#event-6433"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049290.json:
 ```json
 {

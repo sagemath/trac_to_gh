@@ -598,6 +598,22 @@ This most recent one should hopefully apply well to 4.1.2 itself.  The only chan
 
 ---
 
+archive/issue_events_006878.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T09:05:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6642",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6642#event-6878"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054380.json:
 ```json
 {

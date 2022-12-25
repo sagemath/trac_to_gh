@@ -51,6 +51,22 @@ This isn't critical for 4.0.
 
 ---
 
+archive/issue_events_006281.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-02-08T14:22:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6026",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6026#event-6281"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047897.json:
 ```json
 {

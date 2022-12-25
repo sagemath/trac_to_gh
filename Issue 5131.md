@@ -165,6 +165,22 @@ Hi Travis, the patch looks good to me.
 
 ---
 
+archive/issue_events_005378.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-07-21T17:38:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5131",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5131#event-5378"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039164.json:
 ```json
 {

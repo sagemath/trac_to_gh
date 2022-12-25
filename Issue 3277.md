@@ -224,6 +224,22 @@ Sorry, an Americanism - it means, "I don't believe this amazing thing that has h
 
 ---
 
+archive/issue_events_003496.json:
+```json
+{
+    "actor": "@slel",
+    "created_at": "2020-08-22T07:10:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3277",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3277#event-3496"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022631.json:
 ```json
 {

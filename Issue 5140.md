@@ -388,3 +388,19 @@ Merged trac_5140_rebase.patch in Sage 3.4.1.rc2.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_005388.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-09T09:23:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5140",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5140#event-5388"
+}
+```

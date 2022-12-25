@@ -252,6 +252,22 @@ Attachment [trac_7561-review.patch](tarball://root/attachments/some-uuid/ticket7
 
 ---
 
+archive/issue_events_007790.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-06T08:51:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7561",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7561#event-7790"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064220.json:
 ```json
 {

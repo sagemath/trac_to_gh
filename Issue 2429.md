@@ -121,6 +121,22 @@ Since ticket #4492 has been merged, this can now be closed too. Jeroen, could yo
 
 ---
 
+archive/issue_events_002606.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-02-16T10:36:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2429",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2429#event-2606"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016404.json:
 ```json
 {

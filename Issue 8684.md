@@ -47,6 +47,22 @@ The [current organization](http://www.sagemath.org/doc/reference/graphs.html) of
 
 ---
 
+archive/issue_events_008858.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-11-27T21:04:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8684",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8684#event-8858"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079010.json:
 ```json
 {

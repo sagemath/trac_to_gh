@@ -157,6 +157,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_001941.json:
+```json
+{
+    "actor": "@pdenapo",
+    "created_at": "2008-01-19T22:12:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1784",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1784#event-1941"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011270.json:
 ```json
 {

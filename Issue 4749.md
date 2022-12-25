@@ -248,6 +248,22 @@ OK, I relented.  I have added a patch which addresses the specific bug.  There i
 
 ---
 
+archive/issue_events_004992.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-21T12:37:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#event-4992"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035875.json:
 ```json
 {

@@ -28,6 +28,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/720
 
 ---
 
+archive/issue_events_000801.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2008-03-17T17:57:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/720",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/720#event-801"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004178.json:
 ```json
 {

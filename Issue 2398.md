@@ -283,6 +283,22 @@ The patch fixes all of the above examples (and includes the minimal example as a
 
 ---
 
+archive/issue_events_002574.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-07T04:26:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2398",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2398#event-2574"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016156.json:
 ```json
 {

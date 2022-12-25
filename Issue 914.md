@@ -99,6 +99,22 @@ This should probably be marked as invalid.
 
 ---
 
+archive/issue_events_001030.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:21:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/914",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/914#event-1030"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005591.json:
 ```json
 {
@@ -153,6 +169,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001031.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:21:19Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/914",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/914#event-1031"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005594.json:
 ```json
 {
@@ -189,6 +221,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_001032.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:21:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/914",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/914#event-1032"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005596.json:
 ```json
 {
@@ -207,6 +255,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_001033.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:21:30Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/914",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/914#event-1033"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005597.json:
 ```json
 {
@@ -220,6 +284,22 @@ archive/issue_comments_005597.json:
 ```
 
 Resolution changed from invalid to 
+
+
+
+---
+
+archive/issue_events_001034.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:21:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/914",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/914#event-1034"
+}
+```
 
 
 

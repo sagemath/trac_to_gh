@@ -65,6 +65,22 @@ This is fixed by the patch at #8565.
 
 ---
 
+archive/issue_events_008978.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T04:19:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8813",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8813#event-8978"
+}
+```
+
+
+
+---
+
 archive/issue_comments_080765.json:
 ```json
 {

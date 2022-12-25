@@ -78,6 +78,22 @@ This ticket can be closed.
 
 ---
 
+archive/issue_events_009161.json:
+```json
+{
+    "actor": "@dimpase",
+    "created_at": "2010-05-22T08:34:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9007",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9007#event-9161"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083179.json:
 ```json
 {

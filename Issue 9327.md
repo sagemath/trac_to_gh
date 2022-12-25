@@ -193,6 +193,22 @@ Another ticket would be deleting the verbose output in the server logs anytime s
 
 ---
 
+archive/issue_events_009482.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-04T01:34:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9327",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9327#event-9482"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087849.json:
 ```json
 {

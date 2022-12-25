@@ -77,3 +77,19 @@ archive/issue_comments_026978.json:
 ```
 
 I consider this invalid since nobody uses Edit mode anymore for tex editing, now that we have tinymce.
+
+
+
+---
+
+archive/issue_events_004026.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-19T23:37:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3804",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3804#event-4026"
+}
+```

@@ -103,3 +103,19 @@ archive/issue_comments_045043.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_006016.json:
+```json
+{
+    "actor": "@lftabera",
+    "created_at": "2010-06-16T08:24:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5769",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5769#event-6016"
+}
+```

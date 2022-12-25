@@ -231,6 +231,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_002483.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-28T00:09:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2306",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2306#event-2483"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015324.json:
 ```json
 {

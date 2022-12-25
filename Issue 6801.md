@@ -216,6 +216,22 @@ I think this can now be regarded as a duplicate of #9705 and thus closed.
 
 ---
 
+archive/issue_events_007036.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-06-20T18:54:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#event-7036"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055908.json:
 ```json
 {

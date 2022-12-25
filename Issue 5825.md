@@ -198,3 +198,19 @@ archive/issue_comments_045707.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006075.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-05-24T09:39:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5825",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5825#event-6075"
+}
+```

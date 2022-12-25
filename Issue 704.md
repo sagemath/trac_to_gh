@@ -112,3 +112,19 @@ archive/issue_comments_003693.json:
 ```
 
 Attachment [global_proof2.hg](tarball://root/attachments/some-uuid/ticket704/global_proof2.hg) by @williamstein created at 2007-09-21 02:45:38
+
+
+
+---
+
+archive/issue_events_000776.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-21T02:45:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/704",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/704#event-776"
+}
+```

@@ -240,6 +240,22 @@ Outdated, should be closed
 
 ---
 
+archive/issue_events_006945.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-07-14T16:30:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6710",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6710#event-6945"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055002.json:
 ```json
 {

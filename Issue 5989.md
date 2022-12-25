@@ -66,6 +66,22 @@ Applies OK against the "post-final" sage-3.4.2. Positive review.
 
 ---
 
+archive/issue_events_006244.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-12T22:17:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5989",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5989#event-6244"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047505.json:
 ```json
 {

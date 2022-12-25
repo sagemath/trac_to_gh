@@ -2160,6 +2160,22 @@ Nathann
 
 ---
 
+archive/issue_events_006740.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-02T17:44:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#event-6740"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052843.json:
 ```json
 {

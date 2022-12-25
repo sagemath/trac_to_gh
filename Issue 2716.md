@@ -404,6 +404,22 @@ I believe I have made my imports explicit and minimal.
 
 ---
 
+archive/issue_events_002904.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-29T00:18:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2716",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2716#event-2904"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018694.json:
 ```json
 {

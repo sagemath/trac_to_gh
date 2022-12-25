@@ -114,3 +114,19 @@ archive/issue_comments_055877.json:
 ```
 
 I am closing this as `worksforme`. We've gone several releases with maxima-5.19.1, who knows what the problem that prevented Sage from starting as in the description was.
+
+
+
+---
+
+archive/issue_events_007030.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-12-17T20:14:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6795",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6795#event-7030"
+}
+```

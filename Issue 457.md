@@ -87,3 +87,19 @@ archive/issue_comments_002275.json:
 ```
 
 it's been fixed now and the fix has been pushed out.
+
+
+
+---
+
+archive/issue_events_000486.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-19T18:49:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/457",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/457#event-486"
+}
+```

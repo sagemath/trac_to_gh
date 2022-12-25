@@ -473,6 +473,22 @@ I realize this isn't ready for review yet, but at the very least we would want t
 
 ---
 
+archive/issue_events_003428.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-02T21:55:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#event-3428"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022172.json:
 ```json
 {

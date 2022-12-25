@@ -101,6 +101,22 @@ Thanks for fixing the other ticket by writing the function.
 
 ---
 
+archive/issue_events_002863.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2008-04-14T16:59:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2671",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2671#event-2863"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018349.json:
 ```json
 {

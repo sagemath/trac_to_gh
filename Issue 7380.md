@@ -48,6 +48,22 @@ Useless.
 
 ---
 
+archive/issue_events_007604.json:
+```json
+{
+    "actor": "@nathanncohen",
+    "created_at": "2010-02-28T18:03:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7380",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7380#event-7604"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061965.json:
 ```json
 {
@@ -174,6 +190,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_007605.json:
+```json
+{
+    "actor": "@nathanncohen",
+    "created_at": "2010-03-01T07:24:03Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7380",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7380#event-7605"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061971.json:
 ```json
 {
@@ -243,3 +275,19 @@ archive/issue_comments_061974.json:
 ```
 
 Resolution: worksforme
+
+
+
+---
+
+archive/issue_events_007606.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-01T10:53:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7380",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7380#event-7606"
+}
+```

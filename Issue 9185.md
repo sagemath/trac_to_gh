@@ -410,6 +410,22 @@ Positive review.
 
 ---
 
+archive/issue_events_009341.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-25T15:46:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9185",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9185#event-9341"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085788.json:
 ```json
 {

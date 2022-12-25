@@ -149,6 +149,22 @@ Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/pat
 
 ---
 
+archive/issue_events_000228.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-27T19:13:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/217",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/217#event-228"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000966.json:
 ```json
 {
@@ -224,6 +240,22 @@ archive/issue_comments_000968.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000229.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-29T01:19:23Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/217",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/217#event-229"
+}
+```
 
 
 
@@ -361,6 +393,22 @@ archive/issue_comments_000974.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000230.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T09:31:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/217",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/217#event-230"
+}
+```
 
 
 

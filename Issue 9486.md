@@ -675,6 +675,22 @@ $ head -n 3 kirkby/bsd.math+7379+9187-ptestlong.log | hd
 
 ---
 
+archive/issue_events_009637.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-07-13T16:27:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9486",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9486#event-9637"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090935.json:
 ```json
 {

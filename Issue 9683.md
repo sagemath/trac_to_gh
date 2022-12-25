@@ -185,6 +185,22 @@ Changing keywords from "pretty_print, history" to "pretty_print, history, days57
 
 ---
 
+archive/issue_events_009815.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-04-13T19:33:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9683",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9683#event-9815"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093980.json:
 ```json
 {

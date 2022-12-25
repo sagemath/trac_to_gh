@@ -154,6 +154,22 @@ Neither is 128.208.160.198, sagenb.org, so I think we're set.
 
 ---
 
+archive/issue_events_002994.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-06-19T12:19:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2803",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2803#event-2994"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019205.json:
 ```json
 {

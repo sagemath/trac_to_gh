@@ -56,6 +56,22 @@ http://sage.math.washington.edu/home/mvngu/patch/atlas-3.8.3.p7.spkg
 
 ---
 
+archive/issue_events_006972.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-12T00:59:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6738",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6738#event-6972"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055121.json:
 ```json
 {

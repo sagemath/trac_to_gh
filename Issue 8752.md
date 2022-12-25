@@ -105,6 +105,22 @@ I believe this was taken care of in #3863.
 
 ---
 
+archive/issue_events_008920.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2010-04-23T18:21:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8752",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8752#event-8920"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079944.json:
 ```json
 {

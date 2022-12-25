@@ -75,6 +75,22 @@ looks good, doctests pass.
 
 ---
 
+archive/issue_events_006286.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-12T18:17:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6031",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6031#event-6286"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047933.json:
 ```json
 {

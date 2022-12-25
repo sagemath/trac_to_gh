@@ -296,3 +296,19 @@ archive/issue_comments_037012.json:
 ```
 
 I'm closing this as invalid based on the discussion.  The fix should be to remove the nauty spkg entirely, or rename it with "-nonfree".
+
+
+
+---
+
+archive/issue_events_005134.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-03-15T22:57:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4890",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4890#event-5134"
+}
+```

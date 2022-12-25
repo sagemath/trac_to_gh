@@ -414,6 +414,22 @@ Well, since he left exactly the same message on two other tickets which I had fo
 
 ---
 
+archive/issue_events_009420.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-06-18T10:22:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9260",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9260#event-9420"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087011.json:
 ```json
 {

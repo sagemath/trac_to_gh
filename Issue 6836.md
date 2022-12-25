@@ -251,3 +251,19 @@ Merged in 4.4.alpha0:
 
 - trac_6836.patch
 - trac_6836-trivial-doc.patch
+
+
+
+---
+
+archive/issue_events_007069.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T05:57:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6836",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6836#event-7069"
+}
+```

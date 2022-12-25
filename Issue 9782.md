@@ -128,6 +128,22 @@ Good job (especially the extra notes).  Applies fine to 4.5.3.alpha1, builds wit
 
 ---
 
+archive/issue_events_009912.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-31T03:20:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9782",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9782#event-9912"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095870.json:
 ```json
 {

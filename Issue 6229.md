@@ -160,6 +160,22 @@ based on Sage 4.0.1.rc2
 
 ---
 
+archive/issue_events_006476.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:18:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6229",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6229#event-6476"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049620.json:
 ```json
 {

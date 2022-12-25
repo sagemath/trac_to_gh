@@ -227,6 +227,22 @@ Merged into 4.4.alpha2:
 
 ---
 
+archive/issue_events_008779.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-23T17:10:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8607",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8607#event-8779"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077859.json:
 ```json
 {

@@ -72,6 +72,22 @@ Spkg compiles fine, tested cube, works ok.
 
 ---
 
+archive/issue_events_002114.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-28T05:06:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1959",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1959#event-2114"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012619.json:
 ```json
 {

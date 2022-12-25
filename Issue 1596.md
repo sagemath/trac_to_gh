@@ -126,6 +126,22 @@ Looks good to me. Merged in Sage 2.9.2.rc1.
 
 ---
 
+archive/issue_events_001754.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-04T21:34:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1596",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1596#event-1754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010135.json:
 ```json
 {

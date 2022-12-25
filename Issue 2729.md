@@ -94,6 +94,22 @@ looks good.
 
 ---
 
+archive/issue_events_002917.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-31T13:47:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2729",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2729#event-2917"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018755.json:
 ```json
 {

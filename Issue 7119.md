@@ -315,6 +315,22 @@ Adam
 
 ---
 
+archive/issue_events_007340.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T15:33:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7119",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7119#event-7340"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058912.json:
 ```json
 {

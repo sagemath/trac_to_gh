@@ -1030,6 +1030,22 @@ Spkg diff, for review only.
 
 ---
 
+archive/issue_events_009692.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-01-12T08:52:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9543",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9543#event-9692"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091840.json:
 ```json
 {

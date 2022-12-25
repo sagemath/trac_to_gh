@@ -48,6 +48,22 @@ Attachment [ntl_GF2E.patch](tarball://root/attachments/some-uuid/ticket970/ntl_G
 
 ---
 
+archive/issue_events_001091.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T21:12:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/970",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/970#event-1091"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005904.json:
 ```json
 {

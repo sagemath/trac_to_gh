@@ -148,6 +148,22 @@ Attachment [2894-notebookperformance.patch](tarball://root/attachments/some-uuid
 
 ---
 
+archive/issue_events_003092.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-12T12:44:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#event-3092"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019868.json:
 ```json
 {

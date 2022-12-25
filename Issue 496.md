@@ -57,6 +57,22 @@ Attached patch fixes the problem.
 
 ---
 
+archive/issue_events_000527.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2007-08-28T06:43:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-527"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002465.json:
 ```json
 {
@@ -135,6 +151,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000528.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2007-08-29T23:16:35Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-528"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002469.json:
 ```json
 {
@@ -170,6 +202,22 @@ archive/issue_comments_002470.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000529.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-31T22:06:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-529"
+}
+```
 
 
 
@@ -211,6 +259,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000530.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-31T22:07:00Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-530"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002473.json:
 ```json
 {
@@ -224,6 +288,22 @@ archive/issue_comments_002473.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000531.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2007-08-31T22:45:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/496#event-531"
+}
+```
 
 
 

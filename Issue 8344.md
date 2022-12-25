@@ -758,6 +758,22 @@ Merged trac-8344.patch in 4.4.alpha0
 
 ---
 
+archive/issue_events_008534.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-15T20:10:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8344",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8344#event-8534"
+}
+```
+
+
+
+---
+
 archive/issue_comments_074379.json:
 ```json
 {

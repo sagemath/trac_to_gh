@@ -620,6 +620,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_002595.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-12T19:45:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2419",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-2595"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016303.json:
 ```json
 {
@@ -633,6 +649,22 @@ archive/issue_comments_016303.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002596.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-12T19:47:46Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2419",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-2596"
+}
+```
 
 
 
@@ -950,6 +982,22 @@ archive/issue_comments_016318.json:
 ```
 
 Applies and passes tests against 3.0alpha5.  Looks good to me.
+
+
+
+---
+
+archive/issue_events_002597.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-21T00:41:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2419",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2419#event-2597"
+}
+```
 
 
 

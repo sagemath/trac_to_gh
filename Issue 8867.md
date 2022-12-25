@@ -516,6 +516,22 @@ Specifically in the major revision I'm working on, not here.
 
 ---
 
+archive/issue_events_009029.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-31T17:06:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8867",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8867#event-9029"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081377.json:
 ```json
 {

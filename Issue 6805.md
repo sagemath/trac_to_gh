@@ -125,6 +125,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_007040.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-02T04:36:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6805",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6805#event-7040"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055933.json:
 ```json
 {

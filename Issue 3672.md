@@ -60,6 +60,22 @@ I think with the transition to Sphinx-based documentation (3.4) this has been fi
 
 ---
 
+archive/issue_events_003893.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2009-04-22T07:10:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3672",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3672#event-3893"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025908.json:
 ```json
 {

@@ -58,6 +58,22 @@ So this ticket should be closed.
 
 ---
 
+archive/issue_events_005848.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-11T20:49:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5604",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5604#event-5848"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043657.json:
 ```json
 {

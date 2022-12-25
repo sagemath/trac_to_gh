@@ -282,6 +282,22 @@ New patch is cumulative, its the only one that needs to be applied.
 
 ---
 
+archive/issue_events_006742.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-24T08:41:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6504",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6504#event-6742"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052894.json:
 ```json
 {

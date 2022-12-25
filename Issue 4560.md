@@ -146,6 +146,22 @@ Rebased verison of Roed's patch
 
 ---
 
+archive/issue_events_004805.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-29T02:46:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4560",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4560#event-4805"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034099.json:
 ```json
 {

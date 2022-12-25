@@ -137,6 +137,22 @@ Doctests pass, code looks fine.
 
 ---
 
+archive/issue_events_003603.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-10T01:21:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3387",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3387#event-3603"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023665.json:
 ```json
 {

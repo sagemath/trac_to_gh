@@ -138,6 +138,22 @@ No answer, close as "invalid".
 
 ---
 
+archive/issue_events_005891.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-10-13T15:47:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5650",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5650#event-5891"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044038.json:
 ```json
 {

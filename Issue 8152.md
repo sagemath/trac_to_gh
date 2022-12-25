@@ -243,6 +243,22 @@ Obsolete I guess...
 
 ---
 
+archive/issue_events_008357.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-04-09T12:12:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8152",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8152#event-8357"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071558.json:
 ```json
 {

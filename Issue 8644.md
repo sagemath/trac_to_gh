@@ -120,6 +120,22 @@ which incorporates the fixes at #8753.
 
 ---
 
+archive/issue_events_008813.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-28T18:57:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8644",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8644#event-8813"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078274.json:
 ```json
 {

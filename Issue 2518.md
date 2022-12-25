@@ -156,6 +156,22 @@ Since this hasn't been reported in around 8 months, I think this should be close
 
 ---
 
+archive/issue_events_002699.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T07:15:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2518",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2518#event-2699"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017145.json:
 ```json
 {

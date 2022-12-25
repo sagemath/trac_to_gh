@@ -162,6 +162,22 @@ Looks good, and all doctests still pass in sage/rings/polynomial/.
 
 ---
 
+archive/issue_events_001349.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T00:14:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1211",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1211#event-1349"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007498.json:
 ```json
 {

@@ -344,6 +344,22 @@ Attachment [trac_132_docstrings.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
+archive/issue_events_000138.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-28T22:18:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/132",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/132#event-138"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000622.json:
 ```json
 {

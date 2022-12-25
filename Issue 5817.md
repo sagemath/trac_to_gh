@@ -472,6 +472,22 @@ Merged flint-1.2.5.spkg in 4.0.1.rc0.  Note that testing is enabled.  I'll make 
 
 ---
 
+archive/issue_events_006068.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-03T20:23:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5817",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5817#event-6068"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045641.json:
 ```json
 {

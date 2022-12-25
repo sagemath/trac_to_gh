@@ -175,6 +175,22 @@ This patch should be applied after #644.
 
 ---
 
+archive/issue_events_000708.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-01T16:16:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/644",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/644#event-708"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003331.json:
 ```json
 {

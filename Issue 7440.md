@@ -565,6 +565,22 @@ Due to the problems with Sage (disk related I believe), I unable to download thi
 
 ---
 
+archive/issue_events_007665.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-19T01:34:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7440#event-7665"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062521.json:
 ```json
 {
@@ -601,6 +617,22 @@ Changing status from closed to needs_work.
 
 ---
 
+archive/issue_events_007666.json:
+```json
+{
+    "actor": "maldun",
+    "created_at": "2010-08-28T12:03:25Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7440#event-7666"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062523.json:
 ```json
 {
@@ -629,6 +661,22 @@ error configuring valgrind 3.5.0
 
 I use Ubuntu 10.04, and the glibc version is 2.11 ....
 Valgrind 3.6.0 is already out
+
+
+
+---
+
+archive/issue_events_007667.json:
+```json
+{
+    "actor": "maldun",
+    "created_at": "2010-08-28T12:10:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7440#event-7667"
+}
+```
 
 
 

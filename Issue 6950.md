@@ -203,6 +203,22 @@ See #6953 for a follow-up to this ticket.
 
 ---
 
+archive/issue_events_007174.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-18T02:10:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6950",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6950#event-7174"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057375.json:
 ```json
 {

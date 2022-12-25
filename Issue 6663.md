@@ -181,6 +181,22 @@ abort: There is no Mercurial repository here (.hg not found)!
 
 ---
 
+archive/issue_events_006899.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-11T18:11:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6663",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6663#event-6899"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054593.json:
 ```json
 {

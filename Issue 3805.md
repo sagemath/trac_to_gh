@@ -272,6 +272,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_004027.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-01T02:20:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3805",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3805#event-4027"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026988.json:
 ```json
 {

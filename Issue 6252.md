@@ -161,6 +161,22 @@ where one can search for the names of the above new contributors.
 
 ---
 
+archive/issue_events_006496.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2009-06-14T22:27:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6252",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6252#event-6496"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049846.json:
 ```json
 {

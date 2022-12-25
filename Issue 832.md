@@ -102,6 +102,22 @@ second patch (multi_polynomial_ideal_-_vector_space_dimension_-_doctest_fix.patc
 
 ---
 
+archive/issue_events_000945.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-13T07:50:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/832",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/832#event-945"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005131.json:
 ```json
 {

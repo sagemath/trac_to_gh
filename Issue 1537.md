@@ -149,3 +149,19 @@ archive/issue_comments_009791.json:
 ```
 
 Closed as fixed upstream as per Robert's recommendation.
+
+
+
+---
+
+archive/issue_events_001691.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-09T03:43:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1537",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1537#event-1691"
+}
+```

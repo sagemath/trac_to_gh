@@ -100,6 +100,22 @@ works, but I created a referee patch that has more precision (using the #define 
 
 ---
 
+archive/issue_events_009018.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-05-25T02:09:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8853",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8853#event-9018"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081234.json:
 ```json
 {

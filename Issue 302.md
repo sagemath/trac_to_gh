@@ -47,6 +47,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_000319.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-03-01T18:07:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/302",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/302#event-319"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001434.json:
 ```json
 {
@@ -131,6 +147,22 @@ archive/issue_comments_001437.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000320.json:
+```json
+{
+    "actor": "TimothyClemans",
+    "created_at": "2007-03-01T22:27:51Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/302",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/302#event-320"
+}
+```
 
 
 
@@ -229,6 +261,22 @@ archive/issue_comments_001442.json:
 I think it should be marked as invalid because we don't have a good list of the errors that could pop up. When we do then this will become more necessary. 
 
 For example on the TRAC server for Knoboo I've seen it report that the server is having database trouble. If we discover that a Sage Notebook can become unusable then this sort of error reporting would become necessary.
+
+
+
+---
+
+archive/issue_events_000321.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-04T21:40:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/302",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/302#event-321"
+}
+```
 
 
 

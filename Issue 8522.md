@@ -228,3 +228,19 @@ archive/issue_comments_076867.json:
 ```
 
 Since much of this is against an old version of OpenMPI, I've closed this and opened a new ticket for the current issues #10869 seen on Solaris 10 SPARC.
+
+
+
+---
+
+archive/issue_events_008702.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2011-03-03T12:09:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8522",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8522#event-8702"
+}
+```

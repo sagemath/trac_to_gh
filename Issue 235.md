@@ -50,6 +50,22 @@ this is not much of a bug report.  useless.
 
 ---
 
+archive/issue_events_000250.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-08-18T09:55:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/235",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/235#event-250"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001036.json:
 ```json
 {

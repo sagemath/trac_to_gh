@@ -5720,6 +5720,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_010103.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-03T12:29:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9975",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9975#event-10103"
+}
+```
+
+
+
+---
+
 archive/issue_comments_100118.json:
 ```json
 {

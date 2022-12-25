@@ -64,6 +64,22 @@ Changing component from algebraic geometry to distribution.
 
 ---
 
+archive/issue_events_002206.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-10T03:19:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2048",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2048#event-2206"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013229.json:
 ```json
 {
@@ -165,6 +181,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_002207.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-06-23T14:25:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2048",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2048#event-2207"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013234.json:
 ```json
 {
@@ -178,6 +210,22 @@ archive/issue_comments_013234.json:
 ```
 
 Resolution changed from invalid to 
+
+
+
+---
+
+archive/issue_events_002208.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-06-18T12:57:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2048",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2048#event-2208"
+}
+```
 
 
 
@@ -214,6 +262,22 @@ archive/issue_comments_013236.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_002209.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-21T05:47:32Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2048",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2048#event-2209"
+}
+```
 
 
 

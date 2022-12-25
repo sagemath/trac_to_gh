@@ -172,6 +172,22 @@ rebased version.
 
 ---
 
+archive/issue_events_004840.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-23T08:18:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4591",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4591#event-4840"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034370.json:
 ```json
 {

@@ -307,6 +307,22 @@ Code looks good, all doctests pass.  Positive review.  Apply 4746-srange-rebased
 
 ---
 
+archive/issue_events_004988.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-20T07:37:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4746",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4746#event-4988"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035845.json:
 ```json
 {

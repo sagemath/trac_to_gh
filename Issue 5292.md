@@ -260,6 +260,22 @@ I should have added a test, but as I mentioned I don't think this resolves the r
 
 ---
 
+archive/issue_events_005546.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-18T00:26:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#event-5546"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040598.json:
 ```json
 {

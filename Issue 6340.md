@@ -418,6 +418,22 @@ Merged `trac_6340-var-ns.patch`.
 
 ---
 
+archive/issue_events_006584.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-24T08:29:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#event-6584"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050526.json:
 ```json
 {

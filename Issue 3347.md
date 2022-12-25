@@ -562,6 +562,22 @@ Merged 3347.patch only in Sage 3.0.4.alpha0
 
 ---
 
+archive/issue_events_003565.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T11:39:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3347",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3347#event-3565"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023230.json:
 ```json
 {

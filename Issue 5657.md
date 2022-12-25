@@ -48,6 +48,22 @@ Patch looks good; applies OK against Sage 3.4.1.alpha0; positive review.
 
 ---
 
+archive/issue_events_005900.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-03T00:48:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5657",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5657#event-5900"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044150.json:
 ```json
 {

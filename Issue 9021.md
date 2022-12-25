@@ -239,6 +239,22 @@ Dave
 
 ---
 
+archive/issue_events_009173.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-04-05T15:49:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9021",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9021#event-9173"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083338.json:
 ```json
 {

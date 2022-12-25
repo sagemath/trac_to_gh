@@ -229,3 +229,19 @@ archive/issue_comments_035518.json:
 ```
 
 Merged trac_4717.2.patch in Sage 3.2.2.alpha1
+
+
+
+---
+
+archive/issue_events_004962.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-10T07:52:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#event-4962"
+}
+```

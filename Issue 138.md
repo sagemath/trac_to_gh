@@ -55,6 +55,22 @@ This problem no longer exists.
 
 ---
 
+archive/issue_events_000144.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-12T23:25:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/138",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/138#event-144"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000644.json:
 ```json
 {

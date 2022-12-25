@@ -48,6 +48,22 @@ Attachment [id.patch](tarball://root/attachments/some-uuid/ticket1393/id.patch) 
 
 ---
 
+archive/issue_events_001537.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T11:54:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1393",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1393#event-1537"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008935.json:
 ```json
 {

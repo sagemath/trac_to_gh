@@ -154,6 +154,22 @@ archive/issue_comments_046201.json:
 
 ---
 
+archive/issue_events_006114.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-15T23:28:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5858",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5858#event-6114"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046202.json:
 ```json
 {

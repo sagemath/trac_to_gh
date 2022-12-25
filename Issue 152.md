@@ -125,6 +125,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/152
 
 ---
 
+archive/issue_events_000158.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-02-08T21:30:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/152",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/152#event-158"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000693.json:
 ```json
 {

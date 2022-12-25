@@ -84,6 +84,22 @@ Josh did this with integrating in scipy, etc.
 
 ---
 
+archive/issue_events_000079.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-20T13:48:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/79",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/79#event-79"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000395.json:
 ```json
 {

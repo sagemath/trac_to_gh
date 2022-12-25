@@ -322,6 +322,22 @@ Merged in the script repository.
 
 ---
 
+archive/issue_events_008209.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T09:58:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7995",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7995#event-8209"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069721.json:
 ```json
 {

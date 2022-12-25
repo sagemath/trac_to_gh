@@ -324,3 +324,19 @@ archive/issue_comments_015229.json:
 ```
 
 Merged 2299.patch in Sage 2.10.3.rc0
+
+
+
+---
+
+archive/issue_events_002474.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-28T00:48:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2299",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2299#event-2474"
+}
+```

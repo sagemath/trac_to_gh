@@ -241,6 +241,22 @@ I'm thinking this ticket could just be closed--the current way of doing things w
 
 ---
 
+archive/issue_events_001506.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2011-12-17T20:07:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1365",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1365#event-1506"
+}
+```
+
+
+
+---
+
 archive/issue_comments_008722.json:
 ```json
 {

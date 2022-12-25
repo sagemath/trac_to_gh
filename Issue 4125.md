@@ -92,6 +92,22 @@ Looks good to me!
 
 ---
 
+archive/issue_events_004362.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-15T02:49:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4125",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-4362"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029848.json:
 ```json
 {
@@ -208,6 +224,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_004363.json:
+```json
+{
+    "actor": "GeorgSWeber",
+    "created_at": "2008-10-06T19:23:12Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4125",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-4363"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029854.json:
 ```json
 {
@@ -257,3 +289,19 @@ This patch will not be reverted.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_004364.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-07T11:56:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4125",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4125#event-4364"
+}
+```

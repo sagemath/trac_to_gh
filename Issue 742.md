@@ -48,6 +48,22 @@ Now fixed.
 
 ---
 
+archive/issue_events_000831.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-25T06:00:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/742",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/742#event-831"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004332.json:
 ```json
 {

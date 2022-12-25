@@ -76,6 +76,22 @@ fixed in /home/malb/pkgs/singular-3-0-3-20070819.spkg.
 
 ---
 
+archive/issue_events_000482.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-08-19T15:35:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/453",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/453#event-482"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002250.json:
 ```json
 {

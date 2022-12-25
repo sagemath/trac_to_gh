@@ -448,6 +448,22 @@ All four patches merge in Sage 2.10.2.alpha1
 
 ---
 
+archive/issue_events_002240.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-19T14:56:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2079",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2079#event-2240"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013436.json:
 ```json
 {

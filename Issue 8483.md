@@ -128,6 +128,22 @@ I suggest to close this ticket as "invalid" because this is essentially impossib
 
 ---
 
+archive/issue_events_008665.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2010-11-23T17:35:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8483",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8483#event-8665"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076329.json:
 ```json
 {

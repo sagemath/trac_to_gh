@@ -156,3 +156,19 @@ archive/issue_comments_046620.json:
 ```
 
 Given http://comments.gmane.org/gmane.comp.mathematics.sage.devel/67430 , I think we can close this.  The file is still here for reference if we ever need it.
+
+
+
+---
+
+archive/issue_events_006164.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-23T14:55:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5910",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5910#event-6164"
+}
+```

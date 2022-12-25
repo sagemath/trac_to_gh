@@ -94,6 +94,22 @@ good
 
 ---
 
+archive/issue_events_003444.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-18T23:54:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3225",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3225#event-3444"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022276.json:
 ```json
 {

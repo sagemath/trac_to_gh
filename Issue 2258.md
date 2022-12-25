@@ -52,6 +52,22 @@ William
 
 ---
 
+archive/issue_events_002428.json:
+```json
+{
+    "actor": "@yqiang",
+    "created_at": "2008-03-07T05:19:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2258",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2258#event-2428"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014916.json:
 ```json
 {
@@ -101,6 +117,22 @@ archive/issue_comments_014918.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002429.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-07T05:29:20Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2258",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2258#event-2429"
+}
+```
 
 
 
@@ -198,6 +230,22 @@ Michael
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002430.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-07T06:07:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2258",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2258#event-2430"
+}
+```
 
 
 

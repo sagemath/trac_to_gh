@@ -168,6 +168,22 @@ Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
+archive/issue_events_004733.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-14T03:31:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4485",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4485#event-4733"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033064.json:
 ```json
 {

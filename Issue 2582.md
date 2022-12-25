@@ -58,6 +58,22 @@ Attachment [2582-perm-gp-elt-list.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
+archive/issue_events_002769.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-18T10:17:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2582",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2582#event-2769"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017633.json:
 ```json
 {

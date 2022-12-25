@@ -381,6 +381,22 @@ Reviewer patch, apply on top of previous
 
 ---
 
+archive/issue_events_009784.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-01T21:43:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9648",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9648#event-9784"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093412.json:
 ```json
 {

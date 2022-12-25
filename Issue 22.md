@@ -392,6 +392,22 @@ This is a "perfect patch."
 
 ---
 
+archive/issue_events_000021.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T00:34:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/22",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/22#event-21"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000179.json:
 ```json
 {

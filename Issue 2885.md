@@ -47,6 +47,22 @@ See
 
 ---
 
+archive/issue_events_003083.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-12T01:10:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2885",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2885#event-3083"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019804.json:
 ```json
 {

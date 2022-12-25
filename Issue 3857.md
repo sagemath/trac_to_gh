@@ -314,6 +314,22 @@ Changing assignee from NilsSkoruppa to choldsworth.
 
 ---
 
+archive/issue_events_004080.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-06T23:50:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3857",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3857#event-4080"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027422.json:
 ```json
 {

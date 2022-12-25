@@ -59,6 +59,22 @@ Attachment [6115.patch](tarball://root/attachments/some-uuid/ticket585/6115.patc
 
 ---
 
+archive/issue_events_000639.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T03:47:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/585",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/585#event-639"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003009.json:
 ```json
 {

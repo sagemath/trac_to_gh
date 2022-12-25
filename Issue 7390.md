@@ -390,6 +390,22 @@ Looks good to me.  I'll change this status to "positive review."
 
 ---
 
+archive/issue_events_007615.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-08T07:31:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7390",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7390#event-7615"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062051.json:
 ```json
 {

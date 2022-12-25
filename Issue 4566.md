@@ -139,6 +139,22 @@ sage: timeit("assume(x>0)")
 
 ---
 
+archive/issue_events_004811.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-09-05T15:31:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4566",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4566#event-4811"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034132.json:
 ```json
 {

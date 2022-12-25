@@ -114,6 +114,22 @@ Resolution: worksforme
 
 ---
 
+archive/issue_events_003097.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2009-05-18T21:45:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3097"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019932.json:
 ```json
 {
@@ -221,6 +237,22 @@ archive/issue_comments_019936.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003098.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-19T04:56:59Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3098"
+}
+```
 
 
 
@@ -335,6 +367,22 @@ Michael
 
 ---
 
+archive/issue_events_003099.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-19T16:33:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3099"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019940.json:
 ```json
 {
@@ -366,6 +414,22 @@ archive/issue_comments_019941.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003100.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-19T20:48:17Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3100"
+}
+```
 
 
 
@@ -408,6 +472,22 @@ archive/issue_comments_019943.json:
 ```
 
 There are doctests.
+
+
+
+---
+
+archive/issue_events_003101.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2010-01-16T23:47:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#event-3101"
+}
+```
 
 
 

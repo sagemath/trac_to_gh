@@ -139,3 +139,19 @@ archive/issue_comments_001203.json:
 ```
 
 In sage 2.8.7.2 with axiom4sage 0.3.1, this works for me on 32-bit and 64-bit x86 linux.
+
+
+
+---
+
+archive/issue_events_000275.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-20T22:37:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/259",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/259#event-275"
+}
+```

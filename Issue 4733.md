@@ -344,6 +344,22 @@ Attachment [trac_4733.patch](tarball://root/attachments/some-uuid/ticket4733/tra
 
 ---
 
+archive/issue_events_004977.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T07:30:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#event-4977"
+}
+```
+
+
+
+---
+
 archive/issue_comments_035662.json:
 ```json
 {

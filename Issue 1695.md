@@ -88,6 +88,22 @@ Closed because I don't build sage on the machine that led to this problem anymor
 
 ---
 
+archive/issue_events_001854.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-16T20:33:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1695",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1695#event-1854"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010736.json:
 ```json
 {

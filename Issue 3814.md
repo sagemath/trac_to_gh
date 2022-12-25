@@ -308,3 +308,19 @@ archive/issue_comments_027082.json:
 ```
 
 Merged in Sage 3.1.rc0
+
+
+
+---
+
+archive/issue_events_004038.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-15T01:33:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3814",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3814#event-4038"
+}
+```

@@ -68,6 +68,22 @@ Changing priority from major to minor.
 
 ---
 
+archive/issue_events_000181.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-12-03T18:35:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/173",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/173#event-181"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000791.json:
 ```json
 {

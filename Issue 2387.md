@@ -176,3 +176,19 @@ Closed as wontfix due to #3484 and #3485.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002563.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-25T19:34:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2387",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2387#event-2563"
+}
+```

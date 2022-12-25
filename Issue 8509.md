@@ -425,6 +425,22 @@ Merged "sage-spkg.patch" into 4.4.alpha0.
 
 ---
 
+archive/issue_events_008689.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T17:29:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8509",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8509#event-8689"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076719.json:
 ```json
 {

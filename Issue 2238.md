@@ -231,6 +231,22 @@ Merged sage-2238.patch and sage-2238-new.patch in Sage 2.10.2.alpah2
 
 ---
 
+archive/issue_events_002408.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-21T03:05:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2238",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2238#event-2408"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014795.json:
 ```json
 {

@@ -159,3 +159,19 @@ Fixed via #5132 in Sage 3.3.alpha4.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000936.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-02T07:28:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/825",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/825#event-936"
+}
+```

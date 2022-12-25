@@ -89,6 +89,22 @@ Perfunctory positive review.
 
 ---
 
+archive/issue_events_005172.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-03T03:50:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4929",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4929#event-5172"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037327.json:
 ```json
 {

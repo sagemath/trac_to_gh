@@ -213,6 +213,22 @@ Applies against 4.0alpha0, passes all doctests, looks reasonable to me. Positive
 
 ---
 
+archive/issue_events_005492.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-19T17:00:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5236",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5236#event-5492"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040051.json:
 ```json
 {

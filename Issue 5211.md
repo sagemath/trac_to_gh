@@ -247,6 +247,22 @@ Since #4547 was what Dan needed, I can give this a positive review.
 
 ---
 
+archive/issue_events_005466.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-23T21:36:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5211",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5211#event-5466"
+}
+```
+
+
+
+---
+
 archive/issue_comments_039854.json:
 ```json
 {

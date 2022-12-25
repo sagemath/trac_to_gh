@@ -103,6 +103,22 @@ This is fixed by #6699.
 
 ---
 
+archive/issue_events_007024.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-02T11:02:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6789",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6789#event-7024"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055851.json:
 ```json
 {

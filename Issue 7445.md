@@ -134,6 +134,22 @@ In particular, in the latest versions of jmol one can set defaultdirectory to be
 
 ---
 
+archive/issue_events_007672.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2020-03-29T02:12:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7445",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7445#event-7672"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062566.json:
 ```json
 {

@@ -566,6 +566,22 @@ Changing keywords from "" to "symmetric group".
 
 ---
 
+archive/issue_events_009064.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-09-26T07:46:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8908",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8908#event-9064"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081928.json:
 ```json
 {

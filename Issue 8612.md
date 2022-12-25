@@ -238,6 +238,22 @@ Release manager: Apply just this patch.
 
 ---
 
+archive/issue_events_008783.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-03-29T22:06:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#event-8783"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077915.json:
 ```json
 {

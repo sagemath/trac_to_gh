@@ -131,6 +131,22 @@ While not an expert on p-adic height computations (few people are, David H among
 
 ---
 
+archive/issue_events_002158.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-17T23:39:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2004",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2004#event-2158"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012939.json:
 ```json
 {

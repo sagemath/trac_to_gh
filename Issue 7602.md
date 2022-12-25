@@ -163,6 +163,22 @@ The example in the ticket description also works fine on 32-bit ARM, so I think 
 
 ---
 
+archive/issue_events_007828.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-08-20T20:32:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7602",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7602#event-7828"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064753.json:
 ```json
 {

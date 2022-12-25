@@ -120,6 +120,22 @@ should be enough to free everything.
 
 ---
 
+archive/issue_events_000499.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-12T01:56:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/470",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-499"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002335.json:
 ```json
 {
@@ -196,6 +212,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000500.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-13T20:09:47Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/470",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-500"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002339.json:
 ```json
 {
@@ -230,6 +262,22 @@ As it turned out the problem is still there with 2.8.7.alpha0:
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000501.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-14T11:54:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/470",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/470#event-501"
+}
+```
 
 
 

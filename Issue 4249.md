@@ -791,6 +791,22 @@ No, but she (my student) was the one who alerted me to the problem in the first 
 
 ---
 
+archive/issue_events_004488.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-15T10:27:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4249",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4249#event-4488"
+}
+```
+
+
+
+---
+
 archive/issue_comments_030855.json:
 ```json
 {

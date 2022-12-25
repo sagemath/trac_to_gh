@@ -150,6 +150,22 @@ it also work for me with 2.8.13.rc2 on a G4 on 10.4, so close this.
 
 ---
 
+archive/issue_events_001079.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-22T23:23:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/957",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/957#event-1079"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005821.json:
 ```json
 {

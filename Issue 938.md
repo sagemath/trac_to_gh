@@ -191,6 +191,22 @@ This patches cleanly onto 2.8.9.
 
 ---
 
+archive/issue_events_001058.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-27T02:42:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/938",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/938#event-1058"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005722.json:
 ```json
 {

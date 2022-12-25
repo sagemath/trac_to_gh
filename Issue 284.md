@@ -57,3 +57,19 @@ archive/issue_comments_001350.json:
 ```
 
 resolved a while ago.
+
+
+
+---
+
+archive/issue_events_000301.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-08-09T21:40:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/284",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/284#event-301"
+}
+```

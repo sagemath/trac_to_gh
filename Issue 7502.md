@@ -205,6 +205,22 @@ Thanks. Yes, your additions look good as well.
 
 ---
 
+archive/issue_events_007730.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-30T23:54:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7502",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7502#event-7730"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063314.json:
 ```json
 {

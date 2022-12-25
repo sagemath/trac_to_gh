@@ -70,6 +70,22 @@ Apply both patches.
 
 ---
 
+archive/issue_events_004824.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-23T09:46:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4577",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4577#event-4824"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034254.json:
 ```json
 {

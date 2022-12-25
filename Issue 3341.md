@@ -124,6 +124,22 @@ good work.
 
 ---
 
+archive/issue_events_003559.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T07:37:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3341",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3341#event-3559"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023155.json:
 ```json
 {

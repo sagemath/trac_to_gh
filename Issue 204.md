@@ -100,6 +100,22 @@ real number constructor.   While I was at it, I optimized that a lot.
 
 ---
 
+archive/issue_events_000213.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-01-23T21:50:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/204",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/204#event-213"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000917.json:
 ```json
 {

@@ -58,6 +58,22 @@ Changing component from algebra to linear algebra.
 
 ---
 
+archive/issue_events_008476.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2018-03-01T15:00:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8277",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8277#event-8476"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073175.json:
 ```json
 {

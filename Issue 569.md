@@ -203,6 +203,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_000617.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-06T17:26:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/569",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/569#event-617"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002940.json:
 ```json
 {

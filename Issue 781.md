@@ -344,6 +344,22 @@ In particular, almost all Cython extension classes have a __new__ method, and it
 
 ---
 
+archive/issue_events_000886.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-24T01:06:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/781",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/781#event-886"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004662.json:
 ```json
 {

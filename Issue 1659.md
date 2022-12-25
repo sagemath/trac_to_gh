@@ -116,3 +116,19 @@ sage: type(a)
 <type 'numpy.complex128'>
 ```
 
+
+
+
+---
+
+archive/issue_events_001819.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-08-26T20:16:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1659",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1659#event-1819"
+}
+```

@@ -519,6 +519,22 @@ Merged 1231.patch only in 2.8.15.rc0.
 
 ---
 
+archive/issue_events_001369.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T20:14:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1231",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1231#event-1369"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007649.json:
 ```json
 {

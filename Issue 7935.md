@@ -666,6 +666,22 @@ Please update the Author and Reviewer fields, if they're wrong.
 
 ---
 
+archive/issue_events_008151.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T15:11:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7935",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7935#event-8151"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069052.json:
 ```json
 {

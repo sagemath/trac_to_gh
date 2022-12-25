@@ -230,6 +230,22 @@ I think this ticket should be closed as "wontfix".
 
 ---
 
+archive/issue_events_008358.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-03T02:42:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8153",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8153#event-8358"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071569.json:
 ```json
 {

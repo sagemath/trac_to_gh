@@ -103,6 +103,22 @@ Nice catch.
 
 ---
 
+archive/issue_events_007934.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-19T20:07:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7718",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7718#event-7934"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066174.json:
 ```json
 {

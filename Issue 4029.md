@@ -478,6 +478,22 @@ I'm marking this "positive review" so the release manager can close it once #996
 
 ---
 
+archive/issue_events_004259.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-05-13T06:12:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4029",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4029#event-4259"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029012.json:
 ```json
 {

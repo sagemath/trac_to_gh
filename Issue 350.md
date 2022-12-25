@@ -68,6 +68,22 @@ In any case, the bug appears to be fixed now, so I'm closing this ticket.
 
 ---
 
+archive/issue_events_000373.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2007-08-18T17:29:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/350",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/350#event-373"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001692.json:
 ```json
 {

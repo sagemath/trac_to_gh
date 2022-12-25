@@ -93,3 +93,19 @@ drkirkby@hawk:~/sage-4.4.4.alpha0$ file ./local/lib/libcliquer.so
 ./local/lib/libcliquer.so:      ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 ```
 
+
+
+
+---
+
+archive/issue_events_007351.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-06-17T07:48:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7131",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7131#event-7351"
+}
+```

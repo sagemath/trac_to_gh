@@ -69,3 +69,19 @@ archive/issue_comments_008639.json:
 Attachment [1352.patch](tarball://root/attachments/some-uuid/ticket1352/1352.patch) by mabshoff created at 2007-12-01 19:05:15
 
 Merged in 2.8.15.alpha1.
+
+
+
+---
+
+archive/issue_events_001494.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-01T19:05:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1352",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1352#event-1494"
+}
+```

@@ -156,6 +156,22 @@ archive/issue_comments_061084.json:
 
 ---
 
+archive/issue_events_007545.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-31T15:56:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7323",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7323#event-7545"
+}
+```
+
+
+
+---
+
 archive/issue_comments_061085.json:
 ```json
 {

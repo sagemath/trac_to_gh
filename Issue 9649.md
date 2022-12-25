@@ -110,6 +110,22 @@ This is obviously code that went in before the referee process :).
 
 ---
 
+archive/issue_events_009785.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-09T09:41:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9649",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9649#event-9785"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093418.json:
 ```json
 {

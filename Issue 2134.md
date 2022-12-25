@@ -230,6 +230,22 @@ Should now be ready to include.
 
 ---
 
+archive/issue_events_002296.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-15T02:18:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2134",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2134#event-2296"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013971.json:
 ```json
 {

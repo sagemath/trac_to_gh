@@ -352,3 +352,19 @@ Merged in this order:
 
 1. [trac_8250-classcall-classget.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8250/trac_8250-classcall-classget.patch)
 2. [trac_8250-classcall-classget-review-2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8250/trac_8250-classcall-classget-review-2.patch)
+
+
+
+---
+
+archive/issue_events_008451.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-15T03:40:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8250",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8250#event-8451"
+}
+```

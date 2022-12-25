@@ -90,6 +90,22 @@ archive/issue_comments_004351.json:
 
 ---
 
+archive/issue_events_000835.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2007-10-25T21:02:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/744",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/744#event-835"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004352.json:
 ```json
 {

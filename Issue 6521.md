@@ -444,3 +444,19 @@ Merged patches in this order:
 3. `trac_6521-deprecation-fixes.patch`
 
 All doctests pass.
+
+
+
+---
+
+archive/issue_events_006759.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-17T10:08:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6521",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6521#event-6759"
+}
+```

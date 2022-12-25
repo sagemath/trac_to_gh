@@ -508,6 +508,22 @@ Dave
 
 ---
 
+archive/issue_events_007243.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-10-07T15:42:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7021",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7021#event-7243"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058034.json:
 ```json
 {

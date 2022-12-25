@@ -90,6 +90,22 @@ Final version of the patch uploaded:
 
 ---
 
+archive/issue_events_005974.json:
+```json
+{
+    "actor": "@anneschilling",
+    "created_at": "2009-04-10T23:52:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5729",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5729#event-5974"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044679.json:
 ```json
 {
@@ -161,6 +177,38 @@ archive/issue_comments_044682.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005975.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-10T23:58:52Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5729",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5729#event-5975"
+}
+```
+
+
+
+---
+
+archive/issue_events_005976.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-11T00:43:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5729",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5729#event-5976"
+}
+```
 
 
 

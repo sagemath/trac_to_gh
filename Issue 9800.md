@@ -118,6 +118,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_009924.json:
+```json
+{
+    "actor": "@rhinton",
+    "created_at": "2010-08-27T16:37:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9800",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9800#event-9924"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096137.json:
 ```json
 {

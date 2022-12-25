@@ -472,6 +472,22 @@ To the release manager: when merging this, please close #7204 also, since this r
 
 ---
 
+archive/issue_events_006909.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-31T15:29:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6673",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6673#event-6909"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054747.json:
 ```json
 {

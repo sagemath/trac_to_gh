@@ -214,6 +214,22 @@ I've attached a rebased patch that fixes a failed "hunk."
 
 ---
 
+archive/issue_events_009308.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-04T01:34:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9148",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9148#event-9308"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085287.json:
 ```json
 {

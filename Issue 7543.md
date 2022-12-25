@@ -689,6 +689,22 @@ Nice patch this sadic one !
 
 ---
 
+archive/issue_events_007773.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-18T23:45:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7543",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7543#event-7773"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063912.json:
 ```json
 {

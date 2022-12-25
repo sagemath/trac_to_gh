@@ -108,6 +108,22 @@ See fix at #5948.
 
 ---
 
+archive/issue_events_006203.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-07T08:35:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5947",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5947#event-6203"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046962.json:
 ```json
 {

@@ -76,6 +76,22 @@ the computation just to record the comment.
 
 ---
 
+archive/issue_events_000439.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2008-03-17T04:17:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/413",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/413#event-439"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002030.json:
 ```json
 {

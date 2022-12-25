@@ -210,6 +210,22 @@ I think it can be merged in sage 3.3.
 
 ---
 
+archive/issue_events_004768.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T18:42:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4524",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4524#event-4768"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033515.json:
 ```json
 {

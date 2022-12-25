@@ -117,6 +117,22 @@ archive/issue_comments_005689.json:
 
 ---
 
+archive/issue_events_001053.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-21T01:05:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/935",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/935#event-1053"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005690.json:
 ```json
 {
@@ -166,6 +182,22 @@ archive/issue_comments_005692.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_001054.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-28T16:07:51Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/935",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/935#event-1054"
+}
+```
 
 
 
@@ -238,6 +270,22 @@ archive/issue_comments_005696.json:
 ```
 
 I think the attached patch should fix this problem.  (I will close the ticket once I have actually built a distribution and checked that it worked.)
+
+
+
+---
+
+archive/issue_events_001055.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-28T21:40:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/935",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/935#event-1055"
+}
+```
 
 
 

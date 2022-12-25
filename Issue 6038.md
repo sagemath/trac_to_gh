@@ -72,6 +72,22 @@ Merged in Sage 4.0.rc1.
 
 ---
 
+archive/issue_events_006293.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-05-26T16:49:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6038",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6038#event-6293"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047994.json:
 ```json
 {

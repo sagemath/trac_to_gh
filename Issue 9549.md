@@ -261,6 +261,22 @@ Changing status from needs_review to needs_work.
 
 ---
 
+archive/issue_events_009697.json:
+```json
+{
+    "actor": "fwclarke",
+    "created_at": "2010-11-05T12:49:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9549",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9549#event-9697"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091901.json:
 ```json
 {

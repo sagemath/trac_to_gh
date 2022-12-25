@@ -247,3 +247,19 @@ archive/issue_comments_084704.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_009277.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-06-04T15:18:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9121",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9121#event-9277"
+}
+```

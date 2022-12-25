@@ -258,6 +258,22 @@ It works and all doctests pass on the machine in question.  Plus Robertwb looked
 
 ---
 
+archive/issue_events_003802.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-07-07T21:48:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3585",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3585#event-3802"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025261.json:
 ```json
 {

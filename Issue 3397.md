@@ -629,6 +629,22 @@ Mabshoff, to apply this apply:
 
 ---
 
+archive/issue_events_003614.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-10T08:59:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3397",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3397#event-3614"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023751.json:
 ```json
 {

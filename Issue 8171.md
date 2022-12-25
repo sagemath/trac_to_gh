@@ -266,6 +266,22 @@ Dima
 
 ---
 
+archive/issue_events_008374.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-20T22:55:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8171",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8171#event-8374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071826.json:
 ```json
 {

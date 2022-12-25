@@ -123,3 +123,19 @@ diff -r 0c2736a0fd87 setup.py
          cmd = "pyrexc -I%s %s"%(os.getcwd(),f)
          print cmd
          ret = os.system(cmd)
+
+
+
+---
+
+archive/issue_events_000107.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-10-04T22:06:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/103",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/103#event-107"
+}
+```

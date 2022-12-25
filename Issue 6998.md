@@ -148,6 +148,22 @@ Adam
 
 ---
 
+archive/issue_events_007222.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-15T09:35:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6998",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6998#event-7222"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057767.json:
 ```json
 {

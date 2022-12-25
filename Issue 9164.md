@@ -238,6 +238,22 @@ After a rebase, this works!  Awesome.
 
 ---
 
+archive/issue_events_009321.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-03-15T13:02:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#event-9321"
+}
+```
+
+
+
+---
+
 archive/issue_comments_085429.json:
 ```json
 {

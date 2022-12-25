@@ -100,6 +100,22 @@ Attachment [trac_5336.patch](tarball://root/attachments/some-uuid/ticket5336/tra
 
 ---
 
+archive/issue_events_005591.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-24T19:29:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5336",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5336#event-5591"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041030.json:
 ```json
 {

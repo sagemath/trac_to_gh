@@ -101,6 +101,22 @@ The edit tab allows one to edit the worksheet.  The text tab gives output simila
 
 ---
 
+archive/issue_events_004242.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-01-22T00:47:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4012",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4012#event-4242"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028898.json:
 ```json
 {

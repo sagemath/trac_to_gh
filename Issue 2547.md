@@ -65,6 +65,22 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_002728.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-16T20:51:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2547",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2547#event-2728"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017348.json:
 ```json
 {
@@ -132,6 +148,22 @@ archive/issue_comments_017351.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002729.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-16T20:57:23Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2547",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2547#event-2729"
+}
+```
 
 
 
@@ -355,3 +387,19 @@ archive/issue_comments_017363.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002730.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-02T10:08:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2547",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2547#event-2730"
+}
+```

@@ -78,3 +78,19 @@ archive/issue_comments_027889.json:
 Attachment [trac_3906.patch](tarball://root/attachments/some-uuid/ticket3906/trac_3906.patch) by @rlmill created at 2008-09-05 19:41:46
 
 This patch is found also at #3907.
+
+
+
+---
+
+archive/issue_events_004133.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2008-09-05T19:41:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3906",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3906#event-4133"
+}
+```

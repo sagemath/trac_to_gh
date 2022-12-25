@@ -202,3 +202,19 @@ archive/issue_comments_004485.json:
 ```
 
 This patch seems to be 'in' already. Closing therefor and sending e-mail to author.
+
+
+
+---
+
+archive/issue_events_000853.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T21:05:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/758",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/758#event-853"
+}
+```

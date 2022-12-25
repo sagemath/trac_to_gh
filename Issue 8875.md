@@ -137,6 +137,22 @@ Merged [trac_8875_Set_from_iterator_mr.2.patch](http://trac.sagemath.org/sage_tr
 
 ---
 
+archive/issue_events_009033.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-08T21:43:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8875",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8875#event-9033"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081436.json:
 ```json
 {

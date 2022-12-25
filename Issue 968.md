@@ -120,6 +120,22 @@ applied to 2.8.9.alpha0
 
 ---
 
+archive/issue_events_001089.json:
+```json
+{
+    "actor": "@malb",
+    "created_at": "2007-10-23T22:18:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/968",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/968#event-1089"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005896.json:
 ```json
 {

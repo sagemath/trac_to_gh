@@ -169,6 +169,22 @@ for which the original code was broke.
 
 ---
 
+archive/issue_events_004607.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-07T16:13:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#event-4607"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031987.json:
 ```json
 {

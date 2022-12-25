@@ -171,6 +171,22 @@ positive review by was in IRC.
 
 ---
 
+archive/issue_events_001840.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-05T02:36:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1681",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1681#event-1840"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010641.json:
 ```json
 {

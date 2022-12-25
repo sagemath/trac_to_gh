@@ -46,6 +46,22 @@ Ticket #6485 seems to be a duplicate of this one. I suggest we close this one an
 
 ---
 
+archive/issue_events_005795.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-18T20:15:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5550",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5550#event-5795"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043087.json:
 ```json
 {

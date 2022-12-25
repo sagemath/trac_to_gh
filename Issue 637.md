@@ -419,6 +419,22 @@ Merged all three patches in Sage 3.0.2.alpha1
 
 ---
 
+archive/issue_events_000699.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-17T18:36:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/637",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/637#event-699"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003285.json:
 ```json
 {

@@ -131,6 +131,22 @@ For the pedants out there, this number is a no-way strict upper bound on somethi
 
 ---
 
+archive/issue_events_009513.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-06-29T16:16:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9360",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9360#event-9513"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088755.json:
 ```json
 {

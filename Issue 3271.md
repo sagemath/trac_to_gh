@@ -96,6 +96,22 @@ I thought `MPolynomialRing` was set to be deprecated, see #2353.
 
 ---
 
+archive/issue_events_003490.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2008-05-22T16:36:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3271",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3271#event-3490"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022593.json:
 ```json
 {

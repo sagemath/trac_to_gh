@@ -140,3 +140,19 @@ archive/issue_comments_092539.json:
 ```
 
 Resolution: invalid
+
+
+
+---
+
+archive/issue_events_009730.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-08-19T12:33:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9585",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9585#event-9730"
+}
+```

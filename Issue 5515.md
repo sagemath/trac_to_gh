@@ -122,3 +122,19 @@ archive/issue_comments_042790.json:
 ```
 
 Close this ticket as a duplicate of #6295.
+
+
+
+---
+
+archive/issue_events_005765.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-26T07:55:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5515",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5515#event-5765"
+}
+```

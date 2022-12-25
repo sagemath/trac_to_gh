@@ -485,6 +485,22 @@ Thank you. LGTM.
 
 ---
 
+archive/issue_events_005184.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2018-09-19T08:09:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#event-5184"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037452.json:
 ```json
 {

@@ -113,6 +113,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_006863.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-23T15:02:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6623",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6623#event-6863"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054163.json:
 ```json
 {

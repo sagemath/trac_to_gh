@@ -86,6 +86,22 @@ Applies against 3.0.2.alpha0 and passes tests.  Looks good to me.
 
 ---
 
+archive/issue_events_003505.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-25T03:37:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3286",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3286#event-3505"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022699.json:
 ```json
 {

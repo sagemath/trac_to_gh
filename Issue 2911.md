@@ -86,6 +86,22 @@ Looks good!  Hurrah!
 
 ---
 
+archive/issue_events_003113.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-13T20:11:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2911",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2911#event-3113"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020017.json:
 ```json
 {

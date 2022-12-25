@@ -283,6 +283,22 @@ Merged trac-2590-rebased.patch in Sage 3.0.alpha4
 
 ---
 
+archive/issue_events_002779.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-12T11:29:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2590",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2590#event-2779"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017697.json:
 ```json
 {

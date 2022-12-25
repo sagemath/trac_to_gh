@@ -108,3 +108,19 @@ Duplicate, we did update to ipython 0.8.2.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002123.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-13T07:31:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1969",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1969#event-2123"
+}
+```

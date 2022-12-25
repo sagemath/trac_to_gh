@@ -151,6 +151,22 @@ Yep, +1 to mabshoff's comments.  Sorry for the noise.  I'm glad the work is gett
 
 ---
 
+archive/issue_events_004159.json:
+```json
+{
+    "actor": "rdingman",
+    "created_at": "2009-04-29T04:56:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3932",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3932#event-4159"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028097.json:
 ```json
 {
@@ -218,6 +234,22 @@ archive/issue_comments_028100.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_004160.json:
+```json
+{
+    "actor": "rdingman",
+    "created_at": "2009-04-29T04:58:09Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3932",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3932#event-4160"
+}
+```
 
 
 
@@ -574,6 +606,22 @@ archive/issue_comments_028114.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_004161.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-18T23:14:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3932",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3932#event-4161"
+}
+```
 
 
 

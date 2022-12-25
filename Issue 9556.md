@@ -529,6 +529,22 @@ Attachment [trac_9556-dynamic_class_everywhere.patch](tarball://root/attachments
 
 ---
 
+archive/issue_events_009703.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-06-20T21:33:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9556",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9556#event-9703"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091976.json:
 ```json
 {

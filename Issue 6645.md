@@ -489,6 +489,22 @@ The proposed changes are fine by me.
 
 ---
 
+archive/issue_events_006881.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-14T11:13:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#event-6881"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054406.json:
 ```json
 {

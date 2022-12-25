@@ -28,6 +28,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/101
 
 ---
 
+archive/issue_events_000103.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-09-19T16:24:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/101",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/101#event-103"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000474.json:
 ```json
 {
@@ -104,6 +120,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000104.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-09-19T17:27:48Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/101",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/101#event-104"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000478.json:
 ```json
 {
@@ -139,3 +171,19 @@ And now that #698 is there we can close this.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000105.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-09-19T21:35:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/101",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/101#event-105"
+}
+```

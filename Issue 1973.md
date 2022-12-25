@@ -268,6 +268,22 @@ Merged conjugate-partition.4.patch in Sage 2.10.1.rc3
 
 ---
 
+archive/issue_events_002127.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-30T02:51:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#event-2127"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012749.json:
 ```json
 {
@@ -317,6 +333,22 @@ archive/issue_comments_012751.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002128.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-30T04:07:09Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#event-2128"
+}
+```
 
 
 
@@ -468,6 +500,22 @@ archive/issue_comments_012758.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_002129.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-01T04:24:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#event-2129"
+}
+```
 
 
 

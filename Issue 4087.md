@@ -118,6 +118,22 @@ I take it that "sage -testall" has been done?  With or without "-long"?  Assumin
 
 ---
 
+archive/issue_events_004325.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-19T00:18:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4087",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4087#event-4325"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029429.json:
 ```json
 {

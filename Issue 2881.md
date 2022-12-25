@@ -117,3 +117,19 @@ This is actually considered "calculus" and not "numerical". Closed as a duplicat
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003079.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-31T18:45:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2881",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2881#event-3079"
+}
+```

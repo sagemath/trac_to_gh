@@ -156,6 +156,22 @@ This is a duplicate of #7659, but the patch here does a little more.  Can we use
 
 ---
 
+archive/issue_events_007959.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-23T13:28:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7747",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7747#event-7959"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066576.json:
 ```json
 {

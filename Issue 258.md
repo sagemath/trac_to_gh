@@ -569,6 +569,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_000272.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-06-14T07:27:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-272"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001172.json:
 ```json
 {
@@ -703,6 +719,22 @@ archive/issue_comments_001178.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_000273.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2015-07-09T12:03:03Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-273"
+}
+```
 
 
 
@@ -1071,6 +1103,22 @@ archive/issue_comments_001198.json:
 ```
 
 Is "upstream stable + patches" always better than "upstream develop"? Yes.
+
+
+
+---
+
+archive/issue_events_000274.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-10-23T17:28:08Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/258",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/258#event-274"
+}
+```
 
 
 

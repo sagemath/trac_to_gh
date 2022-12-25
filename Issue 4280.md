@@ -127,6 +127,22 @@ This patch fixes the issue and looks correct.    Positive review.
 
 ---
 
+archive/issue_events_004525.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-07T01:37:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4280",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4280#event-4525"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031250.json:
 ```json
 {

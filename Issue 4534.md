@@ -167,6 +167,22 @@ Jaap
 
 ---
 
+archive/issue_events_004780.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-18T19:39:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#event-4780"
+}
+```
+
+
+
+---
+
 archive/issue_comments_033722.json:
 ```json
 {

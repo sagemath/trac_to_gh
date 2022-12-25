@@ -173,6 +173,22 @@ Patch and test work. Positive review.
 
 ---
 
+archive/issue_events_007652.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-12-08T05:39:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7428",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7428#event-7652"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062399.json:
 ```json
 {

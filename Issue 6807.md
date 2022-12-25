@@ -98,6 +98,22 @@ Applies ok, fixes the bug... ;-)
 
 ---
 
+archive/issue_events_007042.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-25T22:25:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6807",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6807#event-7042"
+}
+```
+
+
+
+---
+
 archive/issue_comments_055941.json:
 ```json
 {

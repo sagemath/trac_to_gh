@@ -65,6 +65,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/4815
 
 ---
 
+archive/issue_events_005057.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-12-16T16:39:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4815",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4815#event-5057"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036430.json:
 ```json
 {
@@ -132,6 +148,22 @@ archive/issue_comments_036433.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_005058.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-12-16T16:48:52Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/4815",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4815#event-5058"
+}
+```
 
 
 
@@ -276,3 +308,19 @@ archive/issue_comments_036439.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_005059.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-20T07:43:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4815",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4815#event-5059"
+}
+```

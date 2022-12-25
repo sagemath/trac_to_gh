@@ -102,6 +102,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_008097.json:
+```json
+{
+    "actor": "@novoselt",
+    "created_at": "2010-01-11T20:58:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7882",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7882#event-8097"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068394.json:
 ```json
 {

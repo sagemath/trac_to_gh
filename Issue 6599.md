@@ -125,6 +125,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_006838.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2019-02-26T13:58:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6599",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6599#event-6838"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053923.json:
 ```json
 {

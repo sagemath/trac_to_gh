@@ -125,6 +125,22 @@ I apologize for the noise.  Does anyone know why this test might be "flaky"?
 
 ---
 
+archive/issue_events_010050.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-17T00:37:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9924",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9924#event-10050"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098637.json:
 ```json
 {
@@ -246,6 +262,22 @@ archive/issue_comments_098640.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_010051.json:
+```json
+{
+    "actor": "@dimpase",
+    "created_at": "2010-09-17T06:19:28Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9924",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9924#event-10051"
+}
+```
 
 
 
@@ -535,6 +567,22 @@ archive/issue_comments_098654.json:
 ```
 
 Resolution changed from worksforme to fixed
+
+
+
+---
+
+archive/issue_events_010052.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-29T08:39:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9924",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9924#event-10052"
+}
+```
 
 
 

@@ -344,6 +344,22 @@ sage: E.abelian_group()
 
 ---
 
+archive/issue_events_000374.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-05T14:23:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/351",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/351#event-374"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001701.json:
 ```json
 {

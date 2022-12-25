@@ -124,6 +124,22 @@ Duplicate of #9640.
 
 ---
 
+archive/issue_events_003639.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-11-02T12:57:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3423",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3423#event-3639"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024044.json:
 ```json
 {

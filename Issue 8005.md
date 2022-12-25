@@ -195,6 +195,22 @@ Resolution: worksforme
 
 ---
 
+archive/issue_events_008220.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2013-01-31T20:39:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8005",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8005#event-8220"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069836.json:
 ```json
 {

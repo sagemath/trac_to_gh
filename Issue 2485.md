@@ -325,3 +325,19 @@ archive/issue_comments_016808.json:
 ```
 
 Merged both patches in Sage 2.10.4.rc0
+
+
+
+---
+
+archive/issue_events_002664.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-15T19:27:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2485",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2485#event-2664"
+}
+```

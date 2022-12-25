@@ -103,6 +103,22 @@ For a related issue, see #6270.
 
 ---
 
+archive/issue_events_006501.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-13T21:28:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6257",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6257#event-6501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049884.json:
 ```json
 {

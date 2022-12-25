@@ -182,6 +182,22 @@ sage:   xgcd(y^2, a*h*y+b)
 
 ---
 
+archive/issue_events_003547.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-18T13:08:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3329",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3329#event-3547"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023043.json:
 ```json
 {

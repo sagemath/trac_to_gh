@@ -1105,6 +1105,22 @@ Harald said we shouldn't "announce bugs" on the download pages; I think a simple
 
 ---
 
+archive/issue_events_009781.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-29T23:36:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9644",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9644#event-9781"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093362.json:
 ```json
 {

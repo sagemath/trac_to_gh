@@ -105,6 +105,22 @@ Michael, your spkgs fixed the problem for me.
 
 ---
 
+archive/issue_events_001622.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-03T07:16:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1471",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1471#event-1622"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009446.json:
 ```json
 {

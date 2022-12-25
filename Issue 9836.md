@@ -383,6 +383,22 @@ Positive review for the fact that it is an MPIR bug which has been fixed upstrea
 
 ---
 
+archive/issue_events_009958.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T11:53:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9836",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9836#event-9958"
+}
+```
+
+
+
+---
+
 archive/issue_comments_096920.json:
 ```json
 {

@@ -150,6 +150,22 @@ The patch adds some trivial inconsistencies in how "two-dimensional" and "three-
 
 ---
 
+archive/issue_events_006266.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-11T09:02:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6011",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6011#event-6266"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047747.json:
 ```json
 {

@@ -740,3 +740,19 @@ archive/issue_comments_026688.json:
 ```
 
 Merged scripts-3761-3.2.alpha3.patch and scripts-3761-PART2-bdist.patch in Sage 3.2.rc1
+
+
+
+---
+
+archive/issue_events_003983.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-15T04:58:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3761",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3761#event-3983"
+}
+```

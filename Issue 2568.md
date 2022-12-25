@@ -63,6 +63,22 @@ Changing keywords from "" to "editor_wstein".
 
 ---
 
+archive/issue_events_002751.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-09T06:55:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2568",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2568#event-2751"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017516.json:
 ```json
 {

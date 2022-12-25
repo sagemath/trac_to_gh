@@ -131,6 +131,22 @@ With the current release, 2.8.4.2.1, the output of valgrind for the given code d
 
 ---
 
+archive/issue_events_000676.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2007-09-21T00:30:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/619",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/619#event-676"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003163.json:
 ```json
 {
@@ -236,6 +252,22 @@ Changing status from closed to reopened.
 
 ---
 
+archive/issue_events_000677.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-10-16T03:03:17Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/619",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/619#event-677"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003167.json:
 ```json
 {
@@ -285,6 +317,22 @@ archive/issue_comments_003169.json:
 ```
 
 Changing status from new to assigned.
+
+
+
+---
+
+archive/issue_events_000678.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-20T19:16:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/619",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/619#event-678"
+}
+```
 
 
 

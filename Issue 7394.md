@@ -99,6 +99,22 @@ Changing assignee from @aghitza to @burcin.
 
 ---
 
+archive/issue_events_007617.json:
+```json
+{
+    "actor": "@burcin",
+    "created_at": "2009-11-22T18:02:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7394",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7394#event-7617"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062068.json:
 ```json
 {

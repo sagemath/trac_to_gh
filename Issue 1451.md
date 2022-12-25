@@ -101,6 +101,22 @@ Fixed by #1296, which was merged in 2.9.alpha5.
 
 ---
 
+archive/issue_events_001598.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-11T17:58:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1451",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1451#event-1598"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009322.json:
 ```json
 {

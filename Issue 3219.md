@@ -52,6 +52,22 @@ Also, isn't there an LGPLv3 issue with gmp-4.2.2?
 
 ---
 
+archive/issue_events_003438.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-23T02:01:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3219",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3219#event-3438"
+}
+```
+
+
+
+---
+
 archive/issue_comments_022244.json:
 ```json
 {

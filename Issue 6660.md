@@ -86,6 +86,22 @@ Nathann
 
 ---
 
+archive/issue_events_006896.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-30T16:55:48Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6660",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6660#event-6896"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054570.json:
 ```json
 {

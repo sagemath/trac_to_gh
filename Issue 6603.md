@@ -382,6 +382,22 @@ http://www.sagemath.org/packages/optional/cbc-2.3.spkg
 
 ---
 
+archive/issue_events_006842.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-02T08:50:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6603",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6603#event-6842"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053962.json:
 ```json
 {

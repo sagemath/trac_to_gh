@@ -76,3 +76,19 @@ archive/issue_comments_065642.json:
 ```
 
 Done at #10432
+
+
+
+---
+
+archive/issue_events_007891.json:
+```json
+{
+    "actor": "@nathanncohen",
+    "created_at": "2011-01-01T13:25:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7672",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7672#event-7891"
+}
+```

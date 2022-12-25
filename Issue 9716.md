@@ -218,6 +218,22 @@ ok, then let us set this to positive
 
 ---
 
+archive/issue_events_009850.json:
+```json
+{
+    "actor": "@videlec",
+    "created_at": "2018-05-18T17:16:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9716",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9716#event-9850"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094645.json:
 ```json
 {

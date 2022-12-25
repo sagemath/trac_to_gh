@@ -465,6 +465,22 @@ $ sage "test file.sage"
 
 ---
 
+archive/issue_events_004600.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-15T14:05:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4354",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4354#event-4600"
+}
+```
+
+
+
+---
+
 archive/issue_comments_031925.json:
 ```json
 {

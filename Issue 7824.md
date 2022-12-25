@@ -143,3 +143,19 @@ An updated spkg is available at
 http://sage.math.washington.edu/home/mvngu/spkg/standard/cliquer/cliquer-1.2.p3.spkg
 
 All changes are committed in pjeremy's name.
+
+
+
+---
+
+archive/issue_events_008039.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-24T14:38:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7824",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7824#event-8039"
+}
+```

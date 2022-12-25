@@ -179,3 +179,19 @@ archive/issue_comments_008490.json:
 ```
 
 Merged Sage-2.10.1.rc2-Solaris-build-fixes-for-sage.spkg.patch in Sage 2.10.1.rc3
+
+
+
+---
+
+archive/issue_events_001469.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-30T07:55:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1329",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1329#event-1469"
+}
+```

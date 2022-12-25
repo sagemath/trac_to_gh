@@ -262,6 +262,22 @@ Second patch looks good, too.
 
 ---
 
+archive/issue_events_003318.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-28T07:31:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3102",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3102#event-3318"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021387.json:
 ```json
 {

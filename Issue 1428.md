@@ -117,6 +117,22 @@ The patch looks great. I would suggest making an option that would just return S
 
 ---
 
+archive/issue_events_001575.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-15T03:01:03Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1428",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1428#event-1575"
+}
+```
+
+
+
+---
+
 archive/issue_comments_009182.json:
 ```json
 {

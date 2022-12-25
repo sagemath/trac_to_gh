@@ -312,6 +312,22 @@ Merged in 4.0.rc1.
 
 ---
 
+archive/issue_events_006106.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-05-28T07:04:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-6106"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046098.json:
 ```json
 {
@@ -662,6 +678,22 @@ archive/issue_comments_046106.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_006107.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-04T19:57:42Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-6107"
+}
+```
 
 
 
@@ -1267,3 +1299,19 @@ archive/issue_comments_046134.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006108.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-11-26T10:31:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5852",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5852#event-6108"
+}
+```

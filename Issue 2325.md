@@ -197,6 +197,22 @@ This is fixed for me also, by applying the patch from #2843 against 3.0alpha3 (w
 
 ---
 
+archive/issue_events_002501.json:
+```json
+{
+    "actor": "@kedlaya",
+    "created_at": "2008-04-11T21:02:10Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2325",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2325#event-2501"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015439.json:
 ```json
 {
@@ -228,6 +244,22 @@ archive/issue_comments_015440.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002502.json:
+```json
+{
+    "actor": "@kedlaya",
+    "created_at": "2008-04-18T13:46:57Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2325",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2325#event-2502"
+}
+```
 
 
 
@@ -318,6 +350,22 @@ archive/issue_comments_015445.json:
 ```
 
 Merged 9596.patch in Sage 3.0.1.alpha0
+
+
+
+---
+
+archive/issue_events_002503.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-26T03:39:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2325",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2325#event-2503"
+}
+```
 
 
 

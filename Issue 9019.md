@@ -192,6 +192,22 @@ Simon
 
 ---
 
+archive/issue_events_009171.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-06-05T21:59:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9019",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9019#event-9171"
+}
+```
+
+
+
+---
+
 archive/issue_comments_083325.json:
 ```json
 {

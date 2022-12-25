@@ -119,6 +119,22 @@ The patch fixes the issue. Positive review :)
 
 ---
 
+archive/issue_events_002663.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-14T02:06:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2484",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2484#event-2663"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016796.json:
 ```json
 {

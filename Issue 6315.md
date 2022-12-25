@@ -260,3 +260,19 @@ archive/issue_comments_050317.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_006563.json:
+```json
+{
+    "actor": "@nexttime",
+    "created_at": "2011-09-12T19:41:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6315",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6315#event-6563"
+}
+```

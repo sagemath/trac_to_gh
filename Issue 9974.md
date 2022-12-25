@@ -605,6 +605,22 @@ Changing keywords from "" to "sd32".
 
 ---
 
+archive/issue_events_010102.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-10-05T09:11:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9974",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9974#event-10102"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099918.json:
 ```json
 {

@@ -206,6 +206,22 @@ I'm happy.
 
 ---
 
+archive/issue_events_003716.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-28T12:18:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3496#event-3716"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024576.json:
 ```json
 {

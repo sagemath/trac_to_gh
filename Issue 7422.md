@@ -379,6 +379,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_007646.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-03-12T23:51:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7422",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7422#event-7646"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062363.json:
 ```json
 {

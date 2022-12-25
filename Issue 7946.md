@@ -250,6 +250,22 @@ Thanks.
 
 ---
 
+archive/issue_events_008162.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-11-14T21:01:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7946",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7946#event-8162"
+}
+```
+
+
+
+---
+
 archive/issue_comments_069215.json:
 ```json
 {

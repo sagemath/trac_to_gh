@@ -69,6 +69,22 @@ Attachment [1021.patch](tarball://root/attachments/some-uuid/ticket1021/1021.pat
 
 ---
 
+archive/issue_events_001145.json:
+```json
+{
+    "actor": "cwitty",
+    "created_at": "2007-10-28T17:43:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1021",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1021#event-1145"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006241.json:
 ```json
 {

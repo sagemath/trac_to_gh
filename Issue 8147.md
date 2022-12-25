@@ -189,6 +189,22 @@ Merged in this order:
 
 ---
 
+archive/issue_events_008352.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-03T07:14:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8147",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8147#event-8352"
+}
+```
+
+
+
+---
+
 archive/issue_comments_071502.json:
 ```json
 {

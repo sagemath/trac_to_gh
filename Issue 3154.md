@@ -296,6 +296,22 @@ Nice work!  V3 is just a rebase of V2.
 
 ---
 
+archive/issue_events_003370.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-20T03:45:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3154",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3154#event-3370"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021832.json:
 ```json
 {
@@ -363,6 +379,22 @@ archive/issue_comments_021835.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_003371.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-06T19:27:11Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3154",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3154#event-3371"
+}
+```
 
 
 
@@ -491,3 +523,19 @@ archive/issue_comments_021842.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_003372.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-05-04T04:42:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3154",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3154#event-3372"
+}
+```

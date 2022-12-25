@@ -87,6 +87,22 @@ multi_polynomial_libsingular.pyx in Sage 2.9.2:
 
 ---
 
+archive/issue_events_001860.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-07T17:28:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1701",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1701#event-1860"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010754.json:
 ```json
 {

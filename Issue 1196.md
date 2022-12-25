@@ -151,6 +151,22 @@ Merged in 2.8.13.rc1.
 
 ---
 
+archive/issue_events_001332.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-20T15:50:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1196",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1196#event-1332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_007402.json:
 ```json
 {

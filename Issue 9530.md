@@ -1740,6 +1740,22 @@ Changing priority from critical to blocker.
 
 ---
 
+archive/issue_events_009678.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-30T10:38:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9530",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9530#event-9678"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091604.json:
 ```json
 {

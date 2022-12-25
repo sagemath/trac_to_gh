@@ -349,6 +349,22 @@ sage: timeit('E(P)')
 
 ---
 
+archive/issue_events_006908.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-23T14:25:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6672",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6672#event-6908"
+}
+```
+
+
+
+---
+
 archive/issue_comments_054725.json:
 ```json
 {

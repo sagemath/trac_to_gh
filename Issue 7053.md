@@ -52,6 +52,22 @@ Fixes bug in template arguments.
 
 ---
 
+archive/issue_events_007273.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-09-28T17:32:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7053",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7053#event-7273"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058281.json:
 ```json
 {

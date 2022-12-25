@@ -146,6 +146,22 @@ My fault. Latest version is correct. This can be closed.
 
 ---
 
+archive/issue_events_009231.json:
+```json
+{
+    "actor": "ralle",
+    "created_at": "2010-05-31T11:03:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9078",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9078#event-9231"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084141.json:
 ```json
 {
@@ -202,6 +218,22 @@ Changing status from closed to new.
 
 ---
 
+archive/issue_events_009232.json:
+```json
+{
+    "actor": "johanbosman",
+    "created_at": "2010-05-31T11:40:58Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9078",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9078#event-9232"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084144.json:
 ```json
 {
@@ -238,6 +270,22 @@ Resolution: invalid
 
 ---
 
+archive/issue_events_009233.json:
+```json
+{
+    "actor": "johanbosman",
+    "created_at": "2010-05-31T11:41:13Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9078",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9078#event-9233"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084146.json:
 ```json
 {
@@ -256,6 +304,22 @@ Changing status from closed to needs_work.
 
 ---
 
+archive/issue_events_009234.json:
+```json
+{
+    "actor": "johanbosman",
+    "created_at": "2010-05-31T11:42:26Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9078",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9078#event-9234"
+}
+```
+
+
+
+---
+
 archive/issue_comments_084147.json:
 ```json
 {
@@ -269,3 +333,19 @@ archive/issue_comments_084147.json:
 ```
 
 So it can be closed as 'invalid'.
+
+
+
+---
+
+archive/issue_events_009235.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-05-31T18:33:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9078",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9078#event-9235"
+}
+```

@@ -127,3 +127,19 @@ archive/issue_comments_007292.json:
 ```
 
 Merged in 2.8.15.alpha2.
+
+
+
+---
+
+archive/issue_events_001316.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-02T04:13:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1184",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1184#event-1316"
+}
+```

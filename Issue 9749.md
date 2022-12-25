@@ -158,6 +158,22 @@ apply this one only.
 
 ---
 
+archive/issue_events_009881.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T10:39:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#event-9881"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095320.json:
 ```json
 {

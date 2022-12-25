@@ -30,6 +30,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/7612
 
 ---
 
+archive/issue_events_007838.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2009-12-06T11:50:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7612",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7612#event-7838"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064895.json:
 ```json
 {

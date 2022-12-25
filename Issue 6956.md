@@ -214,6 +214,22 @@ burcin: it seems that there are several people interested in helping with symbol
 
 ---
 
+archive/issue_events_007180.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-24T15:21:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6956",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6956#event-7180"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057439.json:
 ```json
 {

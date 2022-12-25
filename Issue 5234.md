@@ -325,6 +325,22 @@ This seems to be 100% reproducable on my system, but I don't see the logic behin
 
 ---
 
+archive/issue_events_005490.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-03-01T02:21:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5234",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5234#event-5490"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040033.json:
 ```json
 {

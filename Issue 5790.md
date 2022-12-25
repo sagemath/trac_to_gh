@@ -395,6 +395,22 @@ I give a positive review to Nicolas's changes.
 
 ---
 
+archive/issue_events_006037.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-18T15:44:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5790",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5790#event-6037"
+}
+```
+
+
+
+---
+
 archive/issue_comments_045263.json:
 ```json
 {

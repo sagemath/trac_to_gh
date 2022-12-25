@@ -144,6 +144,22 @@ Thanks for the review!
 
 ---
 
+archive/issue_events_008754.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-16T18:49:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8576",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8576#event-8754"
+}
+```
+
+
+
+---
+
 archive/issue_comments_077557.json:
 ```json
 {

@@ -110,6 +110,22 @@ Changing status from new to assigned.
 
 ---
 
+archive/issue_events_000714.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-15T00:21:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/648",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/648#event-714"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003356.json:
 ```json
 {

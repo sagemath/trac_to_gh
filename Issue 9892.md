@@ -174,6 +174,22 @@ Positive review of the proposal to close as duplicate.
 
 ---
 
+archive/issue_events_010017.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-10-03T09:37:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10017"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097896.json:
 ```json
 {
@@ -223,6 +239,22 @@ archive/issue_comments_097898.json:
 ```
 
 Changing status from closed to needs_work.
+
+
+
+---
+
+archive/issue_events_010018.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-10-17T08:39:22Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10018"
+}
+```
 
 
 
@@ -448,6 +480,22 @@ Thanks!
 
 ---
 
+archive/issue_events_010019.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-10T22:20:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10019"
+}
+```
+
+
+
+---
+
 archive/issue_comments_097911.json:
 ```json
 {
@@ -497,6 +545,22 @@ archive/issue_comments_097913.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_010020.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-12T13:24:49Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10020"
+}
+```
 
 
 
@@ -569,3 +633,19 @@ archive/issue_comments_097917.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_010021.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2010-11-15T23:26:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#event-10021"
+}
+```

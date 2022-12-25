@@ -222,6 +222,22 @@ Optional spkg uploaded to sagemath.org and mirrored out
 
 ---
 
+archive/issue_events_002173.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-02T06:51:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2019",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2019#event-2173"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013004.json:
 ```json
 {

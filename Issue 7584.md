@@ -61,6 +61,22 @@ I went ahead and removed this from the spkg.  I also checked in the changes that
 
 ---
 
+archive/issue_events_007810.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-02T19:03:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7584",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7584#event-7810"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064533.json:
 ```json
 {

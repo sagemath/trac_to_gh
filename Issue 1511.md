@@ -245,3 +245,19 @@ archive/issue_comments_009669.json:
 Attachment [trac-1511-update.patch](tarball://root/attachments/some-uuid/ticket1511/trac-1511-update.patch) by mabshoff created at 2007-12-16 00:56:33
 
 Merged in 2.9.rc2.
+
+
+
+---
+
+archive/issue_events_001665.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-16T00:56:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1511",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1511#event-1665"
+}
+```

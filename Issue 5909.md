@@ -80,6 +80,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/5909
 
 ---
 
+archive/issue_events_006163.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-05-20T23:50:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5909",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5909#event-6163"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046612.json:
 ```json
 {

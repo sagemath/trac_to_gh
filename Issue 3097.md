@@ -313,6 +313,22 @@ Merged all six patches in Sage 3.0.2.rc0
 
 ---
 
+archive/issue_events_003313.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-05-23T06:23:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3097",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3097#event-3313"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021344.json:
 ```json
 {

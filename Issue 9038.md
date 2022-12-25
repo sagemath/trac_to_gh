@@ -107,3 +107,19 @@ Replying to [comment:2 jason]:
 > Can you install the linux firefox 3.5 fonts listed in the website above and see if that fixes the problem?
 
 You were right. After removing ttf-jsmath and installing the downloaded fonts it works. Thank you.
+
+
+
+---
+
+archive/issue_events_009190.json:
+```json
+{
+    "actor": "jan",
+    "created_at": "2010-05-28T22:47:24Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9038",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9038#event-9190"
+}
+```

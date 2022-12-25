@@ -146,3 +146,19 @@ Merged patches in this order:
 
 1. the patch at #6950
 2. `trac_6953-typo-fixes.patch`
+
+
+
+---
+
+archive/issue_events_007177.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-18T13:05:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6953",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6953#event-7177"
+}
+```

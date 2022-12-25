@@ -191,3 +191,19 @@ archive/issue_comments_100278.json:
 ```
 
 Fixed by #5281.
+
+
+
+---
+
+archive/issue_events_010120.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-02-06T09:55:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9996",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9996#event-10120"
+}
+```

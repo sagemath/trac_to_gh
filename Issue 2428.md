@@ -108,3 +108,19 @@ sage:
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002605.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-22T21:20:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2428",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2428#event-2605"
+}
+```

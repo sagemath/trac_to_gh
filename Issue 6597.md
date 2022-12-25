@@ -132,6 +132,22 @@ I am glad this will be soon in so that we don't have this patch anymore in Sage-
 
 ---
 
+archive/issue_events_006836.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-09T08:55:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6597",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6597#event-6836"
+}
+```
+
+
+
+---
+
 archive/issue_comments_053913.json:
 ```json
 {

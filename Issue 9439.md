@@ -1940,6 +1940,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009596.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-03-19T03:17:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9439",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9439#event-9596"
+}
+```
+
+
+
+---
+
 archive/issue_comments_090298.json:
 ```json
 {

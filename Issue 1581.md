@@ -127,6 +127,22 @@ This has already been resolved included in Sage.
 
 ---
 
+archive/issue_events_001737.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2008-01-15T06:14:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1581",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1581#event-1737"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010051.json:
 ```json
 {

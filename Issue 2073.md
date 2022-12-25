@@ -165,6 +165,22 @@ Positive review after applying the last patch as well.
 
 ---
 
+archive/issue_events_002234.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-07T10:05:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2073",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2073#event-2234"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013383.json:
 ```json
 {

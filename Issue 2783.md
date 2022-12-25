@@ -58,6 +58,22 @@ According to the ticket description the ticket should be marked as invalid since
 
 ---
 
+archive/issue_events_002971.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-09-08T18:00:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2783",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2783#event-2971"
+}
+```
+
+
+
+---
+
 archive/issue_comments_019067.json:
 ```json
 {
@@ -107,6 +123,22 @@ archive/issue_comments_019069.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_002972.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-09-09T01:13:14Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/2783",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2783#event-2972"
+}
+```
 
 
 
@@ -323,6 +355,22 @@ archive/issue_comments_019079.json:
 ```
 
 No, and using rpy2 instead doesn't produce it.  Moreover, I completely rewrote from scratch the pexpect interfaces to use a much better way of synchronizing IO.  The crap mentioned in this ticket was from the old way of synchronizing IO.   So I'm closing this as fixed.
+
+
+
+---
+
+archive/issue_events_002973.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-11-18T09:36:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2783",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2783#event-2973"
+}
+```
 
 
 

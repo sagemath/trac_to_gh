@@ -156,6 +156,22 @@ I suggest to resolve it as duplicate, even though I couldn't point my finger to 
 
 ---
 
+archive/issue_events_005654.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-03-02T13:54:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5397",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5397#event-5654"
+}
+```
+
+
+
+---
+
 archive/issue_comments_041603.json:
 ```json
 {

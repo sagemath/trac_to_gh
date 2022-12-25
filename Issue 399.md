@@ -102,6 +102,22 @@ The PHCpack developers are working on a slicker interface than mine, so my inter
 
 ---
 
+archive/issue_events_000423.json:
+```json
+{
+    "actor": "mhampton",
+    "created_at": "2007-09-11T17:09:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/399",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-423"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001957.json:
 ```json
 {
@@ -115,6 +131,22 @@ archive/issue_comments_001957.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000424.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-11T22:59:04Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/399",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-424"
+}
+```
 
 
 
@@ -170,3 +202,19 @@ archive/issue_comments_001960.json:
 ```
 
 Resolution: fixed
+
+
+
+---
+
+archive/issue_events_000425.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-19T01:45:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/399",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/399#event-425"
+}
+```

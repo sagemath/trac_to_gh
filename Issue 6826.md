@@ -127,6 +127,22 @@ It still works for me too, but this should probably be fixed for consistencies s
 
 ---
 
+archive/issue_events_007060.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-24T06:18:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6826",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6826#event-7060"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056207.json:
 ```json
 {

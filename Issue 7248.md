@@ -80,6 +80,22 @@ For this ticket, I was thinking of just getting jinja2 in. We can do another tic
 
 ---
 
+archive/issue_events_007467.json:
+```json
+{
+    "actor": "@dandrake",
+    "created_at": "2009-10-19T23:22:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#event-7467"
+}
+```
+
+
+
+---
+
 archive/issue_comments_060061.json:
 ```json
 {
@@ -129,6 +145,22 @@ archive/issue_comments_060063.json:
 ```
 
 Changing status from closed to new.
+
+
+
+---
+
+archive/issue_events_007468.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-20T03:32:06Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#event-7468"
+}
+```
 
 
 
@@ -206,3 +238,19 @@ archive/issue_comments_060067.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_007469.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-20T05:32:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#event-7469"
+}
+```

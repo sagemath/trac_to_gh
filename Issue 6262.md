@@ -137,6 +137,22 @@ William -- Is this a problem with `sagenb.org`?
 
 ---
 
+archive/issue_events_006506.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-27T01:57:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6262",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6262#event-6506"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049908.json:
 ```json
 {

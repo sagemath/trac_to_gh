@@ -123,6 +123,22 @@ Looks good to me.  (Although we just shouldn't allow empty docstrings in the fir
 
 ---
 
+archive/issue_events_006415.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-01T05:28:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6166",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6166#event-6415"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049105.json:
 ```json
 {

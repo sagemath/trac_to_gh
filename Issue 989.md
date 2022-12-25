@@ -123,6 +123,22 @@ applied to 2.8.12.rc0
 
 ---
 
+archive/issue_events_001112.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-06T21:35:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/989",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/989#event-1112"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006019.json:
 ```json
 {

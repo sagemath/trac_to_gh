@@ -247,6 +247,22 @@ Thank you !!!
 
 ---
 
+archive/issue_events_007825.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-19T20:52:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7599",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7599#event-7825"
+}
+```
+
+
+
+---
+
 archive/issue_comments_064721.json:
 ```json
 {

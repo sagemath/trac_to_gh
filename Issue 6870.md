@@ -980,6 +980,22 @@ Merged `trac_6870-final-v2.2.patch`.
 
 ---
 
+archive/issue_events_007102.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-30T08:26:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6870",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6870#event-7102"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056628.json:
 ```json
 {

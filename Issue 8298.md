@@ -113,6 +113,22 @@ Merged 2010/04/20.
 
 ---
 
+archive/issue_events_008495.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-20T22:55:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8298",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8298#event-8495"
+}
+```
+
+
+
+---
+
 archive/issue_comments_073392.json:
 ```json
 {

@@ -189,6 +189,22 @@ Merged in 4.0.1.rc0.
 
 ---
 
+archive/issue_events_006417.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-03T18:26:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6168",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6168#event-6417"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049117.json:
 ```json
 {

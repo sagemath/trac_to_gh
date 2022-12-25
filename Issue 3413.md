@@ -109,6 +109,22 @@ Looks good. It's ready to go.
 
 ---
 
+archive/issue_events_003629.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-16T04:56:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3413",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3413#event-3629"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023892.json:
 ```json
 {

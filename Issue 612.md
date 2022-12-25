@@ -48,6 +48,22 @@ Attachment [trac_612.hg](tarball://root/attachments/some-uuid/ticket612/trac_612
 
 ---
 
+archive/issue_events_000669.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T04:41:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/612",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/612#event-669"
+}
+```
+
+
+
+---
+
 archive/issue_comments_003137.json:
 ```json
 {

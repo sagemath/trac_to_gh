@@ -118,6 +118,22 @@ Indeed, `calculus.rst` seems like the right place to put this.  The patch applie
 
 ---
 
+archive/issue_events_010062.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-28T09:10:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9935",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9935#event-10062"
+}
+```
+
+
+
+---
+
 archive/issue_comments_098758.json:
 ```json
 {

@@ -221,6 +221,22 @@ Just a small comment: I believe that we can now use dollar signs for math input 
 
 ---
 
+archive/issue_events_007942.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-01-03T21:28:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7728",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7728#event-7942"
+}
+```
+
+
+
+---
+
 archive/issue_comments_066288.json:
 ```json
 {

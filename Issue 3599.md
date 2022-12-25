@@ -192,6 +192,22 @@ Here's the png again.
 
 ---
 
+archive/issue_events_003818.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-31T21:51:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3599",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3599#event-3818"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025382.json:
 ```json
 {

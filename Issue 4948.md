@@ -253,6 +253,22 @@ The approach could be taken to write doctests for the rest of the methods in the
 
 ---
 
+archive/issue_events_005190.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-17T08:24:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4948",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4948#event-5190"
+}
+```
+
+
+
+---
+
 archive/issue_comments_037495.json:
 ```json
 {

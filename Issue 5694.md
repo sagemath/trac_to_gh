@@ -83,6 +83,22 @@ Mihcael
 
 ---
 
+archive/issue_events_005936.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-04-06T23:10:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5694",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5694#event-5936"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044432.json:
 ```json
 {

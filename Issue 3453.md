@@ -66,6 +66,22 @@ part 2 of 2  -- this adds full doctests.
 
 ---
 
+archive/issue_events_003672.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-23T09:59:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3453",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3453#event-3672"
+}
+```
+
+
+
+---
+
 archive/issue_comments_024302.json:
 ```json
 {

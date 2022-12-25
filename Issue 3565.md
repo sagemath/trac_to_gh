@@ -137,6 +137,22 @@ No longer valid since sagenb is a different project.
 
 ---
 
+archive/issue_events_003783.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-06-02T12:39:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3565",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3565#event-3783"
+}
+```
+
+
+
+---
+
 archive/issue_comments_025145.json:
 ```json
 {

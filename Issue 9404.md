@@ -129,6 +129,22 @@ Outdated, should be closed
 
 ---
 
+archive/issue_events_009560.json:
+```json
+{
+    "actor": "@fchapoton",
+    "created_at": "2020-07-14T16:30:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9404",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9404#event-9560"
+}
+```
+
+
+
+---
+
 archive/issue_comments_089479.json:
 ```json
 {

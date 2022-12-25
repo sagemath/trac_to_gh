@@ -184,6 +184,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_002318.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-10-30T17:16:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2152",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2152#event-2318"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014097.json:
 ```json
 {

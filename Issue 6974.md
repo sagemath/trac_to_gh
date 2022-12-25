@@ -261,6 +261,22 @@ fi
 
 ---
 
+archive/issue_events_007196.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-27T02:58:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6974",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6974#event-7196"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057582.json:
 ```json
 {

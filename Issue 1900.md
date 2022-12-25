@@ -159,6 +159,22 @@ I deleted it to avoid merge conflict. Don't worry about it.
 
 ---
 
+archive/issue_events_002057.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-24T21:17:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1900",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1900#event-2057"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011999.json:
 ```json
 {

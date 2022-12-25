@@ -90,6 +90,22 @@ Groups:
 
 ---
 
+archive/issue_events_000208.json:
+```json
+{
+    "actor": "@craigcitro",
+    "created_at": "2008-02-08T07:03:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/199",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/199#event-208"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000899.json:
 ```json
 {

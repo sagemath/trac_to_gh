@@ -134,3 +134,19 @@ archive/issue_comments_063880.json:
 ```
 
 Attachment [trac_7541.patch](tarball://root/attachments/some-uuid/ticket7541/trac_7541.patch) by @mwhansen created at 2009-12-19 21:26:33
+
+
+
+---
+
+archive/issue_events_007771.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-19T21:26:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7541",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7541#event-7771"
+}
+```

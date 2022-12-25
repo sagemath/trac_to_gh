@@ -63,3 +63,19 @@ archive/issue_comments_006428.json:
 ```
 
 applied to 2.8.11.rc1 - via with new python-2.5.1.p8.spkg
+
+
+
+---
+
+archive/issue_events_001184.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-02T01:48:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1061",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1061#event-1184"
+}
+```

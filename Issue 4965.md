@@ -1237,3 +1237,19 @@ archive/issue_comments_037717.json:
 ```
 
 Merged polynomial_template.patch and zmod_poly.patch in Sage 3.3.alpha1
+
+
+
+---
+
+archive/issue_events_005208.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-22T23:34:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#event-5208"
+}
+```

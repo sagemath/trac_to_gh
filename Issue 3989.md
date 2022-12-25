@@ -153,6 +153,22 @@ Looks good. I don't have an Itanium to test on, but Michael assures me that it w
 
 ---
 
+archive/issue_events_004218.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-29T09:11:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3989",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3989#event-4218"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028623.json:
 ```json
 {

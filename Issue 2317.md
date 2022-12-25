@@ -49,6 +49,22 @@ Dsage has been deprecated.
 
 ---
 
+archive/issue_events_002493.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-01-19T07:36:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2317",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2317#event-2493"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015387.json:
 ```json
 {

@@ -220,6 +220,22 @@ All right. Hope this will be fixed with #15260.
 
 ---
 
+archive/issue_events_002190.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2016-01-23T20:42:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2034",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2034#event-2190"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013138.json:
 ```json
 {

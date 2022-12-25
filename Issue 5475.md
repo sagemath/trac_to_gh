@@ -128,6 +128,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_005729.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-22T14:38:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5475",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5475#event-5729"
+}
+```
+
+
+
+---
+
 archive/issue_comments_042393.json:
 ```json
 {

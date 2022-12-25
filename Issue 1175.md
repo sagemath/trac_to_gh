@@ -117,3 +117,19 @@ archive/issue_comments_007246.json:
 ```
 
 Merged in Sage 2.9.1 alpha2
+
+
+
+---
+
+archive/issue_events_001307.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2007-12-19T19:08:01Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1175",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1175#event-1307"
+}
+```

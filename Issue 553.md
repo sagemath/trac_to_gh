@@ -83,6 +83,22 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
+archive/issue_events_000594.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T04:14:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/553#event-594"
+}
+```
+
+
+
+---
+
 archive/issue_comments_002841.json:
 ```json
 {
@@ -132,6 +148,22 @@ archive/issue_comments_002843.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000595.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-09-07T07:21:31Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/553#event-595"
+}
+```
 
 
 
@@ -316,3 +348,19 @@ archive/issue_comments_002852.json:
 ```
 
 Merged in 2.9.rc0.
+
+
+
+---
+
+archive/issue_events_000596.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-12-15T11:26:45Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/553#event-596"
+}
+```

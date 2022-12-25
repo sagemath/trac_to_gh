@@ -212,6 +212,22 @@ Just to let people know, this has been merged in sage-4.1.1-alpha0. I can't clos
 
 ---
 
+archive/issue_events_006628.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-16T21:27:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6380",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6380#event-6628"
+}
+```
+
+
+
+---
+
 archive/issue_comments_050981.json:
 ```json
 {

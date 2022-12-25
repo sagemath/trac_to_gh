@@ -48,6 +48,22 @@ Looks good. I particularly like the ability to do "O(x^10)" and implicitly creat
 
 ---
 
+archive/issue_events_004862.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-27T03:13:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4613",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4613#event-4862"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034571.json:
 ```json
 {

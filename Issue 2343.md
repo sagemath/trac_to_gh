@@ -63,6 +63,22 @@ Applies cleanly against 2.3.10.alpha0 and passes tests for me.
 
 ---
 
+archive/issue_events_002520.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-02T21:08:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2343",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2343#event-2520"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015653.json:
 ```json
 {

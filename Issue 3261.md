@@ -64,3 +64,19 @@ archive/issue_comments_022514.json:
 ```
 
 I've tried this in a few installations with #5020 applied and cannot duplicate this.  I'm going to mark it as invalid.
+
+
+
+---
+
+archive/issue_events_003478.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-01-20T10:13:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3261",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3261#event-3478"
+}
+```

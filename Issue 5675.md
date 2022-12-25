@@ -249,6 +249,22 @@ See #5263 for the publish url bug.
 
 ---
 
+archive/issue_events_005918.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-01-25T01:03:31Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5675",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5675#event-5918"
+}
+```
+
+
+
+---
+
 archive/issue_comments_044319.json:
 ```json
 {

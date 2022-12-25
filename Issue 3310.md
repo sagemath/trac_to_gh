@@ -156,3 +156,19 @@ This ticket has been fixed via Craig's and Gonzalo's patch at #4480.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003528.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-11-10T08:41:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3310",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3310#event-3528"
+}
+```

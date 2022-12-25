@@ -126,6 +126,22 @@ I realise this is a duplicate of #9521
 
 ---
 
+archive/issue_events_009896.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-09-04T07:51:18Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9766",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9766#event-9896"
+}
+```
+
+
+
+---
+
 archive/issue_comments_095550.json:
 ```json
 {

@@ -90,6 +90,22 @@ Done, finally.
 
 ---
 
+archive/issue_events_000412.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-10-20T06:38:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/390",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/390#event-412"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001906.json:
 ```json
 {

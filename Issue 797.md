@@ -73,6 +73,22 @@ sage: timeit('[1..10]')
 
 ---
 
+archive/issue_events_000906.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2009-01-14T08:09:49Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/797",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-906"
+}
+```
+
+
+
+---
+
 archive/issue_comments_004774.json:
 ```json
 {
@@ -142,6 +158,22 @@ archive/issue_comments_004777.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000907.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2009-01-14T16:49:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/797",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-907"
+}
+```
 
 
 
@@ -724,6 +756,22 @@ archive/issue_comments_004799.json:
 ```
 
 Changing status from needs_review to positive_review.
+
+
+
+---
+
+archive/issue_events_000908.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-18T22:39:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/797",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/797#event-908"
+}
+```
 
 
 

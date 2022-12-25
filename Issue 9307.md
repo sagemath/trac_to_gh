@@ -57,6 +57,22 @@ $
 
 ---
 
+archive/issue_events_009465.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-07-01T17:10:56Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9307",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9307#event-9465"
+}
+```
+
+
+
+---
+
 archive/issue_comments_087514.json:
 ```json
 {

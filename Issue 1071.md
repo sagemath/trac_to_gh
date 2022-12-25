@@ -144,6 +144,22 @@ I don't mean to push my original patch (which's problems were fixed by mhansen) 
 
 ---
 
+archive/issue_events_001193.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-06T22:19:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1071",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1071#event-1193"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006470.json:
 ```json
 {

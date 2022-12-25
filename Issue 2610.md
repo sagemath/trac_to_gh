@@ -156,3 +156,19 @@ Ok, I can close this now since it has been confirmed.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_002800.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-20T11:13:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2610",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2610#event-2800"
+}
+```

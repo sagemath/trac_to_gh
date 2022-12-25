@@ -67,6 +67,22 @@ Yup!
 
 ---
 
+archive/issue_events_007345.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-05T18:48:35Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7125",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7125#event-7345"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058999.json:
 ```json
 {

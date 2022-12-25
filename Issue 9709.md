@@ -105,6 +105,22 @@ Patch looks good, doctests pass
 
 ---
 
+archive/issue_events_009841.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-09-15T11:13:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9709",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9709#event-9841"
+}
+```
+
+
+
+---
+
 archive/issue_comments_094476.json:
 ```json
 {

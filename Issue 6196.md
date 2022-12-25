@@ -404,6 +404,22 @@ Oh damn.  Thanks, Nick.
 
 ---
 
+archive/issue_events_006444.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-02T21:07:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6196",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6196#event-6444"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049396.json:
 ```json
 {

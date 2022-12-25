@@ -108,6 +108,22 @@ Spkg compiles fine.
 
 ---
 
+archive/issue_events_002112.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-28T05:06:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1957",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1957#event-2112"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012607.json:
 ```json
 {

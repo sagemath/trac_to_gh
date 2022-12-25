@@ -295,6 +295,22 @@ Docstring #random-ed, follow up ticket at #6265.
 
 ---
 
+archive/issue_events_006306.json:
+```json
+{
+    "actor": "@ncalexan",
+    "created_at": "2009-06-12T08:02:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6051",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6051#event-6306"
+}
+```
+
+
+
+---
+
 archive/issue_comments_048118.json:
 ```json
 {

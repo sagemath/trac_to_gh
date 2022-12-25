@@ -204,6 +204,22 @@ Apply every patch.
 
 ---
 
+archive/issue_events_002362.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-17T20:59:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2196",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2196#event-2362"
+}
+```
+
+
+
+---
+
 archive/issue_comments_014401.json:
 ```json
 {

@@ -142,6 +142,22 @@ Done.
 
 ---
 
+archive/issue_events_009507.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-07T06:39:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#event-9507"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088658.json:
 ```json
 {

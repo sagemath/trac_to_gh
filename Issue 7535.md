@@ -253,6 +253,22 @@ Doctests pass with the latter patch and the one in #7532, so I'll mark both as p
 
 ---
 
+archive/issue_events_007765.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-23T19:54:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7535",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7535#event-7765"
+}
+```
+
+
+
+---
+
 archive/issue_comments_063799.json:
 ```json
 {

@@ -101,6 +101,22 @@ Sorry this took 18 hours.  Patch looks fine, applied fine and deals with the pro
 
 ---
 
+archive/issue_events_008876.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-19T05:17:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8706",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8706#event-8876"
+}
+```
+
+
+
+---
+
 archive/issue_comments_079286.json:
 ```json
 {

@@ -62,3 +62,19 @@ archive/issue_comments_001727.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_000381.json:
+```json
+{
+    "actor": "acleone",
+    "created_at": "2010-03-29T21:14:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/359",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/359#event-381"
+}
+```

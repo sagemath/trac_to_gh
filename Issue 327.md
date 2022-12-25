@@ -102,6 +102,22 @@ Dave
 
 ---
 
+archive/issue_events_000351.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-06-09T22:04:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/327",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/327#event-351"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001546.json:
 ```json
 {

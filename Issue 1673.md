@@ -70,6 +70,22 @@ If anything I think the behaviour where you can do f % 11 and get an element of 
 
 ---
 
+archive/issue_events_001832.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-01-04T08:21:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1673",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1673#event-1832"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010595.json:
 ```json
 {

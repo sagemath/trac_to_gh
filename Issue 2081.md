@@ -132,6 +132,22 @@ archive/issue_comments_013445.json:
 
 ---
 
+archive/issue_events_002242.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-15T02:16:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2081",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2081#event-2242"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013446.json:
 ```json
 {

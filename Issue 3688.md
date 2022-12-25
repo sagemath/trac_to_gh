@@ -167,6 +167,22 @@ skip dsage files
 
 ---
 
+archive/issue_events_003910.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-07-24T09:11:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3688",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3688#event-3910"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026093.json:
 ```json
 {

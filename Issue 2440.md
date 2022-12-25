@@ -167,6 +167,22 @@ Positive review, should be accepted.
 
 ---
 
+archive/issue_events_002617.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-09T21:04:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2440",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2440#event-2617"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016478.json:
 ```json
 {

@@ -179,6 +179,22 @@ applied to 2.8.11.alpha0: this should have been fixed via the new Singular.spkg 
 
 ---
 
+archive/issue_events_001081.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2007-11-01T10:36:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/959",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/959#event-1081"
+}
+```
+
+
+
+---
+
 archive/issue_comments_005831.json:
 ```json
 {

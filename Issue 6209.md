@@ -158,6 +158,22 @@ Sorry, my mistake. It's fixed in patches not src indeed!!
 
 ---
 
+archive/issue_events_006458.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-06-04T19:39:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6209",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6209#event-6458"
+}
+```
+
+
+
+---
+
 archive/issue_comments_049517.json:
 ```json
 {

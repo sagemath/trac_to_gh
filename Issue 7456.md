@@ -142,6 +142,22 @@ See also [this thread](http://groups.google.com/group/sage-devel/browse_thread/t
 
 ---
 
+archive/issue_events_007682.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-12-09T02:52:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7456",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7456#event-7682"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062688.json:
 ```json
 {

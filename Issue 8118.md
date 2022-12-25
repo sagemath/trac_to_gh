@@ -576,3 +576,19 @@ archive/issue_comments_071208.json:
 ```
 
 Merged [trac_8118_rebased.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8118/trac_8118_rebased.patch).
+
+
+
+---
+
+archive/issue_events_008326.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-18T21:26:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8118",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8118#event-8326"
+}
+```

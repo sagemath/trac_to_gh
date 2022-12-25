@@ -380,3 +380,19 @@ archive/issue_comments_079094.json:
 ```
 
 Merged "trac_8695-uniquerep_missing__ne__-fh.patch" into 4.4.alpha1.
+
+
+
+---
+
+archive/issue_events_008867.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-19T05:16:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8695",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8695#event-8867"
+}
+```

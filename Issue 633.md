@@ -154,3 +154,19 @@ I have been adding the above code snippet to every spkg that I have touched in t
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000693.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-31T03:23:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/633",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/633#event-693"
+}
+```

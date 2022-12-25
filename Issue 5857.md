@@ -162,6 +162,22 @@ reviewer patch
 
 ---
 
+archive/issue_events_006113.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-23T02:11:00Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#event-6113"
+}
+```
+
+
+
+---
+
 archive/issue_comments_046195.json:
 ```json
 {

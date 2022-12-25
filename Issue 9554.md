@@ -315,6 +315,22 @@ I've merged the patch into SageNB 0.8.2, which awaits review at #9572.
 
 ---
 
+archive/issue_events_009702.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-07-23T07:19:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9554",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9554#event-9702"
+}
+```
+
+
+
+---
+
 archive/issue_comments_091946.json:
 ```json
 {

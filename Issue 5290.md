@@ -123,6 +123,22 @@ Attachment [trac_5290-deletion.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
+archive/issue_events_005544.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-02-17T06:58:04Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5290",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5290#event-5544"
+}
+```
+
+
+
+---
+
 archive/issue_comments_040577.json:
 ```json
 {

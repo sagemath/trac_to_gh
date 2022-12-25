@@ -70,6 +70,22 @@ Fixed in Sage 3.0.rc0
 
 ---
 
+archive/issue_events_003175.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-20T04:48:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2970",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2970#event-3175"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020431.json:
 ```json
 {

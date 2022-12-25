@@ -84,3 +84,19 @@ I can no longer reproduce this. We upgraded ipyhton as well as numpy mutliple ti
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_001908.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-26T16:18:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1750",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1750#event-1908"
+}
+```

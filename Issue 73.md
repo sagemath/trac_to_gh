@@ -114,3 +114,19 @@ diff -r 97f9271f8637 sage/all.py
       raise RuntimeError, "To use the SAGE libraries, set the environment variable SAGE_ROOT to the SAGE build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib"
 ```
 
+
+
+
+---
+
+archive/issue_events_000073.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2006-09-30T18:28:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/73",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/73#event-73"
+}
+```

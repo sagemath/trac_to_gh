@@ -265,6 +265,22 @@ Excellent patch. Recommend acceptance.
 
 ---
 
+archive/issue_events_002544.json:
+```json
+{
+    "actor": "@simon-king-jena",
+    "created_at": "2008-03-05T10:43:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2367",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2367#event-2544"
+}
+```
+
+
+
+---
+
 archive/issue_comments_015938.json:
 ```json
 {

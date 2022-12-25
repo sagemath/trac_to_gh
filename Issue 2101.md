@@ -134,3 +134,19 @@ archive/issue_comments_013663.json:
 ```
 
 Merged all new spkgs but quaddouble-2.3.4.p1.spkg in Sage 2.10.2.alpha0
+
+
+
+---
+
+archive/issue_events_002261.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-14T23:21:40Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2101",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2101#event-2261"
+}
+```

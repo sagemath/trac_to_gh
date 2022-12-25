@@ -76,6 +76,22 @@ Patch applied cleanly against alpha3 and fixes my original issue, good job!
 
 ---
 
+archive/issue_events_003115.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-14T04:58:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2913",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2913#event-3115"
+}
+```
+
+
+
+---
+
 archive/issue_comments_020025.json:
 ```json
 {

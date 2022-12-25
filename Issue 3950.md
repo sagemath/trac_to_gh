@@ -264,3 +264,19 @@ archive/issue_comments_028308.json:
 ```
 
 Merged all three patches in Sage 3.2.2.alpha0
+
+
+
+---
+
+archive/issue_events_004178.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-04T14:55:37Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3950",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3950#event-4178"
+}
+```

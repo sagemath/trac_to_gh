@@ -752,6 +752,22 @@ John -- Please remember to put a sensible commit message in your patch. It's rec
 
 ---
 
+archive/issue_events_006213.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-08-30T12:09:06Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#event-6213"
+}
+```
+
+
+
+---
+
 archive/issue_comments_047107.json:
 ```json
 {

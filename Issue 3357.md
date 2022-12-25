@@ -307,6 +307,22 @@ Pending all doctests passing I give this a positive review. There is still too m
 
 ---
 
+archive/issue_events_003574.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-11T03:44:39Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#event-3574"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023314.json:
 ```json
 {

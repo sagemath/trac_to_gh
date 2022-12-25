@@ -408,3 +408,19 @@ archive/issue_comments_069009.json:
 ```
 
 Close as fixed by #8163.
+
+
+
+---
+
+archive/issue_events_008148.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-03-01T01:53:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7932",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7932#event-8148"
+}
+```

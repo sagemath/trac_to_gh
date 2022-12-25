@@ -501,3 +501,19 @@ archive/issue_comments_032025.json:
 ```
 
 Merged 4366-coercion-traceback-fixed.patch in Sage 3.2.alpha2
+
+
+
+---
+
+archive/issue_events_004611.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-10-28T21:28:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4366",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4366#event-4611"
+}
+```

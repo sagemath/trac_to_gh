@@ -146,6 +146,22 @@ Note to release manager: apply only the _original_ patch (`sage-4552.patch`)
 
 ---
 
+archive/issue_events_004797.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-07T17:45:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4552",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4552#event-4797"
+}
+```
+
+
+
+---
+
 archive/issue_comments_034059.json:
 ```json
 {

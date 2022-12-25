@@ -102,6 +102,22 @@ Looks good, applies to 2.11.alpha1 + #2683, passes doctests.
 
 ---
 
+archive/issue_events_002897.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-29T00:01:05Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2708",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2708#event-2897"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018641.json:
 ```json
 {

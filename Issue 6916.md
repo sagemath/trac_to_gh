@@ -140,6 +140,22 @@ Done.
 
 ---
 
+archive/issue_events_007143.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-30T03:53:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6916",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6916#event-7143"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057005.json:
 ```json
 {

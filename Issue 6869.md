@@ -289,6 +289,22 @@ See #6913 for a follow-up to this ticket. It addresses the issue of writing thos
 
 ---
 
+archive/issue_events_007101.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-10T11:36:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6869",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6869#event-7101"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056590.json:
 ```json
 {

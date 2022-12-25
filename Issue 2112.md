@@ -110,6 +110,22 @@ So small, I say apply.
 
 ---
 
+archive/issue_events_002272.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-02-15T04:51:38Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2112",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2112#event-2272"
+}
+```
+
+
+
+---
+
 archive/issue_comments_013741.json:
 ```json
 {

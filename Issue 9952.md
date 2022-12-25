@@ -206,6 +206,22 @@ archive/issue_comments_099111.json:
 
 ---
 
+archive/issue_events_010081.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-06-19T13:25:33Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9952",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9952#event-10081"
+}
+```
+
+
+
+---
+
 archive/issue_comments_099112.json:
 ```json
 {

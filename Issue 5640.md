@@ -234,6 +234,22 @@ The patch `trac_5640-rebased.patch` is rebased against Sage 4.1.alpha1 and depen
 
 ---
 
+archive/issue_events_005883.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2009-06-26T23:11:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/5640",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/5640#event-5883"
+}
+```
+
+
+
+---
+
 archive/issue_comments_043978.json:
 ```json
 {

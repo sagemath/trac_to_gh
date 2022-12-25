@@ -86,6 +86,22 @@ The discussion at [sage-devel](http://groups.google.com/group/sage-devel/browse_
 
 ---
 
+archive/issue_events_008803.json:
+```json
+{
+    "actor": "@robert-marik",
+    "created_at": "2010-04-21T13:25:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8634",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8634#event-8803"
+}
+```
+
+
+
+---
+
 archive/issue_comments_078179.json:
 ```json
 {

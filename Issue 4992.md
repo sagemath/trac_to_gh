@@ -114,6 +114,22 @@ and it works, too. ;)
 
 ---
 
+archive/issue_events_005236.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T00:14:02Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4992",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4992#event-5236"
+}
+```
+
+
+
+---
+
 archive/issue_comments_038028.json:
 ```json
 {

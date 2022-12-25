@@ -219,6 +219,22 @@ Resolution: wontfix
 
 ---
 
+archive/issue_events_009813.json:
+```json
+{
+    "actor": "drkirkby",
+    "created_at": "2010-08-04T23:50:57Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9681",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9681#event-9813"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093964.json:
 ```json
 {

@@ -528,6 +528,22 @@ archive/issue_comments_068657.json:
 
 ---
 
+archive/issue_events_008123.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2015-01-13T01:16:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7908",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7908#event-8123"
+}
+```
+
+
+
+---
+
 archive/issue_comments_068658.json:
 ```json
 {

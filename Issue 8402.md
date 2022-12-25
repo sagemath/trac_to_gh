@@ -193,6 +193,22 @@ Attachment [trac_8402-categories_missing_test-fh.patch](tarball://root/attachmen
 
 ---
 
+archive/issue_events_008587.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2010-04-29T05:24:19Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8402",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8402#event-8587"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075132.json:
 ```json
 {

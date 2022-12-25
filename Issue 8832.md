@@ -192,6 +192,22 @@ Thanks for this quick review !
 
 ---
 
+archive/issue_events_008997.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-05-09T04:15:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8832",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8832#event-8997"
+}
+```
+
+
+
+---
+
 archive/issue_comments_081091.json:
 ```json
 {

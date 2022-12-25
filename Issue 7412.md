@@ -204,6 +204,22 @@ Resolution: duplicate
 
 ---
 
+archive/issue_events_007637.json:
+```json
+{
+    "actor": "ylchapuy",
+    "created_at": "2009-11-10T00:53:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7412",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7412#event-7637"
+}
+```
+
+
+
+---
+
 archive/issue_comments_062262.json:
 ```json
 {

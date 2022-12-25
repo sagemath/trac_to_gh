@@ -99,6 +99,22 @@ I think the right change is to make the doctests in darwin_utilities.pyx marked
 
 ---
 
+archive/issue_events_006669.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-02-02T06:16:15Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6427",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6427#event-6669"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051520.json:
 ```json
 {

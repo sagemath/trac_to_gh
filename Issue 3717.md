@@ -178,3 +178,19 @@ I am closing this ticket as fixed.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003937.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-18T04:12:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3717",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3717#event-3937"
+}
+```

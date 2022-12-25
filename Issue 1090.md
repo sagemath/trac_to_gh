@@ -68,6 +68,22 @@ This is a dupe of #1628.
 
 ---
 
+archive/issue_events_001216.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-26T06:58:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1090",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1090#event-1216"
+}
+```
+
+
+
+---
+
 archive/issue_comments_006584.json:
 ```json
 {

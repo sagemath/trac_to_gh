@@ -175,6 +175,22 @@ It's exactly as you say, new_gen() calls _sig_off.
 
 ---
 
+archive/issue_events_009796.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-09T09:42:11Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9661",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9661#event-9796"
+}
+```
+
+
+
+---
+
 archive/issue_comments_093623.json:
 ```json
 {

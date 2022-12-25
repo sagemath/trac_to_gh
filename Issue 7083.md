@@ -103,6 +103,22 @@ Passes sage -testall on ubuntu 9.04 32 bit. It seems to pass on an imac running 
 
 ---
 
+archive/issue_events_007305.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-31T15:31:28Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#event-7305"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058443.json:
 ```json
 {

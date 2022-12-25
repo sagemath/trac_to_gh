@@ -70,6 +70,22 @@ I put this into the experimental package directory.
 
 ---
 
+archive/issue_events_001883.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-09T02:12:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1725",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1725#event-1883"
+}
+```
+
+
+
+---
+
 archive/issue_comments_010902.json:
 ```json
 {

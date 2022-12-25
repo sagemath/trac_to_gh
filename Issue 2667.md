@@ -153,6 +153,22 @@ apply just 2667.patch; rhinton and mhansen (and maybe robertwb and cwitty?) shou
 
 ---
 
+archive/issue_events_002859.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-31T19:47:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2667",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2667#event-2859"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018324.json:
 ```json
 {

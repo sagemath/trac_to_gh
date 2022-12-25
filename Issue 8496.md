@@ -569,6 +569,22 @@ Merged "8496-rebased-4.4.alpha0.patch" into 4.4.alpha1.
 
 ---
 
+archive/issue_events_008677.json:
+```json
+{
+    "actor": "@jhpalmieri",
+    "created_at": "2010-04-19T05:16:32Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8496",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8496#event-8677"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076555.json:
 ```json
 {

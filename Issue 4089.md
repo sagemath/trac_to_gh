@@ -118,6 +118,22 @@ Looks good to me.  Apply after #3950
 
 ---
 
+archive/issue_events_004327.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-04T14:55:21Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4089",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4089#event-4327"
+}
+```
+
+
+
+---
+
 archive/issue_comments_029440.json:
 ```json
 {

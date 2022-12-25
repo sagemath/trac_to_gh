@@ -83,6 +83,22 @@ there hasn't been a slideshow mode for at least 6 months...
 
 ---
 
+archive/issue_events_000332.json:
+```json
+{
+    "actor": "boothby",
+    "created_at": "2008-03-17T04:41:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/313",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-332"
+}
+```
+
+
+
+---
+
 archive/issue_comments_001492.json:
 ```json
 {
@@ -114,6 +130,22 @@ archive/issue_comments_001493.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_000333.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-17T04:57:01Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/313",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-333"
+}
+```
 
 
 
@@ -212,6 +244,22 @@ Merged in Sage 3.3.alpha0
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_000334.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-23T10:03:16Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/313",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/313#event-334"
+}
+```
 
 
 

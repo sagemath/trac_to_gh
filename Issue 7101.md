@@ -118,3 +118,19 @@ archive/issue_comments_058668.json:
 ```
 
 Err, it's a duplicate of #5755 which has been fixed.
+
+
+
+---
+
+archive/issue_events_007323.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-04T03:50:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7101",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7101#event-7323"
+}
+```

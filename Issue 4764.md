@@ -95,6 +95,22 @@ I'm closing this as a dupe.
 
 ---
 
+archive/issue_events_005006.json:
+```json
+{
+    "actor": "@robertwb",
+    "created_at": "2008-12-12T02:16:41Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4764",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4764#event-5006"
+}
+```
+
+
+
+---
+
 archive/issue_comments_036038.json:
 ```json
 {

@@ -314,6 +314,22 @@ That seems like a good compromise.
 
 ---
 
+archive/issue_events_006658.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2016-06-12T12:02:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6414",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6414#event-6658"
+}
+```
+
+
+
+---
+
 archive/issue_comments_051413.json:
 ```json
 {

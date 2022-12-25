@@ -122,6 +122,22 @@ See also #1610 for more stuff on "hg record" and cherry picking.
 
 ---
 
+archive/issue_events_008408.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-02-11T14:43:14Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8206",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8206#event-8408"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072255.json:
 ```json
 {

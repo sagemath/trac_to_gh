@@ -79,6 +79,22 @@ I will fix this as part of #4681.
 
 ---
 
+archive/issue_events_003278.json:
+```json
+{
+    "actor": "@loefflerd",
+    "created_at": "2008-12-08T18:03:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3068",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3068#event-3278"
+}
+```
+
+
+
+---
+
 archive/issue_comments_021129.json:
 ```json
 {
@@ -152,6 +168,22 @@ archive/issue_comments_021132.json:
 ```
 
 Changing status from closed to reopened.
+
+
+
+---
+
+archive/issue_events_003279.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-08T18:08:51Z",
+    "event": "reopened",
+    "issue": "https://github.com/sagemath/sagetest/issues/3068",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3068#event-3279"
+}
+```
 
 
 
@@ -235,3 +267,19 @@ Fixed in Sage 3.2.2.alpha1 via #4681.
 Cheers,
 
 Michael
+
+
+
+---
+
+archive/issue_events_003280.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-12-10T11:27:53Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3068",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3068#event-3280"
+}
+```

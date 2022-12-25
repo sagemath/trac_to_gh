@@ -60,6 +60,22 @@ sage: K(2) - K(3)
 
 ---
 
+archive/issue_events_000085.json:
+```json
+{
+    "actor": "dmharvey",
+    "created_at": "2006-10-10T23:57:26Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/85",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/85#event-85"
+}
+```
+
+
+
+---
+
 archive/issue_comments_000425.json:
 ```json
 {

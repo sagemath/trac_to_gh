@@ -140,6 +140,22 @@ Patch applies, and the tests run properly. Positive review.
 
 ---
 
+archive/issue_events_007311.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-10-16T09:02:23Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7089",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7089#event-7311"
+}
+```
+
+
+
+---
+
 archive/issue_comments_058484.json:
 ```json
 {

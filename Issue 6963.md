@@ -119,6 +119,22 @@ Why "no"? --- I wanted to merge #3133, or any ticket with a positive review, as 
 
 ---
 
+archive/issue_events_007186.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2009-09-22T22:07:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6963",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6963#event-7186"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057506.json:
 ```json
 {

@@ -199,3 +199,19 @@ archive/issue_comments_050930.json:
 ```
 
 Resolution: duplicate
+
+
+
+---
+
+archive/issue_events_006624.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2009-11-19T17:47:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6376",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6376#event-6624"
+}
+```

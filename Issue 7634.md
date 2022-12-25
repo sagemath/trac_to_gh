@@ -532,3 +532,19 @@ archive/issue_comments_065132.json:
 ```
 
 Attachment [trac_7634-fix-pickle.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-fix-pickle.patch) by @rlmill created at 2010-01-13 04:35:52
+
+
+
+---
+
+archive/issue_events_007860.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2010-01-13T04:35:52Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7634",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7634#event-7860"
+}
+```

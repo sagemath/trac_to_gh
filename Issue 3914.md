@@ -266,6 +266,22 @@ Has been fixed by trac #385
 
 ---
 
+archive/issue_events_004141.json:
+```json
+{
+    "actor": "@robert-marik",
+    "created_at": "2009-10-25T20:53:43Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#event-4141"
+}
+```
+
+
+
+---
+
 archive/issue_comments_027941.json:
 ```json
 {

@@ -176,6 +176,22 @@ Should we close this ticket as fixed?
 
 ---
 
+archive/issue_events_007167.json:
+```json
+{
+    "actor": "mvngu",
+    "created_at": "2010-01-31T18:21:20Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6943",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6943#event-7167"
+}
+```
+
+
+
+---
+
 archive/issue_comments_057308.json:
 ```json
 {

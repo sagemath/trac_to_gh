@@ -150,3 +150,19 @@ archive/issue_comments_009673.json:
 ```
 
 The next major release of OpenOffice will have LaTeX capabilities so a LaTeX to open_office converter will not be needed.
+
+
+
+---
+
+archive/issue_events_001666.json:
+```json
+{
+    "actor": "tkosan",
+    "created_at": "2008-02-21T07:43:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1512",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1512#event-1666"
+}
+```

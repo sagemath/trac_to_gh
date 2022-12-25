@@ -268,3 +268,19 @@ archive/issue_comments_037904.json:
 Attachment [polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket4981/polynomial_ring.patch) by mabshoff created at 2009-01-24 17:45:36
 
 Merged polynomial_ring.py (take 4) in Sage 3.3.alpha2
+
+
+
+---
+
+archive/issue_events_005224.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2009-01-24T17:45:36Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/4981",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/4981#event-5224"
+}
+```

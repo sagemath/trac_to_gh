@@ -110,6 +110,22 @@ ok, so it already has a positive review!  Thanks!
 
 ---
 
+archive/issue_events_004015.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-11T04:59:07Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3793",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3793#event-4015"
+}
+```
+
+
+
+---
+
 archive/issue_comments_026915.json:
 ```json
 {

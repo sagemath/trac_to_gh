@@ -320,6 +320,22 @@ Resolution: fixed
 
 ---
 
+archive/issue_events_009509.json:
+```json
+{
+    "actor": "@qed777",
+    "created_at": "2010-08-09T09:37:47Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9356",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9356#event-9509"
+}
+```
+
+
+
+---
+
 archive/issue_comments_088681.json:
 ```json
 {

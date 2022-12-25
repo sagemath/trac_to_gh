@@ -67,6 +67,22 @@ Looks good. Positive review.
 
 ---
 
+archive/issue_events_006715.json:
+```json
+{
+    "actor": "@rlmill",
+    "created_at": "2009-07-08T20:22:50Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6478",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6478#event-6715"
+}
+```
+
+
+
+---
+
 archive/issue_comments_052267.json:
 ```json
 {

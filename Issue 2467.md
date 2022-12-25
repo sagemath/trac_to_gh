@@ -103,3 +103,19 @@ archive/issue_comments_016680.json:
 ```
 
 Same as #2371.
+
+
+
+---
+
+archive/issue_events_002646.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-11T02:50:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2467",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2467#event-2646"
+}
+```

@@ -112,6 +112,22 @@ Closing this, since we've dropped support for a Debian package.
 
 ---
 
+archive/issue_events_002920.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2012-04-19T10:00:22Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2732",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2732#event-2920"
+}
+```
+
+
+
+---
+
 archive/issue_comments_018768.json:
 ```json
 {

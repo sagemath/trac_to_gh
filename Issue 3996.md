@@ -146,6 +146,22 @@ Merged trac_3996-rebase.patch in Sage 3.1.2.alpha3
 
 ---
 
+archive/issue_events_004225.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-08-30T00:39:17Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3996",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3996#event-4225"
+}
+```
+
+
+
+---
+
 archive/issue_comments_028657.json:
 ```json
 {

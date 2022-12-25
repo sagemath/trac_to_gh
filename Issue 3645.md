@@ -169,3 +169,19 @@ archive/issue_comments_025720.json:
 Attachment [3645-newest.patch](tarball://root/attachments/some-uuid/ticket3645/3645-newest.patch) by mabshoff created at 2008-07-30 23:21:27
 
 Merged 3645-newest.patch in Sage 3.1.alpha0
+
+
+
+---
+
+archive/issue_events_003864.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-07-30T23:21:27Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3645",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3645#event-3864"
+}
+```

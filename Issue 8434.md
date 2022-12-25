@@ -168,6 +168,22 @@ This was long, long time ago (perhaps even in a galaxy far, far away ...). So I 
 
 ---
 
+archive/issue_events_008619.json:
+```json
+{
+    "actor": "@vbraun",
+    "created_at": "2014-03-31T12:30:25Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8434",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8434#event-8619"
+}
+```
+
+
+
+---
+
 archive/issue_comments_075582.json:
 ```json
 {

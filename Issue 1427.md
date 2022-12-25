@@ -63,3 +63,19 @@ archive/issue_comments_009177.json:
 ```
 
 I'm closing this since it's now in the r-2.6.1.p3.spkg.
+
+
+
+---
+
+archive/issue_events_001574.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2007-12-09T23:52:55Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1427",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1427#event-1574"
+}
+```

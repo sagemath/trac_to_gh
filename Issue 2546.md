@@ -87,6 +87,22 @@ Invalid.  This is the sort of thing that needs to be discussed on sage-support o
 
 ---
 
+archive/issue_events_002727.json:
+```json
+{
+    "actor": "@williamstein",
+    "created_at": "2008-03-16T20:48:42Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2546",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2546#event-2727"
+}
+```
+
+
+
+---
+
 archive/issue_comments_017344.json:
 ```json
 {

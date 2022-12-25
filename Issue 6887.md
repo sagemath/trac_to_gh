@@ -510,6 +510,22 @@ That's fine -- thanks!
 
 ---
 
+archive/issue_events_007118.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2010-01-04T04:09:44Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6887",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6887#event-7118"
+}
+```
+
+
+
+---
+
 archive/issue_comments_056819.json:
 ```json
 {

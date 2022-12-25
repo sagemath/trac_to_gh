@@ -158,6 +158,22 @@ Works great and looks good to me. Resolves the problems too (now 0 is returned 2
 
 ---
 
+archive/issue_events_002146.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-03-29T19:18:54Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1990",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1990#event-2146"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012860.json:
 ```json
 {

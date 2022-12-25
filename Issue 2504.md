@@ -148,6 +148,22 @@ Merged 2504-units_cache.2.patch in Sage 3.0.1.alpha1
 
 ---
 
+archive/issue_events_002685.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-04-26T21:58:58Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/2504",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/2504#event-2685"
+}
+```
+
+
+
+---
+
 archive/issue_comments_016932.json:
 ```json
 {

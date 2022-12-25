@@ -149,3 +149,19 @@ archive/issue_comments_062247.json:
 ```
 
 Works with sagenb-0.6.
+
+
+
+---
+
+archive/issue_events_007635.json:
+```json
+{
+    "actor": "@TimDumol",
+    "created_at": "2010-01-19T03:12:29Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/7410",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/7410#event-7635"
+}
+```

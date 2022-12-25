@@ -231,6 +231,22 @@ Patch with fixed permgroup.py doctests
 
 ---
 
+archive/issue_events_003581.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-06-09T18:47:46Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/3364",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/3364#event-3581"
+}
+```
+
+
+
+---
+
 archive/issue_comments_023495.json:
 ```json
 {

@@ -632,6 +632,22 @@ Okay, that's now #11912.
 
 ---
 
+archive/issue_events_008678.json:
+```json
+{
+    "actor": "@jdemeyer",
+    "created_at": "2011-10-10T20:19:59Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8497",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8497#event-8678"
+}
+```
+
+
+
+---
+
 archive/issue_comments_076584.json:
 ```json
 {

@@ -44,6 +44,22 @@ Issue created by migration from https://trac.sagemath.org/ticket/8210
 
 ---
 
+archive/issue_events_008412.json:
+```json
+{
+    "actor": "@jasongrout",
+    "created_at": "2010-02-09T15:42:12Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/8210",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/8210#event-8412"
+}
+```
+
+
+
+---
+
 archive/issue_comments_072287.json:
 ```json
 {

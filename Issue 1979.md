@@ -125,6 +125,22 @@ Merged in Sage 2.10.1.rc3. This ticket should be reopened if it turns out that t
 
 ---
 
+archive/issue_events_002135.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-30T09:42:09Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1979",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1979#event-2135"
+}
+```
+
+
+
+---
+
 archive/issue_comments_012799.json:
 ```json
 {

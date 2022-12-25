@@ -183,3 +183,19 @@ The docs for `RIF` currently state:
 
 
 and goes on to provide several examples, e.g. both with rational and floating point arguments.
+
+
+
+---
+
+archive/issue_events_006367.json:
+```json
+{
+    "actor": "@embray",
+    "created_at": "2018-08-14T17:00:51Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/6116",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/6116#event-6367"
+}
+```

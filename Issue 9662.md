@@ -134,3 +134,19 @@ sage: gp.eval('kill(x)')
 
 
 which appropriately returns an empty string.
+
+
+
+---
+
+archive/issue_events_009797.json:
+```json
+{
+    "actor": "@mwhansen",
+    "created_at": "2013-07-24T12:23:34Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/9662",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/9662#event-9797"
+}
+```

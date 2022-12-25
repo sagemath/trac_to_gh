@@ -114,6 +114,22 @@ It is not platform dependent: it is not deterministic ;)
 
 ---
 
+archive/issue_events_002048.json:
+```json
+{
+    "actor": "mabshoff",
+    "created_at": "2008-01-24T00:34:30Z",
+    "event": "closed",
+    "issue": "https://github.com/sagemath/sagetest/issues/1890",
+    "type": "issue_event",
+    "url": "https://github.com/sagemath/sagetest/issues/1890#event-2048"
+}
+```
+
+
+
+---
+
 archive/issue_comments_011945.json:
 ```json
 {
